@@ -158,7 +158,7 @@ const FeaturedProjects = () => {
 
         </div>
 
-        <div className="projects-3 w-full flex flex-col md:flex-col justify-center items-center bg-black">
+        <div className="projects-3 w-full flex flex-col md:flex-row justify-center items-center bg-black">
 
           <div className="w-full md:w-1/3 h-[500px] md:h-[600px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-6 md:p-12 gap-2 md:gap-4">
 
