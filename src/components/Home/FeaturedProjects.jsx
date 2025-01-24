@@ -74,7 +74,7 @@ const FeaturedProjects = () => {
     <section ref={sectionRef}   className="featured-projects w-full h-full flex flex-col justify-center items-center bg-customblack text-white">
 
         <div className="marquee w-full shadow-xl relative">
-          <div className="flex h-24 gap-8 justify-center items-center animate-marquee whitespace-nowrap">
+          <div className="flex h-16 md:h-24 gap-8 justify-center items-center animate-marquee whitespace-nowrap">
             
              {numbers.map((num) => (
               <div key={num} className="flex h-full gap-8 justify-center items-center w-auto mx-4">
@@ -91,109 +91,109 @@ const FeaturedProjects = () => {
           <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-gray-900 to-transparent pointer-events-none"></div>
         </div>
 
-        <div className=" feature-hero w-full flex justify-center  items-center  py-40 bg-black ">
+        <div className=" feature-hero w-full flex justify-center  items-center  py-12 md:py-40 bg-black ">
 
-          <div className="w-1/2 flex flex-col gap-4 justify-center items-start pl-24">
+          <div className="w-full md:w-1/2 flex flex-col gap-4 justify-center items-start pl-4 md:pl-24">
 
             <div className={`${isAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'} 
             flex gap-2 justify-center items-center transition-all duration-1000 ease-out`}>
-              <span className="bg-lime-400 text-black size-3 rounded-full">.</span>
-              <p className="text-lg font-semibold text-gray-400">Featured projects</p>
+              <span className="bg-lime-400 text-black size-2 md:size-3 rounded-full">.</span>
+              <p className="text-xs md:text-lg font-semibold text-gray-400">Featured projects</p>
             </div>
 
             <div className={`${isAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'} 
             flex justify-center items-start flex-col gap-2 leading-none transition-all duration-1000 ease-out delay-200`}>
-              <h1 className="text-[80px] text-white leading-none whitespace-nowrap">
+              <h1 className="text-[35px] md:text-[80px] text-white leading-none whitespace-nowrap">
                 Turning Imagination
               </h1>
-              <h1 className="text-[80px] text-white leading-none">
+              <h1 className="text-[35px] md:text-[80px] text-white leading-none">
                 Into Innovation
               </h1>
             </div>
 
             <button className={`${isAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'} 
-            rounded-full p-2 pl-6 text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-16 shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group `}>Become a client <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> </button>
+            rounded-full p-2  pl-6 text-lg md:text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-8 md:mt-16 shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group `}>Become a client <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> </button>
 
           </div>
 
-          <div className="right w-1/2 h-auto flex justify-center items-center">
+          <div className="hidden right w-1/2 h-auto md:flex justify-center items-center">
              <img src="/bulb.png" className="size-[600px]" />
           </div>
 
         </div>
 
-        <div className="projects-2 w-full flex justify-center items-center bg-black">
+        <div className="projects-2 w-full flex flex-col md:flex-row justify-center items-center bg-black">
 
-          <div className="w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-12 gap-4">
+          <div className="w-full md:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-6 md:p-12 gap-2 md:gap-4">
 
-            <h1 className="flex justify-start items-center gap-6"> 
+            <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
               <div><span className="text-customgreen">{"{"}</span> E-commerce Saas <span className="text-customgreen">{"}"}</span>
               </div> 
               <div className="text-gray-400">5/31/24</div>
             </h1>
 
-            <h1 className="text-3xl">EDGECARTS</h1>
+            <h1 className="text-2xl md:text-3xl">EDGECARTS</h1>
 
-            <p className="text-gray-500 font-semibold text-md">Web design & Web development</p>
+            <p className="text-gray-500 font-semibold text-xs md:text-md">Web design & Web development</p>
 
-            <img src="/image1.png" className={`project-image w-full h-[400px] rounded-xl mt-12 transition-transform duration-500 ease-in-out 
-              ${visibleImages[`project-image-0`] ? 'scale-110' : 'scale-100'}`}  />
+            <img src="/image1.png" className={`project-image w-full h-[300px] md:h-[400px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
+              ${visibleImages[`project-image-0`] ? 'md:scale-110' : 'scale-100'}`}  />
           </div>
 
-          <div className="w-1/2 border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-12 gap-4">
+          <div className="w-full md:w-1/2 border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-6 md:p-12 gap-2 md:gap-4">
 
-            <h1 className="flex justify-start items-center gap-6"> 
+            <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
               <div><span className="text-customgreen">{"{"}</span> Saas <span className="text-customgreen">{"}"}</span>
               </div> 
               <div className="text-gray-400">8/8/24</div>
             </h1>
 
-            <h1 className="text-3xl">BUILDOPS</h1>
+            <h1 className="text-2xl md:text-3xl">BUILDOPS</h1>
 
-            <p className="text-gray-500 font-semibold text-md">ERP & PMS for Construction firm</p>
+            <p className="text-gray-500 font-semibold text-xs md:text-md">ERP & PMS for Construction firm</p>
 
-            <img src="/image2.jpg" className={`project-image w-full h-[400px] rounded-xl mt-12 transition-transform duration-500 ease-in-out 
-              ${visibleImages[`project-image-1`] ? 'scale-110' : 'scale-100'}`} />
+            <img src="/image2.jpg" className={`project-image w-full h-[300px]  md:h-[400px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
+              ${visibleImages[`project-image-1`] ? 'md:scale-110' : 'scale-100'}`} />
           </div>
 
         </div>
 
-        <div className="projects-3 w-full flex justify-center items-center bg-black">
+        <div className="projects-3 w-full flex flex-col md:flex-col justify-center items-center bg-black">
 
-          <div className="w-1/3 h-[600px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-12 gap-4">
+          <div className="w-full md:w-1/3 h-[500px] md:h-[600px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-6 md:p-12 gap-2 md:gap-4">
 
-            <h1 className="flex justify-start items-center gap-6"> 
+            <h1 className="flex justify-start items-center text-lg md:text-xl gap-6"> 
               <div><span className="text-customgreen">{"{"}</span> Mobile App <span className="text-customgreen">{"}"}</span>
               </div> 
               <div className="text-gray-400">6/20/24</div>
             </h1>
 
-            <h1 className="text-3xl whitespace-nowrap"> STRIKES</h1>
+            <h1 className="text-2xl md:text-3xl whitespace-nowrap"> STRIKES</h1>
 
-            <p className="text-gray-500 font-semibold text-md">App that Connect the Influencer and Brand and Audience</p>
+            <p className="text-gray-500 font-semibold text-xs md:text-md">App that Connect the Influencer and Brand and Audience</p>
 
-            <img src="/image1.png"  className={`project-image w-full h-[400px] rounded-xl mt-12 transition-transform duration-500 ease-in-out 
-              ${visibleImages[`project-image-2`] ? 'scale-110' : 'scale-100'}`}  />
+            <img src="/image1.png"  className={`project-image w-full h-[300px] md:h-[400px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
+              ${visibleImages[`project-image-2`] ? 'md:scale-110' : 'scale-100'}`}  />
           </div>
 
-          <div className="w-1/3 h-[600px] border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-12 gap-4">
+          <div className="w-full md:w-1/3 h-[500px] md:h-[600px] border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-6 md:p-12 gap-2 md:gap-4">
 
-            <h1 className="flex justify-start items-center gap-6"> 
+            <h1 className="flex justify-start items-center text-lg md:text-xl gap-6"> 
               <div><span className="text-customgreen">{"{"}</span> Software Development <span className="text-customgreen">{"}"}</span>
               </div> 
               <div className="text-gray-400">7/13/24</div>
             </h1>
 
-            <h1 className="text-3xl">Real-Time Machine Monitoring System</h1>
+            <h1 className="text-2xl md:text-3xl">Real-Time Machine Monitoring System</h1>
 
-            <p className="text-gray-500 font-semibold text-md">Monitorting system for your industry with hardware prototype combined software</p>
+            <p className="text-gray-500 font-semibold text-xs md:text-md">Monitorting system for your industry with hardware prototype combined software</p>
 
-            <img src="/image2.jpg"  className={`project-image w-full h-[400px] rounded-xl mt-12 transition-transform duration-500 ease-in-out 
-              ${visibleImages[`project-image-3`] ? 'scale-110' : 'scale-100'}`}  />
+            <img src="/image2.jpg"  className={`project-image w-full h-[300px] md:h-[400px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
+              ${visibleImages[`project-image-3`] ? 'md:scale-110' : 'scale-100'}`}  />
           </div>
 
-          <div className="w-1/3 border border-gray-800 flex justify-center items-center h-[600px]">
-            <div className="flex justify-center items-center rounded-xl size-[90%] hover:size-[100%] hover:rounded-none ease-in-out bg-customgreen text-customblack text-xl gap-4 font-medium transition-all duration-500 group">
+          <div className="w-full md:w-1/3 border border-gray-800 flex justify-center items-center h-[300px] md:h-[600px]">
+            <div className="flex justify-center items-center rounded-none md:rounded-xl size-[100%] md:size-[90%] hover:size-[100%] hover:rounded-none ease-in-out bg-customgreen text-customblack text-xl gap-4 font-medium transition-all duration-500 group">
               View all Projects <FaArrowRightLong className="size-8 rounded-full bg-customblack p-2 text-customgreen  -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
             </div>
           </div>

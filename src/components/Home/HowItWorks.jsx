@@ -150,9 +150,9 @@ const HowItWorks = () => {
   return (
     <section  className="featured-projects w-full h-full flex flex-col justify-center items-center bg-black text-white">
 
-        <div className="marquee w-full shadow-xl relative">
+        <div className="marquee w-full shadow-xl relative bg-customblack">
 
-          <div className="flex h-24 gap-8 justify-center items-center animate-marquee whitespace-nowrap">
+          <div className="flex h-16 md:h-24 gap-8 justify-center items-center animate-marquee whitespace-nowrap ">
             
              {numbers.map((num) => (
               <div key={num} className="flex h-full gap-8 justify-center items-center w-auto mx-4">
@@ -171,15 +171,15 @@ const HowItWorks = () => {
         {/* 1 */}
          <AnimatedElement>
 
-        <div className="feature-hero w-full flex flex-col gap-4 justify-center  items-start pl-24 py-40 bg-black animate-fadeInUp">
+        <div className="feature-hero w-full flex flex-col gap-4 justify-center  items-start pl-4 md:pl-24 py-12 md:py-40 bg-black animate-fadeInUp">
 
           <div className="flex gap-2 justify-center items-center">
             <span className="bg-lime-400 text-black size-3 rounded-full">.</span>
-            <p className="text-lg font-semibold text-gray-400">Process</p>
+            <p className="text-md md:text-lg font-semibold text-gray-400">Process</p>
           </div>
 
           <div className="flex justify-center items-start flex-col gap-2 leading-none ">
-            <h1 className="text-[90px] text-white leading-none">
+            <h1 className="text-[35px] md:text-[90px] text-white leading-none">
               How we work
             </h1>
           </div>
@@ -187,21 +187,21 @@ const HowItWorks = () => {
         </div>
         </AnimatedElement>
 
-        <div className="stpes flex flex-col w-full bg-black px-24">
+        <div className="stpes flex flex-col w-full bg-black px-12  md:px-24">
           {/* 2 */}
           {steps.map((step) => (
           <AnimatedElement delay={step.id*100} key={step.id}>
-            <div  className="step py-16 flex w-full justify-center items-start border-t-2 border-gray-900">
+            <div  className="step py-8  md:py-16 flex flex-col md:flex-row w-full justify-center items-start border-t-2 border-gray-900 gap-2">
 
-              <div className="w-[20%] flex justify-start items-start">
+              <div className="w-full md:w-[20%] flex justify-start items-start">
                   <button className="w-1/2 button py-2 px-4 border border-gray-800 rounded-full">{step.name}</button>
               </div>
 
-              <h1 className="w-[10%] step-count text-3xl font-semibold">
+              <h1 className="w-full md:w-[10%] step-count text-2xl md:text-3xl font-semibold flex">
                   <span className="text-customgreen">{"/"}</span> 0{step.id}
               </h1>
 
-              <div className="description flex flex-col gap-2 w-[70%] items-start justify-start">
+              <div className="description flex flex-col gap-2 w-full md:w-[70%] items-start justify-start">
                   <h1 className="text-white text-2xl pb-2">{step.title}</h1>
                   {step.steps.map((s) => (
                     <p key={s.id} className="text-gray-400 flex justify-center items-center gap-2 pl-4"><FaStarOfLife className="text-customgreen" />{s.content}</p>
@@ -214,32 +214,38 @@ const HowItWorks = () => {
           ))}         
         </div>
         
-        <div className="cards flex justify-center items-center w-full gap-6 p-24">
+        <div className="cards flex flex-col md:flex-row justify-center items-center w-full gap-6 p-8 md:p-24">
 
           {/* 6 */}
           <AnimatedElement delay={800}>
-            <div className="card w-full rounded-xl flex flex-col bg-customgreen p-12">
-                <h1 className="text-[80px] text-start w-full text-customblack font-medium">95+</h1>
-                <p className="text-end w-full text-customgray font-semibold">Percent</p>
-                <p className="text-end w-full text-green-700 text-xl fotnsembold">Customer Satisfaction</p>
+            <div className="card w-full rounded-xl flex flex-col bg-customgreen p-6 md:p-12 h-[240px] md:h-[280px] justify-between">
+                <h1 className="text-[60px] md:text-[80px] text-start w-full text-customblack font-medium">95+</h1>
+                <div className="flex flex-col justify-end items-center">
+                  <p className="text-end w-full text-customgray font-semibold">Percent</p>
+                  <p className="text-end w-full text-green-700 text-xl fotnsembold">Customer Satisfaction</p>
+                </div>
             </div>
           </AnimatedElement>
 
           {/* 7 */}
           <AnimatedElement delay={700}>
-            <div className="card w-full rounded-xl flex flex-col bg-customblack p-12 text-white">
-                <h1 className="text-[80px] text-start w-full  font-medium">10+</h1>
-                <p className="text-end w-full  font-semibold">Years</p>
-                <p className="text-end w-full text-gray-500 text-xl font-semibold">of Experience</p>
+            <div className="card w-full rounded-xl flex flex-col bg-customblack p-6 md:p-12 text-white h-[240px] md:h-[280px] justify-between ">
+                <h1 className="text-[60px] md:text-[80px] text-start w-full  font-medium">10+</h1>
+                <div className="flex flex-col justify-between items-center">
+                  <p className="text-end w-full  font-semibold">Years</p>
+                  <p className="text-end w-full text-gray-500 text-xl font-semibold">of Experience</p>
+                </div>
             </div>
           </AnimatedElement>
 
           {/* 8 */}
           <AnimatedElement delay={800}>
-            <div className="card w-full rounded-xl flex flex-col bg-gray-100 p-12">
-                <h1 className="text-[80px] text-start w-full text-customblack font-medium">24+</h1>
-                <p className="text-end w-full text-customblack font-semibold">Projects</p>
-                <p className="text-end w-full text-green-700 text-xl font-semibold">Completed</p>
+            <div className="card w-full rounded-xl flex flex-col bg-gray-100 p-6 md:p-12 h-[240px] md:h-[280px] justify-between">
+                <h1 className="text-[60px] md:text-[80px] text-start w-full text-customblack font-medium">24+</h1>
+                <div className="flex flex-col justify-between items-center">
+                  <p className="text-end w-full text-customblack font-semibold">Projects</p>
+                  <p className="text-end w-full text-green-700 text-xl font-semibold">Completed</p>
+                </div>
             </div>
           </AnimatedElement>
 

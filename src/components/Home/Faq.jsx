@@ -1,7 +1,7 @@
 import AccordionExample from './Accordian'
-import React, { useEffect, useRef, useState } from 'react';
+import  { useEffect, useRef, useState } from 'react';
 
-const AnimatedElement = ({ children, delay = 0 }) => {
+const AnimatedElement = ({ children, delay=0 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
 
@@ -44,16 +44,16 @@ const Faq = () => {
   
 
   return (
-    <div className="w-full flex flex-col justify-center items-center bg-white py-48">
+    <div className="w-full flex flex-col justify-center items-center bg-white py-24 md:py-48">
 
       <AnimatedElement>
 
          <div className="flex gap-2 justify-center items-center">
-            <span className="bg-lime-400 text-black size-3 rounded-full">.</span>
-            <p className="text-lg font-semibold text-gray-400"> {"{05} - "}FAQ</p>
+            <span className="bg-lime-400 size-2 md:size-3 rounded-full text-white">.</span>
+            <p className="text-md md:text-lg font-semibold text-gray-400">FAQ</p>
         </div>
 
-        <h1 className="text-[90px]">
+        <h1 className="text-[35px] md:text-[90px]">
             Got Questions?
         </h1>
         </AnimatedElement>

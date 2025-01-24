@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom"
 
 const Navbar = () => {
   const location = useLocation()
-  console.log("location:", location);
+  // console.log("location:", location);
 
   const navitems = [
     {
@@ -48,7 +48,7 @@ const Navbar = () => {
     <nav className="opacity-0 translate-y-full w-full h-28 flex flex-row justify-between items-center px-12 border-b border-gray-300 shadow-sm animate-slide-down animate-fill-mode-forwards">
 
         <div className="logo flex justify-center items-center gap-2 object-contain rounded-full">
-          <img src="/logo.png" className="h-8 w-auto rounded-full transition-all duration-300 hover:rotate-360 hover:scale-120" />
+          <img src="/logo.png" className="h-8 w-auto rounded-full transition-all duration-300" />
         </div>
 
         <div className="flex justify-between items-center gap-24">

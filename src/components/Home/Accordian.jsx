@@ -42,7 +42,7 @@ number,
       onClick={onToggle}
     >
       <div className="flex items-center justify-between p-4 text-gray-900 dark:text-gray-100">
-        <h2 className="m-0 text-lg font-semibold text-black flex gap-2"><span className="text-gray-400"> 0{number} {"/"} </span>{title}</h2>
+        <h2 className="m-0 text-sm md:text-lg font-semibold text-black flex gap-2"><span className="text-gray-400 text-xs md:text-lg px-1"> 0{number} </span>{title}</h2>
         <motion.div variants={chevronVariants}>
           <ChevronDown size={18} />
         </motion.div>
@@ -87,34 +87,52 @@ const Accordion = ({ items }) => {
 const accordionItems = [
   {
     number: 1,
-    title: 'What is your typical project timeline',
+    title: 'What types of solutions does Emblock Tech provide?',
     content:
-      'The timeline for a project typically ranges from 4 to 8 weeks, depending on the scope and complexity. After an initial consultation, I’ll provide a detailed timeline with key milestones so you know what to expect at each stage.',
+      'We offer IoT and software solutions like ERP systems, CRM software, trading apps, and more.',
   },
   {
     number: 2,
-    title: 'Do you offer ongoing maintenance and support?',
+    title: 'What is your typical project timeline?',
     content:
-      'Yes, I offer ongoing maintenance and support packages to ensure your website stays updated and runs smoothly. This includes updates, bug fixes, and any necessary changes as your business grows.',
+      'Timelines vary, but most projects take 4-12 weeks, depending on complexity.',
   },
   {
     number: 3,
-    title: 'Can you work with existing brand guidelines?',
+    title: 'Do you offer ongoing maintenance and support?',
     content:
-      'Absolutely! I’m experienced in working with existing brand guidelines to ensure your website aligns with your established identity. I can seamlessly incorporate your branding while enhancing your digital presence.',
+      'Absolutely! We offer maintenance and support services to ensure your systems run smoothly and remain up to date. Whether it’s troubleshooting, updates, or adding new features, we’re here to help.',
   },
   {
     number: 4,
+    title: 'Can you customize your solutions to fit my existing systems or needs?',
+    content:
+      'Yes, we can tailor our solutions to integrate seamlessly with your current systems and meet your unique requirements.'
+  },
+  {
+    number: 5,
     title: 'How do you handle revisions and feedback?',
     content:
-      'Revisions and feedback are a crucial part of the process. I typically offer a set number of revision rounds to refine the design based on your input. I ensure clear communication throughout, so your vision is brought to life effectively.',
+      'We work closely with you, making revisions based on your feedback at every stage.',
+  },
+  {
+    number: 6,
+    title: 'What industries do you serve?',
+    content:
+      'We work with a variety of industries, including construction, retail, manufacturing, auditing, and more. Our solutions are flexible and customizable to fit different business needs.',
+  },
+  {
+    number: 7,
+    title: 'How do you ensure data security in your solutions?',
+    content:
+      'We use advanced security measures to keep your data safe.',
   },
 ]
 
 const AccordionExample = () => {
   return (
     <div className="flex justify-center items-center">
-      <div className="p-8 w-[70%]">
+      <div className="p-4 md:p-8 w-full md:w-[70%]">
         <Accordion items={accordionItems} />
       </div>
     </div>
