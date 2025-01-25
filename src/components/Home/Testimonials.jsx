@@ -82,11 +82,11 @@ const Testimonials = () => {
 
             <div className="flex h-[400px] md:h-[550px] gap-4 md:gap-8 justify-center items-center animate-marqueeright whitespace-nowrap">
                 {numbers.map((i) => (
-                    <div key={i} className="card h-[400px] md:h-[550px] border border-gray-700 rounded-xl flex flex-col p-6 md:p-12 min-w-[400px] bg-black">
+                    <div key={i} className="card h-[400px] md:h-[550px] border border-gray-700 rounded-xl flex flex-col p-4 md:p-12 min-w-[200px] md:min-w-[400px] bg-black">
 
                         <div className="row flex justify-between items-center mb-8">
-                            <div className="ratings flex items-center">
-                                <span className="text-white">5.0</span><span className="text-gray-500">{"/"}5</span>
+                            <div className="ratings flex items-center text-xs md:text-md">
+                                <span className="text-white text-xs md:text-md">5.0</span><span className="text-gray-500">{"/"}5</span>
                                 <PiStarFourFill className="text-yellow-400" />
                                 <PiStarFourFill className="text-yellow-400" />
                                 <PiStarFourFill className="text-yellow-400" />
@@ -95,17 +95,17 @@ const Testimonials = () => {
                             </div>
 
                             <div className="quotes">
-                                <ImQuotesRight className="text-4xl text-customgrayhover" />
+                                <ImQuotesRight className="text-xl md:text-4xl text-customgrayhover" />
                             </div>
                         </div>
 
-                        <div className="review text-wrap min-h-[230px] max-h-[230px]  md:min-h-[300px] font-semibold text-md md:text-xl">
+                        <div className="review text-wrap min-h-[230px] max-h-[230px]  md:min-h-[300px] font-semibold text-xs md:text-xl">
                             {reviews[i%10].review}
                         </div>
 
                         <div className="author flex justify-start items-center  gap-4">
-                            <img src="/profile.png" className="size-12 rounded-full" />
-                            <p className="text-gray-400 font-semibold">{reviews[i%10].author}</p>
+                            <img src="/profile.png" className="size-8 md:size-12 rounded-full" />
+                            <p className="text-gray-400 font-semibold text-xs md:text-xl">{reviews[i%10].author}</p>
                         </div>
                     </div>
 
@@ -113,8 +113,8 @@ const Testimonials = () => {
 
             </div>
 
-            <div className="absolute top-0 left-0 w-48 h-full bg-gradient-to-r from-black to-transparent pointer-events-none"></div>
-            <div className="absolute top-0 right-0 w-48 h-full bg-gradient-to-l from-black to-transparent pointer-events-none"></div>
+            <div className="absolute top-0 left-0 w-6 md:w-24 h-full bg-gradient-to-r from-black to-transparent pointer-events-none"></div>
+            <div className="absolute top-0 right-0 w-6 md:w-24 h-full bg-gradient-to-l from-black to-transparent pointer-events-none"></div>
         </div>
 
     </div>

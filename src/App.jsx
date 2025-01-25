@@ -9,13 +9,15 @@ import Testimonials from "./components/Home/Testimonials";
 import Faq from "./components/Home/Faq";
 import Contact from "./components/Home/Contact";
 import Footer from "./components/Home/Footer";
+import OurProducts from "./components/OurProducts/OurProducts";
+import SingleProduct from "./components/OurProducts/SingleProduct";
 
 function App() {
   
   return (
     <div className="min-w-screen max-w-screen overflow-x-hidden h-full flex flex-col justify-center items-center font-manrope bg-gray-50">
       <Router>
-          <Navbar />  
+        <Navbar />  
         <Routes>
           <Route path="/" element={
               <>
@@ -26,10 +28,16 @@ function App() {
                 <Testimonials />
                 <Faq />
                 <Contact />
-                <Footer />
               </>
           } />
+          <Route path="/ourproducts" element={
+            <OurProducts />
+          } />
+          <Route path="/product/:id" element={
+            <SingleProduct />
+          } />
         </Routes>
+        <Footer />
       </Router>
 
     </div>

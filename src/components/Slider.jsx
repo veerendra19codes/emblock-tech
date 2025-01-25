@@ -23,7 +23,7 @@ const PercentageSlider = ({percentage, value}) => {
             borderRadius: '4px'
           }}
         >
-          {value}%
+          {value}
         </div>
       </div>
     </div>

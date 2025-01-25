@@ -89,11 +89,11 @@ const ToolsAndSkills = () => {
 
         </div>
 
-        <div className="right w-full md:w-2/3 flex flex-col md:grid md:grid-cols-2 gap-4 justify-center items-center md:items-start px-4 md:px-8 mt-12 md:mt-0">
+        <div className="right w-full md:w-2/3 flex flex-col md:grid md:grid-cols-2 gap-4 justify-center items-center md:items-start md:px-8 mt-12 md:mt-0">
           
           {cards.map((card) => (
             <div key={card.id} className={`${isAnimated ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-32'} 
-            m-2 card flex flex-col shadow-md rounded-lg bg-white p-4 md:p-10 pl-12 md:pl-24 w-[350px] md:w-[450px] transition-all duration-1000 ease-out text-start`}>
+            m-2 card flex flex-col shadow-md rounded-lg bg-white p-4 md:p-10 pl-12 md:pl-24 w-[280px] md:w-[450px] transition-all duration-1000 ease-out text-start`}>
                 <h3 className="text-xl font-medium">{card.title}</h3>
                 <p className="text-customgrayhover text-base">{card.content}</p>
                 <PercentageSlider percentage={card.percentage} value={card.value} />

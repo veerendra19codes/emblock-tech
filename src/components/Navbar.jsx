@@ -17,8 +17,8 @@ const Navbar = () => {
     },
     {
       id: 3,
-      name: "Our Projects",
-      path: "/ourprojects",
+      name: "Our Products",
+      path: "/ourproducts",
     },
     {
       id: 4,
@@ -48,7 +48,7 @@ const Navbar = () => {
     <nav className="opacity-0 translate-y-full w-full h-28 flex flex-row justify-between items-center px-12 border-b border-gray-300 shadow-sm animate-slide-down animate-fill-mode-forwards">
 
         <div className="logo flex justify-center items-center gap-2 object-contain rounded-full">
-          <img src="/logo.png" className="h-8 w-auto rounded-full transition-all duration-300" />
+          <img src="/logo.png" className="h-8 w-auto" />
         </div>
 
         <div className="flex justify-between items-center gap-24">

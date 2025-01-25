@@ -26,8 +26,8 @@ export default {
         manrope: "Manrope",
       },
       animation: {
-        marquee: "marquee 40s linear infinite",
-        marqueeright: "marqueeright 40s linear infinite",
+        marquee: "marquee 5s linear infinite",
+        marqueeright: "marqueeright 5s linear infinite",
 
         "slide-down": "slide-down 1.5s ease-out 0.7s forwards",
         "slide-left": "slide-left 1.5s ease-out forwards",

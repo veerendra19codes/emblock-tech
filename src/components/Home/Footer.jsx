@@ -107,16 +107,16 @@ const Footer = () => {
       <div className="flex justify-between items-center w-full border border-gray-800 h-24 md:h-32 px-4 md:px-24">
         <div className="flex gap-2 justify-center items-center">
           <span className="bg-lime-400 text-black size-3 rounded-full">.</span>
-          <p className="text-[14px] font-semibold ">Available for work</p>
+          <p className="text-[10px] md:text-[14px] font-semibold ">Available for work</p>
         </div>
 
-        <button onClick={scrollToTop} className="gap-4 flex items-center font-semibold text-gray-400">Back to top <FaArrowUp className="bg-white text-black size-12  p-4 text-md rounded-full" /></button>     
+        <button onClick={scrollToTop} className="gap-1 md:gap-4 flex items-center font-semibold text-gray-400 text-sm md:text-lg">Back to top <FaArrowUp className="bg-white text-black size-8 md:size-12 p-2 md:p-4 text-md rounded-full" /></button>     
       </div>
 
       <div className="w-full flex flex-col md:flex-row justify-center items-center">
 
         <AnimatedElement>
-          <div className="feature-hero w-full md:w-1/2 flex flex-col gap-8 justify-center  items-start pl-4 md:pl-24 py-20 md:py-40 bg-black">
+          <div className="feature-hero w-full md:w-1/2 flex flex-col gap-4 md:gap-8 justify-center  items-start pl-4 md:pl-24 py-20 md:py-40 bg-black">
 
             <div className="flex justify-center items-center md:items-start flex-col gap-2 leading-none ">
               <h1 className="text-[35px] md:text-[90px] text-white leading-none">
@@ -133,45 +133,47 @@ const Footer = () => {
               </h1>
             </div>
 
-            <p className="text-gray-400 font-semibold text-lg md:text-xl mt-4">Let&apos;s make an impact</p>
+            <p className="text-gray-400 font-semibold text-lg md:text-xl mt-0 md:mt-4">Let&apos;s make an impact</p>
 
           </div>
         </AnimatedElement>
 
 
-          <AnimatedElement delay={200}>
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start py-8 pl-4 md:pl-28">
+        <AnimatedElement delay={200}>
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start py-8 pl-0  md:pl-28">
 
 
             <div className="flex justify-center md:justify-start items-center gap-2">
               <div className="left-image h-full flex justify-center items-center md:items-start">
-                <img src="/container3.png" className="h-24 rotate-180" />
-                <img src="/container2.png" className="h-24 rotate-180" />
-                <img src="/container1.png" className="h-24 rotate-180" />
-                <img src="/logocircle.png" className="size-24 rounded-full" />
+                <img src="/container3.png" className="h-12 md:h-24 rotate-180" />
+                <img src="/container2.png" className="h-12 md:h-24 rotate-180" />
+                <img src="/container1.png" className="h-12 md:h-24 rotate-180" />
+                <img src="/logocircle.png" className="h-12 md:size-24 rounded-full" />
                 
               </div>
 
               <div className=" flex flex-col justify-center items-start gap-1">
-                <h1 className="name font-semibold text-xl text-white font-manrope">EMBLOCK TECH</h1>
-                <p className="text-gray-400 font-medium font-manrope text-xs">contact@emblocktech.com</p>
+                <h1 className="name font-semibold text-md md:text-xl text-white font-manrope">EMBLOCK TECH</h1>
+                <p className="text-gray-400 font-medium font-manrope text-[10px] md:text-xs">contact@emblocktech.com</p>
                 <div className="icons w-full flex gap-2 justify-between items-center ">
-                  <FaXTwitter className="text-gray-400 text-xl hover:rotate-360 transition-all duration-300 " />
-                  <IoLogoInstagram  className="text-gray-400 text-2xl hover:rotate-360 transition-all duration-300 " />
-                  <LuGlobe  className="text-gray-400 text-xl font-bold  hover:rotate-360 transition-all duration-300 " />
+                  <FaXTwitter className="text-gray-400 text-md md:text-xl hover:rotate-360 transition-all duration-300 " />
+                  <IoLogoInstagram  className="text-gray-400 text-md md:text-xl hover:rotate-360 transition-all duration-300 " />
+                  <LuGlobe  className="text-gray-400 text-md md:text-xl font-bold  hover:rotate-360 transition-all duration-300 " />
                 </div>
               </div>
 
             </div>
 
-            <p className="text-gray-500 w-full text-center md:text-start mt-12 font-semibold">Contact Me</p>
-            <h1 className="text-3xl md:text-5xl text-white w-full text-center md:text-start my-4">contact<span className="text-customgreen">@</span>emblocktech.com</h1>
-            <p className="w-full text-gray-500 text-xl flex flex-wrap font-semibold gap-2 pr-12 my-8 justify-center md:justify-start">Contact us for <span className="text-white">{"  "} fast, reliable and professional </span> services that bring your vision to life with precision and creativity</p>
+            <p className="text-gray-500 w-full text-center md:text-start mt-4 md:mt-12 font-semibold text-md md:text-lg">Contact Me</p>
+            <h1 className="text-xl md:text-5xl text-white w-full text-center md:text-start my-0 md:my-4">contact<span className="text-customgreen">@</span>emblocktech.com</h1>
 
-            <button className="rounded-full p-2 pl-6 text-lg md:text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-16 shadow-md shadow-customgreen group hover:shadow-none transition-all duration-500">Book a call <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform duration-300 -rotate-45 group-hover:rotate-0" /> </button>
+            <p className="w-full text-gray-500 text-lg md:text-xl flex flex-wrap font-semibold gap-0 md:gap-2 pr-0 px-4 md:px-0 md:pr-12 my-4 md:my-8 justify-center  md:justify-start items-center ">Contact us for <span className="text-white -ml-12 md:ml-0">{"  "} fast, reliable and professional </span> services that bring your vision to life with precision and creativity</p>
+
+            <button className="rounded-full p-2 pl-6 text-md md:text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-8 md:mt-16 shadow-md shadow-customgreen group hover:shadow-none transition-all duration-500">Book a call <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform duration-300 -rotate-45 group-hover:rotate-0" /> </button>
 
 
         </div>
+
           </AnimatedElement>
       </div>
         
@@ -182,7 +184,7 @@ const Footer = () => {
 
         <ul className="nav-items flex flex-col justify-center md:justify-start items-center md:items-start gap-2">
           <p className="text-gray-500 font-semibold text-md flex leading-none whitespace-nowrap ">Copyright <FaRegCopyright className="ml-2" /></p>
-          <p className="text-gray-500 text-md   font-semibold">EMBLOCK TECH PRIVATE LIMITED, 2025</p>
+          <p className="text-gray-500 text-sm   font-semibold">EMBLOCK TECH PRIVATE LIMITED, 2025</p>
         </ul>
 
       </nav>

@@ -187,13 +187,13 @@ const HowItWorks = () => {
         </div>
         </AnimatedElement>
 
-        <div className="stpes flex flex-col w-full bg-black px-12  md:px-24">
+        <div className="stpes flex flex-col w-full bg-black px-6  md:px-24">
           {/* 2 */}
           {steps.map((step) => (
           <AnimatedElement delay={step.id*100} key={step.id}>
             <div  className="step py-8  md:py-16 flex flex-col md:flex-row w-full justify-center items-start border-t-2 border-gray-900 gap-2">
 
-              <div className="w-full md:w-[20%] flex justify-start items-start">
+              <div className="w-full md:w-[20%] flex justify-center md:justify-start items-center md:items-start">
                   <button className="w-1/2 button py-2 px-4 border border-gray-800 rounded-full">{step.name}</button>
               </div>
 
@@ -214,7 +214,7 @@ const HowItWorks = () => {
           ))}         
         </div>
         
-        <div className="cards flex flex-col md:flex-row justify-center items-center w-full gap-6 p-8 md:p-24">
+        <div className="cards flex flex-col md:flex-row justify-center items-center w-full gap-6 p-4 md:p-24">
 
           {/* 6 */}
           <AnimatedElement delay={800}>
