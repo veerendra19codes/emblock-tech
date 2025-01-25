@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom"
 import { HiMenuAlt2 } from "react-icons/hi";
 import { useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation()
@@ -61,11 +62,11 @@ const Navbar = () => {
 
             <ul className="nav-items flex justify-center items-center gap-8">
               {navitems.map((item) => (
-                <a key={item.id} href={item.path} className={
+                <Link key={item.id} to={item.path} className={
                 location.pathname === item.path
                   ? "text-customgray font-semibold text-sm"
                   : "hover:text-customgray font-semibold text-sm text-customgrayhover"
-                  }>{item.name}</a>
+                  }>{item.name}</Link>
               ))}
             </ul>
 
@@ -92,11 +93,11 @@ const Navbar = () => {
             
           <ul className="nav-items w-full flex flex-col justify-center items-center gap-2 py-2 ">
             {navitems.map((item) => (
-              <a key={item.id} href={item.path} className={
+              <Link key={item.id} to={item.path} className={
               location.pathname === item.path
                 ? "text-customgray font-semibold text-xl"
                 : "hover:text-customgray font-semibold text-xl text-customgrayhover"
-                }>{item.name}</a>
+                }>{item.name}</Link>
             ))}
           </ul>
           
