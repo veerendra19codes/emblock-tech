@@ -35,13 +35,13 @@ number,
 
   return (
     <motion.div
-      className={`w-70 dark:bg-gray-800' my-4 h-[100px] cursor-pointer select-none overflow-hidden rounded-lg border  dark:border-gray-700`}
+      className={`w-70 ' my-4 h-[100px] cursor-pointer select-none overflow-hidden rounded-lg border  `}
       variants={cardVariants}
       initial="collapsed"
       animate={isExpanded ? 'expanded' : 'collapsed'}
       onClick={onToggle}
     >
-      <div className="flex items-center justify-between p-4 text-gray-900 dark:text-gray-100">
+      <div className="flex items-center justify-between p-4 text-gray-900">
         <h2 className="m-0 text-sm md:text-lg font-semibold text-black flex gap-2"><span className="text-gray-400 text-xs md:text-lg px-1"> 0{number} </span>{title}</h2>
         <motion.div variants={chevronVariants}>
           <ChevronDown size={18} />
@@ -53,7 +53,7 @@ number,
         initial="collapsed"
         animate={isExpanded ? 'expanded' : 'collapsed'}
       >
-        <p className="m-0 text-sm text-gray-900 dark:text-gray-100">
+        <p className="m-0 text-sm text-gray-900">
           {content}
         </p>
       </motion.div>
@@ -101,7 +101,7 @@ const accordionItems = [
     number: 3,
     title: 'Do you offer ongoing maintenance and support?',
     content:
-      'Absolutely! We offer maintenance and support services to ensure your systems run smoothly and remain up to date. Whether it’s troubleshooting, updates, or adding new features, we’re here to help.',
+      'Absolutely! We offer maintenance and support services to ensure your systems run smoothly and remain up to date. Whether it&apos;s troubleshooting, updates, or adding new features, we&apos;re here to help.',
   },
   {
     number: 4,

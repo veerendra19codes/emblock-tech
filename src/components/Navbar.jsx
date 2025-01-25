@@ -97,7 +97,7 @@ const Navbar = () => {
               location.pathname === item.path
                 ? "text-customgray font-semibold text-xl"
                 : "hover:text-customgray font-semibold text-xl text-customgrayhover"
-                }>{item.name}</Link>
+                } onClick={() => setShowMobileNavbar(false)}>{item.name}</Link>
             ))}
           </ul>
           

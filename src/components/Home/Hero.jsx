@@ -5,46 +5,85 @@ import {  LuGlobe } from "react-icons/lu";
 const Hero = () => {
   return (
 
-    <div className="flex flex-col gap-8 justify-center items-center w-full h-full bg-[url('/herobg.jpg')]">
+    <div className="flex flex-col gap-0 lg:gap-8 justify-center items-center w-full h-full bg-[url('/herobg.jpg')]">
 
-        <div className="hero w-full h-full flex flex-col md:flex-row justify-between items-center px-6 md:px-12 pt-8 md:pt-24 lg:pt-44">
+        <div className="hero w-full h-full flex flex-col md:flex-row justify-between items-center px-4 md:px-6 lg:px-12 pt-8 md:pt-24 lg:pt-44">
 
 
-          <div className="w-full lg:w-[65%] right flex justify-center items-start flex-col gap-4 font-normal">
+          <div className="w-full md:w-[60%] right hidden md:flex justify-center items-start flex-col gap-2  lg:gap-4 font-normal">
 
-            <h1 className="text-[30px] lg:text-[50px] leading-none align-middle flex justify-center items-center mt-4 ">
-              <span className="opacity-0 translate-y-full animate-slide-up-text-1  animate-fill-mode-forwards">
+            <h1 className="text-xl md:text-3xl lg:text-5xl leading-none align-middle flex justify-center items-center mt-4 ">
+              <span className="opacity-0 translate-y-full animate-slide-up-text-1  animate-fill-mode-forwards whitespace-nowrap ">
                 The Future is 
               </span>
-              <span className="opacity-0 translate-y-full px-6 py-4 border border-transparent shadow-lg rounded-full text-[15px] lg:text-[25px] font-semibold mx-6 animate-slide-down-text-1 animate-fill-mode-forwards whitespace-nowrap">Connected</span>
+              <span className="opacity-0 translate-y-full px-6 py-3 md:py-4 border border-transparent shadow-lg rounded-full text-sm md:text-xl lg:text-3xl font-semibold mx-2 md:mx-6 animate-slide-down-text-1 animate-fill-mode-forwards whitespace-nowrap">Connected</span>
             </h1>
             
-            <h1 className="text-[30px] lg:text-[50px] leading-none align-middle flex justify-center items-center">
+            <h1 className="text-xl md:text-3xl lg:text-5xl  leading-none align-middle flex justify-center items-center">
               <span className=" opacity-0 translate-y-full animate-slide-up-text-2 animate-fill-mode-forwards">At</span>   
 
-              <span className="opacity-0 translate-y-full px-6 py-4  border border-transparent shadow-lg rounded-full text-[15px] lg:text-[25px] font-bold text-white bg-customgray mx-6 animate-slide-up-text-3 animate-fill-mode-forwards uppercase">Embock Tech</span> 
+              <span className="opacity-0 translate-y-full px-6 py-3 md:py-4  border border-transparent shadow-lg rounded-full text-sm md:text-xl lg:text-3xl font-bold text-white bg-customgray mx-2 md:mx-6 animate-slide-up-text-3 animate-fill-mode-forwards uppercase whitespace-nowrap">Embock Tech</span> 
 
-              <span className="opacity-0  translate-y-full animate-slide-up-text-4 animate-fill-mode-forwards">we turn</span>     <span className="opacity-0 translate-x-full px-6 py-4  border border-gray-600 shadow-lg rounded-full text-[15px] lg:text-[25px] mx-6 font-semibold animate-slide-left-text-5 animate-fill-mode-forwards whitespace-nowrap">Ideas</span>
+              <span className="opacity-0  translate-y-full animate-slide-up-text-4 animate-fill-mode-forwards whitespace-nowrap ">we turn</span>     <span className="opacity-0 translate-x-full px-6 py-3 md:py-4  border border-gray-600 shadow-lg rounded-full text-sm md:text-xl lg:text-3xl mx-6 font-semibold animate-slide-left-text-5 animate-fill-mode-forwards whitespace-nowrap">Ideas</span>
             </h1>
 
-            <h1 className="text-[30px] lg:text-[50px] leading-none align-middle flex justify-center items-center">
+            <h1 className="text-xl md:text-3xl lg:text-5xl  leading-none align-middle flex justify-center items-center">
               <span className=" opacity-0 translate-y-full animate-slide-up-text-2 animate-fill-mode-forwards whitespace-nowrap">into possibilities with</span>   
 
-              <span className="opacity-0 translate-y-full px-6 py-4  border border-transparent shadow-lg rounded-full text-[15px] lg:text-[25px] font-bold text-white bg-customgray mx-6 animate-slide-up-text-3 animate-fill-mode-forwards uppercase whitespace-nowrap">Iot & Software</span> 
+              <span className="opacity-0 translate-y-full px-6 py-3 md:py-4  border border-transparent shadow-lg rounded-full text-sm md:text-xl lg:text-3xl font-bold text-white bg-customgray mx-6 animate-slide-up-text-3 animate-fill-mode-forwards uppercase whitespace-nowrap">Iot & Software</span> 
             </h1>
 
-            <h1 className="text-[30px] lg:text-[50px] leading-none align-middle flex justify-center items-center">
-              <span className=" opacity-0 translate-y-full animate-slide-up-text-2 animate-fill-mode-forwards whitespace-nowrap">solutions, empowering you, every</span>   
+            <h1 className="text-xl md:text-3xl lg:text-5xl  leading-none align-middle flex justify-center items-center">
+              <span className=" opacity-0 translate-y-full animate-slide-up-text-2 animate-fill-mode-forwards whitespace-nowrap my-3 lg:my-0">solutions, empowering you, every</span>   
             </h1>
 
-            <h1 className="text-[30px] lg:text-[50px] leading-none align-middle flex justify-center items-center">
-              <span className=" opacity-0 translate-y-full animate-slide-up-text-2 animate-fill-mode-forwards">step of the way</span>   
+            <h1 className="text-xl md:text-3xl lg:text-5xl  leading-none align-middle flex justify-center items-center">
+              <span className=" opacity-0 translate-y-full animate-slide-up-text-2 animate-fill-mode-forwards my-3 lg:my-0 whitespace-nowrap ">step of the way</span>   
             </h1>
             
           </div>
 
-          <div className="w-full lg:w-[35%] h-full flex justify-center items-center">
-            <img src="/hero.png" className="size-[460px]" />
+
+          {/* mobile  */}
+          <div className="w-full  right flex md:hidden justify-center items-start flex-col gap-3  font-normal">
+
+            <h1 className="text-xl  leading-none align-middle flex justify-center items-center mt-4 ">
+              <span className="opacity-0 translate-y-full animate-slide-up-text-1  animate-fill-mode-forwards whitespace-nowrap ">
+                The Future is 
+              </span>
+              <span className="opacity-0 translate-y-full px-6 py-3  border border-transparent shadow-lg rounded-full text-sm  font-semibold mx-2  animate-slide-down-text-1 animate-fill-mode-forwards whitespace-nowrap">Connected</span>
+            </h1>
+            
+            <h1 className="text-xl  leading-none align-middle flex justify-center items-center">
+              <span className=" opacity-0 translate-y-full animate-slide-up-text-2 animate-fill-mode-forwards">At</span>   
+
+              <span className="opacity-0 translate-y-full px-6 py-3   border border-transparent shadow-lg rounded-full text-sm  font-bold text-white bg-customgray mx-2  animate-slide-up-text-3 animate-fill-mode-forwards uppercase whitespace-nowrap">Embock Tech</span> 
+
+              <span className="opacity-0  translate-y-full animate-slide-up-text-4 animate-fill-mode-forwards whitespace-nowrap ">we turn</span>     
+            </h1>
+
+            <h1 className="text-xl   leading-none align-middle flex justify-center items-center">
+              <span className="opacity-0 translate-x-full px-6 py-3  border border-gray-600 shadow-lg rounded-full text-sm  mr-2  font-semibold animate-slide-left-text-5 animate-fill-mode-forwards whitespace-nowrap">Ideas</span>
+              <span className=" opacity-0 translate-y-full animate-slide-up-text-2 animate-fill-mode-forwards whitespace-nowrap">into possibilities with</span>   
+            </h1>
+
+            <h1 className="text-xl   leading-none align-middle flex justify-center items-center">
+              <span className="opacity-0 translate-y-full px-6 py-3   border border-transparent shadow-lg rounded-full text-sm  font-bold text-white bg-customgray mr-2 animate-slide-up-text-3 animate-fill-mode-forwards uppercase whitespace-nowrap">Iot & Software</span> 
+              <span className=" opacity-0 translate-y-full animate-slide-up-text-2 animate-fill-mode-forwards whitespace-nowrap my-3">solutions, </span>   
+            </h1>
+
+            <h1 className="text-xl   leading-none align-middle flex justify-center items-center">
+              <span className=" opacity-0 translate-y-full animate-slide-up-text-2 animate-fill-mode-forwards my-2  whitespace-nowrap ">empowering you, every</span>   
+            </h1>
+
+            <h1 className="text-xl   leading-none align-middle flex justify-center items-center">
+              <span className=" opacity-0 translate-y-full animate-slide-up-text-2 animate-fill-mode-forwards my-2 whitespace-nowrap ">step of the way</span>   
+            </h1>
+            
+          </div>
+
+          <div className="w-full md:w-[40%] mt-4 h-full flex justify-center items-center">
+            <img src="/hero.png" className="size-full" />
           </div>
         </div>
         

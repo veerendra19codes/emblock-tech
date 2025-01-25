@@ -92,9 +92,9 @@ const FeaturedProjects = () => {
           <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-gray-900 to-transparent pointer-events-none"></div>
         </div>
 
-        <div className=" feature-hero w-full flex justify-center  items-center  py-12 md:py-40 bg-black ">
+        <div className=" feature-hero w-full flex justify-center  items-center  py-12 lg:py-40 bg-black ">
 
-          <div className="w-full md:w-1/2 flex flex-col gap-4 justify-center items-start pl-4 md:pl-24">
+          <div className="w-full md:w-1/2 flex flex-col gap-4 lg:gap-8 justify-center items-start pl-6 lg:pl-24">
 
             <div className={`${isAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'} 
             flex gap-2 justify-center items-center transition-all duration-1000 ease-out`}>
@@ -103,11 +103,11 @@ const FeaturedProjects = () => {
             </div>
 
             <div className={`${isAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'} 
-            flex justify-center items-start flex-col gap-2 leading-none transition-all duration-1000 ease-out delay-200`}>
-              <h1 className="text-[35px] md:text-[80px] text-white leading-none whitespace-nowrap">
+            flex justify-center items-start flex-col gap-2 lg:gap-12 leading-none transition-all duration-1000 ease-out delay-200`}>
+              <h1 className="text-2xl md:text-4xl lg:text-[80px] text-white leading-none whitespace-nowrap">
                 Turning Imagination
               </h1>
-              <h1 className="text-[35px] md:text-[80px] text-white leading-none">
+              <h1 className="text-2xl md:text-4xl lg:text-[80px] text-white leading-none">
                 Into Innovation
               </h1>
             </div>
@@ -118,7 +118,7 @@ const FeaturedProjects = () => {
           </div>
 
           <div className="hidden right w-1/2 h-auto md:flex justify-center items-center">
-             <img src="/bulb.png" className="size-[600px]" />
+             <img src="/bulb.png" className="md:size-[400px] lg:size-[600px]" />
           </div>
 
         </div>
