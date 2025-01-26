@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const OurProducts = () => {
     const products = [
@@ -6,24 +7,28 @@ const OurProducts = () => {
             image: "/image1.png",
             title: "Real-Time Machine Monitoring System",
             description: "Emblock Real-time Machine Monitoring System",
+            path: "/product/1",
         },
         {
             id: 2,
             image: "/image2.jpg",
             title: "Strikes",
             description: "App that connects Influencer and Brand and Audience",
+            path: "/product/2",
         },
         {
             id: 3,
             image: "/image3.png",
             title: "Edgecarts",
             description: "Free E-commerce for all",
+            path: "/product/3",
         },
         {
             id: 4,
             image: "/image4.jpg",
             title: "Buildops",
             description: "ERP and Project Management System for Construction",
+            path: "/product/4",
         },
     ]
   return (
@@ -45,9 +50,9 @@ const OurProducts = () => {
                     </p> 
                 </div>
 
-                <button className="w-full md:w-1/5 rounded-full px-6 py-4 bg-customblack text-white font-semibold whitespace-nowrap">
+                <Link to={product.path} className="w-full md:w-1/5 rounded-full px-6 py-4 bg-customblack text-white font-semibold whitespace-nowrap flex justify-center items-center">
                     Learn More
-                </button>
+                </Link>
 
             </div>
             

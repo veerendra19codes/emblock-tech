@@ -1,5 +1,5 @@
 import { FaArrowRightLong } from 'react-icons/fa6';
-import {  useParams } from "react-router-dom";
+import {  Link, useParams } from "react-router-dom";
 
 const SingleProduct = () => {
 
@@ -10,6 +10,7 @@ const SingleProduct = () => {
             id: 1,
             image: "/image2.jpg",
             name: "Edgecarts",
+            path: "/product/1",
             platformType: "E-commerce",
             industryFocus: "Brands",
             keyBenefits: "Enhanced Operational Efficiency",
@@ -40,6 +41,7 @@ const SingleProduct = () => {
             id: 2,
             image: "/image3.png",
             name: "Buildops",
+            path: "/product/2",
             platformType: "SaaS",
             industryFocus: "Construction and Architect",
             keyBenefits: "Enhanced Operational Efficiency",
@@ -70,6 +72,7 @@ const SingleProduct = () => {
             id: 3,
             image: "/image1.png",
             name: "Strikes",
+            path: "/product/3",
             platformType: "Mobile App",
             industryFocus: "Brands and Influencer",
             keyBenefits: "Connect Brands with influencer",
@@ -100,6 +103,7 @@ const SingleProduct = () => {
         {
             id: 4,
             image: "/image4.jpg",
+            path: "/product/4",
             name: "Real-Time Machine Monitoring System",
             platformType: "SaaS",
             industryFocus: "Manufacturing & Production",
@@ -209,7 +213,7 @@ const SingleProduct = () => {
 
             <div className="w-full flex flex-col md:flex-row gap-4 mt-12">
                 {products.filter((product) => product.id != id).map((product) => (
-                    <div key={product.id} className="card w-full md:w-1/3 flex flex-col justify-between items-start p-6 border border-gray-400 rounded-xl h-[400px] md:h-[550px]">
+                    <Link to={product.path} key={product.id} className="card w-full md:w-1/3 flex flex-col justify-between items-start p-6 border border-gray-400 rounded-xl h-[400px] md:h-[550px]">
 
                     <div className="flex flex-col justify-start  items-start gap-2 md:gap-4">
 
@@ -221,7 +225,7 @@ const SingleProduct = () => {
                     </p>
                     </div>
                     <img src={product.image} className="w-full h-[150px] md:h-[280px] rounded-xl" />
-                    </div>
+                    </Link>
                 ))}
                 
                 

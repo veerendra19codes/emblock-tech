@@ -30,6 +30,7 @@ export default {
         marqueeright: "marqueeright 5s linear infinite",
 
         "slide-down": "slide-down 1.5s ease-out 0.7s forwards",
+        "slide-down-fast": "slide-down 0.5s ease-out 0.5s forwards",
         "slide-left": "slide-left 1.5s ease-out forwards",
         "slide-down-text-1": "slide-down-text-1 1.5s ease-out forwards",
         "slide-left-text-1": "slide-left-text-1 1.5s ease-out forwards",

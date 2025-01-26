@@ -84,56 +84,12 @@ const Accordion = ({ items }) => {
   )
 }
 
-const accordionItems = [
-  {
-    number: 1,
-    title: 'What types of solutions does Emblock Tech provide?',
-    content:
-      'We offer IoT and software solutions like ERP systems, CRM software, trading apps, and more.',
-  },
-  {
-    number: 2,
-    title: 'What is your typical project timeline?',
-    content:
-      'Timelines vary, but most projects take 4-12 weeks, depending on complexity.',
-  },
-  {
-    number: 3,
-    title: 'Do you offer ongoing maintenance and support?',
-    content:
-      'Absolutely! We offer maintenance and support services to ensure your systems run smoothly and remain up to date. Whether it&apos;s troubleshooting, updates, or adding new features, we&apos;re here to help.',
-  },
-  {
-    number: 4,
-    title: 'Can you customize your solutions to fit my existing systems or needs?',
-    content:
-      'Yes, we can tailor our solutions to integrate seamlessly with your current systems and meet your unique requirements.'
-  },
-  {
-    number: 5,
-    title: 'How do you handle revisions and feedback?',
-    content:
-      'We work closely with you, making revisions based on your feedback at every stage.',
-  },
-  {
-    number: 6,
-    title: 'What industries do you serve?',
-    content:
-      'We work with a variety of industries, including construction, retail, manufacturing, auditing, and more. Our solutions are flexible and customizable to fit different business needs.',
-  },
-  {
-    number: 7,
-    title: 'How do you ensure data security in your solutions?',
-    content:
-      'We use advanced security measures to keep your data safe.',
-  },
-]
-
-const AccordionExample = () => {
+const AccordionExample = ({data}) => {
+  console.log("data: ", data);
   return (
     <div className="flex justify-center items-center">
       <div className="p-4 md:p-8 w-full md:w-[70%]">
-        <Accordion items={accordionItems} />
+        <Accordion items={data} />
       </div>
     </div>
   )

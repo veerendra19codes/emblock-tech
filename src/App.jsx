@@ -8,9 +8,12 @@ import HowItWorks from "./components/Home/HowItWorks";
 import Testimonials from "./components/Home/Testimonials";
 import Faq from "./components/Home/Faq";
 import Contact from "./components/Home/Contact";
-import Footer from "./components/Home/Footer";
+import Footer from "./components/Footer";
 import OurProducts from "./components/OurProducts/OurProducts";
 import SingleProduct from "./components/OurProducts/SingleProduct";
+import ServicesHero from "./components/Services/Hero";
+import Services from "./components/Services/Services";
+import ServicesFaq from "./components/Services/Faq";
 
 function App() {
   
@@ -30,11 +33,20 @@ function App() {
                 <Contact />
               </>
           } />
+
           <Route path="/ourproducts" element={
             <OurProducts />
           } />
           <Route path="/product/:id" element={
             <SingleProduct />
+          } />
+
+          <Route path="/services" element={
+              <>
+                <ServicesHero />
+                <Services />
+                <ServicesFaq />
+              </>
           } />
         </Routes>
         <Footer />

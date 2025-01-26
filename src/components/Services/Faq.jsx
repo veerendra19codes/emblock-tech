@@ -40,7 +40,7 @@ const AnimatedElement = ({ children, delay=0 }) => {
   );
 };
 
-const Faq = () => {
+const ServicesFaq = () => {
   const data = [
   {
     number: 1,
@@ -109,4 +109,4 @@ const Faq = () => {
   )
 }
 
-export default Faq
+export default ServicesFaq

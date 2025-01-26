@@ -80,7 +80,7 @@ const Testimonials = () => {
 
         <div className="marqueeright w-full shadow-xl relative bg-black my-16">
 
-            <div className="flex h-[400px] md:h-[550px] gap-4 md:gap-8 justify-center items-center animate-marqueeright whitespace-nowrap">
+            <div className="flex h-[400px] md:h-[550px] gap-4 md:gap-8 justify-center items-center animate-marqueeright whitespace-nowrap group group-hover:animate-none">
                 {numbers.map((i) => (
                     <div key={i} className="card h-[400px] md:h-[550px] border border-gray-700 rounded-xl flex flex-col p-4 md:p-12 min-w-[200px] md:min-w-[400px] bg-black">
 
