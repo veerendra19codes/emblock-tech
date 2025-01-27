@@ -27,7 +27,10 @@ export default {
       },
       animation: {
         marquee: "marquee 5s linear infinite",
+        marqueeslow: "marquee 20s linear infinite",
+
         marqueeright: "marqueeright 5s linear infinite",
+        marqueerightslow: "marqueeright 20s linear infinite",
 
         "slide-down": "slide-down 1.5s ease-out 0.7s forwards",
         "slide-down-fast": "slide-down 0.5s ease-out 0.5s forwards",

@@ -84,18 +84,18 @@ const Footer = () => {
     <section  className="featured-projects w-full h-full flex flex-col justify-center items-center bg-black text-white">
 
       <div className="marquee w-full shadow-xl relative bg-customblack">
-        <div className="flex h-16 lg:h-24 gap-8 justify-center items-center animate-marquee whitespace-nowrap">
+        <div className="flex h-16 lg:h-24 gap-8 justify-center items-center animate-marquee lg:animate-marqueeslow  whitespace-nowrap">
             
           {numbers.map((num) => (
-            <div key={num} className="flex h-full gap-8 justify-center items-center w-auto mx-4">
+            <div key={num} className="flex h-full gap-4 lg:gap-8 justify-center items-center w-auto mx-0 lg:mx-4">
 
-              <p className="text-3xl leading-none">
+              <p className="text-xl lg:text-3xl leading-none">
                 <span className="text-customgreen">
                   {">"}{stats[num%4].first}/
                 </span> 
                 {stats[num%4].second}
               </p>
-              <img src="/star.svg" className="size-8 text-customgreen" />
+              <img src="/star.svg" className="size-4 lg:size-8 text-customgreen" />
               </div>
           ))}
         </div>
@@ -113,7 +113,7 @@ const Footer = () => {
         <button onClick={scrollToTop} className="gap-1 lg:gap-4 flex items-center font-semibold text-gray-400 text-sm lg:text-lg">Back to top <FaArrowUp className="bg-white text-black size-8 lg:size-12 p-2 lg:p-4 text-lg rounded-full" /></button>     
       </div>
 
-      <div className="w-full flex flex-col lg:flex-row justify-center items-center">
+      <div className="w-full flex flex-col lg:flex-row justify-between items-center">
 
         <AnimatedElement>
           <div className="feature-hero w-full lg:w-1/2 flex flex-col gap-4 lg:gap-8 justify-center  items-start pl-4 lg:pl-24 py-20 lg:py-40 bg-black">
@@ -139,8 +139,8 @@ const Footer = () => {
         </AnimatedElement>
 
 
+        <div className="w-full lg:w-1/2  flex flex-col justify-center items-center lg:items-start py-8 pl-0  lg:pl-24 gap-8">
         <AnimatedElement delay={200}>
-        <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start py-8 pl-0  lg:pl-28">
 
 
             <div className="flex justify-center lg:justify-start items-center gap-2">
@@ -164,17 +164,23 @@ const Footer = () => {
 
             </div>
 
-            <p className="text-gray-500 w-full text-center lg:text-start mt-4 lg:mt-12 font-semibold text-lg lg:text-lg">Contact Me</p>
-            <h1 className="text-xl lg:text-5xl text-white w-full text-center lg:text-start my-0 lg:my-4">contact<span className="text-customgreen">@</span>emblocktech.com</h1>
+            
+            <div className="flex flex-col gap-1 my-12 justify-center lg:justify-start items-start lg:items-start">
+              <p className="w-full text-gray-500 text-lg lg:text-xl flex flex-wrap font-semibold justify-center  lg:justify-start items-center text-center lg:text-start">Contact us for</p>
+              <span className="w-full px-6 lg:px-0 text-white text-center lg:text-start text-md lg:text-xl">{"  "} fast, reliable and professional </span>
+              <p className="w-full text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-center  lg:justify-start items-center text-center px-4 lg:px-0">services that bring your vision to life</p>
+              <p className="w-full text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-center  lg:justify-start items-center text-center px-4 lg:px-0"> with precision and creativity</p>
+              <h1 className="text-xl  text-white w-full text-center lg:text-start ">contact<span className="text-customgreen">@</span>emblocktech.com</h1>
+            </div>
 
-            <p className="w-full text-gray-500 text-lg lg:text-xl flex flex-wrap font-semibold gap-0 lg:gap-2 pr-0 px-4 lg:px-0 lg:pr-12 my-4 lg:my-8 justify-center  lg:justify-start items-center">Contact us for <span className="text-white ml-4">{"  "} fast, reliable and professional </span> services that bring your vision to life with precision and creativity</p>
+            
 
-            <button className="rounded-full p-2 pl-6 text-lg lg:text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-8 lg:mt-16 shadow-lg shadow-customgreen group hover:shadow-none transition-all duration-500">Book a call <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform duration-300 -rotate-45 group-hover:rotate-0" /> </button>
+            <button className="rounded-full p-2 m-auto lg:m-0 pl-6 text-lg lg:text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-8 lg:mt-16 shadow-lg shadow-customgreen group hover:shadow-none transition-all duration-500 font-medium">Book a call <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform duration-300 -rotate-45 group-hover:rotate-0" /> </button>
 
-
-        </div>
 
           </AnimatedElement>
+        </div>
+
       </div>
         
 

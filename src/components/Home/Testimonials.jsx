@@ -1,6 +1,7 @@
 import { FaStarOfLife } from "react-icons/fa";
 import { PiStarFourFill } from "react-icons/pi";
 import { ImQuotesRight } from "react-icons/im";
+import { useState } from "react";
 
 const Testimonials = () => {
   const numbers = Array.from({ length: 1000 }, (_, i) => i + 1);
@@ -56,6 +57,12 @@ const Testimonials = () => {
             review: "I had an idea for an IoT hardware project, and Emblock Tech brought it to life. They made the whole process super easy, and the final prototype was exactly what I needed. Great experience working with them!"
         },
     ]
+    const [isPlaying, setIsPlaying] = useState(true);
+     // Toggle play/pause
+    const toggleAnimation = () => {
+        setIsPlaying((prev) => !prev);
+    };
+
   return (
     <div className="flex flex-col w-full justify-center items-center bg-black text-white gap-4 h-full pt-8">
       
@@ -78,9 +85,9 @@ const Testimonials = () => {
 
         <p className="text-gray-400 text-sm md:text-lg"><span className="text-customgreen">{"*"}</span>Take theirs</p>
 
-        <div className="marqueeright w-full shadow-xl relative bg-black my-16">
+        <div className="marqueeright  w-full shadow-xl relative bg-black my-16 group" onClick={toggleAnimation} >
 
-            <div className="flex h-[400px] md:h-[550px] gap-4 md:gap-8 justify-center items-center animate-marqueeright whitespace-nowrap group group-hover:animate-none">
+            <div className={`flex h-[400px] md:h-[550px] gap-4 md:gap-8 justify-center items-center   whitespace-nowrap pause-on-hover ${isPlaying ? 'animate-marqueeright' : ''}`}>
                 {numbers.map((i) => (
                     <div key={i} className="card h-[400px] md:h-[550px] border border-gray-700 rounded-xl flex flex-col p-4 md:p-12 min-w-[200px] md:min-w-[400px] bg-black">
 

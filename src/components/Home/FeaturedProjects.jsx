@@ -74,14 +74,14 @@ const FeaturedProjects = () => {
   return (
     <section ref={sectionRef}   className="featured-projects w-full h-full flex flex-col justify-center items-center bg-customblack text-white">
 
-        <div className="marquee w-full shadow-xl relative">
-          <div className="flex h-16 md:h-24 gap-8 justify-center items-center animate-marquee whitespace-nowrap">
+        <div className="marquee  w-full shadow-xl relative group">
+          <div className="flex h-16 md:h-24 gap-8 justify-center items-center animate-marquee lg:animate-marqueeslow whitespace-nowrap ">
             
              {numbers.map((num) => (
-              <div key={num} className="flex h-full gap-8 justify-center items-center w-auto mx-4">
+              <div key={num} className="flex h-full gap-4 lg:gap-8 justify-center items-center w-auto mx-0 lg:mx-4">
 
-                <p className="text-3xl leading-none"><span className="text-customgreen">{">"}{stats[num%4].first}/</span> {stats[num%4].second}</p>
-                <img src="/star.svg" className="size-8 text-customgreen" />
+                <p className="text-xl lg:text-3xl leading-none"><span className="text-customgreen">{">"}{stats[num%4].first}/</span> {stats[num%4].second}</p>
+                <img src="/star.svg" className="size-4 lg:size-8 text-customgreen" />
               </div>
              ))}
             
@@ -92,7 +92,7 @@ const FeaturedProjects = () => {
           <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-gray-900 to-transparent pointer-events-none"></div>
         </div>
 
-        <div className=" feature-hero w-full flex justify-center  items-center  py-12 lg:py-40 bg-black ">
+        <div className=" feature-hero w-full flex justify-start  items-center  py-12 lg:py-40 bg-black ">
 
           <div className="w-full md:w-1/2 flex flex-col gap-4 lg:gap-8 justify-center items-start pl-6 lg:pl-24">
 
@@ -113,13 +113,13 @@ const FeaturedProjects = () => {
             </div>
 
             <button className={`${isAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'} 
-            rounded-full p-2  pl-6 text-lg md:text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-8 md:mt-16 shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group `}>Become a client <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> </button>
+            rounded-full p-2  pl-6 text-lg md:text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-8 md:mt-16 shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium`}>Become a client <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> </button>
 
           </div>
 
-          <div className="hidden right w-1/2 h-auto md:flex justify-center items-center">
+          {/* <div className="hidden right w-1/2 h-auto md:flex justify-center items-center">
              <img src="/bulb.png" className="md:size-[400px] lg:size-[600px]" />
-          </div>
+          </div> */}
 
         </div>
 

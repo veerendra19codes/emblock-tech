@@ -14,6 +14,10 @@ import SingleProduct from "./components/OurProducts/SingleProduct";
 import ServicesHero from "./components/Services/Hero";
 import Services from "./components/Services/Services";
 import ServicesFaq from "./components/Services/Faq";
+import Solutions from "./components/Solutions/Solutions";
+import About from "./components/About/About";
+import ContactUs from "./components/ContactUs/ContactUs";
+import Careers from "./components/Careers/Careers";
 
 function App() {
   
@@ -34,11 +38,24 @@ function App() {
               </>
           } />
 
+          <Route path="/solutions" element={
+              <>
+                <Solutions />
+              </>
+          } />
+
           <Route path="/ourproducts" element={
             <OurProducts />
           } />
+
           <Route path="/product/:id" element={
             <SingleProduct />
+          } />
+
+          <Route path="/about" element={
+              <>
+                <About />
+              </>
           } />
 
           <Route path="/services" element={
@@ -46,6 +63,18 @@ function App() {
                 <ServicesHero />
                 <Services />
                 <ServicesFaq />
+              </>
+          } />
+
+          <Route path="/careers" element={
+              <>
+                <Careers />
+              </>
+          } />
+
+          <Route path="/contactus" element={
+              <>
+                <ContactUs />
               </>
           } />
         </Routes>

@@ -18,7 +18,7 @@ const Navbar = () => {
     {
       id: 2,
       name: "Solutions",
-      path: "/solution",
+      path: "/solutions",
     },
     {
       id: 3,
@@ -65,9 +65,9 @@ const Navbar = () => {
               ))}
             </ul>
 
-            <div className="contacts flex gap-4 justify-center items-center">
+            <Link to="/contactus" className="contacts flex gap-4 justify-center items-center">
               <button className="py-3 px-6 rounded-full bg-customgray text-white text-[14px]  font-semibold hover:bg-customgreen hover:text-customblack transition-all duration-300">Contact Us</button>
-            </div>
+            </Link>
 
           </div>
 

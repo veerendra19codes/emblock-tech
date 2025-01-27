@@ -152,13 +152,13 @@ const HowItWorks = () => {
 
         <div className="marquee w-full shadow-xl relative bg-customblack">
 
-          <div className="flex h-16 lg:h-24 gap-8 justify-center items-center animate-marquee whitespace-nowrap ">
+          <div className="flex h-16 lg:h-24 gap-8 justify-center items-center animate-marquee lg:animate-marqueeslow whitespace-nowrap ">
             
              {numbers.map((num) => (
-              <div key={num} className="flex h-full gap-8 justify-center items-center w-auto mx-4">
+              <div key={num} className="flex h-full gap-4 lg:gap-8 justify-center items-center w-auto mx-0 lg:mx-4">
 
-                <p className="text-3xl leading-none">{services[num%5].value}</p>
-                <img src="/star.svg" className="size-8 text-customgreen" />
+                <p className="text-xl lg:text-3xl leading-none">{services[num%5].value}</p>
+                <img src="/star.svg" className="size-4 lg:size-8 text-customgreen" />
               </div>
              ))}
           </div>
