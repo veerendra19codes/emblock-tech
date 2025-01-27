@@ -1,20 +1,19 @@
-import React from 'react'
 import { FaArrowRightLong } from 'react-icons/fa6'
 
 const ServicesHero = () => {
   return (
     <div className="w-full flex flex-col justify-center items-start font-manrope p-6 md:p-24 gap-12">
-      <h1 className="w-full md:w-[70%] flex justify-start items-center flex-wrap text-3xl md:text-6xl font-normal  text-start whitespace-normal">
+      <h1 className="w-full md:w-[70%] flex justify-start items-center flex-wrap text-3xl md:text-6xl font-normal  text-start whitespace-normal animate-slide-up-text-1 opacity-0 animate-fill-mode-forwards">
         Innovative IoT and Software Solutions Tailored to Transform Your Business and Empower Your Growth Journey
       </h1>
 
       <div className="w-full flex flex-col md:flex-row justify-between items-start gap-8">
         <div className="left w-full md:w-1/2 flex flex-col items-start justify-start gap-8">
-            <p className="text-gray-400 leading-none flex-wrap text-md md:text-xl font-medium">
+            <p className="text-gray-400 leading-none flex-wrap text-md md:text-xl font-medium animate-slide-up-text-2 opacity-0 animate-fill-mode-forwards">
                 Over the years, we&apos;ve had the privilege of partnering with a diverse range of clients, from startups to established enterprises, helping them turn their visions into impactful solutions.
             </p>
             
-            <button className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium">
+            <button className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium animate-slide-up-text-3 opacity-0 animate-fill-mode-forwards">
                 Contact Us Now 
                 <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
             </button>

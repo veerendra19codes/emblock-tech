@@ -72,7 +72,7 @@ const FeaturedProjects = () => {
   ]
 
   return (
-    <section ref={sectionRef}   className="featured-projects w-full h-full flex flex-col justify-center items-center bg-customblack text-white">
+    <section ref={sectionRef}   className="featured-projects w-full h-full  flex flex-col justify-center items-center bg-customblack text-white ">
 
         <div className="marquee  w-full shadow-xl relative group">
           <div className="flex h-16 md:h-24 gap-8 justify-center items-center animate-marquee lg:animate-marqueeslow whitespace-nowrap ">

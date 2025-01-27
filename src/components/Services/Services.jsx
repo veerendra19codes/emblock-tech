@@ -99,7 +99,8 @@ const Services = () => {
       name: "Industrial IoT (IIoT) Solutions",
       image: "/image1.png",
       platformType: "Edge Computing",
-      industryFocus: "Emblock Tech delivers IIoT solutions tailored to industries like manufacturing, logistics, and energy. Our systems enhance productivity through real-time monitoring, predictive maintenance, and automation, helping businesses achieve higher efficiency and reduced downtime.",
+      industryFocus: "Cross Industry",
+      detail: "Emblock Tech delivers IIoT solutions tailored to industries like manufacturing, logistics, and energy. Our systems enhance productivity through real-time monitoring, predictive maintenance, and automation, helping businesses achieve higher efficiency and reduced downtime.",
       buttonText: "IoT",
     },
     {
@@ -176,9 +177,9 @@ const Services = () => {
               </p>
 
               <div className="w-full bottom-buttons gap-4 md:gap-8 flex justify-start  items-center">
-                <button className={`rounded-full min-w-[100px] md:min-w-[150px] font-medium py-2 md:py-3 border   px-4 text-md md:text-xl ${service.id %2 == 0 ? "text-white" : "text-customblack border-customblack bg-white"}`}>{service.buttonText}</button>
+                <button className={`rounded-full min-w-[100px] md:min-w-[150px] font-medium py-2 md:py-3 border   px-4 text-sm md:text-xl whitespace-nowrap ${service.id %2 == 0 ? "text-white" : "text-customblack border-customblack bg-white"}`}>{service.buttonText}</button>
 
-                <button className="rounded-full p-1 md:p-2  md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-2 md:gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium">
+                <button className="rounded-full p-1 md:p-2 pl-4 md:pl-6 text-sm md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-2 md:gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium">
                   Enquiry Now
                   <FaArrowRightLong className="bg-white text-customgray rounded-full size-8 md:size-10 p-2 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
                   </button>

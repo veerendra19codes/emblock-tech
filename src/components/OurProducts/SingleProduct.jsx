@@ -8,102 +8,8 @@ const SingleProduct = () => {
     const products = [
         {
             id: 1,
-            image: "/image2.jpg",
-            name: "Edgecarts",
-            path: "/product/1",
-            platformType: "E-commerce",
-            industryFocus: "Brands",
-            keyBenefits: "Enhanced Operational Efficiency",
-            content: "EDGECARTS makes entering the online marketplace simple and risk-free. Businesses can launch unique e-commerce websites with no upfront costs or hidden fees. We prioritize your success, charging only a 10% commission on each sale.",
-            subcontent: "Build Your Business, Not Your Budget. With EDGECARTS, you can focus on growth while we handle the rest.",
-            subparts: [
-                {
-                    id: 1,
-                    image: "/image1.png",
-                    title: "Breaking Down E-Commerce Barriers",
-                    content: "Launching an e-commerce store often comes with high costs, technical challenges, and maintenance hassles, keeping small businesses and entrepreneurs out of the digital market. EDGECARTS eliminates these barriers with zero setup costs, free maintenance, and a unique domain for every store. Our transparent pricing ensures you only pay a 10% commission per sale—no hidden fees."
-                },
-                {
-                    id: 2,
-                    image: "/image2.jpg",
-                    title: "A Smarter Future for Construction",
-                    content: "EDGECARTS is more than just an e-commerce platform; it&apos;s your gateway to building a thriving online business. Whether you*apos;re a small business owner or an entrepreneur with big dreams, our solution gives you the tools and support to grow without limits"
-                },
-                {
-                    id: 3,
-                    image: "/image3.png",
-                    title: "Your Success, Our Commitment. Join EDGECARTS today and transform the way you do business online.",
-                    content: ""
-                },
-            ]
-        },
-        {
-            id: 2,
-            image: "/image3.png",
-            name: "Buildops",
-            path: "/product/2",
-            platformType: "SaaS",
-            industryFocus: "Construction and Architect",
-            keyBenefits: "Enhanced Operational Efficiency",
-            content: "Our ERP and PMS SaaS is designed specifically for the construction industry, empowering businesses with real-time insights, efficient project management, and seamless collaboration. This solution transforms the way construction projects are planned, executed, and delivered.",
-            subcontent: "Build Better, Smarter, and Faster. If you're looking to revolutionize your construction processes, this is the tool for you.",
-            subparts: [
-                {
-                    id: 1,
-                    image: "/image1.png",
-                    title: "Overcoming the Challenges of Construction Management",
-                    content: "Construction firms often face challenges like misaligned schedules, resource wastage, and delayed timelines due to outdated management tools. These hurdles result in inefficiencies and unnecessary costs that disrupt project delivery and impact profitability. Our ERP and PMS solution addresses these issues, offering real-time tracking of progress, automated resource allocation, and streamlined workflows to ensure your projects stay on track and within budget."
-                },
-                {
-                    id: 2,
-                    image: "/image2.jpg",
-                    title: "A Smarter Future for Construction",
-                    content: "Empower your construction firm with cutting-edge technology designed to simplify project management. Whether you're managing multiple sites or complex operations, our SaaS provides the tools you need to succeed in a competitive industry. Start building a smarter future today with our ERP and PMS solution for construction companies."
-                },
-                {
-                    id: 3,
-                    image: "/image3.png",
-                    title: "",
-                    content: ""
-                },
-            ]
-        },
-        {
-            id: 3,
             image: "/image1.png",
-            name: "Strikes",
-            path: "/product/3",
-            platformType: "Mobile App",
-            industryFocus: "Brands and Influencer",
-            keyBenefits: "Connect Brands with influencer",
-            content: "STRIKES is a revolutionary mobile app that brings brands, influencers, and customers together on a single, seamless platform. With STRIKES, brands can create powerful campaigns, influencers can collaborate effortlessly, and customers can enjoy exclusive offers and purchase directly through the app. It’s the perfect ecosystem for modern marketing and shopping.",
-            subcontent: "Build Better, Smarter, and Faster. If you're looking to revolutionize your construction processes, this is the tool for you.",
-            subparts: [
-                {
-                    id: 1,
-                    image: "/image1.png",
-                    title: "For Brands: Create Campaigns and Drive Results",
-                    content: "STRIKES empowers brands to craft impactful campaigns that resonate with their audience. With just a few clicks, brands can launch tailored campaigns to promote their products or services. The app provides tools to attract the right influencers who align with their brand values and target audience, ensuring successful collaborations. Additionally, brands can track the performance of their campaigns with in-app analytics, maximizing outreach and achieving better ROI."
-                },
-                {
-                    id: 2,
-                    image: "/image2.jpg",
-                    title: "For Influencers: Discover Opportunities and Monetize Your Reach",
-                    content: "STRIKES provides influencers with a platform to grow their careers and partner with leading brands. Influencers can browse a wide range of campaigns that match their niche and audience. They have the flexibility to bid on campaigns or instantly accept offers that suit their style. By using STRIKES, influencers can build their portfolios, showcasing successful collaborations and attracting more opportunities."
-                },
-                {
-                    id: 3,
-                    image: "/image3.png",
-                    title: "Join STRIKES Today",
-                    content: "Whether you're a brand aiming to expand your audience, an influencer looking to grow your career, or a customer searching for great deals, STRIKES is the app for you. Experience a new way to connect, collaborate, and shop—all in one place.Download STRIKES now and be part of the future of collaboration!"
-                },
-            ]
-        },
-        
-        {
-            id: 4,
-            image: "/image4.jpg",
-            path: "/product/4",
+            path: "/product/1",
             name: "Real-Time Machine Monitoring System",
             platformType: "SaaS",
             industryFocus: "Manufacturing & Production",
@@ -131,6 +37,102 @@ const SingleProduct = () => {
                 },
             ]
         },
+        {
+            id: 2,
+            image: "/image2.jpg",
+            name: "Strikes",
+            path: "/product/2",
+            platformType: "Mobile App",
+            industryFocus: "Brands and Influencer",
+            keyBenefits: "Connect Brands with influencer",
+            content: "STRIKES is a revolutionary mobile app that brings brands, influencers, and customers together on a single, seamless platform. With STRIKES, brands can create powerful campaigns, influencers can collaborate effortlessly, and customers can enjoy exclusive offers and purchase directly through the app. It’s the perfect ecosystem for modern marketing and shopping.",
+            subcontent: "Build Better, Smarter, and Faster. If you're looking to revolutionize your construction processes, this is the tool for you.",
+            subparts: [
+                {
+                    id: 1,
+                    image: "/image1.png",
+                    title: "For Brands: Create Campaigns and Drive Results",
+                    content: "STRIKES empowers brands to craft impactful campaigns that resonate with their audience. With just a few clicks, brands can launch tailored campaigns to promote their products or services. The app provides tools to attract the right influencers who align with their brand values and target audience, ensuring successful collaborations. Additionally, brands can track the performance of their campaigns with in-app analytics, maximizing outreach and achieving better ROI."
+                },
+                {
+                    id: 2,
+                    image: "/image2.jpg",
+                    title: "For Influencers: Discover Opportunities and Monetize Your Reach",
+                    content: "STRIKES provides influencers with a platform to grow their careers and partner with leading brands. Influencers can browse a wide range of campaigns that match their niche and audience. They have the flexibility to bid on campaigns or instantly accept offers that suit their style. By using STRIKES, influencers can build their portfolios, showcasing successful collaborations and attracting more opportunities."
+                },
+                {
+                    id: 3,
+                    image: "/image3.png",
+                    title: "Join STRIKES Today",
+                    content: "Whether you're a brand aiming to expand your audience, an influencer looking to grow your career, or a customer searching for great deals, STRIKES is the app for you. Experience a new way to connect, collaborate, and shop—all in one place.Download STRIKES now and be part of the future of collaboration!"
+                },
+            ]
+        },
+        {
+            id: 3,
+            image: "/image3.png",
+            name: "Edgecarts",
+            path: "/product/3",
+            platformType: "E-commerce",
+            industryFocus: "Brands",
+            keyBenefits: "Enhanced Operational Efficiency",
+            content: "EDGECARTS makes entering the online marketplace simple and risk-free. Businesses can launch unique e-commerce websites with no upfront costs or hidden fees. We prioritize your success, charging only a 10% commission on each sale.",
+            subcontent: "Build Your Business, Not Your Budget. With EDGECARTS, you can focus on growth while we handle the rest.",
+            subparts: [
+                {
+                    id: 1,
+                    image: "/image1.png",
+                    title: "Breaking Down E-Commerce Barriers",
+                    content: "Launching an e-commerce store often comes with high costs, technical challenges, and maintenance hassles, keeping small businesses and entrepreneurs out of the digital market. EDGECARTS eliminates these barriers with zero setup costs, free maintenance, and a unique domain for every store. Our transparent pricing ensures you only pay a 10% commission per sale—no hidden fees."
+                },
+                {
+                    id: 2,
+                    image: "/image2.jpg",
+                    title: "A Smarter Future for Construction",
+                    content: "EDGECARTS is more than just an e-commerce platform; it&apos;s your gateway to building a thriving online business. Whether you*apos;re a small business owner or an entrepreneur with big dreams, our solution gives you the tools and support to grow without limits"
+                },
+                {
+                    id: 3,
+                    image: "/image3.png",
+                    title: "Your Success, Our Commitment. Join EDGECARTS today and transform the way you do business online.",
+                    content: ""
+                },
+            ]
+        },
+        {
+            id: 4,
+            image: "/image4.jpg",
+            name: "Buildops",
+            path: "/product/4",
+            platformType: "SaaS",
+            industryFocus: "Construction and Architect",
+            keyBenefits: "Enhanced Operational Efficiency",
+            content: "Our ERP and PMS SaaS is designed specifically for the construction industry, empowering businesses with real-time insights, efficient project management, and seamless collaboration. This solution transforms the way construction projects are planned, executed, and delivered.",
+            subcontent: "Build Better, Smarter, and Faster. If you're looking to revolutionize your construction processes, this is the tool for you.",
+            subparts: [
+                {
+                    id: 1,
+                    image: "/image1.png",
+                    title: "Overcoming the Challenges of Construction Management",
+                    content: "Construction firms often face challenges like misaligned schedules, resource wastage, and delayed timelines due to outdated management tools. These hurdles result in inefficiencies and unnecessary costs that disrupt project delivery and impact profitability. Our ERP and PMS solution addresses these issues, offering real-time tracking of progress, automated resource allocation, and streamlined workflows to ensure your projects stay on track and within budget."
+                },
+                {
+                    id: 2,
+                    image: "/image2.jpg",
+                    title: "A Smarter Future for Construction",
+                    content: "Empower your construction firm with cutting-edge technology designed to simplify project management. Whether you're managing multiple sites or complex operations, our SaaS provides the tools you need to succeed in a competitive industry. Start building a smarter future today with our ERP and PMS solution for construction companies."
+                },
+                {
+                    id: 3,
+                    image: "/image3.png",
+                    title: "",
+                    content: ""
+                },
+            ]
+        },
+        
+        
+        
     ]
 
   return (
@@ -142,7 +144,7 @@ const SingleProduct = () => {
         <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8">
 
             {/* this fixed  */}
-            <div className="w-full md:w-1/3 key-features flex flex-col justify-start items-start ">
+            <div className="left w-full md:w-1/3 key-features flex flex-col justify-start items-start ">
                 <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 py-4 md:py-8">
                     <p className="text-gray-400 font-normal text-base md:text-xl">
                         Platform Type
@@ -178,7 +180,7 @@ const SingleProduct = () => {
             </div>
 
             {/* this div max-h-[500px] and scrollable according to page scroll  */}
-            <div className="w-full md:w-2/3 flex flex-col gap-4 md:gap-6 justify-center items-start">
+            <div className="details w-full md:w-2/3 flex flex-col gap-4 md:gap-6 justify-center items-start">
 
                 <div className="w-full text-lg md:text-2xl text-customgray font-semibold leading-6">
                     {products[id-1].content}

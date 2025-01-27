@@ -148,7 +148,7 @@ const HowItWorks = () => {
   ]
     
   return (
-    <section  className="featured-projects w-full h-full flex flex-col justify-center items-center bg-black text-white">
+    <section  className="featured-projects w-full h-full flex flex-col justify-center items-center bg-black text-white ">
 
         <div className="marquee w-full shadow-xl relative bg-customblack">
 
