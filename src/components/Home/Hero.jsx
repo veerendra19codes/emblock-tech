@@ -87,10 +87,10 @@ const Hero = () => {
           </div> */}
         </div>
         
-        <div className="opacity-0 translate-y-full w-full flex justify-between items-start px-12 py-12 animate-slide-up-text-6 animate-fill-mode-forwards">
+        <div className="opacity-0 translate-y-full w-full flex justify-between items-start px-4 md:px-12 py-12 animate-slide-up-text-6 animate-fill-mode-forwards">
           <button className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium">
             See what we can do 
-            <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
+            <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
           </button>
 
           <div className="hidden md:flex justify-center items-center gap-2">

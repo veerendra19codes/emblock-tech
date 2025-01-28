@@ -18,12 +18,14 @@ import Solutions from "./components/Solutions/Solutions";
 import About from "./components/About/About";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Careers from "./components/Careers/Careers";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   
   return (
     <div className="min-w-screen max-w-screen overflow-x-hidden h-full flex flex-col justify-center items-center font-manrope bg-gray-50">
       <Router>
+        <ScrollToTop />
         <Navbar />  
         <Routes>
           <Route path="/" element={
@@ -35,26 +37,37 @@ function App() {
                 <Testimonials />
                 <Faq />
                 <Contact />
+                <Footer />
               </>
           } />
 
           <Route path="/solutions" element={
               <>
                 <Solutions />
+                <Footer />
               </>
           } />
 
+
           <Route path="/ourproducts" element={
-            <OurProducts />
+            <>
+              <OurProducts />
+              <Footer />
+            </>
           } />
 
           <Route path="/product/:id" element={
-            <SingleProduct />
+            <>
+              <SingleProduct />
+              <Footer />
+            </>
+
           } />
 
           <Route path="/about" element={
               <>
                 <About />
+                <Footer />
               </>
           } />
 
@@ -63,22 +76,24 @@ function App() {
                 <ServicesHero />
                 <Services />
                 <ServicesFaq />
+                <Footer />
               </>
           } />
 
           <Route path="/careers" element={
               <>
                 <Careers />
+                <Footer /> 
               </>
           } />
 
           <Route path="/contactus" element={
               <>
                 <ContactUs />
+                <Footer />
               </>
           } />
         </Routes>
-        <Footer />
       </Router>
 
     </div>
