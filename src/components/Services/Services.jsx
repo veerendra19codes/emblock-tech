@@ -138,7 +138,7 @@ const Services = () => {
   return (
     <div className="flex flex-col w-full">
       {services.map((service) => (
-        <div key={service.id} className={`w-full flex flex-col p-6 md:p-24 justify-start items-start gap-12 ${service.id % 2 == 0 ? "bg-black" : "bg-white"}`}>
+        <div key={service.id} className={`w-full flex flex-col p-6 py-12 md:p-24 justify-start items-start gap-12 ${service.id % 2 == 0 ? "bg-black" : "bg-white"}`}>
 
           <div className="transition-all duration-700 ease-out  left w-full text-start  flex flex-col gap-6 h-full">
 
@@ -154,7 +154,7 @@ const Services = () => {
           </div>
 
           <div className="w-full image-and-details flex flex-col md:flex-row justify-between gap-12 items-start">
-            <img src={service.image} alt="image" className="w-full md:w-1/2 h-auto rounded-xl" />
+            <img src={service.image} alt="image" className="w-full md:w-[40%] h-[50%] rounded-xl" />
 
             <div className="w-full md:w-1/2 h-full flex flex-col justify-between items-start gap-8">
 
@@ -176,7 +176,7 @@ const Services = () => {
                 {service.detail}
               </p>
 
-              <div className="w-full bottom-buttons gap-4 md:gap-8 flex justify-start  items-center">
+              <div className="w-full bottom-buttons gap-4 md:gap-8 flex justify-start  items-center mt-4">
                 <button className={`rounded-full min-w-[100px] md:min-w-[150px] font-medium py-2 md:py-3 border   px-4 text-sm md:text-xl whitespace-nowrap ${service.id %2 == 0 ? "text-white" : "text-customblack border-customblack bg-white"}`}>{service.buttonText}</button>
 
                 <Link to={"/contactus"}className="rounded-full p-1 md:p-2 pl-4 md:pl-6 text-sm md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-2 md:gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium">
