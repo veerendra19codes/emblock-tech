@@ -1,6 +1,7 @@
 import { FaArrowRightLong, FaXTwitter } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
-import {  LuGlobe } from "react-icons/lu";
+import {  FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -88,10 +89,10 @@ const Hero = () => {
         </div>
         
         <div className="opacity-0 translate-y-full w-full flex justify-between items-start px-4 md:px-12 py-12 animate-slide-up-text-6 animate-fill-mode-forwards">
-          <button className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium">
+          <Link to="/services" className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium">
             See what we can do 
             <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
-          </button>
+          </Link>
 
           <div className="hidden md:flex justify-center items-center gap-2">
             <div className=" flex flex-col justify-center items-start gap-1">
@@ -100,7 +101,7 @@ const Hero = () => {
               <div className="icons w-full flex gap-2 justify-between items-center ">
                 <FaXTwitter className="text-gray-400 text-xl hover:rotate-360 transition-all duration-300 " />
                 <IoLogoInstagram  className="text-gray-400 text-2xl hover:rotate-360 transition-all duration-300 " />
-                <LuGlobe  className="text-gray-400 text-xl font-bold  hover:rotate-360 transition-all duration-300 " />
+                <FaLinkedinIn  className="text-gray-400 text-xl font-bold  hover:rotate-360 transition-all duration-300 " />
               </div>
             </div>
 

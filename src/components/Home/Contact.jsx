@@ -1,6 +1,7 @@
 import { FaXTwitter } from "react-icons/fa6";
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { CornerDownRight } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const AnimatedElement = ({ children, delay = 0 }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -99,13 +100,13 @@ const Contact = () => {
             </div>
             ))}
 
-            <div className="card w-full rounded-xl flex flex-col justify-center items-center bg-customgreen p-12 text-black gap-8 shadow-sm ease-in-out transition-all duration-300 group hover:gap-4">
+            <Link to="/about" className="card w-full rounded-xl flex flex-col justify-center items-center bg-customgreen p-12 text-black gap-8 shadow-sm ease-in-out transition-all duration-300 group hover:gap-4">
                 <h1 className="text-2xl text-start w-full  font-medium  group-hover:pl-2 transition-all duration-300">More</h1>
                 
                 <p className="w-full flex justify-end group-hover:pr-2 transition-all duration-300">
                     <CornerDownRight className="bg-customgreen rounded-full size-12 p-2   text-customblack font-bold text-xl " />
                 </p>
-            </div>
+            </Link>
         </div>
     
     </div>

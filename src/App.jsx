@@ -37,14 +37,12 @@ function App() {
                 <Testimonials />
                 <Faq />
                 <Contact />
-                <Footer />
               </>
           } />
 
-          <Route path="/solutions" element={
+          <Route path="/solutions/:id" element={
               <>
                 <Solutions />
-                <Footer />
               </>
           } />
 
@@ -52,14 +50,12 @@ function App() {
           <Route path="/ourproducts" element={
             <>
               <OurProducts />
-              <Footer />
             </>
           } />
 
           <Route path="/product/:id" element={
             <>
               <SingleProduct />
-              <Footer />
             </>
 
           } />
@@ -67,7 +63,6 @@ function App() {
           <Route path="/about" element={
               <>
                 <About />
-                <Footer />
               </>
           } />
 
@@ -76,24 +71,23 @@ function App() {
                 <ServicesHero />
                 <Services />
                 <ServicesFaq />
-                <Footer />
               </>
           } />
 
           <Route path="/careers" element={
               <>
                 <Careers />
-                <Footer /> 
               </>
           } />
 
           <Route path="/contactus" element={
               <>
                 <ContactUs />
-                <Footer />
               </>
           } />
         </Routes>
+        <Footer />
+
       </Router>
 
     </div>

@@ -1,9 +1,9 @@
 import { FaArrowRightLong, FaXTwitter } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
-import { LuGlobe } from "react-icons/lu";
 import { FaArrowUp } from "react-icons/fa6";
 import { useEffect, useRef, useState } from 'react';
 import { FaRegCopyright } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const AnimatedElement = ({ children, delay = 0 }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -158,7 +158,7 @@ const Footer = () => {
                 <div className="icons w-full flex gap-2 justify-between items-center ">
                   <FaXTwitter className="text-gray-400 text-lg lg:text-xl hover:rotate-360 transition-all duration-300 " />
                   <IoLogoInstagram  className="text-gray-400 text-lg lg:text-xl hover:rotate-360 transition-all duration-300 " />
-                  <LuGlobe  className="text-gray-400 text-lg lg:text-xl font-bold  hover:rotate-360 transition-all duration-300 " />
+                  <FaLinkedinIn  className="text-gray-400 text-lg lg:text-xl font-bold  hover:rotate-360 transition-all duration-300 " />
                 </div>
               </div>
 
@@ -184,13 +184,13 @@ const Footer = () => {
       </div>
         
 
-      <nav className="w-full h-40 lg:h-36 flex flex-col lg:flex-row justify-center lg:justify-between items-center px-4 lg:px-32 border border-gray-800 shadow-sm bg-black py-4 gap-4">
+      <nav className="w-full h-24 lg:h-36 flex flex-col lg:flex-row justify-center lg:justify-between items-center px-4 lg:px-32 border border-gray-800 shadow-sm bg-black py-4 gap-2 lg:gap-4">
 
-        <img src="/logowhite.png" className="h-8" />
+        <img src="/logowhite.png" className="h-6 lg:h-8" />
 
         <ul className="nav-items flex flex-col justify-center lg:justify-start items-center lg:items-start gap-2">
-          <p className="text-gray-500 font-semibold text-lg flex leading-none whitespace-nowrap ">Copyright <FaRegCopyright className="ml-2" /></p>
-          <p className="text-gray-500 text-sm   font-semibold">EMBLOCK TECH PRIVATE LIMITED, 2025</p>
+          <p className="text-gray-500 font-semibold text-sm lg:text-lg flex leading-none whitespace-nowrap ">Copyright <FaRegCopyright className="ml-2" /></p>
+          <p className="text-gray-500 text-xs md:text-sm  font-semibold">EMBLOCK TECH PRIVATE LIMITED, 2025</p>
         </ul>
 
       </nav>

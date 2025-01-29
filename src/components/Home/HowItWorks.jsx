@@ -219,7 +219,7 @@ const HowItWorks = () => {
           {/* 6 */}
           <AnimatedElement delay={800}>
             <div className="card w-full rounded-xl flex flex-col bg-customgreen p-6 lg:p-12 h-[240px] lg:h-[280px] justify-between">
-                <h1 className="text-[60px] lg:text-[80px] text-start w-full text-customblack font-medium">95+</h1>
+                <h1 className="text-[60px] lg:text-[80px] text-start w-full text-customblack font-medium">95%</h1>
                 <div className="flex flex-col justify-end items-center">
                   <p className="text-end w-full text-customgray font-semibold">Percent</p>
                   <p className="text-end w-full text-green-700 text-xl fotnsembold">Customer Satisfaction</p>
@@ -230,7 +230,7 @@ const HowItWorks = () => {
           {/* 7 */}
           <AnimatedElement delay={700}>
             <div className="card w-full rounded-xl flex flex-col bg-customblack p-6 lg:p-12 text-white h-[240px] lg:h-[280px] justify-between ">
-                <h1 className="text-[60px] lg:text-[80px] text-start w-full  font-medium">10+</h1>
+                <h1 className="text-[60px] lg:text-[80px] text-start w-full  font-medium">5+</h1>
                 <div className="flex flex-col justify-between items-center">
                   <p className="text-end w-full  font-semibold">Years</p>
                   <p className="text-end w-full text-gray-500 text-xl font-semibold">of Experience</p>
@@ -241,7 +241,7 @@ const HowItWorks = () => {
           {/* 8 */}
           <AnimatedElement delay={800}>
             <div className="card w-full rounded-xl flex flex-col bg-gray-100 p-6 lg:p-12 h-[240px] lg:h-[280px] justify-between">
-                <h1 className="text-[60px] lg:text-[80px] text-start w-full text-customblack font-medium">24+</h1>
+                <h1 className="text-[60px] lg:text-[80px] text-start w-full text-customblack font-medium">60+</h1>
                 <div className="flex flex-col justify-between items-center">
                   <p className="text-end w-full text-customblack font-semibold">Projects</p>
                   <p className="text-end w-full text-green-700 text-xl font-semibold">Completed</p>
