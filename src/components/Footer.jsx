@@ -176,7 +176,7 @@ const Footer = () => {
 
             
 
-            <Link to="/contactus" className="rounded-full p-2 m-auto lg:m-0 pl-6 text-lg lg:text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-8 lg:mt-16 shadow-lg shadow-customgreen group hover:shadow-none transition-all duration-500 font-medium">Book a call <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform duration-300 -rotate-45 group-hover:rotate-0" /> </Link>
+            <Link to="/contactus" className="rounded-full p-2 m-auto mx-6 md:mx-0 md:m-0 lg:m-0 pl-6 text-lg lg:text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-8 lg:mt-16 shadow-lg shadow-customgreen group hover:shadow-none transition-all duration-500 font-medium">Book a call <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform duration-300 -rotate-45 group-hover:rotate-0" /> </Link>
 
 
           </AnimatedElement>

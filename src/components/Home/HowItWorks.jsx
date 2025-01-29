@@ -229,7 +229,7 @@ const HowItWorks = () => {
 
           {/* 7 */}
           <AnimatedElement delay={700}>
-            <div className="card w-full rounded-xl flex flex-col bg-customblack p-6 lg:p-12 text-white h-[240px] lg:h-[280px] justify-between ">
+            <div className="card w-full rounded-xl flex flex-col bg-customblack p-6 lg:p-12 text-white h-[240px] lg:h-[280px] justify-between relative">
                 <h1 className="text-[60px] lg:text-[80px] text-start w-full  font-medium">5+</h1>
                 <div className="flex flex-col justify-between items-center">
                   <p className="text-end w-full  font-semibold">Years</p>
