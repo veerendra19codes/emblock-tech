@@ -158,34 +158,6 @@ const Careers = () => {
   ];
 
 
-
-  const clients = [
-    {
-      id: 1,
-      image: "/client1.png",
-      name: "Buddybooks",
-    },
-    {
-      id: 2,
-      image: "/client2.png",
-      name: "Aarga Constructions",
-    },
-    {
-      id: 3,
-      image: "/client3.png",
-      name: "Nishikas",
-    },
-    {
-      id: 4,
-      image: "/client4.png",
-      name: "Trusspur",
-    },
-    {
-      id: 5,
-      image: "/client5.png",
-      name: "Yaco",
-    },
-  ]
   return (
     <div className="flex flex-col justify-center items-center min-h-screen w-full">
       <section className="bg-[url('/herobg.jpg')] w-full flex flex-col p-6 md:p-32 justify-start items-start md:pt-48">
@@ -320,10 +292,10 @@ const Careers = () => {
               <p className="text-black flex flex-wrap">{job.skillsRequired}</p>
             </p>
 
-            <a href={`contact@emblocktech.com`} className="rounded-full p-1 md:p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen md:hidden flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium mt-8">
+            <Link to={`/careers/${job.id}`} className="rounded-full p-1 md:p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen md:hidden flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium mt-8">
                 Apply Now
                 <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
-              </a>
+              </Link>
           </div>
         ))}
       </section>
