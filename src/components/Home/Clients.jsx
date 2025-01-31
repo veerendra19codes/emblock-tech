@@ -91,7 +91,7 @@ const Clients = () => {
         <div className="flex flex-wrap gap-4">
 
             {clients.map((client) => (
-              <div key={client.id} className="card rounded-xl flex flex-col bg-white p-4 md:p-12 text-black gap-8 shadow-sm group h-[200px] justify-center items-center w-[45%] md:w-[30%]">
+              <div key={client.id} className="card rounded-xl flex flex-col bg-white p-4 md:p-12 text-black gap-8 shadow-sm group h-[150px] md:h-[200px] justify-center items-center w-[45%] md:w-[30%]">
                 <img src={client.image} className="h-8 md:h-20 w-auto" />
                 
                 <p className="w-full flex justify-center text-sm md:text-lg font-medium text-black">

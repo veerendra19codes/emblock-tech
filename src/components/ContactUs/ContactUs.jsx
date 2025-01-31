@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { FaArrowRightLong, FaQuoteLeft } from 'react-icons/fa6';
+import { FaArrowRightLong } from 'react-icons/fa6';
+import { FaQuoteLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Faq from '../Faq';
 import SocialMedia from '../SocialMedia';
@@ -15,7 +16,7 @@ const ContactUs = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "96afdae7-73a5-45cb-b40b-79439e7ade68");
+    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -57,7 +58,7 @@ const ContactUs = () => {
         
       </section>
 
-      <section className=" bg-customblack w-full flex flex-col justify-center items-center p-6 py-12 md:p-[10%] text-white">
+      <section className=" bg-black w-full flex flex-col justify-center items-center p-6 py-12 md:p-[10%] text-white">
 
         <div className="w-full flex flex-col justify-start items-start">
           <div className=" flex gap-2 justify-center items-center transition-all duration-1000 ease-out">
@@ -88,7 +89,7 @@ const ContactUs = () => {
             </p>
 
             <form onSubmit={handleSubmit} className="w-full form flex flex-col justify-center items-center mt-4 gap-8">
-              <input type="hidden" name="access_key" value="96afdae7-73a5-45cb-b40b-79439e7ade68"></input>
+              <input type="hidden" name="access_key" value={import.meta.env.VITE_WEB3FORMS_ACCESS_KEY}></input>
               <div className="w-full flex justify-between items-center gap-8">
 
                 <div className="w-1/2 flex flex-col justify-start items-start">
@@ -142,7 +143,7 @@ const ContactUs = () => {
 
       <Faq />
 
-      <section className="quote h-[500px] md:h-[800px] flex justify-center items-center px-6 md:px-24  md:mb-0 bg-customblack">
+      <section className="quote h-[500px] md:h-[800px] flex justify-center items-center px-6 md:px-24  md:mb-0 bg-black">
           <div className="w-1/5 flex justify-end items-start -mt-[200px] md:-mt-[200px]">
             < FaQuoteLeft  className="text-gray-300 size-[40px] md:size-[200px]"  />
           </div>

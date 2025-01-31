@@ -20,6 +20,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import SingleCareer from "./components/Careers/SingleCareer";
 import OurServices from "./components/Home/OurServices";
 import Clients from "./components/Home/Clients";
+import ServicesNew from "./components/Services/ServicesNew";
 
 function App() {
   
@@ -69,9 +70,10 @@ function App() {
 
           <Route path="/services" element={
               <>
-                <ServicesHero />
+                {/* <ServicesHero />
                 <Services />
-                <ServicesFaq />
+                <ServicesFaq /> */}
+                <ServicesNew />
               </>
           } />
 

@@ -96,7 +96,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <Link to="/contactus" className="contacts flex gap-4 justify-center items-center">
+          <Link to="/contactus" className="contacts flex gap-4 justify-center items-center" onClick={() => setShowMobileNavbar(false)}>
             <button className="py-3 px-6 rounded-full bg-customgray text-white text-[14px]  font-semibold hover:bg-customgreen hover:text-customblack transition-all duration-300">Contact Us</button>
           </Link>
           

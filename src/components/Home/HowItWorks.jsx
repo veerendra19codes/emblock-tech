@@ -148,7 +148,7 @@ const HowItWorks = () => {
   ]
     
   return (
-    <section  className="featured-projects w-full h-full flex flex-col justify-center items-center bg-black text-white ">
+    <section  className="how-it-works w-full h-full flex flex-col justify-center items-center bg-black text-white ">
 
         {/* <div className="marquee w-full shadow-xl relative bg-customblack">
 
@@ -174,12 +174,12 @@ const HowItWorks = () => {
         <div className="feature-hero w-full flex flex-col gap-4 justify-center  items-start pl-4 lg:pl-24 py-12 lg:py-40 bg-black animate-fadeInUp">
 
           <div className="flex gap-2 justify-center items-center">
-            <span className="bg-lime-400 text-black size-3 rounded-full">.</span>
-            <p className="text-lg lg:text-lg font-semibold text-gray-400">Process</p>
+            <span className="bg-lime-400 text-black size-2 md:size-3 rounded-full">.</span>
+            <p className="text-md lg:text-lg font-semibold text-gray-400">Process</p>
           </div>
 
           <div className="flex justify-center items-start flex-col gap-2 leading-none ">
-            <h1 className="text-[35px] lg:text-[90px] text-white leading-none">
+            <h1 className="text-[25px] lg:text-[90px] text-white leading-none">
               How we work
             </h1>
           </div>
@@ -194,7 +194,7 @@ const HowItWorks = () => {
             <div  className="step py-8  lg:py-16 flex flex-col lg:flex-row w-full justify-center items-start border-t-2 border-gray-900 gap-2">
 
               <div className="w-full lg:w-[20%] flex justify-center lg:justify-start items-center lg:items-start">
-                  <button className="w-1/2 button py-2 px-4 border border-gray-800 rounded-full">{step.name}</button>
+                  <button className="w-1/2 button py-2 px-4 border border-gray-800 rounded-full text-md md:text-lg">{step.name}</button>
               </div>
 
               <h1 className="w-full lg:w-[10%] step-count text-2xl lg:text-3xl font-semibold flex">
@@ -202,9 +202,9 @@ const HowItWorks = () => {
               </h1>
 
               <div className="description flex flex-col gap-2 w-full lg:w-[70%] items-start justify-start">
-                  <h1 className="text-white text-2xl pb-2">{step.title}</h1>
+                  <h1 className="text-white text-lg md:text-2xl pb-2">{step.title}</h1>
                   {step.steps.map((s) => (
-                    <p key={s.id} className="text-gray-400 flex justify-center items-center gap-2 pl-4"><FaStarOfLife className="text-customgreen" />{s.content}</p>
+                    <p key={s.id} className="text-gray-400 flex justify-center items-center gap-2 md:pl-4 text-sm md:text-lg"><FaStarOfLife className="text-customgreen" />{s.content}</p>
                   ))}
                 
               </div>

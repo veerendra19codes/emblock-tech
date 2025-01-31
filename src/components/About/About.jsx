@@ -1,5 +1,6 @@
-import { FaQuoteLeft, FaStarOfLife } from "react-icons/fa6"
+import {  FaStarOfLife } from "react-icons/fa6"
 import { GoDotFill } from "react-icons/go"
+import { FaQuoteLeft } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -54,7 +55,7 @@ const About = () => {
         
       </section>
 
-      <div className="bg-customblack w-full flex flex-col my-12 px-6 md:px-24 py-12 md:py-24 text-white">
+      <div className="bg-black w-full flex flex-col my-12 px-6 md:px-24 py-12 md:py-24 text-white">
           <div className="transition-all duration-700 ease-out  left w-full text-start  flex flex-col gap-2 md:gap-6 h-full">
 
             <div className="flex gap-2 justify-start items-center">
