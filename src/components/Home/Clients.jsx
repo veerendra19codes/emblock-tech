@@ -91,7 +91,7 @@ const Clients = () => {
         <div className="flex flex-wrap gap-4">
 
             {clients.map((client) => (
-              <div key={client.id} className="card rounded-xl flex flex-col bg-white p-4 md:p-12 text-black gap-8 shadow-sm group h-[200px] justify-center items-center w-[45%]">
+              <div key={client.id} className="card rounded-xl flex flex-col bg-white p-4 md:p-12 text-black gap-8 shadow-sm group h-[200px] justify-center items-center w-[45%] md:w-[30%]">
                 <img src={client.image} className="h-8 md:h-20 w-auto" />
                 
                 <p className="w-full flex justify-center text-sm md:text-lg font-medium text-black">
@@ -100,7 +100,7 @@ const Clients = () => {
             </div>
             ))}
 
-            <Link to="/about" className="card w-[45%] rounded-xl flex flex-col md:flex-row justify-center items-center bg-customgreen p-12 text-black gap-2 shadow-sm ease-in-out transition-all duration-300 group hover:gap-4 group">
+            <Link to="/about" className="card w-[45%] md:w-[30%] rounded-xl flex flex-col md:flex-row justify-center items-center bg-customgreen p-12 text-black gap-2 shadow-sm ease-in-out transition-all duration-300 group hover:gap-4 group">
                 More
                 
                 <FaArrowRightLong className="size-6 md:size-8 rounded-full bg-customblack p-1 md:p-2 text-customgreen  -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
