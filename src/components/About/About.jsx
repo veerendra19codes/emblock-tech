@@ -18,31 +18,31 @@ const About = () => {
 
         <div className="w-full flex flex-col md:flex-row justify-between items-center my-12">
           <div className="image left w-full md:w-1/2 flex justify-center md:justify-start items-center">
-            <img src="/aboutushero.png" className="w-full md:w-[80%] h-auto rounded-lg" />
+            <img src="/aboutushero.png" className="w-full md:w-[90%] h-auto rounded-lg" />
           </div>
 
           <div className="right w-full md:w-1/2 flex flex-col justify-start items-start px-0 md:px-8 mt-8 md:mt-0">
             <h1 className="text-customblack text-xl mt-4 font-medium">IoT Solutions</h1>
 
-            <p className="text-gray-500 font-medium mt-2 text-xs md:text-sm">As trailblazers in IoT innovation, we deliver solutions tailored to industries like manufacturing, construction, logistics, and supply chain management.</p>
+            <p className="text-gray-500 font-medium mt-2 text-xs md:text-lg">As trailblazers in IoT innovation, we deliver solutions tailored to industries like manufacturing, construction, logistics, and supply chain management.</p>
 
-            <p className="text-gray-500 font-medium mt-4  text-xs md:text-sm">Key offerings include:</p>
+            <p className="text-gray-500 font-medium mt-4  text-xs md:text-lg">Key offerings include:</p>
 
-            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-sm"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Real-Time Machine Monitoring: Gain visibility into equipment performance to reduce downtime and increase productivity.</span></p>
-            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-sm"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Fleet Management Systems: Optimize routes, improve safety, and cut operational costs with data-driven insights.</span></p>
-            <p className="text-gray-500 font-medium text-start mt-4 text-xs md:text-sm"> Our IoT solutions empower businesses to operate smarter, reduce waste, and achieve their goals seamlessly</p>
+            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Real-Time Machine Monitoring: Gain visibility into equipment performance to reduce downtime and increase productivity.</span></p>
+            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Fleet Management Systems: Optimize routes, improve safety, and cut operational costs with data-driven insights.</span></p>
+            <p className="text-gray-500 font-medium text-start mt-4 text-xs md:text-lg"> Our IoT solutions empower businesses to operate smarter, reduce waste, and achieve their goals seamlessly</p>
 
 
 
             <h1 className="text-customblack text-xl mt-4 font-medium">Software Solutions</h1>
 
-            <p className="text-gray-500 font-medium mt-2 text-xs md:text-sm">We bring robust, intuitive, and scalable software platforms to the forefront of business innovation.</p>
+            <p className="text-gray-500 font-medium mt-2 text-xs md:text-lg">We bring robust, intuitive, and scalable software platforms to the forefront of business innovation.</p>
 
-            <p className="text-gray-500 font-medium mt-4 text-xs md:text-sm">Key offerings include:</p>
+            <p className="text-gray-500 font-medium mt-4 text-xs md:text-lg">Key offerings include:</p>
 
-            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-sm"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">E-commerce Inventory Management: Track, manage, and optimize inventory for seamless business operations.</span></p>
-            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-sm"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Customer Behavior Analytics: Understand consumer preferences and tailor strategies for maximum engagement.</span></p>
-            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-sm"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Simplified GST Filing for Chartered Accountants: Streamline complex processes for improved accuracy and compliance.</span></p>
+            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">E-commerce Inventory Management: Track, manage, and optimize inventory for seamless business operations.</span></p>
+            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Customer Behavior Analytics: Understand consumer preferences and tailor strategies for maximum engagement.</span></p>
+            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Simplified GST Filing for Chartered Accountants: Streamline complex processes for improved accuracy and compliance.</span></p>
             
           </div>
         </div>

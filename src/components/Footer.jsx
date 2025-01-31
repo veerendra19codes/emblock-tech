@@ -105,14 +105,14 @@ const Footer = () => {
         <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-gray-900 to-transparent pointer-events-none"></div>
       </div>
 
-      <div className="flex justify-between items-center w-full border border-gray-800 h-24 lg:h-32 px-4 lg:px-24">
+      {/* <div className="flex justify-between items-center w-full border border-gray-800 h-24 lg:h-32 px-4 lg:px-24">
         <div className="flex gap-2 justify-center items-center">
           <span className="bg-lime-400 text-black size-3 rounded-full">.</span>
           <p className="text-[10px] lg:text-[14px] font-semibold ">Available for work</p>
         </div>
 
         <button onClick={scrollToTop} className="gap-1 lg:gap-4 flex items-center font-semibold text-gray-400 text-sm lg:text-lg">Back to top <FaArrowUp className="bg-white text-black size-8 lg:size-12 p-2 lg:p-4 text-lg rounded-full" /></button>     
-      </div>
+      </div> */}
 
       <div className="w-full flex flex-col lg:flex-row justify-between items-center">
 

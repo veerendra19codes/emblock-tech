@@ -477,7 +477,7 @@ const Solutions = () => {
                       </h2>
                   </div>
   
-                  <button className="rounded-full p-2   pl-6 text-md md:text-lg whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group my-4 font-semibold my-4">
+                  <button className="rounded-full p-2   pl-6 text-md md:text-lg whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group my-4 font-semibold">
                       Case studies
                       <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
                   </button>
@@ -524,6 +524,7 @@ const Solutions = () => {
         </div>
       </section>
 
+      {/* quote  */}
       <section className="h-[400px] md:h-[800px] flex justify-center items-center px-6 md:px-24">
         <div className="w-1/4 flex justify-end items-start -mt-[100px] md:-mt-[200px]">
           < FaQuoteLeft  className="text-gray-600 size-[40px] md:size-[200px]"  />
@@ -574,9 +575,3 @@ const Solutions = () => {
 }
 
 export default Solutions
-
-//  Enhancing operational workflows.
-// Automation: Reducing reliance on manual processes.
-// Real-Time Monitoring: Providing a clear picture of machine performance and productivity.
-// Predictive Maintenance: Ensuring machinery is always in optimal condition to avoid disruptions.
-// Quality Control: Delivering consistent product standards that meet regulatory requirements.

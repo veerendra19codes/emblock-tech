@@ -19,6 +19,7 @@ import About from "./components/About/About";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Careers from "./components/Careers/Careers";
 import ScrollToTop from "./components/ScrollToTop";
+import SingleCareer from "./components/Careers/SingleCareer";
 
 function App() {
   
@@ -77,6 +78,12 @@ function App() {
           <Route path="/careers" element={
               <>
                 <Careers />
+              </>
+          } />
+
+          <Route path="/careers/:id" element={
+              <>
+                <SingleCareer />
               </>
           } />
 
