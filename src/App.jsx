@@ -3,11 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Home/Hero";
 import FeaturedProjects from "./components/Home/FeaturedProjects";
-import ToolsAndSkills from "./components/Home/ToolsAndSkills";
 import HowItWorks from "./components/Home/HowItWorks";
 import Testimonials from "./components/Home/Testimonials";
 import Faq from "./components/Faq";
-import Contact from "./components/Home/Contact";
 import Footer from "./components/Footer";
 import OurProducts from "./components/OurProducts/OurProducts";
 import SingleProduct from "./components/OurProducts/SingleProduct";
@@ -20,6 +18,8 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import Careers from "./components/Careers/Careers";
 import ScrollToTop from "./components/ScrollToTop";
 import SingleCareer from "./components/Careers/SingleCareer";
+import OurServices from "./components/Home/OurServices";
+import Clients from "./components/Home/Clients";
 
 function App() {
   
@@ -33,11 +33,11 @@ function App() {
               <>
                 <Hero />
                 <FeaturedProjects />
-                <ToolsAndSkills />
+                <OurServices />
                 <HowItWorks />
                 <Testimonials />
                 <Faq />
-                <Contact />
+                <Clients />
               </>
           } />
 

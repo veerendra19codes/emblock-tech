@@ -8,7 +8,7 @@ const ServicesHero = () => {
         Innovative IoT and Software Solutions Tailored to Transform Your Business and Empower Your Growth Journey
       </h1>
 
-      <div className="w-full flex flex-col md:flex-row justify-between items-start gap-8">
+      <div className="w-full flex flex-col-reverse md:flex-row justify-between items-start gap-8">
         <div className="left w-full md:w-1/2 flex flex-col items-start justify-start gap-8">
             <p className="text-gray-400 leading-none flex-wrap text-md md:text-xl font-medium animate-slide-up-text-2 opacity-0 animate-fill-mode-forwards">
                 Over the years, we&apos;ve had the privilege of partnering with a diverse range of clients, from startups to established enterprises, helping them turn their visions into impactful solutions.
@@ -20,7 +20,7 @@ const ServicesHero = () => {
             </Link>
         </div>
 
-        <div className="w-full md:w-1/3 right flex flex-wrap flex-end justify-start lg:justify-center items-start lg:items-end  gap-4 mt-4 lg:mt-0">
+        <div className="w-full md:w-1/3 right flex flex-wrap md:flex-end justify-start lg:justify-center items-start lg:items-end  gap-4 mt-4 lg:mt-0">
             <span className="opacity-0 translate-x-full px-6 py-2 md:py-3  border border-gray-600 shadow-lg rounded-full text-sm md:text-2xl  font-semibold animate-slide-left-text-5 animate-fill-mode-forwards whitespace-nowrap">Embedded</span>
 
             <span className="opacity-0 translate-y-full px-6 py-2 md:py-3  border border-transparent shadow-lg rounded-full text-sm md:text-2xl  font-semibold animate-slide-down-text-1 animate-fill-mode-forwards whitespace-nowrap">ERP & CRM</span>

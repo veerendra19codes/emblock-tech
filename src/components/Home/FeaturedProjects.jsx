@@ -125,7 +125,7 @@ const FeaturedProjects = () => {
 
         <div className="projects-2 w-full flex flex-col md:flex-row justify-center items-center bg-black">
 
-          <Link to="/product/1" className="w-full md:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-16  gap-2 md:gap-4">
+          <Link to="/product/1" className="w-full md:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-6 md:p-16  gap-2 md:gap-4">
 
             <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
               <div><span className="text-customgreen">{"{"}</span> E-commerce Saas <span className="text-customgreen">{"}"}</span>
@@ -140,7 +140,7 @@ const FeaturedProjects = () => {
             <img src="/image1.png" className={`project-image  w-full h-[150px] md:h-[400px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out ${visibleImages[`project-image-0`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
-          <Link to="/product/2" className="w-full md:w-1/2 border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-16 gap-2 md:gap-4">
+          <Link to="/product/2" className="w-full md:w-1/2 border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-6 md:p-16 gap-2 md:gap-4">
 
             <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
               <div><span className="text-customgreen">{"{"}</span> Saas <span className="text-customgreen">{"}"}</span>
@@ -159,7 +159,8 @@ const FeaturedProjects = () => {
 
         <div className="projects-3 w-full flex flex-col md:flex-row justify-center items-center bg-black">
 
-          <Link to="/product/3" className="w-full md:w-1/3 h-[350px] md:h-[600px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-6 md:p-12 gap-2 md:gap-4">
+          <Link to="/product/3" className="w-full md:w-1/3 h-[350px] md:h-[600px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:p-12 gap-2 md:gap-4">
+          <div className="flex flex-col gap-4 justify-start items-start">
 
             <h1 className="flex justify-start items-center text-lg md:text-xl gap-6"> 
               <div><span className="text-customgreen">{"{"}</span> Mobile App <span className="text-customgreen">{"}"}</span>
@@ -170,12 +171,15 @@ const FeaturedProjects = () => {
             <h1 className="text-2xl md:text-3xl whitespace-nowrap"> STRIKES</h1>
 
             <p className="text-gray-500 font-semibold text-xs md:text-md">App that Connect the Influencer and Brand and Audience</p>
+          </div>
 
-            <img src="/image1.png"  className={`project-image w-full h-[150px] md:h-[400px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
+
+            <img src="/image1.png"  className={`project-image w-full h-[150px] md:min-h-[250px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
               ${visibleImages[`project-image-2`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
-          <Link to="/product/4" className="w-full md:w-1/3 h-[400px] md:h-[600px] border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-6 md:p-12 gap-2 md:gap-4">
+          <Link to="/product/4" className="w-full md:w-1/3 h-[430px] md:h-[600px] border border-gray-800 flex flex-col hover:bg-customblackhover justify-between items-start p-6 md:p-12 gap-2 md:gap-4">
+          <div className="flex flex-col gap-4 justify-start items-start">
 
             <h1 className="flex justify-start items-center text-lg md:text-xl gap-6"> 
               <div><span className="text-customgreen">{"{"}</span> Software Development <span className="text-customgreen">{"}"}</span>
@@ -186,8 +190,9 @@ const FeaturedProjects = () => {
             <h1 className="text-2xl md:text-3xl">Real-Time Machine Monitoring System</h1>
 
             <p className="text-gray-500 font-semibold text-xs md:text-md">Monitorting system for your industry with hardware prototype combined software</p>
+          </div>
 
-            <img src="/image2.jpg"  className={`project-image w-full h-[150px] md:h-[400px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
+            <img src="/image2.jpg"  className={`project-image w-full h-[150px] md:min-h-[250px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
               ${visibleImages[`project-image-3`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 

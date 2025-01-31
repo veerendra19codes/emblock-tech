@@ -167,16 +167,20 @@ const Footer = () => {
 
             
             <div className="flex flex-col gap-1 my-12 justify-center lg:justify-start items-start lg:items-start">
-              <p className="w-full text-gray-500 text-lg lg:text-xl flex flex-wrap font-semibold justify-center  lg:justify-start items-center text-center lg:text-start">Contact us for</p>
-              <span className="w-full px-6 lg:px-0 text-white text-center lg:text-start text-md lg:text-xl">{"  "} fast, reliable and professional </span>
-              <p className="w-full text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-center  lg:justify-start items-center text-center px-4 lg:px-0">services that bring your vision to life</p>
-              <p className="w-full text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-center  lg:justify-start items-center text-center px-4 lg:px-0"> with precision and creativity</p>
-              <h1 className="text-xl  text-white w-full text-center lg:text-start ">contact<span className="text-customgreen">@</span>emblocktech.com</h1>
+              <p className="w-full text-gray-500 text-lg lg:text-xl flex flex-wrap font-semibold justify-center  lg:justify-start items-center text-center lg:text-start">Contact us</p>
+              <h1 className="text-xl md:text-3xl text-white w-full text-center lg:text-start ">contact<span className="text-customgreen">@</span>emblocktech.com</h1>
+
+              {/* <span className="w-full px-6 lg:px-0 text-white text-center lg:text-start text-md lg:text-xl">fast, reliable and professional </span>
+              <p className="w-full text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-center  lg:justify-start items-center text-center px-4 lg:px-0">services that bring your vision to life</p> */}
+
+
+              <p className="w-full md:w-[80%] text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-center  lg:justify-start items-center text-center md:text-start px-4 lg:px-0 mt-8">Contact us for <span className="w-full lg:px-0 text-white">fast, reliable and professional </span> services that bring your vision to life with precision and creativity</p>
+              
             </div>
 
             
 
-            <Link to="/contactus" className="rounded-full p-2 m-auto mx-6 md:mx-0 md:m-0 lg:m-0 pl-6 text-lg lg:text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-8 lg:mt-16 shadow-lg shadow-customgreen group hover:shadow-none transition-all duration-500 font-medium">Book a call <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform duration-300 -rotate-45 group-hover:rotate-0" /> </Link>
+            <Link to="/contactus" className="rounded-full p-2 m-auto mx-6 md:mx-0 md:m-0 lg:m-0 pl-6 text-lg lg:text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-8 lg:mt-16 shadow-lg shadow-customgreen group hover:shadow-none transition-all duration-500 font-medium w-150px] md:w-fit">Book a call <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform duration-300 -rotate-45 group-hover:rotate-0" /> </Link>
 
 
           </AnimatedElement>

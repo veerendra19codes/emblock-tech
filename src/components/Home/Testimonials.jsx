@@ -57,11 +57,11 @@ const Testimonials = () => {
             review: "I had an idea for an IoT hardware project, and Emblock Tech brought it to life. They made the whole process super easy, and the final prototype was exactly what I needed. Great experience working with them!"
         },
     ]
-    const [isPlaying, setIsPlaying] = useState(true);
-     // Toggle play/pause
-    const toggleAnimation = () => {
-        setIsPlaying((prev) => !prev);
-    };
+    // const [isPlaying, setIsPlaying] = useState(true);
+    //  // Toggle play/pause
+    // const toggleAnimation = () => {
+    //     setIsPlaying((prev) => !prev);
+    // };
 
   return (
     <div className="flex flex-col w-full justify-center items-center bg-black text-white gap-4 h-full pt-8">

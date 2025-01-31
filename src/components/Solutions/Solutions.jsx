@@ -525,11 +525,11 @@ const Solutions = () => {
       </section>
 
       {/* quote  */}
-      <section className="h-[400px] md:h-[800px] flex justify-center items-center px-6 md:px-24">
-        <div className="w-1/4 flex justify-end items-start -mt-[100px] md:-mt-[200px]">
+      <section className="w-full h-[400px] md:h-[800px] flex justify-center items-center px-6 md:px-24">
+        <div className="w-1/5 flex justify-end items-start -mt-[150px] md:-mt-[200px]">
           < FaQuoteLeft  className="text-gray-600 size-[40px] md:size-[200px]"  />
         </div>
-        <div className="w-3/4 flex flex-col justify-center items-start -mb-[100px] md:-mb-[200px]">
+        <div className="w-4/5 flex flex-col justify-center items-start -mb-[100px] md:-mb-[200px]">
           <h1 className="text-black text-sm md:text-3xl font-medium mb-8">
             &ldquo;{solution.quote.quote}&ldquo;
           </h1>
