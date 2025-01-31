@@ -78,7 +78,7 @@ const Navbar = () => {
         <img src="logo.png" className="h-6" />
         <HiMenuAlt2 className="size-12 rotate-180 shadow-2xl rounded-full bg-white p-2" onClick={() => setShowMobileNavbar(true)} />
 
-        <div className={`${showMobileNavbar ? "flex" : "hidden"} fixed top-0 right-0 left-0 menu w-full flex-col gap-4 bg-white text-white bg-opacity-90 backdrop-blur-sm z-50  h-[450px] opacity-0 animate-slide-down-fast animate-fill-mode-forwards`}>
+        <div className={`${showMobileNavbar ? "flex" : "hidden"} fixed top-0 right-0 left-0 menu w-full flex-col gap-4 bg-white text-white bg-opacity-90 backdrop-blur-sm z-50  h-[500px] opacity-0 animate-slide-down-fast animate-fill-mode-forwards`}>
 
           <nav className="w-full h-20 p-4 flex justify-between items-center md:hidden shadow-sm  bg-gray-100">
             <img src="logo.png" className="h-6" />
@@ -95,6 +95,10 @@ const Navbar = () => {
                 } onClick={() => setShowMobileNavbar(false)}>{item.name}</Link>
             ))}
           </ul>
+
+          <Link to="/contactus" className="contacts flex gap-4 justify-center items-center">
+            <button className="py-3 px-6 rounded-full bg-customgray text-white text-[14px]  font-semibold hover:bg-customgreen hover:text-customblack transition-all duration-300">Contact Us</button>
+          </Link>
           
           <div className="flex flex-col gap-2 justify-center items-center">
             <p className="text-gray-400 font-semibold text-xl">Email:</p>

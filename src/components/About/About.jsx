@@ -115,7 +115,7 @@ const About = () => {
         </div>
 
 
-        <section className="h-[400px] md:h-[600px] flex justify-center items-center px-6 md:px-24 mb-24 md:mb-0">
+        <section className="quote h-[400px] md:h-[600px] flex justify-center items-center px-6 md:px-24 mb-24 md:mb-0">
           <div className="w-1/4 flex justify-end items-start -mt-[100px] md:-mt-[150px]">
             < FaQuoteLeft  className="text-gray-600 size-[40px] md:size-[200px]"  />
           </div>

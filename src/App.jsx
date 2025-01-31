@@ -6,7 +6,7 @@ import FeaturedProjects from "./components/Home/FeaturedProjects";
 import ToolsAndSkills from "./components/Home/ToolsAndSkills";
 import HowItWorks from "./components/Home/HowItWorks";
 import Testimonials from "./components/Home/Testimonials";
-import Faq from "./components/Home/Faq";
+import Faq from "./components/Faq";
 import Contact from "./components/Home/Contact";
 import Footer from "./components/Footer";
 import OurProducts from "./components/OurProducts/OurProducts";

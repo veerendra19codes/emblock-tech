@@ -1,9 +1,8 @@
-import { CornerDownRight } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
 import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
 import { Link } from "react-router-dom";
-import { FaXTwitter } from "react-icons/fa6";
+import SocialMedia from "../SocialMedia";
+import React, { useEffect, useRef, useState } from 'react'
 
 const AnimatedElement = ({ children, delay = 0 }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -159,8 +158,8 @@ const Careers = () => {
 
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen w-full">
-      <section className="bg-[url('/herobg.jpg')] w-full flex flex-col p-6 md:p-32 justify-start items-start md:pt-48">
+    <div className="flex flex-col justify-center items-center min-h-screen w-full overflow-x-hidden">
+      <section className="bg-[url('/herobg.jpg')] bg-no-repeat bg- w-full flex flex-col p-6 md:p-32 justify-start items-start md:pt-48">
 
         <button className=" rounded-full py-2 px-4 bg-transparent border-2 border-gray-400 font-semibold text-sm md:text-lg">We are hiring!</button>
 
@@ -388,76 +387,7 @@ const Careers = () => {
       </section>
 
 
-      <section className="w-full flex flex-col p-6 py-12 md:p-24 bg-gray-100">
-      
-        <AnimatedElement>
-
-          <div className="flex gap-2 justify-start items-center">
-              <span className="bg-lime-400 text-black size-2 md:size-3 rounded-full">.</span>
-              <p className="text-md md:text-lg font-semibold text-gray-400">Contact Us</p>
-          </div>
-
-          <h1 className="text-[25px] md:text-[60px] font-medium">
-              We&apos;re all over the internet
-          </h1>
-        </AnimatedElement>
-
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
-
-              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm">
-                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Twitter/X</h1>
-                  
-                  <p className="w-full flex justify-end">
-                      <FaXTwitter className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl" />
-                  </p>
-              </div>
-
-              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm">
-                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Twitter/X</h1>
-                  
-                  <p className="w-full flex justify-end">
-                      <FaXTwitter className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl" />
-                  </p>
-              </div>
-
-              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm">
-                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Twitter/X</h1>
-                  
-                  <p className="w-full flex justify-end">
-                      <FaXTwitter className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl" />
-                  </p>
-              </div>
-
-              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm">
-                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Twitter/X</h1>
-                  
-                  <p className="w-full flex justify-end">
-                      <FaXTwitter className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl" />
-                  </p>
-              </div>
-
-              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm">
-                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Twitter/X</h1>
-                  
-                  <p className="w-full flex justify-end">
-                      <FaXTwitter className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl" />
-                  </p>
-              </div>
-
-              <Link to="/about" className="card w-full rounded-xl flex flex-col justify-center items-center bg-customgreen p-4 md:p-12 text-black gap-8 shadow-sm ease-in-out transition-all duration-300 group hover:gap-4">
-                <h1 className="text-lg md:text-2xl text-start w-full  font-medium  group-hover:pl-2 transition-all duration-300">More</h1>
-                
-                <p className="w-full flex justify-end group-hover:pr-2 transition-all duration-300">
-                    <CornerDownRight className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-2   text-customblack font-bold text-xl " />
-                </p>
-            </Link>
-
-              
-
-          </div>
-      
-      </section>
+      <SocialMedia />
     </div>
   )
 }

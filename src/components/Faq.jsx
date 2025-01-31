@@ -1,4 +1,4 @@
-import AccordionExample from '../Accordian'
+import AccordionExample from './Accordian'
 import  { useEffect, useRef, useState } from 'react';
 
 const AnimatedElement = ({ children, delay=0 }) => {

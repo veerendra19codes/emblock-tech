@@ -84,7 +84,7 @@ const Footer = () => {
   return (
     <section  className="featured-projects w-full h-full flex flex-col justify-center items-center bg-black text-white">
 
-      <div className="marquee w-full shadow-xl relative bg-customblack">
+      {/* <div className="marquee w-full shadow-xl relative bg-customblack">
         <div className="flex h-16 lg:h-24 gap-8 justify-center items-center animate-marquee lg:animate-marqueeslow  whitespace-nowrap">
             
           {numbers.map((num) => (
@@ -103,7 +103,7 @@ const Footer = () => {
           
         <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-gray-900 to-transparent pointer-events-none"></div>
         <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-gray-900 to-transparent pointer-events-none"></div>
-      </div>
+      </div> */}
 
       {/* <div className="flex justify-between items-center w-full border border-gray-800 h-24 lg:h-32 px-4 lg:px-24">
         <div className="flex gap-2 justify-center items-center">
