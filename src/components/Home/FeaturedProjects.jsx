@@ -74,7 +74,7 @@ const FeaturedProjects = () => {
   return (
     <section ref={sectionRef}   className="featured-projects w-full h-full  flex flex-col justify-center items-center bg-customblack text-white ">
 
-        <div className="marquee  w-full shadow-xl relative group">
+        {/* <div className="marquee  w-full shadow-xl relative group">
           <div className="flex h-16 md:h-24 gap-8 justify-center items-center animate-marquee lg:animate-marqueeslow whitespace-nowrap ">
             
              {numbers.map((num) => (
@@ -90,7 +90,7 @@ const FeaturedProjects = () => {
           </div>
           <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-gray-900 to-transparent pointer-events-none"></div>
           <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-gray-900 to-transparent pointer-events-none"></div>
-        </div>
+        </div> */}
 
         <div className=" feature-hero w-full flex justify-start  items-center  py-12 lg:py-40 bg-black ">
 
@@ -125,7 +125,7 @@ const FeaturedProjects = () => {
 
         <div className="projects-2 w-full flex flex-col md:flex-row justify-center items-center bg-black">
 
-          <Link to="/product/1" className="w-full md:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-6  gap-2 md:gap-4">
+          <Link to="/product/1" className="w-full md:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-16  gap-2 md:gap-4">
 
             <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
               <div><span className="text-customgreen">{"{"}</span> E-commerce Saas <span className="text-customgreen">{"}"}</span>
@@ -137,11 +137,10 @@ const FeaturedProjects = () => {
 
             <p className="text-gray-500 font-semibold text-xs md:text-md">Web design & Web development</p>
 
-            <img src="/image1.png" className={`project-image w-full h-[150px] md:h-[400px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
-              ${visibleImages[`project-image-0`] ? 'md:scale-100' : 'scale-100'}`}  />
+            <img src="/image1.png" className={`project-image  w-full h-[150px] md:h-[400px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out ${visibleImages[`project-image-0`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
-          <Link to="/product/2" className="w-full md:w-1/2 border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-6 gap-2 md:gap-4">
+          <Link to="/product/2" className="w-full md:w-1/2 border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-16 gap-2 md:gap-4">
 
             <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
               <div><span className="text-customgreen">{"{"}</span> Saas <span className="text-customgreen">{"}"}</span>
@@ -153,8 +152,7 @@ const FeaturedProjects = () => {
 
             <p className="text-gray-500 font-semibold text-xs md:text-md">ERP & PMS for Construction firm</p>
 
-            <img src="/image2.jpg" className={`project-image w-full h-[150px]  md:h-[400px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out  
-              ${visibleImages[`project-image-1`] ? 'md:scale-100' : 'scale-100'}`} />
+            <img src="/image2.jpg" className={`project-image  w-full h-[150px]  md:h-[400px] rounded-xl mt-6  md:mt-12 transition-transform duration-500  ease-in-out  ${visibleImages[`project-image-1`] ? 'md:scale-110' : 'scale-100'}`} />
           </Link>
 
         </div>

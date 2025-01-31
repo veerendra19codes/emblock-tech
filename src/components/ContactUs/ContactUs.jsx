@@ -75,15 +75,15 @@ const ContactUs = () => {
           </div>
 
           <div className="w-full md:w-1/2 flex flex-col justify-center items-start py-12 md:py-0">
-            <h1 className="text-lg md:text-2xl  font-medium">
+            <h1 className="text-lg md:text-3xl  font-medium">
               Get in touch
             </h1>
 
-            <p className="text-xs md:text-md font-medium mt-4">
+            <p className="text-xs md:text-lg font-medium mt-4">
               You can reach us through various channels, and our dedicated team is always ready to assist with any questions, concerns, or support you need.
             </p>
 
-            <p className="text-lg md:text-2xl font-medium mt-16">
+            <p className="text-lg md:text-3xl font-medium mt-16">
               Send us a message
             </p>
 
@@ -92,17 +92,17 @@ const ContactUs = () => {
               <div className="w-full flex justify-between items-center gap-8">
 
                 <div className="w-1/2 flex flex-col justify-start items-start">
-                  <label className="text-xs md:text-md text-start">
+                  <label className="text-xs md:text-lg text-start">
                     Name
                   </label>
-                  <input type="text" name="name" className="w-full border-b border-white p-2 text-gray-400 outline-none bg-transparent focus:border-b focus:border-white text-xs md:text-md" placeholder="name" />
+                  <input type="text" name="name" className="w-full border-b border-white p-2 text-gray-400 outline-none bg-transparent focus:border-b focus:border-white text-xs md:text-lg" placeholder="name" />
                 </div>
 
                 <div className="w-1/2 flex flex-col justify-start items-start">
-                  <label className="text-xs md:text-md text-start">
+                  <label className="text-xs md:text-lg text-start">
                     Email
                   </label>
-                  <input type="text" name="email" className="w-full border-b border-white p-2 text-gray-400 bg-transparent outline-none text-xs md:text-md" placeholder="email" />
+                  <input type="text" name="email" className="w-full border-b border-white p-2 text-gray-400 bg-transparent outline-none text-xs md:text-lg" placeholder="email" />
                 </div>
 
               </div>
@@ -110,22 +110,22 @@ const ContactUs = () => {
               <div className="w-full flex justify-between items-center gap-8">
 
                 <div className="w-1/2 flex flex-col justify-start items-start">
-                  <label className="text-xs md:text-md text-start">
+                  <label className="text-xs md:text-lg text-start">
                     Phone Number
                   </label>
-                  <input type="number" name="phoneNumber" className="w-full border-b border-white p-2 text-gray-400 bg-transparent outline-none text-xs md:text-md" placeholder="phone number" />
+                  <input type="number" name="phoneNumber" className="w-full border-b border-white p-2 text-gray-400 bg-transparent outline-none text-xs md:text-lg" placeholder="phone number" />
                 </div>
 
                 <div className="w-1/2 flex flex-col justify-start items-start">
-                  <label className="text-xs md:text-md text-start">
+                  <label className="text-xs md:text-lg text-start">
                     Company website
                   </label>
-                  <input type="text" name="companyWebsite" className="w-full border-b border-white p-2 text-gray-400 bg-transparent outline-none text-xs md:text-md" placeholder="company website" />
+                  <input type="text" name="companyWebsite" className="w-full border-b border-white p-2 text-gray-400 bg-transparent outline-none text-xs md:text-lg" placeholder="company website" />
                 </div>
 
               </div>
 
-              <textarea type="text" name="message" placeholder="send us a message" rows={10} className="mt-8 w-full bg-black border border-gray-400 text-gray-400 p-2 outline-none rounded-xl text-xs md:text-md" />
+              <textarea type="text" name="message" placeholder="send us a message" rows={10} className="mt-8 w-full bg-black border border-gray-400 text-gray-400 p-2 outline-none rounded-xl text-xs md:text-lg" />
 
               <button  className="rounded-full p-2  md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium mt-4">
                 Send a message
