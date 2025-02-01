@@ -73,22 +73,22 @@ const Clients = () => {
     },
   ]
   return (
-    <div className="w-full flex flex-col px-6 py-12 md:p-24 bg-gray-100">
+    <div className="w-full flex flex-col justify-center  px-6 py-12 md:p-24 bg-gray-100">
       
       <AnimatedElement>
 
-        <div className="flex gap-2 justify-start items-center">
+        <div className="flex gap-2 justify-start items-center 2xl:pl-[5%]">
             <span className="bg-lime-400 text-white size-2 md:size-3 rounded-full">.</span>
             <p className="text-sm md:text-lg font-semibold text-gray-400"> Our Clients </p>
         </div>
 
-        <h1 className="text-[25px] sm:text-[40px] lg:text-[60px] mb-12">
+        <h1 className="text-[25px] sm:text-[40px] lg:text-[60px] mb-12 2xl:pl-[5%]">
             Discover our happiest clients
         </h1>
       </AnimatedElement>
 
 
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4 justify-center">
 
             {clients.map((client, index) => (
               
@@ -107,9 +107,11 @@ const Clients = () => {
 
             <Link to="/about" className="card w-[45%] md:w-[30%] rounded-xl flex flex-col md:flex-row justify-center items-center bg-customgreen p-12 text-black gap-2 shadow-sm ease-in-out transition-all duration-300 group hover:gap-4 group">
 <AnimatedElement delay={100 * (clients.length + 1)}>
+              <div to="/about" className="card w-full flex flex-col md:flex-row justify-center items-center bg-customgreen  text-black gap-2  ease-in-out transition-all duration-300 group-hover:gap-4 group">
                 More
                 
                 <FaArrowRightLong className="size-6 md:size-8 rounded-full bg-customblack p-1 md:p-2 text-customgreen  -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
+              </div>
 </AnimatedElement>
             </Link>
 

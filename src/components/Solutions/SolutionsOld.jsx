@@ -1,137 +1,58 @@
-import { useEffect, useRef, useState } from "react";
-import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { GoDotFill } from "react-icons/go";
+import { Link, useParams } from "react-router-dom";
 import { FaQuoteLeft } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import AnimatedQuoteSection from "../AnimatedQuoteSection";
+import { useEffect, useRef, useState } from "react";
 
-const AnimatedElement = ({ children, delay = 0 }) => {
+
+const useInView = (options = {}) => {
   const [isVisible, setIsVisible] = useState(false);
-  const elementRef = useRef(null);
+  const ref = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.1 }
-    );
+    if (!ref.current) return;
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !isVisible) {
+        setIsVisible(true);
+        // Once element is visible, stop observing
+        observer.unobserve(ref.current);
+      }
+    }, options);
+
+    observer.observe(ref.current);
 
     return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
+      if (ref.current) {
+        observer.unobserve(ref.current);
       }
     };
-  }, []);
+  }, [ref, options]);
 
+  return [ref, isVisible];
+};
+
+const AnimatedSection = ({ children, delay = 0 }) => {
+  const [ref, isVisible] = useInView({ threshold: 0.1 });
+  
   return (
-    <div 
-      ref={elementRef}
-      className={`transform transition-all duration-700 w-full ${
-        isVisible 
-          ? `opacity-100 translate-y-0 delay-[${delay}ms]` 
-          : 'opacity-0 translate-y-10'
+    <div
+      ref={ref}
+      className={`transition-all duration-1000 ease-out transform ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
+      style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
     </div>
   );
 };
 
-const services = [
-    {
-      id: 1,
-      name: "Analyze",
-      title: "Understanding Your Unique Needs",
-      subtext: "Empowering businesses with IoT strategies that align with goals, maximize value, and drive sustainable growth.",
-      services: [
-        {
-          id: 1,
-          content: " In-Depth Consultation: We work closely with your team to understand your goals, operations, and challenges."
-        },
-        {
-          id: 2,
-          content: " Data-Driven Insights: Through research and analysis, we uncover opportunities to enhance efficiency and innovation."
-        },
-        {
-          id: 3,
-          content: "Customized Recommendations: We tailor our solutions to align with your unique business objectives."
-        },
-      ]
-    },
-    {
-      id: 2,
-      name: "Design",
-      title: "Crafting Tailored IoT Solutions",
-      subtext: "Our team designs IoT solutions that integrate seamlessly with your systems, ensuring scalability and future-proofing.",
-      services: [
-        {
-          id: 1,
-          content: "Solution Architecture: We create robust frameworks that fit your industry and requirements."
-        },
-        {
-          id: 2,
-          content: "User-Centric Design: We focus on usability, creating interfaces and systems that are intuitive and efficient."
-        },
-        {
-          id: 3,
-          content: "Scalability & Flexibility: We design solutions that grow with your business, adapting to future demands."
-        },
-      ]
-    },
-    {
-      id: 3,
-      name: "Build",
-      title: "Bringing Ideas to Life",
-      subtext: "In this phase, we implement your IoT solution with precision, ensuring every detail aligns with your",
-      services: [
-        {
-          id: 1,
-          content: "System Integration: We integrate IoT devices and platforms into your existing infrastructure seamlessly."
-        },
-        {
-          id: 2,
-          content: "Custom Development: We develop tailored applications, platforms, and features that meet your specific needs.",
-        },
-        {
-          id: 3,
-          content: "Rigorous Testing: We ensure every aspect of the solution performs optimally through comprehensive testing."
-        },
-      ]
-    },
-    {
-      id: 4,
-      name: "Optimize",
-      title: "Continuous Improvement and Support",
-      subtext: "Our job doesn’t stop after deployment. We provide ongoing optimization and supports",
-      services: [
-        {
-          id: 1,
-          content: " Performance Monitoring: We track system performance and make necessary adjustments for peak efficiency."
-        },
-        {
-          id: 2,
-          content: "Proactive Maintenance: Regular updates and fixes keep your system secure and up-to-date."
-        },
-        {
-          id: 3,
-          content: " Analytics and Insights: We provide actionable insights from collected data to help you make informed decisions."
-        },
-      ]
-    },
 
-  ]
+const SolutionsOld = () => {
+  const { id } = useParams();
 
-
-
-const ServicesNew = () => {
-
-   const solutions = [
+  const solutions = [
     {
       id: 1,
       title: "EMBLOCK: IoT Solutions for Manufacturing",
@@ -508,7 +429,9 @@ const ServicesNew = () => {
     },
   ]
 
-  const solution = solutions[0];
+
+  const solution = solutions[id-1];
+
 
   const quotes = [
     {
@@ -532,236 +455,205 @@ const ServicesNew = () => {
     {
         id: 4,
         quote: `“Managing GST used to be a nightmare until we switched to EMBLOCK. Automated tax calculations and seamless filing have made compliance effortless!."`,
-        author: "CA Avani Daxin",
-        designatin: "Founder Buddybooks",
+        author: "",
+        designatin: "",
+    },
+    {
+        id: 5,
+        quote: "",
+        author: "",
+        designatin: "",
     },
   ]
 
   return (
-    <div className="flex flex-col w-full overflow-x-hidden justify-start items-start">
-      <section className="bg-[url('/herobg.jpg')] bg-no-repeat flex flex-col justify-start p-[10%] ">
+    <div className="flex justify-start items-center py-4 md:py-32 min-h-screen w-full flex-col">
+      {/* {solutions.map((solution) => ( */}
+        <section key={solution.id} className="top w-full flex flex-col justify-start items-start py-0 ">
 
-        <h1 className="w-full text-start text-[25px] md:text-[60px] font-medium">
-            Innovative IoT and Software Solutions Tailored to Transform Your Business and Empower Your Growth Journey
-        </h1>
-        <p className="w-full text-start text-xl md:text-3xl font-medium text-gray-500 mt-12">
-            Over the years, we’ve had the privilege of partnering with a diverse range of clients, from startups to established enterprises, helping them turn their visions into impactful solutions.
-        </p>
-
-        <Link to="/services" className="rounded-full w-fit  p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-12 md:my-24">
-          Contact Us Now
-          <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
-        </Link>
-      </section>
-
-      <section className="flex flex-col w-full bg-black text-white p-6 md:p-[10%]">
-        <h1 className="text-start w-full text-[25px] md:text-[60px] font-medium">
-          What We&apos;re Experts In:
-        </h1>
-        <p className="w-full text-start text-md md:text-2xl font-medium mt-8">
-          From strategy and planning to deployment and optimization, we provide tailored IoT solutions that enhance efficiency, scalability, and security for your business.
-        </p>
-
-        <div className="w-full flex flex-col-reverse md:flex-row gap-4 justify-between items-start mt-16">
-
-          <div className="w-full md:text-4/5 flex flex-col items-start">
-            <h1 className="text-start w-full  text-[25px] md:text-[50px] font-medium">
-              IoT Consulting and Strategy Development
-            </h1>
-            <p className="w-full text-start text-md md:text-2xl font-medium mt-8">
-              We create tailored IoT roadmaps, conducting business assessments and feasibility studies to ensure seamless integration and maximum ROI.
-            </p>
-
-            <p className="w-full text-start text-gray-400 text-sm md:text-xl font-medium mt-12">
-              Our consulting services are tailored to identify the value IoT can bring to your business and align it with your goals. We begin with a comprehensive business assessment to evaluate your organization’s specific needs and identify areas where IoT can drive operational efficiency, cost savings, or customer engagement. Once the assessment is complete, we create a customized IoT strategy, mapping out actionable services to achieve your objectives. To ensure feasibility, we conduct in-depth technical and financial analyses, validating the viability of your IoT initiatives.
-            </p>
-
-            <Link to="/services/1" className="rounded-full w-fit  p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-12 md:mt-24">
-              Learn More
-            <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
-            </Link>
-          </div>
-
-          <button className="w-fit md:w-1/5 p-2 px-4 bg-white text-black text-lg rounded-full font-medium mt-4">
-            Strategic
-          </button>
-        </div>
-
-        <div className="w-full flex flex-col-reverse md:flex-row gap-4 justify-between items-start mt-16">
-
-          <div className="w-full md:text-4/5 flex flex-col items-start">
-            <h1 className="text-start w-full  text-[25px] md:text-[50px] font-medium">
-              Building Secure & Scalable IoT Ecosystems
-            </h1>
-            <p className="w-full text-start text-md md:text-2xl font-medium mt-8">
-              Our solutions enhance IoT performance with real-time monitoring, predictive maintenance, and seamless connectivity management.
-            </p>
-
-            <p className="w-full text-start text-gray-400 text-sm md:text-xl font-medium mt-12">
-              We specialize in developing scalable, secure, and high-performance IoT solutions tailored to your business needs. Our services include IoT platform development, device provisioning, data analytics, and cloud infrastructure to ensure seamless connectivity. With AI-powered analytics and real-time data processing, we help businesses unlock valuable insights. Our security solutions protect devices, data, and networks from threats, ensuring compliance with industry standards. From initial setup to continuous optimization, we provide the technical backbone for your IoT success.
-            </p>
-
-            <Link to="/services/2" className="rounded-full w-fit  p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-12 md:mt-24">
-              Learn More
-            <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
-            </Link>
-          </div>
-
-          <button className="w-fit md:w-1/5 py-2 px-4 bg-white text-black text-lg rounded-full font-medium mt-4">
-            Technical
-          </button>
-        </div>
-
-        <div className="w-full flex flex-col-reverse md:flex-row justify-between items-start mt-16 gap-4">
-
-          <div className="w-full md:text-4/5 flex flex-col items-start">
-            <h1 className="text-start w-full  text-[25px] md:text-[50px] font-medium">
-              Optimizing IoT for Maximum Efficiency
-            </h1>
-            <p className="w-full text-start text-md md:text-2xl font-medium mt-8">
-              We develop and integrate IoT platforms, device provisioning, cloud infrastructure, and security solutions for reliable and future-proof operations.
-            </p>
-
-            <p className="w-full text-start text-gray-400 text-sm md:text-xl font-medium mt-12">
-              We streamline IoT deployment, monitoring, and management to ensure smooth, efficient operations. Our solutions include custom IoT applications, connectivity management, edge computing, and predictive maintenance to enhance productivity. With real-time monitoring, automated alerts, and proactive support, we minimize downtime and maximize performance. Our smart asset tracking solutions improve inventory and supply chain management. From integration to long-term support, we keep your IoT ecosystem running at peak efficiency.
-            </p>
-
-            <Link to="/services/3" className="rounded-full w-fit  p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-12 md:mt-24">
-              Learn More
-            <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
-            </Link>
-          </div>
-
-          <button className="w-fit md:w-1/5 px-4 p-2 bg-white text-black text-lg rounded-full font-medium mt-4">
-            Operational
-          </button>
-        </div>
-      </section>
-
-       <section  className="how-it-works w-full h-full flex flex-col justify-center items-center text-black bg-white ">
-
-
-      <AnimatedElement>
-    
-      <div className="feature-hero w-full flex flex-col gap-4 justify-center  items-start pl-4 lg:pl-24 py-12 lg:py-40 bg-white animate-fadeInUp">
-
-        <div className="flex gap-2 justify-center items-center">
-          <span className="bg-lime-400 text-black size-2 md:size-3 rounded-full">.</span>
-          <p className="text-md lg:text-lg font-semibold text-gray-500">Services</p>
-        </div>
-
-        <div className="flex justify-center items-start flex-col gap-2 leading-none ">
-          <h1 className="text-[25px] lg:text-[90px] text-black leading-none">
-            Why Our Services?
+ <AnimatedSection delay={200}>
+          <h1 className="w-full text-[35px] md:text-[60px] text-start text-customblack font-normal flex flex-wrap leading-none px-6 md:px-32 py-12 md:py-0">
+            {solution.title}
           </h1>
-        </div>
+        </AnimatedSection>
 
-      </div>
-      </AnimatedElement>
+ <AnimatedSection delay={400}>
 
-      <div className="stpes flex flex-col w-full px-6  lg:px-24">
-        {/* 2 */}
-        {services.map((service) => (
-        <AnimatedElement delay={service.id*100} key={service.id}>
-          <div  className="service py-8  lg:py-16 flex flex-col lg:flex-row w-full justify-center items-start border-t-2 border-gray-300 gap-2">
+          <p className="text-customblack text-start text-xs md:text-2xl flex flex-wrap font-semibold mt-8 md:mt-24 px-6 md:px-32">
+            {solution.description}
+          </p>
+ </AnimatedSection>
 
-            <div className="w-full lg:w-[20%] flex justify-center lg:justify-start items-center lg:items-start">
-                <button className="w-1/2 button py-2 px-4 border border-gray-800 rounded-full text-black">{service.name}</button>
-            </div>
 
-            <h1 className="w-full lg:w-[10%] service-count text-2xl lg:text-3xl font-semibold flex">
-                <span className="text-customgreen">{"/"}</span> 0{service.id}
-            </h1>
+          <div className="focus w-full relative flex flex-col-reverse md:flex-row justify-start items-start mt-16 md:max-h-screen overflow-y-auto no-scrollbar pl-0 md:pl-32 mb-12">
+            <section className="left w-full md:w-[60%] px-6 md:px-0  flex flex-col justify-start items-start py-12 my-12">
+              <h2 className="text-customblack text-start w-full font-semibold text-xl md:text-3xl flex flex-wrap">
+                Focus Areas of the Solution:
+              </h2>
 
-            <div className="description flex flex-col gap-2 w-full lg:w-[70%] items-start justify-start">
-                <h1 className="text-black text-lg md:text-2xl pb-2">{service.title}</h1>
-                <h1 className="text-black text-sm md:text-lg pb-2">{service.subtext}</h1>
-                
-                {service.services.map((s) => (
-                  <p key={s.id} className="text-gray-500 flex justify-center items-start gap-2 md:pl-4 text-xs md:text-lg"><FaStarOfLife className="text-customgreen size-8" />{s.content}</p>
+              <p className="w-full text-start text-customgrayhover flex flex-wrap text-sm md:text-xl font-semibold mt-8">
+                {solution.focusAreasText}
+              </p>
+
+              <ul className="w-full flex flex-col items-start justify-start list-disc text-customblack">
+                {solution.focusAreas.map((f) => (
+                    <li key={f.id} className="w-full text-start text-customgrayhover flex flex-wrap text-sm md:text-xl font-semibold mt-2">
+                      <span className="text-customblack flex items-center gap-2"><GoDotFill size={8} /> {f.title}</span> {f.point}
+                    </li>
                 ))}
-              
-            </div>
+                
+              </ul>
 
+              <img src={solution.image1} alt="image" className="w-full rounded-xl object-contain my-16" />
+
+              <div className="painPoint w-full flex flex-col justify-start items-start">
+                <h1 className="text-customblack text-start w-full font-semibold text-xl md:text-3xl flex flex-wrap">
+                  Pain Points:
+                </h1>
+                <p className="w-full text-start text-customgrayhover flex flex-wrap text-sm md:text-xl font-semibold mt-8">
+                  {solution.painPoint}
+                </p>
+              </div>
+
+              <img src={solution.image2} alt="image" className="w-full rounded-xl object-contain my-16" />
+
+              <p className="w-full text-start text-customgrayhover flex flex-wrap text-sm md:text-xl font-semibold mt-8">
+                {solution.bottomText}
+              </p>
+
+              <ul className="w-full flex flex-col items-start justify-start list-disc text-customblack">
+                {solution.bottomTexts.map((b) => (
+                    <li key={b.id} className="w-full text-start text-customgrayhover flex flex-wrap text-sm md:text-xl font-semibold mt-2">
+                      <span className="text-customblack flex items-center gap-2"><GoDotFill size={8} /> {b.title}</span> {b.text}
+                    </li>
+                ))}
+                
+              </ul>
+
+            </section>
+
+            <section className="w-full md:w-[40%] h-auto md:sticky md:top-0 md:-right-0 p-8 md:pr-32">
+              <div className="left w-full key-features flex flex-col justify-start items-start ">
+                  <div className="w-full flex flex-col justify-center items-start border-b border-gray-300 py-4">
+                      <p className="text-gray-400 font-normal text-base">
+                          Service
+                      </p>
+                      <h2 className="text-customblack text-lg  font-medium">
+                          {solution.services}
+                      </h2>
+                  </div>
+  
+                  <div className="w-full flex flex-col justify-center items-start border-b border-gray-300 py-4">
+                      <p className="text-gray-400 font-normal text-base">
+                          Category
+                      </p>
+                      <h2 className="text-customblack text-lg font-medium">
+                          {solution.category}
+                      </h2>
+                  </div>
+  
+                  <div className="w-full flex flex-col justify-center items-start  py-4">
+                      <p className="text-gray-400 font-normal text-base">
+                          Client
+                      </p>
+                      <h2 className="text-customblack text-lg  font-medium">
+                          {solution.client}
+                      </h2>
+                  </div>
+  
+                  <button className="rounded-full p-2   pl-6 text-md md:text-lg whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group my-4 font-semibold">
+                      Case studies
+                      <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
+                  </button>
+                  
+              </div>
+            </section>
           </div>
-        </AnimatedElement>
-        ))}         
-      </div>
+          
+        </section>
+      {/* ))} */}
+      
+      <section className="w-full bg-black px-6 md:px-24 py-24 md:py-48 text-white flex flex-col justify-center items-center">
+        <h1 className="text-2xl font-medium text-start w-full">Our Solutions</h1>
 
-      <div className="cards flex flex-col lg:flex-row justify-center items-center w-full gap-6 p-4  py-12 lg:p-24">
+        <div className="w-full middle flex gap-2 flex-col-reverse md:flex-row justify-between items-center">
 
-          {/* 6 */}
-          <AnimatedElement delay={800}>
-            <div className="card w-full rounded-xl flex flex-col bg-customgreen p-6 lg:p-12 h-[240px] lg:h-[280px] justify-between">
-                <h1 className="text-[60px] lg:text-[80px] text-start w-full text-customblack font-medium">95%</h1>
-                <div className="flex flex-col justify-end items-center">
-                  <p className="text-end w-full text-customgray font-semibold">Percent</p>
-                  <p className="text-end w-full text-green-700 text-xl fotnsembold">Customer Satisfaction</p>
-                </div>
-            </div>
-          </AnimatedElement>
+          <div className="left w-full md:w-1/2 flex flex-col justify-start items-start">
+            <p className="w-full text-start text-gray-400 flex flex-wrap text-md md:text-xl font-semibold my-8">
+                {solution.solution.header}
+              </p>
 
-          {/* 7 */}
-          <AnimatedElement delay={700}>
-            <div className="card w-full rounded-xl flex flex-col bg-customblack p-6 lg:p-12 text-white h-[240px] lg:h-[280px] justify-between relative">
-                <h1 className="text-[60px] lg:text-[80px] text-start w-full  font-medium">5+</h1>
-                <div className="flex flex-col justify-between items-center">
-                  <p className="text-end w-full  font-semibold">Years</p>
-                  <p className="text-end w-full text-gray-500 text-xl font-semibold">of Experience</p>
-                </div>
-            </div>
-          </AnimatedElement>
+              <p className="w-full text-start text-gray-400 flex flex-wrap text-sm md:text-xl font-semibold">
+                Key features:
+              </p>
 
-          {/* 8 */}
-          <AnimatedElement delay={800}>
-            <div className="card w-full rounded-xl flex flex-col bg-gray-200 p-6 lg:p-12 h-[240px] lg:h-[280px] justify-between">
-                <h1 className="text-[60px] lg:text-[80px] text-start w-full text-customblack font-medium">60+</h1>
-                <div className="flex flex-col justify-between items-center">
-                  <p className="text-end w-full text-customblack font-semibold">Projects</p>
-                  <p className="text-end w-full text-green-700 text-xl font-semibold">Completed</p>
-                </div>
-            </div>
-          </AnimatedElement>
+              <ul className="w-full flex flex-col items-start justify-start list-disc text-customblack gap-4">
+                {solution.solution.keyFeatures.map((f) => (
+                    <li key={f.id} className="w-full text-start text-gray-400 flex flex-row flex-wrap text-sm md:text-xl font-semibold justify-between items-start">
+                      <GoDotFill size={8} className="mt-2" /> <span className="w-[95%]"> {f.text} </span>
+                    </li>
+                ))}
+                
+              </ul>
+          </div>
 
+          <div className="right w-full md:w-1/2 flex justify-center items-center mt-4 md:mt-0">
+            <img src={solution.solution.image} className="size-full md:size-[90%]  rounded-xl" />
+          </div>
         </div>
-       </section>
 
-
-
-      {/* <section className="quote h-[500px] md:h-[600px] flex justify-center items-center px-6 md:px-24 py-24 md:mb-0 bg-black">
-        <div className="w-1/5 flex justify-end items-start -mt-[180px] md:-mt-[150px]">
-          < FaQuoteLeft  className="text-gray-400 size-[40px] md:size-[200px]"  />
+        <div className="bottom w-full flex flex-col gap-4 justify-start my-12">
+          <h1 className="text-white text-md md:text-2xl font-medium">{solution.solution.bottomTextHeader}</h1>
+          <p className="text-gray-400 text-sm md:text-xl font-medium">{solution.solution.bottomText}</p>
         </div>
-        <div className="w-4/5 flex flex-col justify-center items-start -mb-[50px] md:-mb-[150px] pr-[5%] text-white">
-          <h1 className=" text-sm md:text-3xl font-medium mb-8">
-            &ldquo;Vision without action is a dream. At our core, we transform aspirations into reality through relentless innovation and unwavering dedication.&ldquo;
-          </h1>
-          <p className="text-xs md:text-lg font-medium mb-4">Vigneshwaran R</p>
-          <p className="text-xs md:text-md font-medium">CEO & Founder EMBLOCK</p>
-        </div>
-      </section> */}
+      </section>
 
-      <AnimatedQuoteSection quotes={quotes} />
+      {/* quote  */}
+      <section className="w-full h-[400px] md:h-[800px] flex justify-center items-center ">
+        <AnimatedSection delay={800}>
+            <section className="w-full h-[400px] md:h-[800px] flex justify-center items-center px-6 md:px-24">
 
+                <div className="w-1/5 flex justify-end items-start -mt-[150px] md:-mt-[200px]">
+                < FaQuoteLeft  className="text-gray-600 size-[40px] md:size-[200px]"  />
+                </div>
+                <div className="w-4/5 flex flex-col justify-center items-start -mb-[100px] md:-mb-[200px]">
+                <h1 className="text-black text-sm md:text-3xl font-medium mb-8">
+                    &ldquo;{solution.quote.quote}&ldquo;
+                </h1>
+                <p className="text-xs md:text-lg font-medium mb-4">{solution.quote.author}</p>
+                <p className="text-xs md:text-md font-medium">{solution.quote.designation}</p>
+                </div>
+            </section>
+        </AnimatedSection>
+      </section>
 
+      <div className="w-full flex flex-col justify-center items-start gap-0 py-24 px-6 md:px-24">
+                    <AnimatedSection delay={600}>
 
-      <section className="w-full flex flex-col justify-center items-start gap-0 py-12 md:py-24 px-6 md:px-24">
             <div className="flex gap-2 justify-center items-center">
                 <span className="bg-lime-400  size-2 md:size-3 rounded-full text-white">.</span>
-                <p className="text-md md:text-lg font-semibold text-gray-400">Other Solutions</p>
+                <p className="text-sm md:text-lg font-semibold text-gray-400">Other Solutions</p>
             </div>
+            </AnimatedSection>
             
-            <h1 className="text-[35px] md:text-[80px]">
+             <AnimatedSection delay={800}>
+
+            <h1 className="text-[25px] md:text-[60px]">
                 Some of other Solutions
             </h1>
+             </AnimatedSection>
 
             <div className="w-full flex flex-col md:flex-row gap-4 mt-8 ">
-                {solutions.filter((s) => s.id != solution.id).map((s) => (
-                    <Link to={`/solutions/${s.id}`} key={s.id} className="card w-full md:w-1/3 flex flex-col justify-between items-start p-6 border border-gray-400 rounded-xl h-[400px] md:h-[500px]">
+                {solutions.filter((s) => s.id != solution.id ).map((s, index) => (
+                    
+                    <Link to={`/solutions/${s.id}`} key={s.id} className="card w-full md:w-1/3 flex  justify-center items-start  rounded-xl h-[400px] md:h-[500px]">
+                    <AnimatedSection key={s.id} delay={1000 + (index * 200)}>
+                        <Link to={`/solutions/${s.id}`} key={s.id} className="card w-full flex flex-col justify-between items-start p-4 border border-gray-400 rounded-xl h-[400px] md:h-[500px]">
+
 
                     <div className="flex flex-col justify-start  items-start gap-2 md:gap-4">
 
-                    <h1 className="text-xl md:text-2xl uppercase">
+                    <h1 className="text-xl md:text-2xl uppercase font-medium">
                         {s.title}
                     </h1>
                     <p className="text-customgrayhover font-semibold text-sm md:text-lg">
@@ -769,16 +661,20 @@ const ServicesNew = () => {
                     </p>
                     </div>
                     <img src={solution.image1} className="w-full h-[150px] md:h-[250px] rounded-xl" />
+                        </Link>
+
+                 </AnimatedSection>
                     </Link>
+
                 ))}
                 
                 
             </div>
-        </section>
-
+        </div>
       
+
     </div>
   )
 }
 
-export default ServicesNew
+export default SolutionsOld

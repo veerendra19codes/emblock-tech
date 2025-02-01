@@ -24,6 +24,7 @@ import SingleService from "./components/Services/SingleService";
 import HowWeWork from "./components/Home/HowWeWork";
 import FaqNew from "./components/FaqNew";
 import HomeFaq from "./components/Home/Accordian";
+import SolutionsOld from "./components/Solutions/SolutionsOld";
 
 function App() {
   
@@ -34,7 +35,7 @@ function App() {
         <Navbar />  
         <Routes>
           <Route path="/" element={
-              <div className="w-full overflow-x-hidden flex flex-col justify-center  items-stretch">
+              <>
                 <Hero />
                 <FeaturedProjects />
                 <OurServices />
@@ -43,12 +44,13 @@ function App() {
                 {/* <Faq /> */}
                 <HomeFaq />
                 <Clients />
-              </div>
+              </>
           } />
 
           <Route path="/solutions/:id" element={
               <>
-                <Solutions />
+                {/* <Solutions /> */}
+                <SolutionsOld />
               </>
           } />
 

@@ -125,7 +125,7 @@ const FeaturedProjects = () => {
 
         <div className="projects-2 w-full flex flex-col lg:flex-row justify-center items-center bg-black">
 
-          <Link to="/product/1" className="w-full lg:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-6 md:p-12 xl:p-16  gap-2 md:gap-4">
+          <Link to="/product/1" className="w-full lg:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-6 md:p-12  gap-2 md:gap-4 2xl:h-[750px]">
 
             <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
               <div><span className="text-customgreen">{"{"}</span> E-commerce Saas <span className="text-customgreen">{"}"}</span>
@@ -133,14 +133,14 @@ const FeaturedProjects = () => {
               <div className="text-gray-400">5/31/24</div>
             </h1>
 
-            <h1 className="text-2xl md:text-3xl">EDGECARTS</h1>
+            <h1 className="text-2xl md:text-3xl  2xl:text-4xl">EDGECARTS</h1>
 
-            <p className="text-gray-500 font-semibold text-xs md:text-md">Web design & Web development</p>
+            <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">Web design & Web development</p>
 
-            <img src="/image1.png" className={`project-image  w-full h-[150px] md:h-[400px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out ${visibleImages[`project-image-0`] ? 'md:scale-110' : 'scale-100'}`}  />
+            <img src="/image1.png" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px] md:h-[400px] 2xl:h-[450px] rounded-xl mt-6 md:mt-12  transition-transform duration-500 ease-in-out ${visibleImages[`project-image-0`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
-          <Link to="/product/2" className="w-full lg:w-1/2 border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-6 md:p-12 xl:p-16 gap-2 md:gap-4">
+          <Link to="/product/2" className="w-full lg:w-1/2 border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-6 md:p-12  gap-2 md:gap-4 2xl:h-[750px]">
 
             <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
               <div><span className="text-customgreen">{"{"}</span> Saas <span className="text-customgreen">{"}"}</span>
@@ -148,37 +148,37 @@ const FeaturedProjects = () => {
               <div className="text-gray-400">8/8/24</div>
             </h1>
 
-            <h1 className="text-2xl md:text-3xl">BUILDOPS</h1>
+            <h1 className="text-2xl md:text-3xl 2xl:text-4xl">BUILDOPS</h1>
 
-            <p className="text-gray-500 font-semibold text-xs md:text-md">ERP & PMS for Construction firm</p>
+            <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">ERP & PMS for Construction firm</p>
 
-            <img src="/image2.jpg" className={`project-image  w-full h-[150px]  md:h-[400px] rounded-xl mt-6  md:mt-12 transition-transform duration-500  ease-in-out  ${visibleImages[`project-image-1`] ? 'md:scale-110' : 'scale-100'}`} />
+            <img src="/image2.jpg" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px]  md:h-[400px] 2xl:h-[450px] rounded-xl mt-6  md:mt-12 transition-transform duration-500  ease-in-out  ${visibleImages[`project-image-1`] ? 'md:scale-110' : 'scale-100'}`} />
           </Link>
 
         </div>
 
         <div className="projects-3 w-full flex flex-col lg:flex-row justify-center items-center bg-black">
 
-          <Link to="/product/3" className="w-full lg:w-1/3 h-[350px] sm:h-[600px]  lg:h-[600px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:p-8 xl:p-16 gap-2 md:gap-4">
+          <Link to="/product/3" className="w-full lg:w-1/3 h-[350px] sm:h-[600px]  lg:h-[600px] 2xl:h-[650px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:p-8 xl:p-12 gap-2 md:gap-4">
           <div className="flex flex-col gap-4 justify-start items-start">
 
-            <h1 className="flex justify-start items-center text-lg md:text-xl gap-6"> 
+            <h1 className="flex justify-start items-center text-lg md:text-xl  gap-6"> 
               <div><span className="text-customgreen">{"{"}</span> Mobile App <span className="text-customgreen">{"}"}</span>
               </div> 
               <div className="text-gray-400">6/20/24</div>
             </h1>
 
-            <h1 className="text-2xl md:text-3xl whitespace-nowrap"> STRIKES</h1>
+            <h1 className="text-2xl md:text-3xl 2xl:text-4xl whitespace-nowrap"> STRIKES</h1>
 
-            <p className="text-gray-500 font-semibold text-xs md:text-md">App that Connect the Influencer and Brand and Audience</p>
+            <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">App that Connect the Influencer and Brand and Audience</p>
           </div>
 
 
-            <img src="/image1.png"  className={`project-image w-full h-[150px] sm:h-[300px] md:h-[250px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
+            <img src="/image1.png"  className={`project-image w-full h-[150px] sm:h-[300px] md:h-[250px] 2xl:h-[350px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
               ${visibleImages[`project-image-2`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
-          <Link to="/product/4" className="w-full lg:w-1/3 h-[430px] sm:h-[600px] lg:h-[600px] border border-gray-800 flex flex-col hover:bg-customblackhover justify-between items-start p-6 md:p-8 xl:p-16 gap-2 md:gap-4">
+          <Link to="/product/4" className="w-full lg:w-1/3 h-[430px] sm:h-[600px] lg:h-[600px] border 2xl:h-[650px] border-gray-800 flex flex-col hover:bg-customblackhover justify-between items-start p-6 md:p-8 xl:p-12 gap-2 md:gap-4">
           <div className="flex flex-col gap-4 justify-start items-start">
 
             <h1 className="flex justify-start items-center text-lg md:text-xl gap-6"> 
@@ -187,18 +187,18 @@ const FeaturedProjects = () => {
               <div className="text-gray-400">7/13/24</div>
             </h1>
 
-            <h1 className="text-2xl md:text-3xl">Real-Time Machine Monitoring System</h1>
+            <h1 className="text-2xl md:text-3xl 2xl:text-4xl">Real-Time Machine Monitoring System</h1>
 
-            <p className="text-gray-500 font-semibold text-xs md:text-md">Monitorting system for your industry with hardware prototype combined software</p>
+            <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">Monitorting system for your industry with hardware prototype combined software</p>
           </div>
 
-            <img src="/image2.jpg"  className={`project-image w-full h-[150px] sm:h-[300px]  md:h-[250px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
+            <img src="/image2.jpg"  className={`project-image w-full h-[150px] sm:h-[300px]  md:h-[250px] 2xl:h-[350px] rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
               ${visibleImages[`project-image-3`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
-          <div className="w-full lg:w-1/3 border border-gray-800 flex justify-center items-center h-[200px] sm:h-[400px]  lg:h-[600px]">
-            <Link to="/ourproducts" className="flex justify-center items-center rounded-none md:rounded-xl size-[100%] md:size-[90%] hover:size-[100%] hover:rounded-none ease-in-out bg-customgreen text-customblack text-xl gap-4 font-medium transition-all duration-500 group">
-              View all Projects <FaArrowRightLong className="size-8 rounded-full bg-customblack p-2 text-customgreen  -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
+          <div className="w-full lg:w-1/3 border border-gray-800 flex justify-center items-center h-[200px] sm:h-[400px]  lg:h-[600px] 2xl:h-[650px]">
+            <Link to="/ourproducts" className="flex justify-center items-center rounded-none md:rounded-xl size-[100%] md:size-[90%] hover:size-[100%] hover:rounded-none ease-in-out bg-customgreen text-customblack text-xl 2xl:text-2xl gap-4 font-medium transition-all duration-500 group">
+              View all Projects <FaArrowRightLong className="size-8 2xl:size-12 rounded-full bg-customblack p-2 text-customgreen  -rotate-45 group-hover:rotate-0 transition-transform duration-500 " />
             </Link>
           </div>
 

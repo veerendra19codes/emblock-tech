@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
 const OurServices = () => {
+  
   const [isAnimated, setIsAnimated] = useState(false);
  const sectionRef = useRef(null);
 
@@ -128,16 +129,16 @@ const OurServices = () => {
             <div key={card.id} className={`${isAnimated ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-32'} 
              card flex flex-col justify-between shadow-lg rounded-lg bg-white p-4 lg:p-8 xl:p-12 w-[45%] h-[200px] lg:h-[250px] transition-all duration-1000 ease-out text-start`}>
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-sm sm:text-xl lg:text-xl font-medium">{card.title}</h3>
-                  <p className="text-customgrayhover text-xs sm:text-lg lg:text-base">{card.content}</p>
+                  <h3 className="text-sm sm:text-xl lg:text-2xl font-semibold">{card.title}</h3>
+                  <p className="text-gray-500 text-xs sm:text-lg  font-medium">{card.content}</p>
                 </div>
                 {/* <PercentageSlider percentage={card.percentage} value={card.value} /> */}
             </div>
           ))}
 
-          <div className="allservices bg-customgreen rounded-lg w-[45%] h-[200px] lg:h-[250px] flex flex-col md:flex-row justify-center items-center group gap-2 shadow-lg text-xs md:text-lg whitespace-nowrap font-medium">
+          <div className="allservices bg-customgreen rounded-lg w-[45%] h-[200px] lg:h-[250px] flex flex-col md:flex-row justify-center items-center group gap-2 shadow-lg text-xs md:text-lg 2xl:text-2xl whitespace-nowrap font-medium">
             View all Services 
-            <FaArrowRightLong className="size-6 md:size-8 rounded-full bg-customblack p-1 md:p-2 text-customgreen  -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
+            <FaArrowRightLong className="size-6 md:size-8 2xl:size-12 rounded-full bg-customblack p-1 md:p-2 2xl:p-3 text-customgreen  -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
           </div>
           
         </div>

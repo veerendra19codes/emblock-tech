@@ -79,7 +79,7 @@ const Testimonials = () => {
 
             <h1 className="text-[25px]  sm:text-[60px] lg:text-[60px] flex justify-center items-center relative">
                 word for it 
-                <FaStarOfLife className="text-customgreen text-sm sm:text-xl  lg:text-3xl top-0  md:top-8  -right-4  md:-right-8 absolute" />
+                {/* <FaStarOfLife className="text-customgreen text-sm sm:text-xl  lg:text-3xl top-0  md:top-8  -right-4  md:-right-8 absolute" /> */}
             </h1>
 
         </div>
@@ -87,14 +87,14 @@ const Testimonials = () => {
         <p className="text-gray-400 text-sm md:text-lg"><span className="text-customgreen">{"*"}</span>Take theirs</p>
 
         <div className="marqueeright  w-full shadow-xl relative bg-black my-16 group"  >
-
-            <div className={`flex h-[400px] md:h-[550px] gap-4 md:gap-8 justify-center items-center   whitespace-nowrap pause-on-hover animate-marqueeright lg:animate-marqueerightslow`} >
+{/* */}
+            <div className={`flex h-[400px] md:h-[550px]  gap-4 md:gap-10 justify-center items-center   whitespace-nowrap pause-on-hover animate-marqueeright md:animate-marqueerightslow `} >
                 {numbers.map((i) => (
                     <div key={i} className="card h-[300px] md:h-[550px] border border-gray-700 rounded-xl flex flex-col p-4 md:p-12 min-w-[200px] md:min-w-[400px] bg-black">
 
                         <div className="row flex justify-between items-center mb-8">
-                            <div className="ratings flex items-center text-xs md:text-md">
-                                <span className="text-white text-xs md:text-md">5.0</span><span className="text-gray-500">{"/"}5</span>
+                            <div className="ratings flex items-center text-xs md:text-md 2xl:text-lg">
+                                <span className="text-white text-xs md:text-md 2xl:text-lg">5.0</span><span className="text-gray-500">{"/"}5</span>
                                 <PiStarFourFill className="text-yellow-400" />
                                 <PiStarFourFill className="text-yellow-400" />
                                 <PiStarFourFill className="text-yellow-400" />
@@ -124,6 +124,43 @@ const Testimonials = () => {
             <div className="absolute top-0 left-0 w-6 md:w-24 h-full bg-gradient-to-r from-black to-transparent pointer-events-none"></div>
             <div className="absolute top-0 right-0 w-6 md:w-24 h-full bg-gradient-to-l from-black to-transparent pointer-events-none"></div>
         </div>
+
+
+         {/* <div className="overflow-hidden w-full relative bg-black my-16">
+        <div className="flex gap-4 animate-marquee-right-new">
+          {numbers.map((i) => (
+            <div
+              key={i}
+              className="card shrink-0 h-[300px] md:h-[450px] border border-gray-700 rounded-xl flex flex-col p-4 md:p-8 w-[280px] md:w-[400px] bg-black"
+            >
+              <div className="row flex justify-between items-center mb-4 md:mb-6">
+                <div className="ratings flex items-center gap-1 text-xs md:text-md">
+                  <span className="text-white">5.0</span>
+                  <span className="text-gray-500">/5</span>
+                  {[...Array(5)].map((_, index) => (
+                    <PiStarFourFill key={index} className="text-yellow-400" />
+                  ))}
+                </div>
+                <ImQuotesRight className="text-xl md:text-3xl text-customgrayhover" />
+              </div>
+
+              <div className="review text-wrap flex-grow font-semibold text-xs md:text-lg leading-relaxed">
+                {reviews[i % 10].review}
+              </div>
+
+              <div className="author flex justify-start items-center gap-3 mt-4">
+                <img src="/profile.png" className="size-8 md:size-10 rounded-full" />
+                <p className="text-gray-400 font-semibold text-xs md:text-lg">
+                  {reviews[i % 10].author}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="absolute top-0 left-0 w-12 md:w-24 h-full bg-gradient-to-r from-black to-transparent pointer-events-none z-10" />
+        <div className="absolute top-0 right-0 w-12 md:w-24 h-full bg-gradient-to-l from-black to-transparent pointer-events-none z-10" />
+      </div> */}
 
     </div>
   )

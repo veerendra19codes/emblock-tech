@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
+//  
+    <div className="flex flex-col gap-0 lg:gap-8 justify-center items-center w-screen  h-full  bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat">
 
-    <div className="flex flex-col gap-0 lg:gap-8 justify-center items-center w-full  h-full bg-[url('/herobg.jpg')] bg-no-repeat">
-
-        <div className="hero w-full h-full flex flex-col md:flex-row justify-start items-center px-4  pt-8 md:px-[10%] md:p-[10%]">
+        <div className="hero w-full h-full flex flex-col md:flex-row justify-start items-center px-4  pt-8 md:px-[10%] md:pt-[10%]">
 
 
           <div className="w-full md:w-[60%] right hidden md:flex justify-center items-start flex-col gap-2  lg:gap-4 font-normal">
@@ -88,28 +88,28 @@ const Hero = () => {
           </div> */}
         </div>
         
-        <div className="opacity-0 translate-y-full w-full flex justify-between items-start px-4 md:px-[10%] pt-12 pb-24 md:pb-24 animate-slide-up-text-6 animate-fill-mode-forwards ">
-          <Link to="/services" className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium">
+        <div className="opacity-0 translate-y-full w-full flex justify-between items-start px-4 md:px-[10%] pt-12 md:py-24 animate-slide-up-text-6 animate-fill-mode-forwards ">
+          <Link to="/services" className="rounded-full p-2    pl-6  text-md md:text-xl  whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium">
             See what we can do 
             <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
           </Link>
 
           <div className="hidden md:flex justify-center items-center gap-2">
             <div className=" flex flex-col justify-center items-start gap-1">
-              <h1 className="name font-semibold text-xl text-customgray font-manrope">EMBLOCK TECH</h1>
-              <p className="text-customgray font-medium font-manrope text-xs">contact@emblocktech.com</p>
+              <h1 className="name font-semibold text-xl  text-customgray font-manrope">EMBLOCK TECH</h1>
+              <p className="text-customgray font-medium font-manrope text-xs 2xl:text-lg">contact@emblocktech.com</p>
               <div className="icons w-full flex gap-2 justify-between items-center ">
-                <FaXTwitter className="text-gray-400 text-xl hover:rotate-360 transition-all duration-300 " />
-                <IoLogoInstagram  className="text-gray-400 text-2xl hover:rotate-360 transition-all duration-300 " />
-                <FaLinkedinIn  className="text-gray-400 text-xl font-bold  hover:rotate-360 transition-all duration-300 " />
+                <FaXTwitter className="text-gray-400 text-xl 2xl:text-2xl hover:rotate-360 transition-all duration-300 " />
+                <IoLogoInstagram  className="text-gray-400 text-2xl 2xl:text-3xl  hover:rotate-360 transition-all duration-300 " />
+                <FaLinkedinIn  className="text-gray-400 text-xl 2xl:text-2xl  font-bold  hover:rotate-360 transition-all duration-300 " />
               </div>
             </div>
 
             <div className="left-image h-full flex justify-center items-start">
-              <img src="/logocircle.png" className="size-24 rounded-full" />
-              <img src="/container1.png" className="h-24" />
-              <img src="/container2.png" className="h-24" />
-              <img src="/container3.png" className="h-24" />
+              <img src="/logocircle.png" className="size-24 2xl:size-32 rounded-full" />
+              <img src="/container1.png" className="h-24 2xl:h-32" />
+              <img src="/container2.png" className="h-24 2xl:h-32" />
+              <img src="/container3.png" className="h-24 2xl:h-32" />
             </div>
           </div>
         </div>
