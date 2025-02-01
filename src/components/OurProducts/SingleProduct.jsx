@@ -1,5 +1,46 @@
+import { useEffect, useRef, useState } from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import {  Link, useParams } from "react-router-dom";
+
+const AnimatedElement = ({ children, delay = 0, className="" }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => {
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div 
+      ref={elementRef}
+      className={`transform transition-all duration-700 w-full ${className} ${
+        isVisible 
+          ? `opacity-100 translate-y-0 delay-[${delay}ms]` 
+          : 'opacity-0 translate-y-10'
+      }`}
+    >
+      {children}
+    </div>
+  );
+};
+
 
 const SingleProduct = () => {
 
@@ -136,38 +177,41 @@ const SingleProduct = () => {
     ]
 
   return (
-    <div className="flex flex-col justify-center items-center w-full h-full p-6 md:p-28">
-        <h1 className="text-[35px] md:text-[70px] uppercase w-full text-start font-medium">
+    <div className="flex flex-col justify-center items-center w-full h-full p-6 py-12 md:p-28">
+        <AnimatedElement>
+
+        <h1 className="text-[35px] md:text-[40px] lg:text-[60px] uppercase w-full text-start font-medium">
             {products[id-1].name}
         </h1>
+        </AnimatedElement>
 
-        <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8">
+        <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8 mt-8">
 
             {/* this fixed  */}
             <div className="left w-full md:w-1/3 key-features flex flex-col justify-start items-start ">
                 <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 py-4 md:py-8">
-                    <p className="text-gray-400 font-normal text-base md:text-xl">
+                    <p className="text-gray-400 font-normal text-base md:text-lg">
                         Platform Type
                     </p>
-                    <h2 className="text-customblack text-lg md:text-2xl font-medium">
+                    <h2 className="text-customblack text-lg md:text-xl font-medium">
                         {products[id-1].platformType}
                     </h2>
                 </div>
 
                 <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 py-4 md:py-8">
-                    <p className="text-gray-400 font-normal text-base md:text-xl">
+                    <p className="text-gray-400 font-normal text-base md:text-lg">
                         Industry Focus
                     </p>
-                    <h2 className="text-customblack text-lg md:text-2xl  font-medium">
+                    <h2 className="text-customblack text-lg md:text-xl  font-medium">
                         {products[id-1].industryFocus}
                     </h2>
                 </div>
 
                 <div className="w-full flex flex-col justify-center items-start  py-4 md:py-8">
-                    <p className="text-gray-400 font-normal text-base md:text-xl">
+                    <p className="text-gray-400 font-normal text-base md:text-lg">
                         Key Benefits
                     </p>
-                    <h2 className="text-customblack text-lg md:text-2xl  font-medium">
+                    <h2 className="text-customblack text-lg md:text-xl  font-medium">
                         {products[id-1].keyBenefits}
                     </h2>
                 </div>
@@ -204,29 +248,35 @@ const SingleProduct = () => {
         </div>
 
         <div className="w-full flex flex-col justify-center items-start gap-0">
-            <div className="flex gap-2 justify-center items-center">
+            {/* <div className="flex gap-2 justify-center items-center"> */}
+                <AnimatedElement className="w-full flex justify-start items-center gap-2">
+
                 <span className="bg-lime-400  size-2 md:size-3 rounded-full text-white">.</span>
                 <p className="text-md md:text-lg font-semibold text-gray-400">Our Products</p>
-            </div>
+                </AnimatedElement>
+            {/* </div> */}
             
-            <h1 className="text-[35px] md:text-[80px]">
+            <AnimatedElement className="text-[25px] md:text-[40px] lg:text-[60px] mb-24">
                 Our Extended Products
-            </h1>
+            </AnimatedElement>
 
-            <div className="w-full flex flex-col md:flex-row gap-4 mt-12">
-                {products.filter((product) => product.id != id).map((product) => (
-                    <Link to={product.path} key={product.id} className="card w-full md:w-1/3 flex flex-col justify-between items-start p-6 border border-gray-400 rounded-xl h-[400px] md:h-[550px]">
+            <div className="w-full flex flex-col md:flex-row gap-4">
+                {products.filter((product) => product.id != id).map((product, index) => (
+                    <Link to={product.path} key={product.id} className="card w-full lg:w-1/3  ">
+                        <AnimatedElement delay={1000+(200*index)} className='flex flex-col justify-between items-start p-4  border border-gray-400 rounded-xl h-[400px] md:h-[550px]'>
 
-                    <div className="flex flex-col justify-start  items-start gap-2 md:gap-4">
 
-                    <h1 className="text-xl md:text-3xl uppercase">
+                    <div className="flex flex-col justify-start  items-start gap-2 md:gap-4 font-medium">
+
+                    <h1 className="text-xl md:text-2xl lg:text-2xl uppercase 2xl:text-3xl font-medium">
                         {product.name}
                     </h1>
-                    <p className="text-customgrayhover font-semibold text-sm md:text-lg">
+                    <p className="text-customgrayhover font-semibold text-sm md:text-md lg:text-lg 2xl:text-xl">
                         {product.subcontent}
                     </p>
                     </div>
-                    <img src={product.image} className="w-full h-[150px] md:h-[280px] rounded-xl" />
+                    <img src={product.image} className="w-full h-[150px] sm:h-[250px] rounded-xl 2xl:h-[350px]" />
+                        </AnimatedElement>
                     </Link>
                 ))}
                 

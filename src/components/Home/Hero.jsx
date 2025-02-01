@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
 //  
-    <div className="flex flex-col gap-0 lg:gap-8 justify-center items-center w-screen  h-full  bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat">
+    <div className="flex flex-col gap-0 lg:gap-8 justify-center items-center w-screen  h-full  bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat py-12">
 
         <div className="hero w-full h-full flex flex-col md:flex-row justify-start items-center px-4  pt-8 md:px-[10%] md:pt-[10%]">
 

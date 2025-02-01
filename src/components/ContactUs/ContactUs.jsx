@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import Faq from '../Faq';
 import SocialMedia from '../SocialMedia';
 import toast, { Toaster } from 'react-hot-toast';
+import FaqNew from '../FaqNew';
+import ContactUsFaq from './ContactUsAccordian';
+import AnimatedQuoteSection from '../AnimatedQuoteSection';
 
 
 const ContactUs = () => {
@@ -36,10 +39,82 @@ const ContactUs = () => {
     }
   };
 
+   const data = [
+  {
+    number: 1,
+    title: "How do EMBLOCK's solutions enhance manufacturing operations?",
+    content:
+      'Our solutions provide real-time monitoring of machinery, enabling predictive maintenance, reducing downtime, and improving overall production efficiency.',
+  },
+  {
+    number: 2,
+    title: "What features do EMBLOCK's logistics solutions offer?",
+    content:
+      'We offer features like HD dashcams for safety, automated risk profiling for better driver management, and real-time tracking to optimize fleet operations."',
+  },
+  {
+    number: 3,
+    title: "Can EMBLOCK's solutions be integrated with existing systems?",
+    content:
+      'Yes, our solutions are designed to be compatible with existing ERP, PMS, and other operational systems to ensure seamless integration and data synchronization',
+  },
+  {
+    number: 4,
+    title: 'What support does EMBLOCK offer for its products?',
+    content:
+      'We provide comprehensive support including installation, training, and ongoing technical assistance to ensure our clients get the most out of our solutions'
+  },
+  {
+    number: 5,
+    title: 'How does EMBLOCK ensure data security in its IoT devices? ',
+    content:
+      'Data security is paramount at EMBLOCK. We employ robust encryption and compliance with international security standards to protect all data handled by our devices.',
+  },
+  {
+    number: 6,
+    title: "What industries can benefit from EMBLOCK's IoT solutions?",
+    content:
+      'While our solutions are versatile enough for various industries, they are particularly beneficial for manufacturing, logistics, supply chain, and even construction sectors',
+  },
+  {
+    number: 7,
+    title: "How does the installation process of EMBLOCK's devices work?",
+    content:
+      'Our team conducts a thorough site assessment followed by a customized installation plan to fit the specific needs of each client, ensuring minimal disruption and optimal functionality.',
+  },
+]
+
+const quotes = [
+    {
+      id: 1,
+      quote: `"EMBLOCK has completely transformed our construction management. With real-time video streaming, image recognition for attendance, and integrated PMS & ERP, it’s a single solution for everything we need on-site."`,
+      author: "Bala venkatesh",
+      designatin: "Founder Aargaa Construction",
+    },
+    {
+      id: 2,
+      quote: `“Right from the setup, EMBLOCK's e-commerce solution boosted our online operations, enhancing efficiency and scalability exactly as shown in the demo”`,
+      author: "Devi  Ramanujam",
+      designatin: "Founder Nishika",
+    },
+    {
+      id: 3,
+      quote: `“Fleet safety has always been a priority for us, and EMBLOCK delivered exactly what we needed. Driver behavior monitoring and GPS tracking have improved safety and efficiency across our fleet.`,
+      author: "Syed Irfan ",
+      designatin: "Founder-NATIONAL TRANSPORT ",
+    },
+    {
+      id: 4,
+      quote: `“Managing GST used to be a nightmare until we switched to EMBLOCK. Automated tax calculations and seamless filing have made compliance effortless!."`,
+      author: "CA Avani Daxin",
+      designatin: "Founder Buddybooks",
+    },
+  ]
+
 
   return (
     <div className="flex flex-col justify-center items-center overflow-x-hidden w-full">
-        <section className="bg-[url('/herobg.jpg')] bg-no-repeat bg- w-full flex flex-col p-6 md:p-32 justify-start items-start md:pt-48">
+        <section className="bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat bg- w-full flex flex-col p-6 md:p-32 justify-start items-start md:pt-48">
 
         <div className=" flex gap-2 justify-center items-center transition-all duration-1000 ease-out">
             <span className="bg-lime-400  size-2 md:size-3 rounded-full text-white">.</span>
@@ -141,9 +216,10 @@ const ContactUs = () => {
 
       </section>
 
-      <Faq />
+      {/* <Faq /> */}
+      <ContactUsFaq />
 
-      <section className="quote h-[500px] md:h-[800px] flex justify-center items-center px-6 md:px-24  md:mb-0 bg-black">
+      {/* <section className="quote h-[500px] md:h-[800px] flex justify-center items-center px-6 md:px-24  md:mb-0 bg-black">
           <div className="w-1/5 flex justify-end items-start -mt-[200px] md:-mt-[200px]">
             < FaQuoteLeft  className="text-gray-300 size-[40px] md:size-[200px]"  />
           </div>
@@ -154,7 +230,9 @@ const ContactUs = () => {
             <p className="text-xs md:text-lg font-medium mb-4">Vigneshwaran R</p>
             <p className="text-xs md:text-md font-medium">CEO & Founder EMBLOCK</p>
           </div>
-        </section>
+        </section> */}
+      
+      <AnimatedQuoteSection quotes={quotes} className="bg-black text-white" />
 
 
         <SocialMedia />

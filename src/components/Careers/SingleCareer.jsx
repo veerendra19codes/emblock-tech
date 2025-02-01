@@ -3,6 +3,48 @@ import { Link, useParams } from "react-router-dom"
 import { jobs } from "../../data";
 import { TiPin } from "react-icons/ti";
 import { GoDotFill } from "react-icons/go";
+import { useEffect, useRef, useState } from "react";
+
+
+const AnimatedElement = ({ children, delay = 0, className }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => {
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div 
+      ref={elementRef}
+      className={`transform transition-all duration-700 w-full ${className} ${
+        isVisible 
+          ? `opacity-100 translate-y-0 delay-[${delay}ms]` 
+          : 'opacity-0 translate-y-10'
+      }`}
+    >
+      {children}
+    </div>
+  );
+};
+
 
 const SingleCareer = () => {
     const { id } = useParams();
@@ -11,9 +53,14 @@ const SingleCareer = () => {
 
   return (
     <div className="flex flex-col justify-center items-center min-h-screen w-full">
-      <section className="bg-[url('/herobg.jpg')] w-full flex flex-col p-6 md:p-32 justify-start items-start md:pt-48">
+      <section className="bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat w-full flex flex-col p-6 md:p-32 justify-start items-start md:pt-48">
+
+      <AnimatedElement>
 
         <button className=" rounded-full py-2 px-4 bg-transparent border-2 border-gray-400 font-semibold text-sm md:text-lg">We are hiring!</button>
+      </AnimatedElement>
+
+      <AnimatedElement delay={200}>
 
         <h1 className="w-full md:w-[90%] text-[25px] md:text-[60px] font-normal flex-wrap leading-none my-2 md:my-4">
           {jobs[id-1].title} 
@@ -21,12 +68,18 @@ const SingleCareer = () => {
         <h1 className="w-full md:w-[90%] text-[25px] md:text-[60px] font-normal flex-wrap leading-none md:my-4">
           ({jobs[id-1].openPositions} Positions)
         </h1>
+      </AnimatedElement>
+
+      <AnimatedElement delay={400}>
 
         {jobs[id-1].details.map((detail) => (
-            <p key={detail.id} className="text-gray-500 font-medium text-xs md:text-2xl w-full md:w-full mt-4 md:mt-8">
+          <p key={detail.id} className="text-gray-500 font-medium text-xs md:text-2xl w-full md:w-full mt-4 md:mt-8">
                 {detail.line}
             </p>
         ))}
+        </AnimatedElement>
+
+        <AnimatedElement delay={800}>
 
         <p className="flex justify-start items-start gap-2 md:gap-4 text-lg md:text-2xl font-medium mt-12">
             <span className=" text-black text-xs md:text-lg whitespace-nowrap">Role Type:</span>
@@ -36,6 +89,7 @@ const SingleCareer = () => {
             <span className=" text-black  text-xs md:text-lg whitespace-nowrap">Skills Required:</span>
             <span className="text-gray-500 text-xs md:text-lg flex flex-wrap">{jobs[id-1].skillsRequired}</span>
         </p>
+        </AnimatedElement>
       </section>
 
       <section className="details bg-black w-full flex flex-col ">

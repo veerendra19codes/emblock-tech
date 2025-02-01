@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaQuoteLeft } from "react-icons/fa";
 
-const AnimatedQuoteSection = ({ quotes }) => {
+const AnimatedQuoteSection = ({ quotes ,className="" }) => {
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   
@@ -28,7 +28,7 @@ const AnimatedQuoteSection = ({ quotes }) => {
   const currentQuote = validQuotes[currentQuoteIndex];
   
   return (
-    <section className="quote h-[400px] md:h-[700px] w-full flex justify-center items-center px-6 md:px-24 mb-24 md:mb-0 overflow-hidden">
+    <section className={`quote h-[400px] md:h-[800px] w-full flex justify-center items-center px-6 md:px-24 mb-24 md:mb-0 overflow-hidden ${className}`}>
       <div className="w-1/5 flex justify-end items-start -mt-[100px] md:-mt-[150px]">
         <FaQuoteLeft className="text-gray-600 size-[40px] md:size-[200px]" />
       </div>
@@ -40,7 +40,7 @@ const AnimatedQuoteSection = ({ quotes }) => {
               : 'translate-y-0 opacity-100'
           }`}
         >
-          <h1 className="text-black text-md md:text-xl xl:text-3xl font-medium mb-8">
+          <h1 className=" text-md md:text-xl xl:text-3xl font-medium mb-8">
             {currentQuote.quote}
           </h1>
           <p className="text-sm md:text-md xl:text-lg font-medium mb-4">

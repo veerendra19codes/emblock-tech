@@ -1,6 +1,46 @@
+import { useEffect, useRef, useState } from 'react';
 import { FaStarOfLife } from 'react-icons/fa';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import {  Link, useParams } from "react-router-dom";
+
+const AnimatedElement = ({ children, delay = 0, className="" }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => {
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div 
+      ref={elementRef}
+      className={`transform transition-all duration-700 w-full ${className} ${
+        isVisible 
+          ? `opacity-100 translate-y-0 delay-[${delay}ms]` 
+          : 'opacity-0 translate-y-10'
+      }`}
+    >
+      {children}
+    </div>
+  );
+};
 
 const SingleService = () => {
 
@@ -198,19 +238,24 @@ const SingleService = () => {
                 ]
             }
         },
-        
     ]
 
   return (
     <div className="flex flex-col 
     justify-center items-center w-full h-full   text-black bg-white">
-        <h1 className="text-[25px] md:text-[60px] w-full text-start font-medium p-6 md:px-[10%] md:pt-[10%]">
+        <AnimatedElement>
+
+        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] w-full text-start font-medium p-6 py-12 md:px-[10%] md:pt-[10%]">
             {services[id-1].name}
         </h1>
+        </AnimatedElement>
 
-        <p className="text-md md:text-2xl font-medium  p-6 md:px-[10%]">
+        <AnimatedElement delay={200}>
+
+        <p className="text-md md:text-2xl font-medium  p-6 md:px-[10%] mb-12">
             {services[id-1].text}
         </p>
+        </AnimatedElement>
 
         <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8 p-6 md:px-[10%]">
 
@@ -345,29 +390,32 @@ const SingleService = () => {
 
         {/* other solutions  */}
         <div className="w-full flex flex-col justify-center items-start gap-0 mt-8 p-6 md:p-[10%]">
-            <div className="flex gap-2 justify-center items-center">
-                <span className="bg-lime-400  size-2 md:size-3 rounded-full text-white">.</span>
+            <AnimatedElement delay={600} className="w-full  flex gap-2 justify-start items-center">
+                <span className="bg-customgreen  size-2 md:size-3 rounded-full text-white">.</span>
                 <p className="text-md md:text-lg font-semibold text-gray-400">Our services</p>
-            </div>
+            </AnimatedElement>
             
-            <h1 className="text-[35px] md:text-[80px]">
+            <h1 className="text-[25px] md:text-[40px] lg:text-[60px]">
                 Our Extended services
             </h1>
 
             <div className="w-full flex flex-col md:flex-row gap-4 mt-12">
-                {services.filter((service) => service.id != id).map((service) => (
-                    <Link to={service.path} key={service.id} className="card w-full md:w-1/3 flex flex-col justify-between items-start p-6 border border-gray-400 rounded-xl h-[400px] md:h-[550px]">
+                {services.filter((service) => service.id != id).map((service, index) => (
+                    <Link to={service.path} key={service.id} className="card w-full md:w-1/3 ">
+                        <AnimatedElement delay={1000+(200*index)} className="flex flex-col justify-between items-start p-4 border border-gray-400 rounded-xl h-[400px] md:h-[550px]">
+
 
                     <div className="flex flex-col justify-start  items-start gap-2 md:gap-4">
 
-                    <h1 className="text-xl md:text-3xl uppercase">
+                    <h1 className="text-xl md:text-2xl 2xl:text-3xl uppercase font-medium">
                         {service.name}
                     </h1>
                     <p className="text-customgrayhover font-semibold text-sm md:text-lg">
                         {service.subcontent}
                     </p>
                     </div>
-                    <img src={service.image} className="w-full h-[150px] md:h-[280px] rounded-xl" />
+                    <img src={service.image} className="w-full h-[150px] sm:h-[250px] rounded-xl" />
+                        </AnimatedElement>
                     </Link>
                 ))}
                 

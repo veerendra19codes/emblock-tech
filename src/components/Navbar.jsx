@@ -258,16 +258,16 @@ const Navbar = () => {
 
       {/* Desktop Solutions Popup */}
       {showPopup && (
-        <div className="absolute w-[40%] left-1/2 top-[7rem] transform -translate-x-1/2 bg-black text-white rounded-xl p-4 shadow-lg text-center transition-all duration-300 flex flex-row justify-center items-center z-50">
-          <div className="left w-1/2 flex flex-col justify-start items-start gap-2">
-            <h1 className="text-white text-lg w-full text-start font-medium">
+        <div className="absolute w-[50%] h-[400px] left-1/2 top-[7rem] transform -translate-x-1/2 bg-black text-white rounded-xl p-4 2xl:p-8 shadow-lg text-center transition-all duration-300 flex flex-row  justify-between items-center z-50">
+          <div className="left w-[40%] h-full flex flex-col justify-start items-start gap-2 2xl:gap-6">
+            <h1 className="text-white text-lg 2xl:text-2xl w-full text-start font-medium">
               Our Solutions
             </h1>
             {solutionsItems.map((item) => (
               <Link
                 key={item.id}
                 to={item.path}
-                className="text-gray-400 w-full text-md font-medium text-start hover:text-white"
+                className="text-gray-400 w-full text-md 2xl:text-xl font-medium text-start hover:text-white"
                 onClick={() => setShowPopup(false)}
               >
                 {item.name}
@@ -275,9 +275,9 @@ const Navbar = () => {
             ))}
           </div>
 
-          <div className="w-1/2 flex bg-white rounded-xl justify-start items-center p-4 h-full">
+          <div className="w-[60%] flex bg-white rounded-xl justify-start items-center p-4 h-full gap-4">
             <img src="/image3.png" className="rounded-lg w-1/2 h-full object-cover" alt="Solutions" />
-            <p className="w-1/2 h-full text-xs text-black font-medium">
+            <p className="w-1/2 h-full text-sm 2xl:text-md text-black font-medium text-start">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, quisquam culpa! Facere cumque dolorem enim nobis aliquid necessitatibus dicta similique optio unde nesciunt quod obcaecati aliquam, repellendus magni eligendi sapiente.
             </p>
           </div>
