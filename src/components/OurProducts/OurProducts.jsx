@@ -5,7 +5,7 @@ const OurProducts = () => {
   const products = [
     {
       id: 1,
-      image: "/image1.png",
+      image: "/real-time-machine-monitoring-product.jpg",
       title: "Real-Time Machine Monitoring System",
       description: "Emblock Real-time Machine Monitoring System",
       path: "/product/1",

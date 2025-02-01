@@ -87,15 +87,15 @@ const SolutionsOld = () => {
         },
       ],
       services: "UI/UX Design",
-      category: "Mobile App",
-      client: "Stonks Inc",
-      image1: "/image1.png",
-      image2: "/image2.jpg",
+      industry: "Manufactoring",
+      focus: "Increase Productivity",
+      image1: "/manufacturing-image1.png",
+      image2: "/manufacturing-image2.png",
       painPoint: "Manufacturers face a variety of challenges that can disrupt operations and hinder growth. Labor shortages are a persistent issue, with many companies struggling to meet production goals without increasing operational costs. Additionally, unplanned production delays caused by equipment failures or inefficiencies in production lines often result in lost time and revenue. Limited visibility into production status and inventory levels can further exacerbate supply chain disruptions, making it difficult to align supply with demand. Finally, compliance with environmental and quality regulations adds another layer of complexity, requiring continuous monitoring and reporting to avoid costly penalties.",
       bottomText: "EMBLOCK brings transformative benefits to the manufacturing industry, making it an indispensable solution for forward-thinking businesses. By minimizing unplanned downtime and reducing maintenance costs, EMBLOCK significantly enhances operational efficiency. Its predictive maintenance capabilities ensure machinery runs smoothly, avoiding unexpected disruptions. With automated data collection and advanced analytics, manufacturers can streamline workflows, improve decision-making, and increase overall productivity. Additionally, continuous monitoring helps companies adhere to strict environmental and quality standards, ensuring compliance and mitigating the risk of regulatory fines.",
       bottomTexts: [],
       solution: {
-        image: "/image1.png",
+        image: "/manufacturing-middle-image.jpeg",
         header: "EMBLOCK provides an all-encompassing solution designed to address these challenges effectively.",
         keyFeatures: [
           {
@@ -142,16 +142,16 @@ const SolutionsOld = () => {
           point: " Leveraging predictive analytics to optimize the use of materials and labor."
         },
       ],
-      services: "UI/UX Design",
-      category: "Mobile App",
-      client: "Stonks Inc",
-      image1: "/image1.png",
-      image2: "/image2.jpg",
+      services: "Project Managements",
+      industry: "Construction",
+      focus: "Streamline Operations",
+      image1: "/construction-image1.webp",
+      image2: "/construction-image2.webp",
       painPoint: "The construction industry faces a variety of persistent challenges that impact efficiency and profitability. Project delays are a common concern, often caused by miscommunication, inefficient workflows, or labor shortages. Budget overruns arise due to poor resource management and fluctuating material costs, straining financial resources. Compliance with safety and building codes is another critical challenge, as failure to meet standards can result in costly penalties and reputational damage. Additionally, effective communication across project teams often remains a hurdle, leading to missed deadlines and reduced productivity.",
       bottomText: "EMBLOCK provides unparalleled benefits for the construction industry, helping companies maintain a competitive edge. By ensuring cost efficiency through tighter budget control and risk mitigation, our solutions minimize financial strain. Projects stay on schedule thanks to robust project management tools, improving client satisfaction and operational efficiency. Superior resource management reduces unnecessary expenditures and downtime, ensuring materials and labor are used effectively. With improved workflows and streamlined communication, construction firms can elevate their productivity and profitability.",
       bottomTexts: [],
       solution: {
-        image: "/image1.png",
+        image: "/construction-middle-image.jpg",
         header: "EMBLOCK provides cutting-edge solutions to overcome these challenges and drive success in construction projects.",
         keyFeatures: [
           {
@@ -182,58 +182,58 @@ const SolutionsOld = () => {
     },
     {
       id: 3,
-      title: "EMBLOCK: E-Commerce Solution of Brands ",
+      title: "EMBLOCK: Pipeline Monitoring and Leak Detection  ",
       type: "E-commerce solutions",
-      description: "The retail industry is undergoing a significant transformation, driven by the rapid adoption of digital solutions and  e-commerce platforms. As businesses strive to remain competitive, they face increasing pressure to reduce operational costs, adopt scalable online solutions, and deliver exceptional customer experiences. EMBLOCK addresses these challenges by offering a seamless, scalable, and customizable e-commerce platform built on Magento, allowing retailers to establish and grow their online presence without incurring hefty setup charges.",
-      focusAreasText: "EMBLOCK's solutions are designed to meet the specific demands of the retail industry. We focus on:",
+      description: "The oil and gas industry is a critical sector that fuels global economies, but it also faces immense challenges in maintaining safety, operational efficiency, and regulatory compliance. Aging infrastructure, environmental concerns, and the need for modernization have made leak detection and predictive maintenance more essential than ever. EMBLOCK addresses these challenges with a state-of-the-art solution designed for real-time pipeline monitoring and leak detection. Our technology enhances operational safety, prevents costly spills, and ensures pipeline integrity.",
+      focusAreasText: "EMBLOCK’s innovative technology is designed to tackle key areas within the oil and gas industry:",
       focusAreas: [
         {
           id: 1,
-          title: "E-Commerce Integration:",
-          point: "  Providing retailers with a platform to set up online stores without setup charges, ensuring a smooth transition to digital operations."
+          title: "Safety Monitoring:",
+          point: " Real-time detection of leaks to prevent hazardous incidents."
         },
         {
           id: 2,
-          title: "Customizable Functionality:",
-          point: "Built on Magento, the platform offers scalability "
+          title: "Predictive Maintenance:",
+          point: " AI-powered analytics to identify vulnerabilities before they escalate into major failures. "
         },
         {
           id: 3,
-          title: "Operational Efficiency:",
-          point: " Streamlining product listing, order management, and logistics integration to simplify day-to-day operations."
+          title: "Environmental Compliance:",
+          point: " Ensuring oil and gas operators meet strict environmental standards by preventing spills and leaks."
         },
       ],
-      services: "UI/UX Design",
-      category: "Mobile App",
-      client: "Stonks Inc",
-      image1: "/image1.png",
-      image2: "/image2.jpg",
-      painPoint: "Retailers frequently encounter several obstacles when attempting to establish or expand their online presence. Setting up and managing online platforms often involves high upfront costs and technical complexity, discouraging many businesses from transitioning to e-commerce. Integration issues with logistics and order management further add to the challenges, complicating operations and affecting efficiency. Additionally, many retailers struggle to deliver a smooth online shopping experience, leading to reduced customer satisfaction and lower retention rates.",
-      bottomText: "EMBLOCK delivers a wide range of benefits for the retail industry:",
+      services: "Pipeline Integrity Management",
+      industry: "Oil and Gas",
+      focus: "Leak Detection & Predictive Maintenance",
+      image1: "/pipeline-monitoring-image1.png",
+      image2: "/pipeline-monitoring-image2.png",
+      painPoint: "Oil and gas companies face several significant challenges that threaten both their operations and the environment. Undetected leaks can lead to severe environmental damage, regulatory penalties, and financial losses. Safety risks are heightened by aging infrastructure, increasing the likelihood of equipment failure. Additionally, the industry operates under stringent compliance requirements, and failure to meet these regulations can result in hefty fines and reputational damage. EMBLOCK’s advanced leak detection technology directly addresses these pain points, providing operators with early warnings to minimize hazards and prevent costly downtime.",
+      bottomText: "EMBLOCK delivers transformative benefits for oil and gas operations:",
       bottomTexts: [
         {
           id: 1,
-          title: "Cost Efficiency:",
-          text: "A commission-based model that eliminates the need for significant upfront investments.",
+          title: "Enhanced Safety:",
+          text: " Reduces the risk of pipeline failures and catastrophic incidents through proactive monitoring.",
         },
         {
           id: 2,
-          title: "Enhanced Sales:",
-          text: "Expanding online presence allows retailers to reach a broader audience and increase revenue.",
+          title: "Operational Efficiency:",
+          text: " Remote monitoring and predictive maintenance optimize performance and reduce manual inspections.",
         },
         {
           id: 3,
-          title: "Customer Retention:",
-          text: " A smooth and customizable online shopping experience keeps customers engaged and coming back.",
+          title: "Environmental Protection:",
+          text: "  Ensures compliance with strict regulations and prevents costly spills.",
         },
         {
           id: 4,
-          title: "Scalability: ",
-          text: "The platform grows with your business, accommodating new product lines, higher sales volumes, and additional integrations.",
+          title: "Cost Savings:",
+          text: " Lowers expenses related to emergency repairs, legal fines, and production downtime.",
         },
       ],
       solution: {
-        image: "/image1.png",
+        image: "/pipeline-monitoring-middle-image.jpeg",
         header: "EMBLOCK offers a turnkey e-commerce solution tailored to the specific needs of the retail industry, eliminating the barriers to entry for businesses looking to establish their online presence.",
         keyFeatures: [
           {
@@ -286,11 +286,11 @@ const SolutionsOld = () => {
           point: " AI-driven risk profiling and HD dashcams ensure accountability and promote safer driving practices."
         },
       ],
-      services: "UI/UX Design",
-      category: "Mobile App",
-      client: "Stonks Inc",
-      image1: "/image1.png",
-      image2: "/image2.jpg",
+      services: "Fleet Monitoring and Management",
+      industry: "Logistics and Supply Chain",
+      focus: "Operational Efficiency",
+      image1: "/fleet-safety-image1.png",
+      image2: "/fleet-safety-image2.jpg",
       painPoint: "Logistics and supply chain businesses face several critical challenges that impact their efficiency and profitability. High costs associated with accidents and insurance claims can strain budgets, while unsafe driving behaviors lead to inefficiencies and increased risks. One of the most significant issues is the difficulty in exonerating drivers wrongfully accused of traffic violations, resulting in unnecessary legal disputes and reputational damage. EMBLOCK’s solutions directly address these pain points by improving accountability, enhancing safety standards, and providing indisputable video evidence when needed.",
       bottomText: "EMBLOCK delivers unparalleled value to logistics and supply chain businesses by:",
       bottomTexts: [
@@ -316,7 +316,7 @@ const SolutionsOld = () => {
         },
       ],
       solution: {
-        image: "/image1.png",
+        image: "/fleet-safety-middle-image.png",
         header: "EMBLOCK offers cutting-edge technology to resolve these challenges and elevate logistics operations.",
         keyFeatures: [
           {
@@ -368,11 +368,11 @@ const SolutionsOld = () => {
           point: "Enables accountants to handle multiple clients seamlessly by organizing and automating routine tasks."
         },
       ],
-      services: "UI/UX Design",
-      category: "Mobile App",
-      client: "Stonks Inc",
-      image1: "/image1.png",
-      image2: "/image2.jpg",
+      services: "Tax Filing",
+      industry: "Accounting",
+      focus: "Compliance Automation",
+      image1: "/gst-solution-image1.png",
+      image2: "/gst-solution-image2.jpg",
       painPoint: "Accounting professionals face several challenges that affect their efficiency and productivity. Manual errors during data entry and tax preparation are common, leading to potential compliance issues and penalties. Additionally, the time-consuming nature of creating and submitting GST forms can limit the capacity of accountants to manage multiple clients. Keeping up with frequent updates to tax laws and regulations further complicates the process, leaving little room for strategic decision-making. EMBLOCK’s solution addresses these pain points by automating repetitive tasks and reducing the risk of errors, allowing accountants to focus on delivering value to their clients.",
       bottomText: "EMBLOCK’s accounting software offers several benefits to professionals and firms:",
       bottomTexts: [
@@ -398,7 +398,7 @@ const SolutionsOld = () => {
         },
       ],
       solution: {
-        image: "/image1.png",
+        image: "/gst-solution-middle-image.png",
         header: "EMBLOCK’s accounting software provides cutting-edge tools to simplify and enhance tax compliance processes.",
         keyFeatures: [
           {
@@ -536,7 +536,7 @@ const SolutionsOld = () => {
               <div className="left w-full key-features flex flex-col justify-start items-start ">
                   <div className="w-full flex flex-col justify-center items-start border-b border-gray-300 py-4">
                       <p className="text-gray-400 font-normal text-base">
-                          Service
+                          Services
                       </p>
                       <h2 className="text-customblack text-lg  font-medium">
                           {solution.services}
@@ -545,19 +545,19 @@ const SolutionsOld = () => {
   
                   <div className="w-full flex flex-col justify-center items-start border-b border-gray-300 py-4">
                       <p className="text-gray-400 font-normal text-base">
-                          Category
+                          Industry
                       </p>
                       <h2 className="text-customblack text-lg font-medium">
-                          {solution.category}
+                          {solution.industry}
                       </h2>
                   </div>
   
                   <div className="w-full flex flex-col justify-center items-start  py-4">
                       <p className="text-gray-400 font-normal text-base">
-                          Client
+                          Focus
                       </p>
                       <h2 className="text-customblack text-lg  font-medium">
-                          {solution.client}
+                          {solution.focus}
                       </h2>
                   </div>
   
@@ -598,7 +598,7 @@ const SolutionsOld = () => {
           </div>
 
           <div className="right w-full md:w-1/2 flex justify-center items-center mt-4 md:mt-0">
-            <img src={solution.solution.image} className="size-full md:size-[90%]  rounded-xl" />
+            <img src={solution.solution.image} className="size-full md:size-[90%] h-[250px] md:h-[400px] 2xl:h-[550px] object-cover rounded-xl" />
           </div>
         </div>
 
@@ -643,10 +643,10 @@ const SolutionsOld = () => {
             </h1>
              </AnimatedSection>
 
-            <div className="w-full flex flex-col md:flex-row gap-4 mt-8 ">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 ">
                 {solutions.filter((s) => s.id != solution.id ).map((s, index) => (
                     
-                    <Link to={`/solutions/${s.id}`} key={s.id} className="card w-full md:w-1/3 flex  justify-center items-start  rounded-xl h-[400px] md:h-[500px]">
+                    <Link to={`/solutions/${s.id}`} key={s.id} className="card w-full  flex  justify-center items-start  rounded-xl h-[400px] md:h-[500px]">
                     <AnimatedSection key={s.id} delay={1000 + (index * 200)}>
                         <Link to={`/solutions/${s.id}`} key={s.id} className="card w-full flex flex-col justify-between items-start p-4 border border-gray-400 rounded-xl h-[400px] md:h-[500px]">
 
@@ -660,7 +660,7 @@ const SolutionsOld = () => {
                         {s.type}
                     </p>
                     </div>
-                    <img src={solution.image1} className="w-full h-[150px] md:h-[250px] rounded-xl" />
+                    <img src={s.image1} className="w-full h-[150px] md:h-[250px] rounded-xl" />
                         </Link>
 
                  </AnimatedSection>

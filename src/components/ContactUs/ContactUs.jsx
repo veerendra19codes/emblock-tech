@@ -18,6 +18,23 @@ const ContactUs = () => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
+    
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    // Regular expression for validating email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!email) {
+      toast.error("Invalid Email");
+      return;
+    } else if (!emailRegex.test(email)) {
+      toast.error("Invalid Email Format");
+      return;
+    } else if (!message) {
+      toast.error("Message is empty");
+      return;
+    }
 
     formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
 
@@ -176,7 +193,7 @@ const quotes = [
 
                 <div className="w-1/2 flex flex-col justify-start items-start">
                   <label className="text-xs md:text-lg text-start">
-                    Email
+                    Email*
                   </label>
                   <input type="text" name="email" className="w-full border-b border-white p-2 text-gray-400 bg-transparent outline-none text-xs md:text-lg" placeholder="email" />
                 </div>
@@ -204,7 +221,7 @@ const quotes = [
               <textarea type="text" name="message" placeholder="send us a message" rows={10} className="mt-8 w-full bg-black border border-gray-400 text-gray-400 p-2 outline-none rounded-xl text-xs md:text-lg" />
 
               <button  className="rounded-full p-2  md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium mt-4">
-                Send a message
+                Send a message*
                 <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
               </button>
               <Toaster />

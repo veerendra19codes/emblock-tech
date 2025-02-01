@@ -187,7 +187,7 @@ const Navbar = () => {
   const solutionsItems = [
     { id: 1, name: "Manufacturing", path: "/solutions/1" },
     { id: 2, name: "Construction", path: "/solutions/2" },
-    { id: 3, name: "Retail", path: "/solutions/3" },
+    { id: 3, name: "Oil and Gas", path: "/solutions/3" },
     { id: 4, name: "Logistics and Supply Chain", path: "/solutions/4" },
     { id: 5, name: "Accounting", path: "/solutions/5" },
   ];

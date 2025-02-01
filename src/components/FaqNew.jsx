@@ -4,24 +4,7 @@ import { Plus } from 'lucide-react';
 const FaqNew = ({data}) => {
   const [openIndex, setOpenIndex] = useState(null);
 
-  const faqData = [
-    {
-      question: "What services do you offer?",
-      answer: "We offer a wide range of digital services including web development, mobile app development, UI/UX design, and digital marketing solutions tailored to meet your business needs."
-    },
-    {
-      question: "How long does it take to complete a project?",
-      answer: "Project timelines vary depending on complexity and requirements. Typically, small projects take 2-4 weeks, while larger projects can take 2-6 months. We'll provide a detailed timeline during our initial consultation."
-    },
-    {
-      question: "What is your pricing structure?",
-      answer: "Our pricing is project-based and depends on various factors including scope, complexity, and timeline. We provide detailed quotes after understanding your specific requirements during our consultation."
-    },
-    {
-      question: "Do you offer maintenance and support?",
-      answer: "Yes, we provide ongoing maintenance and support services to ensure your digital solutions remain up-to-date and perform optimally. We offer various support packages to suit different needs and budgets."
-    }
-  ];
+  
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);

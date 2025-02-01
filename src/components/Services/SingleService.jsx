@@ -49,7 +49,7 @@ const SingleService = () => {
     const services = [
         {
             id: 1,
-            image: "/image1.png",
+            image: "/service1-image1.png",
             path: "/services/1",
             name: "Transform Your Business with a Winning IoT Strategy",
             text: "At Emblock Tech, we help businesses create a roadmap for IoT success. Our Strategic IoT Services are designed to align technology adoption with your unique goals, ensuring every investment drives measurable value.",
@@ -60,13 +60,13 @@ const SingleService = () => {
             subparts: [
                 {
                     id: 1,
-                    image: "/image1.png",
+                    image: "/service1-image1.png",
                     title: "Feasibility Studies",
                     content: "Before taking any major steps, we conduct detailed feasibility studies to assess the technical and financial viability of your IoT initiatives. Our team evaluates the compatibility of proposed IoT solutions with your existing infrastructure, operational processes, and business model. We also analyze costs, timelines, and potential risks to provide a clear picture of the project's sustainability. This thorough analysis helps mitigate risks and ensures that the implementation phase proceeds smoothly, delivering the intended results without unnecessary delays or unforeseen expenses."
                 },
                 {
                     id: 2,
-                    image: "/image2.jpg",
+                    image: "/service1-image2.png",
                     title: "",
                     content: ""
                 },
@@ -99,7 +99,7 @@ const SingleService = () => {
         },
         {
             id: 2,
-            image: "/image2.jpg",
+            image: "/service2-image1.png",
             path: "/services/2",
             name: "Innovating IoT Ecosystems with Next-Generation Solutions",
             text: "Welcome to Emblock Tech, your trusted partner in Technical IoT Services. We design, integrate, and secure advanced IoT ecosystems that fuel innovation, enhance efficiency, and drive measurable growth. From device provisioning to data analytics and cloud infrastructure, we deliver tailored solutions for seamless performance.",
@@ -110,13 +110,13 @@ const SingleService = () => {
             subparts: [
                 {
                     id: 1,
-                    image: "/image1.png",
+                    image: "/service2-image1.png",
                     title: "IoT Platform Development and Integration",
                     content: "IoT Platform Development and Integration"
                 },
                 {
                     id: 2,
-                    image: "/image2.jpg",
+                    image: "/service2-image2.png",
                     title: "Device and Sensor Provisioning",
                     content: "From selecting the right hardware to developing custom firmware, we handle every aspect of device and sensor provisioning. Our goal is to ensure your IoT devices perform optimally while maintaining the highest security standards. We manage the entire lifecycle of your devices, from initial setup to ongoing maintenance, ensuring reliable and consistent performance. This comprehensive approach minimizes downtime and maximizes the effectiveness of your IoT ecosystem."
                 },
@@ -148,7 +148,7 @@ const SingleService = () => {
             },
             bottom: {
                 text: "At Emblock Tech, we deliver advanced technical IoT solutions tailored to your business needs. Our expertise includes developing and integrating scalable IoT platforms with your existing ERP and CRM systems, ensuring seamless operations. We provision reliable devices and sensors with robust security, and utilize AI-powered data analytics to transform raw data into actionable insights. Our secure cloud infrastructure supports real-time data processing and reliable backups, while our comprehensive security measures protect your entire IoT ecosystem from cyber threats. Partner with us to drive innovation and optimize your IoT initiatives.",
-                image: "/image1.png",
+                image: "/service2-image3.png",
                 points: [
                     {
                         id: 1,
@@ -170,7 +170,7 @@ const SingleService = () => {
         },
         {
             id: 3,
-            image: "/image3.png",
+            image: "/service3-image1.png",
             path: "/services/3",
             name: "Maximize Efficiency with Our IoT Operational Services",
             text: "At Emblock Tech, we help businesses streamline IoT deployment, monitoring, and maintenance to achieve maximum efficiency. Our Operational IoT Services are designed to optimize system performance and provide real-time insights that enhance productivity and drive business growth.",
@@ -181,13 +181,13 @@ const SingleService = () => {
             subparts: [
                 {
                     id: 1,
-                    image: "/image1.png",
+                    image: "/service3-image1.png",
                     title: "Custom IoT Application Development",
                     content: "We develop intuitive mobile and web applications that enable seamless interaction with your IoT ecosystem. Our custom applications are tailored to meet your specific business needs, ensuring a user-friendly experience and efficient management of your IoT devices. We prioritize scalability and integration, allowing your applications to grow alongside your business. Additionally, our solutions support various platforms, ensuring accessibility and flexibility for all users."
                 },
                 {
                     id: 2,
-                    image: "/image2.jpg",
+                    image: "/service3-image2.png",
                     title: "Connectivity Solutions and Management",
                     content: "Our team designs and manages reliable IoT networks, ensuring uninterrupted communication between your devices. We implement robust connectivity solutions that support scalable and secure data transmission, keeping your operations running smoothly. By leveraging the latest networking technologies, we ensure high availability and low latency for critical applications. Our proactive management approach minimizes downtime and optimizes network performance for sustained efficiency."
                 },
@@ -219,6 +219,7 @@ const SingleService = () => {
             },
             bottom: {
                 text: "At Emblock Tech, we deliver advanced technical IoT solutions tailored to your business needs. Our expertise includes developing and integrating scalable IoT platforms with your existing ERP and CRM systems, ensuring seamless operations. We provision reliable devices and sensors with robust security, and utilize AI-powered data analytics to transform raw data into actionable insights. Our secure cloud infrastructure supports real-time data processing and reliable backups, while our comprehensive security measures protect your entire IoT ecosystem from cyber threats. Partner with us to drive innovation and optimize your IoT initiatives.",
+                image: "/service3-image3.png",
                 points: [
                     {
                         id: 1,
@@ -304,7 +305,7 @@ const SingleService = () => {
                 
                 {services[id-1].subparts.map((part) => (
                     <div key={part.id} className="w-full flex flex-col justify-center items-star gap-4 md:gap-6 my-6">
-                        <img src={part.image} className="w-full h-auto rounded-xl" />
+                        <img src={part.image} className="w-full h-[250px] lg:h-[400px] 2xl:h-[500px] object-cover rounded-xl" />
                         <h1 className="w-full text-lg md:text-2xl text-customgray font-semibold leading-6">
                             {part.title}
                         </h1>
@@ -343,8 +344,8 @@ const SingleService = () => {
 
             {services[id-1].middle.points.map((p) => (
                     <p key={p.id} className="w-full flex flex-row justify-start items-start gap-2 md:gap-4 flex-wrap text-xs md:text-lg text-gray-400">
-                        <FaStarOfLife className="text-customgreen size-2 md:size-4 mt-2" /> 
-                        <span className="w-[90%] md:w-[95%]">
+                        <FaStarOfLife className="text-customgreen size-2 mt-2 md:size-4 " /> 
+                        <span className="w-[90%] lg:w-[95%]">
                             {p.text}
                         </span>
                     </p>
@@ -367,7 +368,7 @@ const SingleService = () => {
 
             <div className="w-full flex flex-col md:flex-row justify-between items-start">
                 <div className="w-full md:w-1/2 flex justify-start items-center">
-                    <img src={services[id-1].bottom.image} className="h-full w-full md:w-[80%] " />
+                    <img src={services[id-1].bottom.image} className="w-full md:w-[80%] h-[250px] lg:h-[400px] 2xl:h-[500px] object-cover rounded-xl" />
                 </div>
 
                 <div className="w-full md:w-1/2 flex flex-col justify-start items-start gap-8 mt-8 md:mt-0">
@@ -414,7 +415,7 @@ const SingleService = () => {
                         {service.subcontent}
                     </p>
                     </div>
-                    <img src={service.image} className="w-full h-[150px] sm:h-[250px] rounded-xl" />
+                    <img src={service.image} className="w-full h-[200px] sm:h-[250px] lg:h-[350px] rounded-xl object-cover" />
                         </AnimatedElement>
                     </Link>
                 ))}

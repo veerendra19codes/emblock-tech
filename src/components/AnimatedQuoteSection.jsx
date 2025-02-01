@@ -20,7 +20,7 @@ const AnimatedQuoteSection = ({ quotes ,className="" }) => {
         setIsAnimating(false);
       }, 500); // Half of the transition duration
       
-    }, 7000); // Change quote every 5 seconds
+    }, 3000); // Change quote every 3 seconds
     
     return () => clearInterval(interval);
   }, [validQuotes.length]);
