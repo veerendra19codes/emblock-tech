@@ -1,3 +1,4 @@
+import FaqNew from '../FaqNew';
 import AccordionExample from './Accordian'
 import  { useEffect, useRef, useState } from 'react';
 
@@ -40,7 +41,7 @@ const AnimatedElement = ({ children, delay=0 }) => {
   );
 };
 
-const Faq = () => {
+const HomeFaq = () => {
   const data = [
   {
     number: 1,
@@ -103,10 +104,10 @@ const Faq = () => {
         </AnimatedElement>
 
         <AnimatedElement delay={200}>
-          <AccordionExample data={data} />
+          <FaqNew data={data} />
         </AnimatedElement>
     </div>
   )
 }
 
-export default Faq
+export default HomeFaq

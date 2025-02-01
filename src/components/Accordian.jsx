@@ -35,14 +35,21 @@ number,
 
   return (
     <motion.div
-      className={`w-70 ' my-4 h-[100px] cursor-pointer select-none overflow-hidden rounded-lg border  `}
+      className={`w-70 ' my-4  cursor-pointer select-none overflow-hidden rounded-lg border  `}
       variants={cardVariants}
       initial="collapsed"
       animate={isExpanded ? 'expanded' : 'collapsed'}
       onClick={onToggle}
     >
-      <div className="flex items-center justify-between p-4 text-gray-900">
-        <h2 className="m-0 text-sm md:text-lg font-semibold text-black flex gap-2"><span className="text-gray-400 text-xs md:text-lg px-1"> 0{number} </span>{title}</h2>
+      <div className="flex items-center justify-between p-2 lg:p-4 text-gray-900 h-[110%]">
+
+        <h2 className="m-0 text-sm md:text-lg font-semibold text-black flex items-center gap-2">
+          <span className="text-gray-400 text-xs lg:text-lg px-1">     
+            0{number} 
+          </span>
+          {title}
+        </h2>
+
         <motion.div variants={chevronVariants}>
           <ChevronDown size={18} />
         </motion.div>

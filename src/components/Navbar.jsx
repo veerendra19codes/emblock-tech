@@ -47,7 +47,7 @@ const Navbar = () => {
   return (
     <>
       {/* desktop nav  */}
-      <nav className="opacity-0 translate-y-full w-full h-28 hidden md:flex flex-row justify-between items-center px-12 border-b border-gray-300 shadow-sm animate-slide-down animate-fill-mode-forwards">
+      <nav className="opacity-0 translate-y-full w-full h-28 hidden lg:flex flex-row justify-between items-center px-12 border-b border-gray-300 shadow-sm animate-slide-down animate-fill-mode-forwards">
 
           <Link to="/" className="logo flex justify-center items-center gap-2 object-contain rounded-full">
             <img src="/logo.png" className="h-8 w-auto" />
@@ -74,13 +74,13 @@ const Navbar = () => {
       </nav>
 
       {/* mobile navbar  */}
-      <nav className="w-full h-20 flex justify-between items-center p-4 md:hidden shadow-sm border-b border-gray-400 bg-gray-100">
+      <nav className="w-full h-20 flex justify-between items-center p-4 lg:hidden shadow-sm border-b border-gray-400 bg-gray-100">
         <img src="logo.png" className="h-6" />
         <HiMenuAlt2 className="size-12 rotate-180 shadow-2xl rounded-full bg-white p-2" onClick={() => setShowMobileNavbar(true)} />
 
         <div className={`${showMobileNavbar ? "flex" : "hidden"} fixed top-0 right-0 left-0 menu w-full flex-col gap-4 bg-white text-white bg-opacity-90 backdrop-blur-sm z-50  h-[500px] opacity-0 animate-slide-down-fast animate-fill-mode-forwards`}>
 
-          <nav className="w-full h-20 p-4 flex justify-between items-center md:hidden shadow-sm  bg-gray-100">
+          <nav className="w-full h-20 p-4 flex justify-between items-center lg:hidden shadow-sm  bg-gray-100">
             <img src="logo.png" className="h-6" />
             <IoCloseSharp className="size-12 rotate-180 shadow-2xl rounded-full bg-white text-customblack p-2" onClick={() => setShowMobileNavbar(false)} />
           </nav>

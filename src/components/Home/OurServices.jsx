@@ -111,11 +111,11 @@ const OurServices = () => {
         <div className={`${isAnimated ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-32'}   transition-all duration-700 ease-out  left w-full lg:w-1/3 text-center lg:text-right flex flex-col gap-6 h-full`}>
 
           <div className="flex gap-2 justify-center lg:justify-end items-center">
-            <span className="bg-lime-400 text-black size-3 rounded-full">.</span>
-            <p className="text-lg lg:text-lg font-semibold text-gray-400">Services</p>
+            <span className="bg-lime-400 text-white size-2 sm:size-3 rounded-full">.</span>
+            <p className="text-sm  lg:text-lg font-semibold text-gray-500">Services</p>
           </div>
 
-          <h1 className="text-[35px] lg:text-[80px] leading-none">
+          <h1 className="text-[25px] sm:text-[40px] lg:text-[60px] leading-none">
             <h1>Our Services</h1>
             <h1>Teams</h1>
           </h1>
@@ -126,16 +126,16 @@ const OurServices = () => {
           
           {cards.map((card) => (
             <div key={card.id} className={`${isAnimated ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-32'} 
-             card flex flex-col justify-between shadow-lg rounded-lg bg-white p-4 lg:p-12 w-[45%] h-[200px] lg:h-[180px] transition-all duration-1000 ease-out text-start`}>
-                <div className="flex flex-col">
-                  <h3 className="text-xs lg:text-xl font-medium">{card.title}</h3>
-                  <p className="text-customgrayhover text-xs lg:text-base">{card.content}</p>
+             card flex flex-col justify-between shadow-lg rounded-lg bg-white p-4 lg:p-8 xl:p-12 w-[45%] h-[200px] lg:h-[250px] transition-all duration-1000 ease-out text-start`}>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-sm sm:text-xl lg:text-xl font-medium">{card.title}</h3>
+                  <p className="text-customgrayhover text-xs sm:text-lg lg:text-base">{card.content}</p>
                 </div>
                 {/* <PercentageSlider percentage={card.percentage} value={card.value} /> */}
             </div>
           ))}
 
-          <div className="allservices bg-customgreen rounded-lg w-[45%] h-[200px] lg:h-[180px] flex flex-col md:flex-row justify-center items-center group gap-2 shadow-lg text-xs md:text-lg whitespace-nowrap">
+          <div className="allservices bg-customgreen rounded-lg w-[45%] h-[200px] lg:h-[250px] flex flex-col md:flex-row justify-center items-center group gap-2 shadow-lg text-xs md:text-lg whitespace-nowrap font-medium">
             View all Services 
             <FaArrowRightLong className="size-6 md:size-8 rounded-full bg-customblack p-1 md:p-2 text-customgreen  -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
           </div>

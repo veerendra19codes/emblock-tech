@@ -41,7 +41,7 @@ const AnimatedElement = ({ children, delay = 0 }) => {
   );
 };
 
-const HowItWorks = () => {
+const HowWeWork = () => {
   const numbers = Array.from({ length: 1000 }, (_, i) => i + 1);
 
   const services = [
@@ -171,15 +171,15 @@ const HowItWorks = () => {
         {/* 1 */}
          <AnimatedElement>
 
-        <div className="feature-hero w-full flex flex-col gap-4 justify-center  items-start pl-4 lg:pl-24 py-12 lg:py-40 bg-black animate-fadeInUp">
+        <div className="feature-hero w-full flex flex-col gap-4 justify-center  items-start pl-4 lg:pl-24 py-12 md:py-24 xl:py-40 bg-black animate-fadeInUp">
 
           <div className="flex gap-2 justify-center items-center">
             <span className="bg-lime-400 text-black size-2 md:size-3 rounded-full">.</span>
-            <p className="text-md lg:text-lg font-semibold text-gray-400">Process</p>
+            <p className="text-sm lg:text-lg font-semibold text-gray-400">Process</p>
           </div>
 
           <div className="flex justify-center items-start flex-col gap-2 leading-none ">
-            <h1 className="text-[25px] lg:text-[90px] text-white leading-none">
+            <h1 className="text-[25px] sm:text-[40px] lg:text-[60px] text-white leading-none">
               How we work
             </h1>
           </div>
@@ -204,7 +204,10 @@ const HowItWorks = () => {
               <div className="description flex flex-col gap-2 w-full lg:w-[70%] items-start justify-start">
                   <h1 className="text-white text-lg md:text-2xl pb-2">{step.title}</h1>
                   {step.steps.map((s) => (
-                    <p key={s.id} className="text-gray-400 flex justify-center items-center gap-2 md:pl-4 text-sm md:text-lg"><FaStarOfLife className="text-customgreen" />{s.content}</p>
+                    <p key={s.id} className="text-gray-400 flex justify-start items-start gap-2 md:pl-4 text-sm md:text-lg"><FaStarOfLife className="text-customgreen mt-2 size-4" />
+                    <span className="w-[90%] md:w-[95%]">
+                      {s.content}
+                    </span></p>
                   ))}
                 
               </div>
@@ -214,7 +217,7 @@ const HowItWorks = () => {
           ))}         
         </div>
         
-        <div className="cards flex flex-col lg:flex-row justify-center items-center w-full gap-6 p-4 lg:p-24">
+        <div className="cards flex flex-col md:flex-row justify-center items-center w-full gap-6 p-4 sm:pb-16 lg:p-24">
 
           {/* 6 */}
           <AnimatedElement delay={800}>
@@ -255,4 +258,4 @@ const HowItWorks = () => {
   )
 }
 
-export default HowItWorks
+export default HowWeWork

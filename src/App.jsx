@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Home/Hero";
 import FeaturedProjects from "./components/Home/FeaturedProjects";
-import HowItWorks from "./components/Home/HowItWorks";
 import Testimonials from "./components/Home/Testimonials";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
@@ -22,25 +21,29 @@ import OurServices from "./components/Home/OurServices";
 import Clients from "./components/Home/Clients";
 import ServicesNew from "./components/Services/ServicesNew";
 import SingleService from "./components/Services/SingleService";
+import HowWeWork from "./components/Home/HowWeWork";
+import FaqNew from "./components/FaqNew";
+import HomeFaq from "./components/Home/Accordian";
 
 function App() {
   
   return (
-    <div className="min-w-screen max-w-screen overflow-x-hidden h-full flex flex-col justify-center items-center font-manrope bg-gray-50">
+    <div className="w-full overflow-x-hidden h-full flex flex-col justify-center items-center font-manrope bg-gray-50">
       <Router>
         <ScrollToTop />
         <Navbar />  
         <Routes>
           <Route path="/" element={
-              <>
+              <div className="w-full overflow-x-hidden flex flex-col justify-center  items-stretch">
                 <Hero />
                 <FeaturedProjects />
                 <OurServices />
-                <HowItWorks />
+                <HowWeWork />
                 <Testimonials />
-                <Faq />
+                {/* <Faq /> */}
+                <HomeFaq />
                 <Clients />
-              </>
+              </div>
           } />
 
           <Route path="/solutions/:id" element={
