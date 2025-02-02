@@ -1,5 +1,4 @@
-import { CornerDownRight } from 'lucide-react'
-import React, { useEffect, useRef, useState } from 'react'
+import  { useEffect, useRef, useState } from 'react'
 import { FaArrowRightLong, FaXTwitter } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
@@ -44,23 +43,7 @@ const AnimatedElement = ({ children, delay = 0 }) => {
 
 const SocialMedia = () => {
 
-  const links = [
-    {
-      id:1 ,
-      name: "LinkedIn",
-      link: "",
-    },
-    {
-      id:2 ,
-      name: "Instagram",
-      link: "",
-    },
-    {
-      id:1 ,
-      name: "LinkedIn",
-      link: "",
-    },
-  ]
+  
   return (
     <section className="socialmedia w-full flex flex-col p-6 py-12 md:p-24 xl:py-36">
       

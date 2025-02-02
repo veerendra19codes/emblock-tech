@@ -1,6 +1,5 @@
-import { FaArrowRightLong, FaXTwitter } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
 import { useEffect, useRef, useState } from 'react';
-import { CornerDownRight } from 'lucide-react';
 import { Link } from "react-router-dom";
 
 const AnimatedElement = ({ children, delay = 0, className="" }) => {

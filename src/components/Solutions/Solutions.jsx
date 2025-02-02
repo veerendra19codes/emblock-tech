@@ -478,38 +478,6 @@ const Solutions = () => {
 
   const solution = solutions[id - 1]
 
-  const quotes = [
-    {
-      id: 1,
-      quote: `"EMBLOCK has completely transformed our construction management. With real-time video streaming, image recognition for attendance, and integrated PMS & ERP, it’s a single solution for everything we need on-site."`,
-      author: "Bala venkatesh",
-      designatin: "Founder Aargaa Construction",
-    },
-    {
-      id: 2,
-      quote: `“Right from the setup, EMBLOCK's e-commerce solution boosted our online operations, enhancing efficiency and scalability exactly as shown in the demo”`,
-      author: "Devi  Ramanujam",
-      designatin: "Founder Nishika",
-    },
-    {
-      id: 3,
-      quote: `“Fleet safety has always been a priority for us, and EMBLOCK delivered exactly what we needed. Driver behavior monitoring and GPS tracking have improved safety and efficiency across our fleet.`,
-      author: "Syed Irfan ",
-      designatin: "Founder-NATIONAL TRANSPORT ",
-    },
-    {
-      id: 4,
-      quote: `“Managing GST used to be a nightmare until we switched to EMBLOCK. Automated tax calculations and seamless filing have made compliance effortless!."`,
-      author: "",
-      designatin: "",
-    },
-    {
-      id: 5,
-      quote: "",
-      author: "",
-      designatin: "",
-    },
-  ]
 
   return (
     <div className="flex justify-start items-center py-4 md:py-32 min-h-screen w-full flex-col">

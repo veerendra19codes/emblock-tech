@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { Link } from "react-router-dom";
 
@@ -276,7 +276,7 @@ Download STRIKES now and be part of the future of collaboration!
                         A Smarter Future for Businesses
                     </h1>
                     <p className="w-full text-base md:text-xl text-customgrayhover font-semibold">
-                       EDGECARTS is more than just an e-commerce platform; it’s your gateway to building a thriving online business. Whether you’re a small business owner or an entrepreneur with big dreams, our solution gives you the tools and support to grow without limits.
+                       EDGECARTS is more than just an e-commerce platform; it&apos;s your gateway to building a thriving online business. Whether you&apos;re a small business owner or an entrepreneur with big dreams, our solution gives you the tools and support to grow without limits.
                     </p>
                 </div>
 

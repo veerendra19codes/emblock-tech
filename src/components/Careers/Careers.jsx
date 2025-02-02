@@ -2,7 +2,7 @@ import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
 import { Link } from "react-router-dom";
 import SocialMedia from "../SocialMedia";
-import React, { useEffect, useRef, useState } from 'react'
+import  { useEffect, useRef, useState } from 'react'
 
 const AnimatedElement = ({ children, delay = 0 }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,6 +45,7 @@ const AnimatedElement = ({ children, delay = 0 }) => {
 
 
 const Careers = () => {
+
   const jobs = [
     {
       id: 1,
@@ -179,7 +180,7 @@ const Careers = () => {
         <AnimatedElement delay={400}>
 
         <p className="text-gray-500 font-medium text-sm md:text-lg lg:text-2xl w-full md:w-[60%] mt-4 md:mt-8">
-          At Emblock Tech, we’re creating innovative solutions and fostering growth. Join a team where your ideas matter, your skills grow, and your impact lasts. Let’s build the future together!
+          At Emblock Tech, we&apos;re creating innovative solutions and fostering growth. Join a team where your ideas matter, your skills grow, and your impact lasts. Let&apos;s build the future together!
         </p>
         </AnimatedElement>
 
@@ -208,7 +209,7 @@ const Careers = () => {
             <h1>Dear Aspirants,</h1>
 
             <p className="mt-4">
-              We’re excited about your interest in joining our team! To ensure your application is considered, please follow our official application process:
+              We&apos;re excited about your interest in joining our team! To ensure your application is considered, please follow our official application process:
             </p>
             <p className="w-full flex flex-row flex-wrap justify-start items-start gap-2">
               <GoDotFill size={8} className="mt-2" />
@@ -219,13 +220,13 @@ const Careers = () => {
             <p className="w-full flex flex-row flex-wrap justify-start items-start gap-2">
               <GoDotFill size={8} className="mt-2" />
               <span className="w-[90%] md:w-[95%]">
-                Include Your Portfolio: Attach your GitHub profile, portfolio, or links to projects you’re proud to showcase.
+                Include Your Portfolio: Attach your GitHub profile, portfolio, or links to projects you&apos;re proud to showcase.
               </span>
             </p>
             <p className="w-full flex flex-row flex-wrap justify-start items-start gap-2">
               <GoDotFill size={8} className="mt-2" />
               <span className="w-[90%] md:w-[95%]">
-                LinkedIn Profile: Don’t forget to share your LinkedIn profile link for us to learn more about your professional journey.
+                LinkedIn Profile: Don&apos;t forget to share your LinkedIn profile link for us to learn more about your professional journey.
               </span>
             </p>
             

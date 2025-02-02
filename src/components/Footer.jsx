@@ -1,6 +1,5 @@
 import { FaArrowRightLong, FaXTwitter } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
-import { FaArrowUp } from "react-icons/fa6";
 import { useEffect, useRef, useState } from 'react';
 import { FaRegCopyright } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -49,70 +48,8 @@ const AnimatedElement = ({ children, delay = 0, className="" }) => {
 
 const Footer = () => {
 
-  const numbers = Array.from({ length: 1000 }, (_, i) => i + 1);
-
-  const stats = [
-    {
-      id: 0,
-      first: "98%",
-      second: "client retention rate",
-    },
-    {
-      id: 1,
-      first: "50+",
-      second: "satisfies clients",
-    },
-    {
-      id: 3,
-      first: "2+",
-      second: "years of experience",
-    },
-    {
-      id: 4,
-      first: "70+",
-      second: "finished projects",
-    },
-  ]
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <section  className="featured-projects w-full h-full flex flex-col justify-center items-center bg-black text-white md:pt-12">
-
-      {/* <div className="marquee w-full shadow-xl relative bg-customblack">
-        <div className="flex h-16 lg:h-24 gap-8 justify-center items-center animate-marquee lg:animate-marqueeslow  whitespace-nowrap">
-            
-          {numbers.map((num) => (
-            <div key={num} className="flex h-full gap-4 lg:gap-8 justify-center items-center w-auto mx-0 lg:mx-4">
-
-              <p className="text-xl lg:text-3xl leading-none">
-                <span className="text-customgreen">
-                  {">"}{stats[num%4].first}/
-                </span> 
-                {stats[num%4].second}
-              </p>
-              <img src="/star.svg" className="size-4 lg:size-8 text-customgreen" />
-              </div>
-          ))}
-        </div>
-          
-        <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-gray-900 to-transparent pointer-events-none"></div>
-        <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-gray-900 to-transparent pointer-events-none"></div>
-      </div> */}
-
-      {/* <div className="flex justify-between items-center w-full border border-gray-800 h-24 lg:h-32 px-4 lg:px-24">
-        <div className="flex gap-2 justify-center items-center">
-          <span className="bg-lime-400 text-black size-3 rounded-full">.</span>
-          <p className="text-[10px] lg:text-[14px] font-semibold ">Available for work</p>
-        </div>
-
-        <button onClick={scrollToTop} className="gap-1 lg:gap-4 flex items-center font-semibold text-gray-400 text-sm lg:text-lg">Back to top <FaArrowUp className="bg-white text-black size-8 lg:size-12 p-2 lg:p-4 text-lg rounded-full" /></button>     
-      </div> */}
 
       <div className="w-full flex flex-col lg:flex-row justify-between items-start py-24">
 
@@ -167,14 +104,12 @@ const Footer = () => {
 
             
             <div className="flex flex-col gap-1 my-12 justify-center lg:justify-start items-start lg:items-start">
-              {/* <p className="w-full text-gray-500 text-lg lg:text-xl flex flex-wrap font-semibold justify-center  lg:justify-start items-center text-center lg:text-start">Contact us</p> */}
+              
               <h1 className="text-xl md:text-3xl text-white w-full text-center lg:text-start ">contact<span className="text-customgreen">@</span>emblocktech.com</h1>
 
               <h1 className="text-xl md:text-3xl text-white w-full text-center lg:text-start my-4 "><span className="text-customgreen">+91</span>99523 11408</h1>
 
-              {/* <span className="w-full px-6 lg:px-0 text-white text-center lg:text-start text-md lg:text-xl">fast, reliable and professional </span>
-              <p className="w-full text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-center  lg:justify-start items-center text-center px-4 lg:px-0">services that bring your vision to life</p> */}
-
+              
 
               <p className="w-full  text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-center  lg:justify-start items-center text-center lg:text-start px-4 lg:px-0 mt-8">102, 20th Cross Road, Bengaluru 560076, Karnataka, India </p>
               <p className="w-full  text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-center  lg:justify-start items-center text-center lg:text-start px-4 lg:px-0 ">No.23-A, Vadakuthu, Cuddalore, Tamil Nadu, 607308</p>

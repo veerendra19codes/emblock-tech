@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
-import { FaQuoteLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import AnimatedQuoteSection from "../AnimatedQuoteSection";
 
@@ -543,7 +542,7 @@ const ServicesNew = () => {
             Innovative IoT and Software Solutions Tailored to Transform Your Business and Empower Your Growth Journey
         </h1>
         <p className="w-full lg:w-[80%] text-start text-xl md:text-2xl lg:text-3xl  font-medium text-gray-500 mt-12">
-            Over the years, we’ve had the privilege of partnering with a diverse range of clients, from startups to established enterprises, helping them turn their visions into impactful solutions.
+            Over the years, we&apos;ve had the privilege of partnering with a diverse range of clients, from startups to established enterprises, helping them turn their visions into impactful solutions.
         </p>
 
         <Link to="/services" className="rounded-full w-fit  p-2 md:p-4  pl-6 md:pl-10 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium md:font-semibold my-12 md:my-24">
@@ -571,7 +570,7 @@ const ServicesNew = () => {
             </p>
 
             <p className="w-full text-start text-gray-400 text-sm md:text-lg font-medium mt-12">
-              Our consulting services are tailored to identify the value IoT can bring to your business and align it with your goals. We begin with a comprehensive business assessment to evaluate your organization’s specific needs and identify areas where IoT can drive operational efficiency, cost savings, or customer engagement. Once the assessment is complete, we create a customized IoT strategy, mapping out actionable services to achieve your objectives. To ensure feasibility, we conduct in-depth technical and financial analyses, validating the viability of your IoT initiatives.
+              Our consulting services are tailored to identify the value IoT can bring to your business and align it with your goals. We begin with a comprehensive business assessment to evaluate your organization&apos;s specific needs and identify areas where IoT can drive operational efficiency, cost savings, or customer engagement. Once the assessment is complete, we create a customized IoT strategy, mapping out actionable services to achieve your objectives. To ensure feasibility, we conduct in-depth technical and financial analyses, validating the viability of your IoT initiatives.
             </p>
 
             <Link to="/services/1" className="rounded-full w-fit  p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-12 md:my-24">
@@ -724,24 +723,7 @@ const ServicesNew = () => {
         </div>
        </section>
 
-
-
-      {/* <section className="quote h-[500px] md:h-[600px] flex justify-center items-center px-6 md:px-24 py-24 md:mb-0 bg-black">
-        <div className="w-1/5 flex justify-end items-start -mt-[180px] md:-mt-[150px]">
-          < FaQuoteLeft  className="text-gray-400 size-[40px] md:size-[200px]"  />
-        </div>
-        <div className="w-4/5 flex flex-col justify-center items-start -mb-[50px] md:-mb-[150px] pr-[5%] text-white">
-          <h1 className=" text-sm md:text-3xl font-medium mb-8">
-            &ldquo;Vision without action is a dream. At our core, we transform aspirations into reality through relentless innovation and unwavering dedication.&ldquo;
-          </h1>
-          <p className="text-xs md:text-lg font-medium mb-4">Vigneshwaran R</p>
-          <p className="text-xs md:text-md font-medium">CEO & Founder EMBLOCK</p>
-        </div>
-      </section> */}
-
       <AnimatedQuoteSection quotes={quotes} />
-
-
 
       <section className="w-full flex flex-wrap flex-col justify-center items-start gap-0 py-12 md:py-24 px-6  lg:px-24">
             <AnimatedElement className="w-full flex gap-2 justify-start items-center sm:px-[5%]">
@@ -775,11 +757,9 @@ const ServicesNew = () => {
 
                     </Link>
                 ))}
-                
-                
+        
             </div>
         </section>
-
       
     </div>
   )

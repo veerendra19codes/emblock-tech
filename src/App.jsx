@@ -4,13 +4,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Home/Hero";
 import FeaturedProjects from "./components/Home/FeaturedProjects";
 import Testimonials from "./components/Home/Testimonials";
-import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import OurProducts from "./components/OurProducts/OurProducts";
-import SingleProduct from "./components/OurProducts/SingleProduct";
-import ServicesHero from "./components/Services/Hero";
-import Services from "./components/Services/Services";
-import ServicesFaq from "./components/Services/Faq";
 import Solutions from "./components/Solutions/Solutions";
 import About from "./components/About/About";
 import ContactUs from "./components/ContactUs/ContactUs";
@@ -22,9 +17,7 @@ import Clients from "./components/Home/Clients";
 import ServicesNew from "./components/Services/ServicesNew";
 import SingleService from "./components/Services/SingleService";
 import HowWeWork from "./components/Home/HowWeWork";
-import FaqNew from "./components/FaqNew";
 import HomeFaq from "./components/Home/Accordian";
-import SolutionsOld from "./components/Solutions/SolutionsOld";
 import SingleProductScroll from "./components/OurProducts/SingleProductScroll";
 
 function App() {
@@ -42,7 +35,6 @@ function App() {
                 <OurServices />
                 <HowWeWork />
                 <Testimonials />
-                {/* <Faq /> */}
                 <HomeFaq />
                 <Clients />
               </>
@@ -63,7 +55,6 @@ function App() {
 
           <Route path="/product/:id" element={
             <>
-              {/* <SingleProduct /> */}
               <SingleProductScroll />
             </>
 
@@ -77,9 +68,6 @@ function App() {
 
           <Route path="/services" element={
               <>
-                {/* <ServicesHero />
-                <Services />
-                <ServicesFaq /> */}
                 <ServicesNew />
               </>
           } />

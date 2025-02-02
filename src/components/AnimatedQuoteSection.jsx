@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { FaQuoteLeft } from "react-icons/fa";
 
 const AnimatedQuoteSection = ({ quotes ,className="" }) => {

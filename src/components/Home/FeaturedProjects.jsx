@@ -47,50 +47,9 @@ const FeaturedProjects = () => {
     };
   }, [isAnimated]);
 
-  const numbers = Array.from({ length: 1000 }, (_, i) => i + 1);
-  const stats = [
-    {
-      id: 0,
-      first: "98%",
-      second: "client retention rate",
-    },
-    {
-      id: 1,
-      first: "50+",
-      second: "satisfies clients",
-    },
-    {
-      id: 3,
-      first: "2+",
-      second: "years of experience",
-    },
-    {
-      id: 4,
-      first: "70+",
-      second: "finished projects",
-    },
-  ]
-
+  
   return (
     <section ref={sectionRef}   className="featured-projects w-full h-full  flex flex-col justify-center items-center bg-customblack text-white ">
-
-        {/* <div className="marquee  w-full shadow-xl relative group">
-          <div className="flex h-16 md:h-24 gap-8 justify-center items-center animate-marquee lg:animate-marqueeslow whitespace-nowrap ">
-            
-             {numbers.map((num) => (
-              <div key={num} className="flex h-full gap-4 lg:gap-8 justify-center items-center w-auto mx-0 lg:mx-4">
-
-                <p className="text-xl lg:text-3xl leading-none"><span className="text-customgreen">{">"}{stats[num%4].first}/</span> {stats[num%4].second}</p>
-                <img src="/star.svg" className="size-4 lg:size-8 text-customgreen" />
-              </div>
-             ))}
-            
-
-            
-          </div>
-          <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-gray-900 to-transparent pointer-events-none"></div>
-          <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-gray-900 to-transparent pointer-events-none"></div>
-        </div> */}
 
         <div className=" feature-hero w-full flex justify-start  items-center  py-24 lg:py-40 bg-black ">
 
@@ -127,32 +86,32 @@ const FeaturedProjects = () => {
 
           <Link to="/product/1" className="w-full lg:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-6 md:p-12  gap-2 md:gap-4 2xl:h-[750px]">
 
-            <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
+            {/* <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
               <div><span className="text-customgreen">{"{"}</span> E-commerce Saas <span className="text-customgreen">{"}"}</span>
               </div> 
               <div className="text-gray-400">5/31/24</div>
-            </h1>
+            </h1> */}
 
             <h1 className="text-2xl md:text-3xl  2xl:text-4xl">EDGECARTS</h1>
 
             <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">Web design & Web development</p>
 
-            <img src="/edgecarts.webp" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px] md:h-[400px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12  transition-transform duration-500 ease-in-out ${visibleImages[`project-image-0`] ? 'md:scale-110' : 'scale-100'}`}  />
+            <img src="/edgecarts.webp" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px] sm:h-[250px] md:h-[400px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12  transition-transform duration-500 ease-in-out ${visibleImages[`project-image-0`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
           <Link to="/product/2" className="w-full lg:w-1/2 border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-6 md:p-12  gap-2 md:gap-4 2xl:h-[750px]">
 
-            <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
+            {/* <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
               <div><span className="text-customgreen">{"{"}</span> Saas <span className="text-customgreen">{"}"}</span>
               </div> 
               <div className="text-gray-400">8/8/24</div>
-            </h1>
+            </h1> */}
 
             <h1 className="text-2xl md:text-3xl 2xl:text-4xl">BUILDOPS</h1>
 
             <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">ERP & PMS for Construction firm</p>
 
-            <img src="/buildops.jpg" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px]  md:h-[400px] 2xl:h-[450px] object-cover rounded-xl mt-6  md:mt-12 transition-transform duration-500  ease-in-out  ${visibleImages[`project-image-1`] ? 'md:scale-110' : 'scale-100'}`} />
+            <img src="/buildops.jpg" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px] sm:h-[250px]  md:h-[400px] 2xl:h-[450px] object-cover rounded-xl mt-6  md:mt-12 transition-transform duration-500  ease-in-out  ${visibleImages[`project-image-1`] ? 'md:scale-110' : 'scale-100'}`} />
           </Link>
 
         </div>
@@ -162,11 +121,11 @@ const FeaturedProjects = () => {
           <Link to="/product/3" className="w-full lg:w-1/3 h-[350px] sm:h-[600px]  lg:h-[600px] 2xl:h-[720px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:p-8 xl:p-12 gap-2 md:gap-4">
           <div className="flex flex-col gap-4 justify-start items-start">
 
-            <h1 className="flex justify-start items-center text-lg md:text-xl  gap-6"> 
+            {/* <h1 className="flex justify-start items-center text-lg md:text-xl  gap-6"> 
               <div><span className="text-customgreen">{"{"}</span> Mobile App <span className="text-customgreen">{"}"}</span>
               </div> 
               <div className="text-gray-400">6/20/24</div>
-            </h1>
+            </h1> */}
 
             <h1 className="text-2xl md:text-3xl 2xl:text-4xl whitespace-nowrap"> STRIKES</h1>
 
@@ -181,11 +140,11 @@ const FeaturedProjects = () => {
           <Link to="/product/4" className="w-full lg:w-1/3 h-[430px] sm:h-[600px] lg:h-[600px] border 2xl:h-[720px] border-gray-800 flex flex-col hover:bg-customblackhover justify-between items-start p-6 md:p-8 xl:p-12 gap-2 md:gap-4">
           <div className="flex flex-col gap-4 justify-start items-start">
 
-            <h1 className="flex justify-start items-center text-lg md:text-xl gap-6"> 
+            {/* <h1 className="flex justify-start items-center text-lg md:text-xl gap-6"> 
               <div><span className="text-customgreen">{"{"}</span> Software Development <span className="text-customgreen">{"}"}</span>
               </div> 
               <div className="text-gray-400">7/13/24</div>
-            </h1>
+            </h1> */}
 
             <h1 className="text-2xl md:text-3xl 2xl:text-4xl">Real-Time Machine Monitoring System</h1>
 

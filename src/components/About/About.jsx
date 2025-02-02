@@ -1,6 +1,5 @@
 import { FaStarOfLife } from "react-icons/fa6"
 import { GoDotFill } from "react-icons/go"
-import { FaQuoteLeft } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 import AnimatedQuoteSection from "../AnimatedQuoteSection";
 
@@ -190,24 +189,10 @@ const About = () => {
         </div>
 
         <h1 className="text-center mx-auto flex justify-center items-center text-md md:text-xl text-white font-medium my-8 w-full md:w-[70%] mt-16">
-          At EMBLOCK, we envision a smarter, more connected world where innovation and efficiency lead the way. Together, we can pave the path to a future that's not only transformative but also secure, scalable, and sustainable.
+          At EMBLOCK, we envision a smarter, more connected world where innovation and efficiency lead the way. Together, we can pave the path to a future that&apos;s not only transformative but also secure, scalable, and sustainable.
         </h1>
 
       </div>
-
-
-      {/* <section className="quote h-[400px] md:h-[700px] flex justify-center items-center px-6 md:px-24 mb-24 md:mb-0">
-          <div className="w-1/5 flex justify-end items-start -mt-[100px] md:-mt-[150px]">
-            < FaQuoteLeft  className="text-gray-600 size-[40px] md:size-[200px]"  />
-          </div>
-          <div className="w-4/5 flex flex-col justify-center items-start -mb-[100px] md:-mb-[150px] pr-[5%]">
-            <h1 className="text-black text-sm md:text-3xl font-medium mb-8">
-              &ldquo;Vision without action is a dream. At our core, we transform aspirations into reality through relentless innovation and unwavering dedication.&ldquo;
-            </h1>
-            <p className="text-xs md:text-lg font-medium mb-4">Vigneshwaran R</p>
-            <p className="text-xs md:text-md font-medium">CEO & Founder EMBLOCK</p>
-          </div>
-        </section> */}
 
       <AnimatedQuoteSection quotes={quotes} />
     </div>

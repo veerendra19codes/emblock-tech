@@ -1,5 +1,3 @@
-import { m } from 'framer-motion';
-import PercentageSlider from '../Slider'
 import { useState, useEffect, useRef } from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { Link } from "react-router-dom";
@@ -30,50 +28,7 @@ const OurServices = () => {
    };
  }, [isAnimated]);
 
-//  const cards = [
-//     {
-//       id: 1,
-//       title: "Designers",
-//       content: "Crafts intuitive user experiences and visually engaging interface",
-//       percentage: 30,
-//       value: 3,
-//     },
-//     {
-//       id: 2,
-//       title: "Embedded System Engineers",
-//       content: "Develop firmware and software for the IoT devices themselves (microcontrollers, sensors, etc.)",
-//       percentage: 20,
-//       value: 2,
-//     },
-//     {
-//       id: 3,
-//       title: "Developers",
-//       content: "Transforms designs into responsive high-performing web and mobile applications",
-//       percentage: 80,
-//       value: 11,
-//     },
-//     {
-//       id: 4,
-//       title: "IoT Architects",
-//       content: "Design and plan the overall IoT system architecture, including connectivity, data flow and security.",
-//       percentage: 10,
-//       value: 1,
-//     },
-//     {
-//       id: 5,
-//       title: "Project Manager",
-//       content: "Coordinates the creative process, ensuring on-time delivery and client satisfaction.",
-//       percentage: 40,
-//       value: 4,
-//     },
-//     {
-//       id: 6,
-//       title: "IoT Data Scientists",
-//       content: "Analyze IoT data to extract insights, build predictive models and optimize system performance",
-//       percentage: 10,
-//       value: 1,
-//     },
-//   ]
+
 
   const cards = [
     {
@@ -133,7 +88,7 @@ const OurServices = () => {
                   <h3 className="text-sm sm:text-xl lg:text-2xl font-semibold">{card.title}</h3>
                   <p className="text-gray-500 text-xs sm:text-lg  font-medium">{card.content}</p>
                 </div>
-                {/* <PercentageSlider percentage={card.percentage} value={card.value} /> */}
+                
             </div>
           ))}
 

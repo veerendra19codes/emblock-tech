@@ -1,4 +1,3 @@
-import { LuClock3 } from "react-icons/lu";
 import { FaStarOfLife } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 
@@ -42,30 +41,7 @@ const AnimatedElement = ({ children, delay = 0 }) => {
 };
 
 const HowWeWork = () => {
-  const numbers = Array.from({ length: 1000 }, (_, i) => i + 1);
-
-  const services = [
-    {
-      id: 0,
-      value: "Corporate Website"
-    },
-    {
-      id: 1,
-      value: "ERP & CRM"
-    },
-    {
-      id: 3,
-      value: "IoT"
-    },
-    {
-      id: 4,
-      value: "Mobile APP"
-    },
-    {
-      id: 5,
-      value: "Ecommerce"
-    },
-  ]
+  
 
   const steps = [
     {
@@ -150,23 +126,6 @@ const HowWeWork = () => {
   return (
     <section  className="how-it-works w-full h-full flex flex-col justify-center items-center bg-black text-white ">
 
-        {/* <div className="marquee w-full shadow-xl relative bg-customblack">
-
-          <div className="flex h-16 lg:h-24 gap-8 justify-center items-center animate-marquee lg:animate-marqueeslow whitespace-nowrap ">
-            
-             {numbers.map((num) => (
-              <div key={num} className="flex h-full gap-4 lg:gap-8 justify-center items-center w-auto mx-0 lg:mx-4">
-
-                <p className="text-xl lg:text-3xl leading-none">{services[num%5].value}</p>
-                <img src="/star.svg" className="size-4 lg:size-8 text-customgreen" />
-              </div>
-             ))}
-          </div>
-
-          <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-gray-900 to-transparent pointer-events-none"></div>
-          <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-gray-900 to-transparent pointer-events-none"></div>
-
-        </div> */}
 
         {/* 1 */}
          <AnimatedElement>

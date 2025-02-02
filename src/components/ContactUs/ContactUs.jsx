@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { FaArrowRightLong } from 'react-icons/fa6';
-import { FaQuoteLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Faq from '../Faq';
 import SocialMedia from '../SocialMedia';
 import toast, { Toaster } from 'react-hot-toast';
-import FaqNew from '../FaqNew';
 import ContactUsFaq from './ContactUsAccordian';
 import AnimatedQuoteSection from '../AnimatedQuoteSection';
 
@@ -56,51 +53,6 @@ const ContactUs = () => {
     }
   };
 
-   const data = [
-  {
-    number: 1,
-    title: "How do EMBLOCK's solutions enhance manufacturing operations?",
-    content:
-      'Our solutions provide real-time monitoring of machinery, enabling predictive maintenance, reducing downtime, and improving overall production efficiency.',
-  },
-  {
-    number: 2,
-    title: "What features do EMBLOCK's logistics solutions offer?",
-    content:
-      'We offer features like HD dashcams for safety, automated risk profiling for better driver management, and real-time tracking to optimize fleet operations."',
-  },
-  {
-    number: 3,
-    title: "Can EMBLOCK's solutions be integrated with existing systems?",
-    content:
-      'Yes, our solutions are designed to be compatible with existing ERP, PMS, and other operational systems to ensure seamless integration and data synchronization',
-  },
-  {
-    number: 4,
-    title: 'What support does EMBLOCK offer for its products?',
-    content:
-      'We provide comprehensive support including installation, training, and ongoing technical assistance to ensure our clients get the most out of our solutions'
-  },
-  {
-    number: 5,
-    title: 'How does EMBLOCK ensure data security in its IoT devices? ',
-    content:
-      'Data security is paramount at EMBLOCK. We employ robust encryption and compliance with international security standards to protect all data handled by our devices.',
-  },
-  {
-    number: 6,
-    title: "What industries can benefit from EMBLOCK's IoT solutions?",
-    content:
-      'While our solutions are versatile enough for various industries, they are particularly beneficial for manufacturing, logistics, supply chain, and even construction sectors',
-  },
-  {
-    number: 7,
-    title: "How does the installation process of EMBLOCK's devices work?",
-    content:
-      'Our team conducts a thorough site assessment followed by a customized installation plan to fit the specific needs of each client, ensuring minimal disruption and optimal functionality.',
-  },
-]
-
 const quotes = [
     {
       id: 1,
@@ -140,7 +92,7 @@ const quotes = [
 
         <h1 className="w-full text-start text-[35px] md:text-[60px] font-medium">We&apos;re happy to help</h1>
 
-        <p className="w-full text-start text-xl md:text-3xl font-medium my-6 md:my-12">At EmBlock, we value your inquiries, feedback, and suggestions. Whether you have a question about our services, need assistance, or want to explore a partnership, we’d love to hear from you. </p>
+        <p className="w-full text-start text-xl md:text-3xl font-medium my-6 md:my-12">At EmBlock, we value your inquiries, feedback, and suggestions. Whether you have a question about our services, need assistance, or want to explore a partnership, we&apos;d love to hear from you. </p>
         
         <Link to="/services" className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-12">
             Become a client 
@@ -236,23 +188,9 @@ const quotes = [
       {/* <Faq /> */}
       <ContactUsFaq />
 
-      {/* <section className="quote h-[500px] md:h-[800px] flex justify-center items-center px-6 md:px-24  md:mb-0 bg-black">
-          <div className="w-1/5 flex justify-end items-start -mt-[200px] md:-mt-[200px]">
-            < FaQuoteLeft  className="text-gray-300 size-[40px] md:size-[200px]"  />
-          </div>
-          <div className="w-4/5 flex flex-col justify-center items-start -mb-[000px] md:-mb-[100px] pr-[5%] text-white ">
-            <h1 className="text-sm md:text-3xl font-medium mb-8">
-              &ldquo;Vision without action is a dream. At our core, we transform aspirations into reality through relentless innovation and unwavering dedication.&ldquo;
-            </h1>
-            <p className="text-xs md:text-lg font-medium mb-4">Vigneshwaran R</p>
-            <p className="text-xs md:text-md font-medium">CEO & Founder EMBLOCK</p>
-          </div>
-        </section> */}
-      
       <AnimatedQuoteSection quotes={quotes} className="bg-black text-white" />
 
-
-        <SocialMedia />
+      <SocialMedia />
     </div>
   )
 }

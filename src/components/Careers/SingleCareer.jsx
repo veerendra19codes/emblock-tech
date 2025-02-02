@@ -1,7 +1,6 @@
 import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
 import { Link, useParams } from "react-router-dom"
 import { jobs } from "../../data";
-import { TiPin } from "react-icons/ti";
 import { GoDotFill } from "react-icons/go";
 import { useEffect, useRef, useState } from "react";
 

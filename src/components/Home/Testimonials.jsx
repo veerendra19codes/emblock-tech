@@ -1,7 +1,5 @@
-import { FaStarOfLife } from "react-icons/fa";
 import { PiStarFourFill } from "react-icons/pi";
 import { ImQuotesRight } from "react-icons/im";
-import { useState } from "react";
 
 const Testimonials = () => {
   const numbers = Array.from({ length: 1000 }, (_, i) => i + 1);
@@ -57,11 +55,7 @@ const Testimonials = () => {
             review: "I had an idea for an IoT hardware project, and Emblock Tech brought it to life. They made the whole process super easy, and the final prototype was exactly what I needed. Great experience working with them!"
         },
     ]
-    // const [isPlaying, setIsPlaying] = useState(true);
-    //  // Toggle play/pause
-    // const toggleAnimation = () => {
-    //     setIsPlaying((prev) => !prev);
-    // };
+    
 
   return (
     <div className="flex flex-col w-full justify-center items-center bg-black text-white gap-4 h-full pt-8">
@@ -79,7 +73,7 @@ const Testimonials = () => {
 
             <h1 className="text-[25px]  sm:text-[60px] lg:text-[60px] flex justify-center items-center relative">
                 word for it 
-                {/* <FaStarOfLife className="text-customgreen text-sm sm:text-xl  lg:text-3xl top-0  md:top-8  -right-4  md:-right-8 absolute" /> */}
+                
             </h1>
 
         </div>
@@ -124,43 +118,6 @@ const Testimonials = () => {
             <div className="absolute top-0 left-0 w-6 md:w-24 h-full bg-gradient-to-r from-black to-transparent pointer-events-none"></div>
             <div className="absolute top-0 right-0 w-6 md:w-24 h-full bg-gradient-to-l from-black to-transparent pointer-events-none"></div>
         </div>
-
-
-         {/* <div className="overflow-hidden w-full relative bg-black my-16">
-        <div className="flex gap-4 animate-marquee-right-new">
-          {numbers.map((i) => (
-            <div
-              key={i}
-              className="card shrink-0 h-[300px] md:h-[450px] border border-gray-700 rounded-xl flex flex-col p-4 md:p-8 w-[280px] md:w-[400px] bg-black"
-            >
-              <div className="row flex justify-between items-center mb-4 md:mb-6">
-                <div className="ratings flex items-center gap-1 text-xs md:text-md">
-                  <span className="text-white">5.0</span>
-                  <span className="text-gray-500">/5</span>
-                  {[...Array(5)].map((_, index) => (
-                    <PiStarFourFill key={index} className="text-yellow-400" />
-                  ))}
-                </div>
-                <ImQuotesRight className="text-xl md:text-3xl text-customgrayhover" />
-              </div>
-
-              <div className="review text-wrap flex-grow font-semibold text-xs md:text-lg leading-relaxed">
-                {reviews[i % 10].review}
-              </div>
-
-              <div className="author flex justify-start items-center gap-3 mt-4">
-                <img src="/profile.png" className="size-8 md:size-10 rounded-full" />
-                <p className="text-gray-400 font-semibold text-xs md:text-lg">
-                  {reviews[i % 10].author}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="absolute top-0 left-0 w-12 md:w-24 h-full bg-gradient-to-r from-black to-transparent pointer-events-none z-10" />
-        <div className="absolute top-0 right-0 w-12 md:w-24 h-full bg-gradient-to-l from-black to-transparent pointer-events-none z-10" />
-      </div> */}
 
     </div>
   )
