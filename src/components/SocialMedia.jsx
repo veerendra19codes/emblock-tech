@@ -1,5 +1,5 @@
 import  { useEffect, useRef, useState } from 'react'
-import { FaArrowRightLong, FaXTwitter } from 'react-icons/fa6'
+import { FaArrowRightLong, FaInstagram, FaLinkedin, FaSquareFacebook, FaXTwitter } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
 const AnimatedElement = ({ children, delay = 0 }) => {
@@ -45,7 +45,7 @@ const SocialMedia = () => {
 
   
   return (
-    <section className="socialmedia w-full flex flex-col p-6 py-12 md:p-24 xl:py-36">
+    <section className="socialmedia w-full flex flex-col p-6 py-12 md:p-24 xl:py-36 bg-gray-100">
       
         <AnimatedElement>
 
@@ -62,63 +62,45 @@ const SocialMedia = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 mt-4 md:mt-0">
 
+
             <AnimatedElement delay={200}>
-              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm h-[100px] group">
-                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Twitter/X</h1>
+              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm h-[150px] md:h-[200px] group">
+                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Instagram</h1>
                   
                   <p className="w-full flex justify-end">
-                      <FaXTwitter className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl group-hover:rotate-360 transition-all duration-300" />
+                      <FaInstagram className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl group-hover:rotate-360 transition-all duration-300" />
                   </p>
               </div>
             </AnimatedElement>
+
+
+
 
             <AnimatedElement delay={400}>
-
-              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm">
-                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Twitter/X</h1>
+              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm h-[150px] md:h-[200px] group">
+                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Facebook</h1>
                   
                   <p className="w-full flex justify-end">
-                      <FaXTwitter className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl" />
+                      <FaSquareFacebook className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl group-hover:rotate-360 transition-all duration-300" />
                   </p>
               </div>
             </AnimatedElement>
+
 
             <AnimatedElement delay={600}>
-
-              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm">
-                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Twitter/X</h1>
+              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm h-[150px] md:h-[200px] group">
+                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Linkedin</h1>
                   
                   <p className="w-full flex justify-end">
-                      <FaXTwitter className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl" />
+                      <FaLinkedin className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl group-hover:rotate-360 transition-all duration-300" />
                   </p>
               </div>
             </AnimatedElement>
+            
 
             <AnimatedElement delay={800}>
 
-              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm">
-                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Twitter/X</h1>
-                  
-                  <p className="w-full flex justify-end">
-                      <FaXTwitter className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl" />
-                  </p>
-              </div>
-            </AnimatedElement>
-
-            <AnimatedElement delay={1000}>
-
-              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm">
-                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Twitter/X</h1>
-                  
-                  <p className="w-full flex justify-end">
-                      <FaXTwitter className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl" />
-                  </p>
-              </div>
-            </AnimatedElement>
-
-            <AnimatedElement delay={1200}>
-
-              <Link to="/about" className="card w-full h-full rounded-xl flex flex-col md:flex-row justify-center items-center bg-customgreen p-4  text-black gap-4 shadow-sm ease-in-out transition-all duration-300 group font-medium text-2xl">
+              <Link to="/about" className="card w-full h-[150px] md:h-[200px] rounded-xl flex flex-col md:flex-row justify-center items-center bg-customgreen p-4  text-black gap-4 shadow-sm ease-in-out transition-all duration-300 group font-medium text-2xl">
                   More 
                   <FaArrowRightLong className="size-6 md:size-8 rounded-full bg-customblack p-1 md:p-2 text-customgreen  -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
             </Link>

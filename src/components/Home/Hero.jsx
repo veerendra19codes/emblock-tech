@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col gap-0 lg:gap-8 justify-center items-center w-screen  h-full  bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat py-12">
+    <div className="flex flex-col gap-0 lg:gap-8 justify-center items-center w-screen  h-full  bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat  pb-12">
 
-        <div className="hero w-full h-full flex flex-col md:flex-row justify-start items-center px-4  pt-8 md:px-[10%] md:pt-[5%]">
+        <div className="hero w-full h-full flex flex-col md:flex-row justify-start items-center px-4  md:px-[10%] md:pt-[5%]">
 
 
           <div className="w-full md:w-[60%] right hidden md:flex justify-center items-start flex-col gap-2  lg:gap-4 font-normal">
@@ -88,7 +88,7 @@ const Hero = () => {
         </div>
         
         <div className="opacity-0 translate-y-full w-full flex justify-between items-start px-4 md:px-[10%] pt-12 md:py-24 animate-slide-up-text-6 animate-fill-mode-forwards ">
-          <Link to="/services" className="rounded-full p-2    pl-6  text-md md:text-xl  whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium">
+          <Link to="/services" className="rounded-full p-2    pl-4 md:pl-6  text-md md:text-xl  whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium">
             See what we can do 
             <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
           </Link>

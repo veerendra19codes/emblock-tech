@@ -181,14 +181,14 @@ const SingleCareer = () => {
           <p className="flex items-center text-xs md:text-xl mt-4">📌 Attachments (Mandatory)</p>
           <p className="text-xs md:text-xl flex items-center gap-2 ml-6"><GoDotFill className="size-2" />Resume (PDF format preferred), Portfolio, Github or other projects links, Linkedin profile</p>
 
-          <div className="text-red-500 text-sm md:text-xl font-medium flex flex-col md:flex-row gap-2 items-center my-4 justify-start w-full md:w-fit">
+          <div className="text-red-500 text-sm md:text-xl font-medium flex flex-col md:flex-row gap-2 items-start md:items-center my-4 justify-start w-full md:w-fit">
             <p className="w-full text-start">
               Send you application to:
             </p>
             <a 
   href="https://mail.google.com/mail/?view=cm&fs=1&to=career@emblocktech.com" 
   target="_blank" 
-  rel="noopener noreferrer"  className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-2 md:my-6 w-full md:w-fit">
+  rel="noopener noreferrer"  className="rounded-full p-2 pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-2 md:my-6 md:w-fit">
               career@emblocktech.com
               <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
             </a>
@@ -200,11 +200,11 @@ const SingleCareer = () => {
 
           <p className="text-xs md:text-xl">To proceed further, you must also fill out the attached application form. This helps us understanc your skills, experience, and preferences better.</p>
 
-          <div className="text-red-500 text-sm md:text-xl font-medium flex  flex-col md:flex-row gap-2 items-center justify-start w-full md:w-fit my-4">
+          <div className="text-red-500 text-sm md:text-xl font-medium flex  flex-col md:flex-row gap-2 items-start md:items-center justify-start w-full md:w-fit my-4">
             <p className="w-full text-start">
               Google form Link: 
             </p>
-            <Link to="/services" className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-0 md:my-6 w-full md:w-fit">
+            <Link to="/services" className="rounded-full p-2   pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-0 md:my-6 w-fit">
               Link
               <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
             </Link>

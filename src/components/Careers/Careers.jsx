@@ -184,7 +184,7 @@ const Careers = () => {
         </p>
         </AnimatedElement>
 
-        <Link to="/services" className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-12 md:my-24">
+        <Link to="/services" className="rounded-full p-2 pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-12 md:my-24">
           Connect With Us
           <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
         </Link>
@@ -280,7 +280,7 @@ const Careers = () => {
 
               </div>
 
-              <Link to={`/careers/${job.id}`} className="rounded-full p-1 md:p-2  md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen hidden md:flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium">
+              <Link to={`/careers/${job.id}`} className="w-fit rounded-full p-2 pl-4 md:pl-6  text-md md:text-xl whitespace-nowrap text-black bg-customgreen hidden md:flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium">
                 Apply Now
                 <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
               </Link>
@@ -302,7 +302,7 @@ const Careers = () => {
               <p className="text-black flex flex-wrap">{job.skillsRequired}</p>
             </p>
 
-            <Link to={`/careers/${job.id}`} className="rounded-full p-1 md:p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen md:hidden flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium mt-8">
+            <Link to={`/careers/${job.id}`} className="rounded-full p-1 md:p-2 pl-4   md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen md:hidden flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium mt-8">
                 Apply Now
                 <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
               </Link>
