@@ -28,17 +28,19 @@ const AnimatedQuoteSection = ({ quotes ,className="" }) => {
   const currentQuote = validQuotes[currentQuoteIndex];
   
   return (
-    <section className={`quote h-[600px] md:h-[800px] w-full flex justify-center items-center px-6 md:px-24 mb-24 md:mb-0 overflow-hidden ${className}`}>
-      <div className="w-1/5 flex justify-end items-start -mt-[100px] md:-mt-[150px]">
+    <div className="w-full h-auto flex justify-center items-center">
+
+    <section className={`quote h-[550px] md:h-[800px] w-full flex justify-center items-center pb-32 md:pb-16 px-6 md:px-24 md:mb-0 overflow-hidden ${className} transition-all duration-1000 ease-in-out ${
+            isAnimating
+              ? '-translate-y-24 opacity-0'
+              : 'translate-y-0 opacity-100'
+          }`}>
+      <div className={`w-1/5 flex justify-end items-start -mt-[120px] md:-mt-[150px] transition-all duration-1000 ease-in-out`}>
         <FaQuoteLeft className="text-gray-600 size-[40px] md:size-[200px]" />
       </div>
-      <div className="w-4/5 flex flex-col justify-center items-start -mb-[100px] md:-mb-[150px] pr-[5%] relative">
+      <div className="w-4/5 flex flex-col justify-start items-start mb-[100px]  pr-[5%] md:mb-[50px] lg:mb-0 relative">
         <div
-          className={`absolute w-full transition-all duration-1000 ease-in-out ${
-            isAnimating
-              ? '-translate-y-full opacity-0'
-              : 'translate-y-0 opacity-100'
-          }`}
+          className={`absolute w-full`}
         >
           <h1 className=" text-md md:text-xl xl:text-3xl font-medium mb-8">
             {currentQuote.quote}
@@ -52,6 +54,8 @@ const AnimatedQuoteSection = ({ quotes ,className="" }) => {
         </div>
       </div>
     </section>
+    </div>
+
   );
 };
 

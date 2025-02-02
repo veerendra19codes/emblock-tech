@@ -75,12 +75,11 @@ const Testimonials = () => {
                 word for it 
                 
             </h1>
-
         </div>
 
         <p className="text-gray-400 text-sm md:text-lg"><span className="text-customgreen">{"*"}</span>Take theirs</p>
 
-        <div className="marqueeright  w-full shadow-xl relative bg-black my-16 group"  >
+        <div className="marqueeright  w-full shadow-xl relative bg-black my-8 group"  >
 {/* */}
             <div className={`flex h-[400px] md:h-[550px]  gap-4 md:gap-10 justify-center items-center   whitespace-nowrap pause-on-hover animate-marqueeright md:animate-marqueerightslow `} >
                 {numbers.map((i) => (

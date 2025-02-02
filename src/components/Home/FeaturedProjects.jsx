@@ -51,7 +51,7 @@ const FeaturedProjects = () => {
   return (
     <section ref={sectionRef}   className="featured-projects w-full h-full  flex flex-col justify-center items-center bg-customblack text-white ">
 
-        <div className=" feature-hero w-full flex justify-start  items-center  py-24 lg:py-40 bg-black ">
+        <div className=" feature-hero w-full flex justify-start  items-center  py-12 lg:py-40 bg-black ">
 
           <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-8 justify-center items-start pl-6 lg:pl-24">
 
@@ -84,7 +84,7 @@ const FeaturedProjects = () => {
 
         <div className="projects-2 w-full flex flex-col lg:flex-row justify-center items-center bg-black">
 
-          <Link to="/product/1" className="w-full lg:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-6 md:p-12  gap-2 md:gap-4 h-[280px] sm:h-[400px] 2xl:h-[750px]">
+          <Link to="/product/1" className="w-full lg:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-6 md:py-0 md:px-12 gap-2 md:gap-4 h-[280px] sm:h-[400px] md:h-[600px] 2xl:h-[750px]">
 
             {/* <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
               <div><span className="text-customgreen">{"{"}</span> E-commerce Saas <span className="text-customgreen">{"}"}</span>
@@ -99,7 +99,7 @@ const FeaturedProjects = () => {
             <img src="/edgecarts.webp" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px] sm:h-[250px] md:h-[400px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12  transition-transform duration-500 ease-in-out ${visibleImages[`project-image-0`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
-          <Link to="/product/2" className="w-full lg:w-1/2 border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-6 md:p-12  gap-2 md:gap-4 2xl:h-[750px]">
+          <Link to="/product/2" className="w-full lg:w-1/2 border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-6 md:px-12  gap-2 md:gap-4 h-[280px] sm:h-[400px] md:h-[600px] 2xl:h-[750px]">
 
             {/* <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
               <div><span className="text-customgreen">{"{"}</span> Saas <span className="text-customgreen">{"}"}</span>
@@ -111,14 +111,14 @@ const FeaturedProjects = () => {
 
             <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">ERP & PMS for Construction firm</p>
 
-            <img src="/buildops.jpg" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px] sm:h-[250px]  md:h-[400px] 2xl:h-[450px] object-cover rounded-xl mt-6  md:mt-12 transition-transform duration-500  ease-in-out  ${visibleImages[`project-image-1`] ? 'md:scale-110' : 'scale-100'}`} />
+            <img src="/buildops.jpg" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px] sm:h-[250px]  md:h-[400px] 2xl:h-[450px] object-cover rounded-xl mt-6  md:mt-12 transition-transform duration-500  ease-in-out ${visibleImages[`project-image-1`] ? 'md:scale-110' : 'scale-100'}`} />
           </Link>
 
         </div>
 
-        <div className="projects-3 w-full flex flex-col lg:flex-row justify-center items-center bg-black">
+        <div className="projects-3 h-auto w-full flex flex-col lg:flex-row justify-center items-center bg-black">
 
-          <Link to="/product/3" className="w-full lg:w-1/3 h-[350px] sm:h-[600px]  lg:h-[600px] 2xl:h-[720px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:p-8 xl:p-12 gap-2 md:gap-4">
+          <Link to="/product/3" className="w-full lg:w-1/3 h-[280px] sm:h-[400px] md:h-[600px] lg:h-[600px] 2xl:h-[720px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:p-8 xl:p-12 gap-2 md:gap-4">
           <div className="flex flex-col gap-4 justify-start items-start">
 
             {/* <h1 className="flex justify-start items-center text-lg md:text-xl  gap-6"> 
@@ -133,11 +133,11 @@ const FeaturedProjects = () => {
           </div>
 
 
-            <img src="/strikes.jpeg"  className={`project-image w-full sm:w-fit  h-[150px] sm:h-[300px] md:h-[250px] 2xl:h-[350px] object-cover rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out mx-auto 
+            <img src="/strikes.jpeg"  className={`project-image w-full md:w-[95%] mx-auto h-[150px] sm:h-[250px]  md:h-[400px] lg:h-[350px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12  transition-transform duration-500 ease-in-out lg:my-4 
               ${visibleImages[`project-image-2`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
-          <Link to="/product/4" className="w-full lg:w-1/3 h-[430px] sm:h-[600px] lg:h-[600px] border 2xl:h-[720px] border-gray-800 flex flex-col hover:bg-customblackhover justify-between items-start p-6 md:p-8 xl:p-12 gap-2 md:gap-4">
+          <Link to="/product/4" className="w-full  lg:w-1/3 h-[350px] sm:h-[400px] md:h-[600px] lg:h-[600px] border 2xl:h-[720px] border-gray-800 flex flex-col hover:bg-customblackhover justify-between items-start p-6 md:p-8 xl:p-12 gap-2 md:gap-4">
           <div className="flex flex-col gap-4 justify-start items-start">
 
             {/* <h1 className="flex justify-start items-center text-lg md:text-xl gap-6"> 
@@ -151,7 +151,7 @@ const FeaturedProjects = () => {
             <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">Monitorting system for your industry with hardware prototype combined software</p>
           </div>
 
-            <img src="/real-time-machine-monitoring-product.jpg"  className={`project-image w-full sm:w-fit mx-auto h-[150px] sm:h-[300px]  md:h-[250px] 2xl:h-[350px] object-cover rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
+            <img src="/real-time-machine-monitoring-product.jpg"  className={`project-image w-full md:w-[95%]  mx-auto h-[150px] sm:h-[250px]  md:h-[400px] lg:h-[350px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out lg:my-4 
               ${visibleImages[`project-image-3`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 

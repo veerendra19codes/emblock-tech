@@ -83,7 +83,7 @@ const OurServices = () => {
           
           {cards.map((card) => (
             <div key={card.id} className={`${isAnimated ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-32'} 
-             card flex flex-col justify-between shadow-lg rounded-lg bg-white p-4 lg:p-8 xl:p-12 w-[45%] h-[200px] lg:h-[250px] transition-all duration-1000 ease-out text-start`}>
+             card flex flex-col justify-between shadow-lg rounded-lg bg-white p-4 lg:p-8 xl:p-12 w-[45%] h-[200px] lg:h-[250px] transition-all duration-1000 ease-out text-center`}>
                 <div className="flex flex-col gap-2">
                   <h3 className="text-sm sm:text-xl lg:text-2xl font-semibold">{card.title}</h3>
                   <p className="text-gray-500 text-xs sm:text-lg  font-medium">{card.content}</p>

@@ -300,7 +300,7 @@ Download STRIKES now and be part of the future of collaboration!
         </div>
 
 
-        <div className="h-[800px] 2xl:h-[1000px] w-full bg-black text-white flex flex-col p-[10%]">
+        <div className="h-[650px] lg:h-[800px] w-full bg-black text-white flex flex-col justify-start items-center p-6 lg:p-[10%]">
              <AnimatedElement className="w-full flex justify-start items-center gap-2">
                 <span className="bg-lime-400  size-2 md:size-3 rounded-full text-black">.</span>
                 <p className="text-md md:text-lg font-semibold text-gray-400">Team</p>

@@ -579,7 +579,7 @@ const ServicesNew = () => {
             </Link>
           </div>
 
-          <button className="w-fit p-2 px-4 bg-white text-black text-lg lg:text-2xl rounded-full font-medium lg:font-semibold mt-4">
+          <button className="w-fit p-1 md:p-2 px-4 bg-white text-black text-md lg:text-xl rounded-full font-medium mt-4">
             Strategic
           </button>
         </div>
@@ -604,7 +604,7 @@ const ServicesNew = () => {
             </Link>
           </div>
 
-          <button className="w-fit py-2 px-4 bg-white text-black text-lg lg:text-2xl rounded-full font-medium lg:font-semibold mt-4">
+          <button className="w-fit p-1 md:p-2 px-4 bg-white text-black text-md lg:text-xl rounded-full font-medium mt-4">
             Technical
           </button>
         </div>
@@ -629,7 +629,7 @@ const ServicesNew = () => {
             </Link>
           </div>
 
-          <button className="w-fit px-4 p-2 bg-white text-black text-lg lg:text-2xl rounded-full font-medium lg:font-semibold mt-4">
+          <button className="w-fit p-1 md:p-2 px-4  bg-white text-black text-md lg:text-xl rounded-full font-medium mt-4">
             Operational
           </button>
         </div>
