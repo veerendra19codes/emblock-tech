@@ -114,10 +114,10 @@ const Footer = () => {
         <button onClick={scrollToTop} className="gap-1 lg:gap-4 flex items-center font-semibold text-gray-400 text-sm lg:text-lg">Back to top <FaArrowUp className="bg-white text-black size-8 lg:size-12 p-2 lg:p-4 text-lg rounded-full" /></button>     
       </div> */}
 
-      <div className="w-full flex flex-col lg:flex-row justify-between items-center">
+      <div className="w-full flex flex-col lg:flex-row justify-between items-start py-24">
 
-        <AnimatedElement className="w-full md:w-1/2">
-          <div className="feature-hero w-full lg:w-1/2 flex flex-col gap-4 lg:gap-8 justify-center items-center lg:items-start pl-4 lg:pl-[10%] 2xl:pl-[20%] py-20 lg:py-40 bg-black">
+        <AnimatedElement className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-8 justify-center items-center lg:items-start pl-4 lg:pl-[10%] 2xl:pl-[20%]  bg-black">
 
             <div className="flex justify-center items-center lg:items-start flex-col gap-2 leading-none ">
               <h1 className="text-[25px] md:text-[40px] lg:text-[60px] text-white leading-none">
@@ -140,7 +140,7 @@ const Footer = () => {
         </AnimatedElement>
 
 
-        <div className="w-full lg:w-1/2  flex flex-col justify-center items-center lg:items-start py-8 pl-0  lg:pl-24 gap-8">
+        <div className="w-full lg:w-1/2  flex flex-col justify-center items-center lg:items-start pl-0  lg:pl-24 gap-8 mt-12 lg:mt-0">
         <AnimatedElement delay={200} className="flex flex-col items-center justify-start lg:items-start">
 
 
@@ -176,7 +176,10 @@ const Footer = () => {
               <p className="w-full text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-center  lg:justify-start items-center text-center px-4 lg:px-0">services that bring your vision to life</p> */}
 
 
-              <p className="w-full  text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-center  lg:justify-start items-center text-center lg:text-start px-4 lg:px-0 mt-8">102, 20th Cross Road, Bengaluru 560076, Karnataka, India No.23-A, Vadakuthu, Cuddalore, Tamil Nadu, 607308</p>
+              <p className="w-full  text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-center  lg:justify-start items-center text-center lg:text-start px-4 lg:px-0 mt-8">102, 20th Cross Road, Bengaluru 560076, Karnataka, India </p>
+              <p className="w-full  text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-center  lg:justify-start items-center text-center lg:text-start px-4 lg:px-0 ">No.23-A, Vadakuthu, Cuddalore, Tamil Nadu, 607308</p>
+
+              
               
             </div>
 

@@ -539,14 +539,14 @@ const ServicesNew = () => {
     <div className="flex flex-col w-full overflow-x-hidden justify-start items-start">
       <AnimatedElement  className="bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat flex flex-col justify-start p-[10%] ">
 
-        <h1 className="w-full lg:w-[80%] text-start text-[25px] md:text-[40px] lg:text-[40px] font-medium">
+        <h1 className="w-full lg:w-[80%] text-start text-[25px] md:text-[40px] lg:text-[60px] font-medium">
             Innovative IoT and Software Solutions Tailored to Transform Your Business and Empower Your Growth Journey
         </h1>
-        <p className="w-full lg:w-[80%] text-start text-xl md:text-2xl  font-medium text-gray-500 mt-12">
+        <p className="w-full lg:w-[80%] text-start text-xl md:text-2xl lg:text-3xl  font-medium text-gray-500 mt-12">
             Over the years, we’ve had the privilege of partnering with a diverse range of clients, from startups to established enterprises, helping them turn their visions into impactful solutions.
         </p>
 
-        <Link to="/services" className="rounded-full w-fit  p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-12 md:my-24">
+        <Link to="/services" className="rounded-full w-fit  p-2 md:p-4  pl-6 md:pl-10 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium md:font-semibold my-12 md:my-24">
           Contact Us Now
           <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
         </Link>

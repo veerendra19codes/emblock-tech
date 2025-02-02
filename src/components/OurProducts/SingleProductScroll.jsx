@@ -1,53 +1,70 @@
-import { useEffect, useRef, useState } from 'react';
-import { FaArrowRightLong } from 'react-icons/fa6';
-import {  Link, useParams } from "react-router-dom";
-import Edgecarts from './Edgecarts';
+import { useEffect, useRef, useState } from "react"
+import { FaArrowRightLong } from "react-icons/fa6"
+import { Link, useParams } from "react-router-dom"
+import Edgecarts from "./Edgecarts"
 
-const AnimatedElement = ({ children, delay = 0, className="" }) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const elementRef = useRef(null);
+const AnimatedElement = ({ children, delay = 0, className = "" }) => {
+  const [isVisible, setIsVisible] = useState(false)
+  const elementRef = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
+          setIsVisible(true)
         }
       },
-      { threshold: 0.1 }
-    );
+      { threshold: 0.1 },
+    )
 
     if (elementRef.current) {
-      observer.observe(elementRef.current);
+      observer.observe(elementRef.current)
     }
 
     return () => {
       if (elementRef.current) {
-        observer.unobserve(elementRef.current);
+        observer.unobserve(elementRef.current)
       }
-    };
-  }, []);
+    }
+  }, [])
 
   return (
-    <div 
+    <div
       ref={elementRef}
       className={`transform transition-all duration-700 w-full ${className} ${
-        isVisible 
-          ? `opacity-100 translate-y-0 delay-[${delay}ms]` 
-          : 'opacity-0 translate-y-10'
+        isVisible ? `opacity-100 translate-y-0 delay-[${delay}ms]` : "opacity-0 translate-y-10"
       }`}
     >
       {children}
     </div>
-  );
-};
+  )
+}
 
+const SingleProductScroll = () => {
+  const { id } = useParams()
+  const [isLeftSticky, setIsLeftSticky] = useState(false)
+  const leftComponentRef = useRef(null)
+  const rightComponentRef = useRef(null)
 
-const SingleProduct = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      if (leftComponentRef.current && rightComponentRef.current) {
+        const leftRect = leftComponentRef.current.getBoundingClientRect()
+        const rightRect = rightComponentRef.current.getBoundingClientRect()
 
-    const { id } = useParams();
+        if (rightRect.top <= 0 && rightRect.bottom > window.innerHeight) {
+          setIsLeftSticky(true)
+        } else {
+          setIsLeftSticky(false)
+        }
+      }
+    }
 
-    const products = [
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  const products = [
         {
             id: 1,
             image: "/product1-image1.png",
@@ -176,121 +193,116 @@ Download STRIKES now and be part of the future of collaboration!
             ]
         },    
     ]
-
+    
   return id == 3 ? (
-            <Edgecarts />
-        ): (
-
-       
+    <Edgecarts />
+  ) : (
     <div className="flex flex-col justify-center items-center w-full h-full p-6 py-12 md:p-28">
-        <AnimatedElement>
-
+      <AnimatedElement>
         <h1 className="text-[35px] md:text-[40px] lg:text-[60px] uppercase w-full text-start font-medium">
-            {products[id-1].name}
+          {products[id - 1].name}
         </h1>
+      </AnimatedElement>
+
+      <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8 mt-16">
+        {/* left component  */}
+        <div
+          ref={leftComponentRef}
+          className={`left w-full md:w-[30%] key-features flex flex-col justify-start items-start ${
+            isLeftSticky ? "md:fixed md:top-0 md:w-[calc(30%-2rem)]" : ""
+          }`}
+        >
+          <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 py-4 md:py-8">
+            <p className="text-gray-400 font-normal text-base md:text-lg">Platform Type</p>
+            <h2 className="text-customblack text-lg md:text-xl font-medium">{products[id - 1].platformType}</h2>
+          </div>
+
+          <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 py-4 md:py-8">
+            <p className="text-gray-400 font-normal text-base md:text-lg">Industry Focus</p>
+            <h2 className="text-customblack text-lg md:text-xl  font-medium">{products[id - 1].industryFocus}</h2>
+          </div>
+
+          <div className="w-full flex flex-col justify-center items-start  py-4 md:py-8">
+            <p className="text-gray-400 font-normal text-base md:text-lg">Key Benefits</p>
+            <h2 className="text-customblack text-lg md:text-xl  font-medium">{products[id - 1].keyBenefits}</h2>
+          </div>
+
+          <button className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group my-4 font-semibold">
+            Visit Website
+            <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" />
+          </button>
+        </div>
+
+        {isLeftSticky && <div className="hidden md:block w-1/3" />}
+        
+        {/* right component  */}
+        <div
+          ref={rightComponentRef}
+          className="details w-full md:w-[65%] flex flex-col gap-4 md:gap-6 justify-center items-start"
+        >
+          <div className="details w-full  flex flex-col gap-4 md:gap-6 justify-center items-start">
+            <div className="w-full text-lg md:text-2xl text-customgray font-semibold leading-6">
+              {products[id - 1].content}
+            </div>
+            <p className="w-full text-base md:text-xl text-customgrayhover font-semibold">
+              {products[id - 1].subcontent}
+            </p>
+
+            {products[id - 1].subparts.map((part) => (
+              <div key={part.id} className="w-full flex flex-col justify-center items-star gap-4 md:gap-6 my-6">
+                <img
+                  src={part.image || "/placeholder.svg"}
+                  className="w-full h-[250px] lg:h-[400px] 2xl:h-[500px] object-cover rounded-xl"
+                />
+                <h1 className="w-full text-xl md:text-2xl text-customgray font-semibold leading-6">{part.title}</h1>
+                <p className="w-full text-base md:text-xl text-customgrayhover font-semibold">{part.content}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full flex flex-col justify-center items-start gap-0">
+        {/* <div className="flex gap-2 justify-center items-center"> */}
+        <AnimatedElement className="w-full flex justify-start items-center gap-2">
+          <span className="bg-lime-400  size-2 md:size-3 rounded-full text-white">.</span>
+          <p className="text-md md:text-lg font-semibold text-gray-400">Our Products</p>
+        </AnimatedElement>
+        {/* </div> */}
+
+        <AnimatedElement className="text-[25px] md:text-[40px] lg:text-[60px] mb-24">
+          Our Extended Products
         </AnimatedElement>
 
-        <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8 mt-16">
-
-            {/* this fixed  */}
-            <div className="left w-full md:w-1/3 key-features flex flex-col justify-start items-start ">
-                <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 py-4 md:py-8">
-                    <p className="text-gray-400 font-normal text-base md:text-lg">
-                        Platform Type
-                    </p>
-                    <h2 className="text-customblack text-lg md:text-xl font-medium">
-                        {products[id-1].platformType}
-                    </h2>
-                </div>
-
-                <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 py-4 md:py-8">
-                    <p className="text-gray-400 font-normal text-base md:text-lg">
-                        Industry Focus
-                    </p>
-                    <h2 className="text-customblack text-lg md:text-xl  font-medium">
-                        {products[id-1].industryFocus}
-                    </h2>
-                </div>
-
-                <div className="w-full flex flex-col justify-center items-start  py-4 md:py-8">
-                    <p className="text-gray-400 font-normal text-base md:text-lg">
-                        Key Benefits
-                    </p>
-                    <h2 className="text-customblack text-lg md:text-xl  font-medium">
-                        {products[id-1].keyBenefits}
-                    </h2>
-                </div>
-
-                <button className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group my-4 font-semibold">
-                    Visit Website 
-                    <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
-                </button>
-                
-            </div>
-
-            {/* this div max-h-[500px] and scrollable according to page scroll  */}
-            <div className="details w-full md:w-2/3 flex flex-col gap-4 md:gap-6 justify-center items-start">
-
-                <div className="w-full text-lg md:text-2xl text-customgray font-semibold leading-6">
-                    {products[id-1].content}
-                </div>
-                <p className="w-full text-base md:text-xl text-customgrayhover font-semibold">
-                    {products[id-1].subcontent}
-                </p>
-
-                {products[id-1].subparts.map((part) => (
-                    <div key={part.id} className="w-full flex flex-col justify-center items-star gap-4 md:gap-6 my-6">
-                        <img src={part.image} className="w-full h-[250px] lg:h-[400px] 2xl:h-[500px] object-cover rounded-xl" />
-                        <h1 className="w-full text-xl md:text-2xl text-customgray font-semibold leading-6">
-                            {part.title}
-                        </h1>
-                        <p className="w-full text-base md:text-xl text-customgrayhover font-semibold">
-                            {part.content}
-                        </p>
-                    </div>
-                ))}
-            </div>
-        </div>
-
-        <div className="w-full flex flex-col justify-center items-start gap-0">
-            {/* <div className="flex gap-2 justify-center items-center"> */}
-                <AnimatedElement className="w-full flex justify-start items-center gap-2">
-
-                <span className="bg-lime-400  size-2 md:size-3 rounded-full text-white">.</span>
-                <p className="text-md md:text-lg font-semibold text-gray-400">Our Products</p>
-                </AnimatedElement>
-            {/* </div> */}
-            
-            <AnimatedElement className="text-[25px] md:text-[40px] lg:text-[60px] mb-24">
-                Our Extended Products
-            </AnimatedElement>
-
-            <div className="w-full flex flex-col md:flex-row gap-4">
-                {products.filter((product) => product.id != id).map((product, index) => (
-                    <Link to={product.path} key={product.id} className="card w-full lg:w-1/3  ">
-                        <AnimatedElement delay={1000+(200*index)} className='flex flex-col justify-between items-start p-4  border border-gray-400 rounded-xl h-[400px] md:h-[550px] 2xl:h-[600px]'>
-
-
-                    <div className="flex flex-col justify-start  items-start gap-2 md:gap-4 font-medium">
-
+        <div className="w-full flex flex-col md:flex-row gap-4">
+          {products
+            .filter((product) => product.id != id)
+            .map((product, index) => (
+              <Link to={product.path} key={product.id} className="card w-full lg:w-1/3  ">
+                <AnimatedElement
+                  delay={1000 + 200 * index}
+                  className="flex flex-col justify-between items-start p-4  border border-gray-400 rounded-xl h-[400px] md:h-[550px] 2xl:h-[600px]"
+                >
+                  <div className="flex flex-col justify-start  items-start gap-2 md:gap-4 font-medium">
                     <h1 className="text-xl md:text-2xl lg:text-2xl uppercase 2xl:text-3xl font-medium">
-                        {product.name}
+                      {product.name}
                     </h1>
                     <p className="text-customgrayhover font-semibold text-sm md:text-md lg:text-lg 2xl:text-xl">
-                        {product.subcontent}
+                      {product.subcontent}
                     </p>
-                    </div>
-                    <img src={product.image} className="w-full h-[150px] sm:h-[250px] rounded-xl 2xl:h-[350px] object-cover" />
-                        </AnimatedElement>
-                    </Link>
-                ))}
-                
-                
-            </div>
+                  </div>
+                  <img
+                    src={product.image || "/placeholder.svg"}
+                    className="w-full h-[150px] sm:h-[250px] rounded-xl 2xl:h-[350px] object-cover"
+                  />
+                </AnimatedElement>
+              </Link>
+            ))}
         </div>
+      </div>
     </div>
-     )
-  
+  )
 }
 
-export default SingleProduct
+export default SingleProductScroll
+

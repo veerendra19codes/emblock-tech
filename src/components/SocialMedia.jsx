@@ -135,7 +135,7 @@ const SocialMedia = () => {
 
             <AnimatedElement delay={1200}>
 
-              <Link to="/about" className="card w-full h-full rounded-xl flex justify-center items-center bg-customgreen p-4 md:p-12 text-black gap-8 shadow-sm ease-in-out transition-all duration-300 group font-medium text-2xl">
+              <Link to="/about" className="card w-full h-full rounded-xl flex flex-col md:flex-row justify-center items-center bg-customgreen p-4  text-black gap-4 shadow-sm ease-in-out transition-all duration-300 group font-medium text-2xl">
                   More 
                   <FaArrowRightLong className="size-6 md:size-8 rounded-full bg-customblack p-1 md:p-2 text-customgreen  -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
             </Link>

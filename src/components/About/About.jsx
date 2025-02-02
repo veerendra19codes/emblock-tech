@@ -93,7 +93,7 @@ const About = () => {
 
         <p className="w-full text-start text-xl md:text-3xl font-medium mt-4">EMBLOCK: Turning Imagination Into Innovation </p>
 
-        <p className="w-full text-start text-sm md:text-2xl font-medium mt-8">Welcome to EMBLOCK, where innovation meets efficiency to redefine how industries operate in a digitally-driven world. At EMBLOCK, we specialize in harnessing the transformative power of Internet of Things (IoT) and advanced software technologies to accelerate digital transformation across diverse sectors. Founded on the core principles of innovation, sustainability, and practicality, our mission is to empower businesses with intelligent solutions that improve operational efficiency and enhance decision-making. </p>
+        <p className="w-full md:w-[90%] text-start text-sm md:text-2xl font-medium mt-8">Welcome to EMBLOCK, where innovation meets efficiency to redefine how industries operate in a digitally-driven world. At EMBLOCK, we specialize in harnessing the transformative power of Internet of Things (IoT) and advanced software technologies to accelerate digital transformation across diverse sectors. Founded on the core principles of innovation, sustainability, and practicality, our mission is to empower businesses with intelligent solutions that improve operational efficiency and enhance decision-making. </p>
 
         <div className="w-full flex flex-col lg:flex-row justify-between items-center my-12">
           <div className="image left w-full lg:w-1/2 flex justify-center md:justify-start items-center">

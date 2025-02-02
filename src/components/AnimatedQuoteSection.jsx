@@ -28,7 +28,7 @@ const AnimatedQuoteSection = ({ quotes ,className="" }) => {
   const currentQuote = validQuotes[currentQuoteIndex];
   
   return (
-    <section className={`quote h-[400px] md:h-[800px] w-full flex justify-center items-center px-6 md:px-24 mb-24 md:mb-0 overflow-hidden ${className}`}>
+    <section className={`quote h-[600px] md:h-[800px] w-full flex justify-center items-center px-6 md:px-24 mb-24 md:mb-0 overflow-hidden ${className}`}>
       <div className="w-1/5 flex justify-end items-start -mt-[100px] md:-mt-[150px]">
         <FaQuoteLeft className="text-gray-600 size-[40px] md:size-[200px]" />
       </div>

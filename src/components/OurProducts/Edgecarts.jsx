@@ -42,6 +42,28 @@ const AnimatedElement = ({ children, delay = 0, className="" }) => {
 };
 
 const Edgecarts = () => {
+    const [isLeftSticky, setIsLeftSticky] = useState(false)
+  const leftComponentRef = useRef(null)
+  const rightComponentRef = useRef(null)
+
+   useEffect(() => {
+    const handleScroll = () => {
+      if (leftComponentRef.current && rightComponentRef.current) {
+        const leftRect = leftComponentRef.current.getBoundingClientRect()
+        const rightRect = rightComponentRef.current.getBoundingClientRect()
+
+        if (rightRect.top <= 0 && rightRect.bottom > window.innerHeight) {
+          setIsLeftSticky(true)
+        } else {
+          setIsLeftSticky(false)
+        }
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
 
     const products = [
         {
@@ -111,7 +133,7 @@ Download STRIKES now and be part of the future of collaboration!
         },
         {
             id: 3,
-            image: "/image3.png",
+            image: "/edgecarts-image1.png",
             name: "Edgecarts",
             path: "/product/3",
             platformType: "E-commerce",
@@ -122,19 +144,19 @@ Download STRIKES now and be part of the future of collaboration!
             subparts: [
                 {
                     id: 1,
-                    image: "/image1.png",
+                    image: "/edgecarts-image2.png",
                     title: "Breaking Down E-Commerce Barriers",
                     content: "Launching an e-commerce store often comes with high costs, technical challenges, and maintenance hassles, keeping small businesses and entrepreneurs out of the digital market. EDGECARTS eliminates these barriers with zero setup costs, free maintenance, and a unique domain for every store. Our transparent pricing ensures you only pay a 10% commission per sale—no hidden fees."
                 },
                 {
                     id: 2,
-                    image: "/image2.jpg",
+                    image: "/edgecarts-image2.png",
                     title: "A Smarter Future for Construction",
                     content: "EDGECARTS is more than just an e-commerce platform; it&apos;s your gateway to building a thriving online business. Whether you*apos;re a small business owner or an entrepreneur with big dreams, our solution gives you the tools and support to grow without limits"
                 },
                 {
                     id: 3,
-                    image: "/image3.png",
+                    image: "/edgecarts-image3.png",
                     title: "Your Success, Our Commitment. Join EDGECARTS today and transform the way you do business online.",
                     content: ""
                 },
@@ -142,7 +164,7 @@ Download STRIKES now and be part of the future of collaboration!
         },
         {
             id: 4,
-            image: "/image4.jpg",
+            image: "/product4-image1.png",
             name: "Buildops",
             path: "/product/4",
             platformType: "SaaS",
@@ -153,19 +175,19 @@ Download STRIKES now and be part of the future of collaboration!
             subparts: [
                 {
                     id: 1,
-                    image: "/image1.png",
+                    image: "/product4-image1.png",
                     title: "Overcoming the Challenges of Construction Management",
                     content: "Construction firms often face challenges like misaligned schedules, resource wastage, and delayed timelines due to outdated management tools. These hurdles result in inefficiencies and unnecessary costs that disrupt project delivery and impact profitability. Our ERP and PMS solution addresses these issues, offering real-time tracking of progress, automated resource allocation, and streamlined workflows to ensure your projects stay on track and within budget."
                 },
                 {
                     id: 2,
-                    image: "/image2.jpg",
+                    image: "/product4-image2.png",
                     title: "A Smarter Future for Construction",
                     content: "Empower your construction firm with cutting-edge technology designed to simplify project management. Whether you're managing multiple sites or complex operations, our SaaS provides the tools you need to succeed in a competitive industry. Start building a smarter future today with our ERP and PMS solution for construction companies."
                 },
                 {
                     id: 3,
-                    image: "/image3.png",
+                    image: "/product4-image3.png",
                     title: "",
                     content: ""
                 },
@@ -183,10 +205,15 @@ Download STRIKES now and be part of the future of collaboration!
         </h1>
         </AnimatedElement>
 
-        <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8 mt-8 px-[10%]">
+        <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8 mt-16 px-[8%] mb-24">
 
             {/* this fixed  */}
-            <div className="left w-full md:w-1/3 key-features flex flex-col justify-start items-start ">
+            <div
+          ref={leftComponentRef}
+          className={`left w-full md:w-[30%] key-features flex flex-col justify-start items-start ${
+            isLeftSticky ? "md:fixed md:top-0 md:w-[calc(30%-6rem)]" : ""
+          }`}
+        >
                 <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 py-4 md:py-8">
                     <p className="text-gray-400 font-normal text-base md:text-lg">
                         Platform Type
@@ -221,8 +248,11 @@ Download STRIKES now and be part of the future of collaboration!
                 
             </div>
 
+        {isLeftSticky && <div className="hidden md:block w-1/3" />}
+
+
             {/* this div max-h-[500px] and scrollable according to page scroll  */}
-            <div className="details w-full md:w-2/3 flex flex-col gap-4 md:gap-6 justify-center items-start">
+            <div ref={rightComponentRef} className="details w-full md:w-[65%] flex flex-col gap-4 md:gap-6 justify-center items-start">
 
                 <div className="w-full text-lg md:text-2xl text-customgray font-semibold leading-6">
                     EDGECARTS makes entering the online marketplace simple and risk-free. Businesses can launch unique e-commerce websites with no upfront costs or hidden fees. We prioritize your success, charging only a 10% commission on each sale.
@@ -321,7 +351,7 @@ Download STRIKES now and be part of the future of collaboration!
                         {product.subcontent}
                     </p>
                     </div>
-                    <img src={product.image} className="w-full h-[150px] sm:h-[250px] rounded-xl 2xl:h-[350px]" />
+                    <img src={product.image} className="w-full h-[150px] sm:h-[250px] rounded-xl 2xl:h-[350px] object-cover" />
                         </AnimatedElement>
                     </Link>
                 ))}

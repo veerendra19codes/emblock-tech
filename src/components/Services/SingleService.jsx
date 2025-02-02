@@ -6,6 +6,7 @@ import {  Link, useParams } from "react-router-dom";
 const AnimatedElement = ({ children, delay = 0, className="" }) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,7 +45,31 @@ const AnimatedElement = ({ children, delay = 0, className="" }) => {
 
 const SingleService = () => {
 
+
     const { id } = useParams();
+
+    const [isLeftSticky, setIsLeftSticky] = useState(false)
+  const leftComponentRef = useRef(null)
+  const rightComponentRef = useRef(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (leftComponentRef.current && rightComponentRef.current) {
+        const leftRect = leftComponentRef.current.getBoundingClientRect()
+        const rightRect = rightComponentRef.current.getBoundingClientRect()
+
+        if (rightRect.top <= 0 && rightRect.bottom > window.innerHeight) {
+          setIsLeftSticky(true)
+        } else {
+          setIsLeftSticky(false)
+        }
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
 
     const services = [
         {
@@ -246,14 +271,14 @@ const SingleService = () => {
     justify-center items-center w-full h-full   text-black bg-white">
         <AnimatedElement>
 
-        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] w-full text-start font-medium p-6 py-12 md:px-[10%] md:pt-[10%]">
+        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] w-full md:w-[95%] text-start font-medium p-6 py-12 md:px-[10%] md:pt-[10%]">
             {services[id-1].name}
         </h1>
         </AnimatedElement>
 
         <AnimatedElement delay={200}>
 
-        <p className="text-md md:text-2xl font-medium  p-6 md:px-[10%] mb-12">
+        <p className="text-md md:text-2xl w-full md:w-[90%] font-medium  p-6 md:px-[10%] mb-12">
             {services[id-1].text}
         </p>
         </AnimatedElement>
@@ -261,7 +286,12 @@ const SingleService = () => {
         <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8 p-6 md:px-[10%]">
 
             {/* this fixed  */}
-            <div className="left w-full md:w-1/3 key-features flex flex-col justify-start items-start ">
+            <div
+          ref={leftComponentRef}
+          className={`left w-full md:w-[30%] key-features flex flex-col justify-start items-start ${
+            isLeftSticky ? "md:fixed md:top-0 md:w-[calc(30%-8rem)]" : ""
+          }`}
+        >
                 <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 py-4 md:py-8">
                     <p className="text-gray-500 font-normal text-sm md:text-lg">
                         Category
@@ -296,8 +326,13 @@ const SingleService = () => {
                 
             </div>
 
+
+
+        {isLeftSticky && <div className="hidden md:block w-1/3" />}
+
+
             {/* this div max-h-[500px] and scrollable according to page scroll  */}
-            <div className="details w-full md:w-2/3 flex flex-col gap-4 md:gap-6 justify-center items-start">
+            <div ref={rightComponentRef} className="details w-full md:w-[65%] flex flex-col gap-4 md:gap-6 justify-center items-start">
 
                 <div className="w-full text-md md:text-xl text-gray-500 font-semibold leading-6">
                     {services[id-1].content}

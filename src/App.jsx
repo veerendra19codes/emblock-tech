@@ -25,6 +25,7 @@ import HowWeWork from "./components/Home/HowWeWork";
 import FaqNew from "./components/FaqNew";
 import HomeFaq from "./components/Home/Accordian";
 import SolutionsOld from "./components/Solutions/SolutionsOld";
+import SingleProductScroll from "./components/OurProducts/SingleProductScroll";
 
 function App() {
   
@@ -49,8 +50,7 @@ function App() {
 
           <Route path="/solutions/:id" element={
               <>
-                {/* <Solutions /> */}
-                <SolutionsOld />
+                <Solutions />
               </>
           } />
 
@@ -63,7 +63,8 @@ function App() {
 
           <Route path="/product/:id" element={
             <>
-              <SingleProduct />
+              {/* <SingleProduct /> */}
+              <SingleProductScroll />
             </>
 
           } />

@@ -174,7 +174,7 @@ const FeaturedProjects = () => {
           </div>
 
 
-            <img src="/strikes.jpeg"  className={`project-image w-full h-[150px] sm:h-[300px] md:h-[250px] 2xl:h-[350px] object-cover rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
+            <img src="/strikes.jpeg"  className={`project-image w-full sm:w-fit  h-[150px] sm:h-[300px] md:h-[250px] 2xl:h-[350px] object-cover rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out mx-auto 
               ${visibleImages[`project-image-2`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
@@ -192,7 +192,7 @@ const FeaturedProjects = () => {
             <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">Monitorting system for your industry with hardware prototype combined software</p>
           </div>
 
-            <img src="/real-time-machine-monitoring-product.jpg"  className={`project-image w-full h-[150px] sm:h-[300px]  md:h-[250px] 2xl:h-[350px] object-cover rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
+            <img src="/real-time-machine-monitoring-product.jpg"  className={`project-image w-full sm:w-fit mx-auto h-[150px] sm:h-[300px]  md:h-[250px] 2xl:h-[350px] object-cover rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out 
               ${visibleImages[`project-image-3`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 

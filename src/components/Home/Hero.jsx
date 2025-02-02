@@ -8,7 +8,7 @@ const Hero = () => {
 //  
     <div className="flex flex-col gap-0 lg:gap-8 justify-center items-center w-screen  h-full  bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat py-12">
 
-        <div className="hero w-full h-full flex flex-col md:flex-row justify-start items-center px-4  pt-8 md:px-[10%] md:pt-[10%]">
+        <div className="hero w-full h-full flex flex-col md:flex-row justify-start items-center px-4  pt-8 md:px-[10%] md:pt-[5%]">
 
 
           <div className="w-full md:w-[60%] right hidden md:flex justify-center items-start flex-col gap-2  lg:gap-4 font-normal">

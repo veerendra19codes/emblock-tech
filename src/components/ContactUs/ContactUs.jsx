@@ -161,7 +161,7 @@ const quotes = [
           <h1 className="w-full text-start text-[25px] md:text-[60px] font-medium text-white">Feel free to reach out to us - our team is here to help!</h1>
         </div>
 
-        <div className="map-and-contact w-full flex flex-col md:flex-row justify-between items-center mt-8">
+        <div className="map-and-contact w-full flex flex-col md:flex-row gap-4 md:gap-12 justify-between items-center mt-8">
           <div className="map w-full md:w-1/2 flex justify-start items-center">
             
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7768.833871562424!2d77.70846808950584!3d13.199119993995087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1cfe75446265%3A0x296c70e9a129418e!2sKempegowda%20International%20Airport%20Bengaluru!5e0!3m2!1sen!2sin!4v1738332183791!5m2!1sen!2sin"  allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-full md:w-[400px] h-[300px] md:h-[600px]"></iframe>
