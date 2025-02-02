@@ -101,7 +101,7 @@ const About = () => {
           </div>
 
           <div className="right w-full lg:w-1/2 flex flex-col justify-start items-start px-0 md:px-8 mt-8 md:mt-0">
-            <h1 className="text-customblack text-xl mt-4 font-medium">IoT Solutions</h1>
+            <h1 className="text-customblack text-xl lg:text-3xl mt-4 font-medium">IoT Solutions</h1>
 
             <p className="text-gray-500 font-medium mt-2 text-xs md:text-lg">As trailblazers in IoT innovation, we deliver solutions tailored to industries like manufacturing, construction, logistics, and supply chain management.</p>
 
@@ -113,7 +113,7 @@ const About = () => {
 
 
 
-            <h1 className="text-customblack text-xl mt-4 font-medium">Software Solutions</h1>
+            <h1 className="text-customblack text-xl lg:text-3xl mt-4 font-medium">Software Solutions</h1>
 
             <p className="text-gray-500 font-medium mt-2 text-xs md:text-lg">We bring robust, intuitive, and scalable software platforms to the forefront of business innovation.</p>
 
@@ -126,7 +126,7 @@ const About = () => {
           </div>
         </div>
 
-        <h1 className="w-full flex justify-center items-center text-md md:text-xl text-customblack font-medium my-8">
+        <h1 className="w-full flex justify-center items-center text-md md:text-xl lg:text-2xl text-customblack font-medium my-8">
           Every solution is designed to simplify workflows, improve accuracy, and enhance user satisfaction.
         </h1>
 
@@ -159,27 +159,27 @@ const About = () => {
 
             <p className="w-full text-start text-gray-400 font-medium flex justify-start items-start gap-2 flex-wrap">
               <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%] lg:w-[95%] text-start">Enhance operational efficiency by automating processes.</span>
+              <span className="w-[90%]  text-start">Enhance operational efficiency by automating processes.</span>
             </p>
 
             <p className="w-full text-start text-gray-400 font-medium flex flex-row justify-start items-start gap-2 flex-wrap">
               <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%] lg:w-[95%] text-start">Deliver critical data insights that drive smarter decision-making.</span>
+              <span className="w-[90%] text-start">Deliver critical data insights that drive smarter decision-making.</span>
             </p>
 
             <p className="w-full text-start text-gray-400 font-medium flex flex-row justify-start items-start gap-2 flex-wrap">
               <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%] lg:w-[95%] text-start flex">Promote innovation in every facet of business.</span>
+              <span className="w-[90%]  text-start flex">Promote innovation in every facet of business.</span>
             </p>
 
             <p className="w-full text-start text-gray-400 font-medium flex flex-row justify-start items-start gap-2 flex-wrap">
               <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%] lg:w-[95%] text-start flex">Foster sustainable growth by integrating eco-friendly technologies and solutions.</span>
+              <span className="w-[90%] text-start flex">Foster sustainable growth by integrating eco-friendly technologies and solutions.</span>
             </p>
 
             <p className="w-full text-start text-gray-400 font-medium flex flex-row justify-start items-start gap-2 flex-wrap">
               <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%] lg:w-[95%] text-start flex">Empower businesses with scalable, adaptable solutions.</span>
+              <span className="w-[90%] text-start flex">Empower businesses with scalable, adaptable solutions.</span>
             </p>
 
           </div>

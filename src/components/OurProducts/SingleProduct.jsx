@@ -280,7 +280,7 @@ Download STRIKES now and be part of the future of collaboration!
                         {product.subcontent}
                     </p>
                     </div>
-                    <img src={product.image} className="w-full h-[150px] sm:h-[250px] rounded-xl 2xl:h-[350px]" />
+                    <img src={product.image} className="w-full h-[150px] sm:h-[250px] rounded-xl 2xl:h-[350px] object-cover" />
                         </AnimatedElement>
                     </Link>
                 ))}

@@ -82,7 +82,7 @@ const Footer = () => {
   };
 
   return (
-    <section  className="featured-projects w-full h-full flex flex-col justify-center items-center bg-black text-white">
+    <section  className="featured-projects w-full h-full flex flex-col justify-center items-center bg-black text-white md:pt-12">
 
       {/* <div className="marquee w-full shadow-xl relative bg-customblack">
         <div className="flex h-16 lg:h-24 gap-8 justify-center items-center animate-marquee lg:animate-marqueeslow  whitespace-nowrap">

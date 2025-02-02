@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { CornerDownRight } from 'lucide-react';
 import { Link } from "react-router-dom";
 
-const AnimatedElement = ({ children, delay = 0 }) => {
+const AnimatedElement = ({ children, delay = 0, className="" }) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
 
@@ -31,7 +31,7 @@ const AnimatedElement = ({ children, delay = 0 }) => {
    return (
     <div 
       ref={elementRef}
-      className={`transform transition-all duration-700 ${
+      className={`transform transition-all duration-700 ${className} ${
         isVisible 
           ? `opacity-100 translate-y-0 delay-[${delay}ms]` 
           : 'opacity-0 translate-y-10'
@@ -92,22 +92,22 @@ const Clients = () => {
 
             {clients.map((client, index) => (
               
-              <div key={client.id} className="card rounded-xl flex flex-col bg-white p-4 md:p-12 text-black gap-8 shadow-sm group h-[150px] md:h-[200px] justify-center items-center w-[45%] md:w-[30%]">
-                <AnimatedElement key={client.id} delay={100*(index+1)}>
+              <AnimatedElement delay={100*(index+1)} key={client.id} className="card rounded-xl flex flex-col bg-white p-4 md:p-12 text-black gap-8 shadow-sm group h-[150px] md:h-[200px] justify-center items-center w-[45%] md:w-[30%]">
+                {/* <AnimatedElement key={client.id} delay={100*(index+1)}> */}
                 <img src={client.image} className="h-8 md:h-20 w-auto" />
                 
                 <p className="w-full flex justify-center text-sm md:text-lg font-medium text-black">
                   {client.name}
                 </p>
-              </AnimatedElement>
-            </div>
+              {/* </AnimatedElement> */}
+            </AnimatedElement>
 
             ))}
 
 
-            <Link to="/about" className="card w-[45%] md:w-[30%] rounded-xl flex flex-col md:flex-row justify-center items-center bg-customgreen p-12 text-black gap-2 shadow-sm ease-in-out transition-all duration-300 group hover:gap-4 group">
-<AnimatedElement delay={100 * (clients.length + 1)}>
-              <div to="/about" className="card w-full flex flex-col md:flex-row justify-center items-center bg-customgreen  text-black gap-2  ease-in-out transition-all duration-300 group-hover:gap-4 group">
+            <Link to="/about" className="card w-[45%] md:w-[30%]  shadow-sm ease-in-out transition-all duration-300 group hover:gap-4 group">
+<AnimatedElement delay={100 * (clients.length + 1)} className="bg-customgreen w-full h-full  p-12 flex flex-col md:flex-row justify-center items-center  text-black gap-2  rounded-xl">
+              <div to="/about" className="card w-full flex flex-col md:flex-row justify-center items-center bg-customgreen  text-black gap-2  ease-in-out transition-all duration-300  group">
                 More
                 
                 <FaArrowRightLong className="size-6 md:size-8 rounded-full bg-customblack p-1 md:p-2 text-customgreen  -rotate-45 group-hover:rotate-0 transition-transform duration-500" />

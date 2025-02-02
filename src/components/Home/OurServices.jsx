@@ -2,6 +2,7 @@ import { m } from 'framer-motion';
 import PercentageSlider from '../Slider'
 import { useState, useEffect, useRef } from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
+import { Link } from "react-router-dom";
 
 const OurServices = () => {
   
@@ -136,10 +137,10 @@ const OurServices = () => {
             </div>
           ))}
 
-          <div className="allservices bg-customgreen rounded-lg w-[45%] h-[200px] lg:h-[250px] flex flex-col md:flex-row justify-center items-center group gap-2 shadow-lg text-xs md:text-lg 2xl:text-2xl whitespace-nowrap font-medium">
+          <Link to="/services" className="allservices bg-customgreen rounded-lg w-[45%] h-[200px] lg:h-[250px] flex flex-col md:flex-row justify-center items-center group gap-2 shadow-lg text-xs md:text-lg 2xl:text-2xl whitespace-nowrap font-medium">
             View all Services 
             <FaArrowRightLong className="size-6 md:size-8 2xl:size-12 rounded-full bg-customblack p-1 md:p-2 2xl:p-3 text-customgreen  -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
-          </div>
+          </Link>
           
         </div>
       </section>

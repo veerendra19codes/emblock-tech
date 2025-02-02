@@ -204,7 +204,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="opacity-0 translate-y-full w-full h-28 hidden lg:flex flex-row justify-between items-center px-12 border-b border-gray-300 shadow-sm animate-slide-down animate-fill-mode-forwards">
+      <nav className="opacity-0 translate-y-full w-full h-28 hidden lg:flex flex-row justify-between items-center px-12 border-b border-gray-300 shadow-sm animate-slide-down-fast animate-fill-mode-forwards">
         <Link to="/" className="logo flex justify-center items-center gap-2 object-contain rounded-full">
           <img src="/logo.png" className="h-8 w-auto" alt="Logo" />
         </Link>

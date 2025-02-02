@@ -12,21 +12,21 @@ const OurProducts = () => {
     },
     {
       id: 2,
-      image: "/image2.jpg",
+      image: "/strikes.jpeg",
       title: "Strikes",
       description: "App that connects Influencer and Brand and Audience",
       path: "/product/2",
     },
     {
       id: 3,
-      image: "/image3.png",
+      image: "/edgecarts.webp",
       title: "Edgecarts",
       description: "Free E-commerce for all",
       path: "/product/3",
     },
     {
       id: 4,
-      image: "/image4.jpg",
+      image: "/buildops.jpg",
       title: "Buildops",
       description: "ERP and Project Management System for Construction",
       path: "/product/4",
@@ -78,7 +78,7 @@ const ProductCard = ({ product }) => {
           : "opacity-0 translate-y-20" // Start with opacity-0 and translate-y-20
       }`}
     >
-      <img src={product.image} className="w-full h-4/5 rounded-xl" />
+      <img src={product.image} className="w-full h-[250px] sm:h-[350px] lg:h-[450px] 2xl:h-[550px] object-cover rounded-xl" />
 
       <div className="title-and-link w-full flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="w-full flex flex-col justify-center items-start gap-2 md:gap-8">
