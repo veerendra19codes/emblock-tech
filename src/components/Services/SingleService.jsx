@@ -448,7 +448,7 @@ const SingleService = () => {
                 {services.filter((service) => service.id != id).map((service, index) => (
                     <Link to={service.path} key={service.id} className="card w-full md:w-1/3 ">
 
-                        <AnimatedElement delay={1000+(200*index)} className="flex flex-col justify-between items-start p-4 border border-gray-400 rounded-xl gap-4  h-fit md:h-[500px]">
+                        <AnimatedElement delay={1000+(200*index)} className="flex flex-col justify-between items-start p-4 border border-gray-400 rounded-xl gap-4  h-fit md:h-fit">
 
                             <div className="flex flex-col justify-start  items-start gap-2 md:gap-4">
                             <h1 className="text-xl md:text-2xl 2xl:text-3xl uppercase font-medium">
