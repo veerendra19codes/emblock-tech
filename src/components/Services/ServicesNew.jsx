@@ -946,11 +946,11 @@ const ServicesNew = () => {
         <h1 className="w-full lg:w-[80%] text-start text-[25px] md:text-[40px] lg:text-[60px] leading-tight font-normal">
             Innovative IoT and Software Solutions Tailored to Transform Your Business and Empower Your Growth Journey
         </h1>
-        <p className="w-full lg:w-[80%] text-start text-xl md:text-2xl lg:text-3xl  font-medium text-gray-500 mt-8 md:mt-[2%]">
+        <p className="w-full lg:w-[80%] text-start text-base md:text-xl lg:text-2xl  font-medium text-gray-500 mt-8 md:mt-[2%]">
             Over the years, we&apos;ve had the privilege of partnering with a diverse range of clients, from startups to established enterprises, helping them turn their visions into impactful solutions.
         </p>
 
-        <Link to="/services" className="rounded-full w-fit  p-2  pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium  my-6 md:my-24">
+        <Link to="/contactus" className="rounded-full w-fit  p-2  pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium  my-6 md:my-24">
           Contact Us Now
           <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
         </Link>
@@ -960,7 +960,7 @@ const ServicesNew = () => {
         <h1 className="text-start w-full text-[25px] md:text-[40px] lg:text-[60px] font-medium">
           What We&apos;re Experts In:
         </h1>
-        <p className="w-full text-start text-md md:text-xl lg:text-2xl font-medium mt-4 md:mt-8">
+        <p className="w-full text-start text-sm md:text-lg lg:text-xl font-medium mt-4 md:mt-8">
           From strategy and planning to deployment and optimization, we provide tailored IoT solutions that enhance efficiency, scalability, and security for your business.
         </p>
 
@@ -970,23 +970,23 @@ const ServicesNew = () => {
             <h1 className="text-start w-full  text-[25px] md:text-[40px] lg:text-[60px] font-medium">
               IoT Consulting and Strategy Development
             </h1>
-            <p className="w-full text-start text-md md:text-xl font-medium mt-4 md:mt-8">
+            <p className="w-full text-start text-sm md:text-lg font-medium mt-4 md:mt-8">
               We create tailored IoT roadmaps, conducting business assessments and feasibility studies to ensure seamless integration and maximum ROI.
             </p>
 
-            <p className="w-full text-start text-gray-400 text-sm md:text-lg font-medium mt-4 md:mt-12">
+            <p className="w-full text-start text-gray-400 text-xs md:text-base font-medium mt-4 md:mt-12">
               Our consulting services are tailored to identify the value IoT can bring to your business and align it with your goals. We begin with a comprehensive business assessment to evaluate your organization&apos;s specific needs and identify areas where IoT can drive operational efficiency, cost savings, or customer engagement. Once the assessment is complete, we create a customized IoT strategy, mapping out actionable services to achieve your objectives. To ensure feasibility, we conduct in-depth technical and financial analyses, validating the viability of your IoT initiatives.
             </p>
 
-            <Link to="/services/1" className="rounded-full w-fit  p-2   pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-4 md:my-12 lg:my-24">
+            <Link to="/services/1" className="rounded-full w-fit  p-2   pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-4 md:my-12 lg:my-16">
               Learn More
             <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
             </Link>
           </div>
 
-          <button className="w-fit p-1 md:p-2 px-4 bg-white text-black text-xs lg:text-xl rounded-full font-medium mt-4">
+          <label className="w-fit p-1 md:p-2 px-4 bg-white text-black text-xs lg:text-xl rounded-full font-medium mt-4">
             Strategic
-          </button>
+          </label>
         </div>
 
         <div className="w-full flex flex-col-reverse md:flex-row gap-4 justify-between items-start mt-8 pt-4 md:mt-16 border-t border-gray-700">
@@ -995,23 +995,23 @@ const ServicesNew = () => {
             <h1 className="text-start w-full  text-[25px] md:text-[40px] lg:text-[60px] font-medium">
               Building Secure & Scalable IoT Ecosystems
             </h1>
-            <p className="w-full text-start text-md md:text-xl font-medium mt-4 md:mt-8">
+            <p className="w-full text-start text-sm md:text-lg font-medium mt-4 md:mt-8">
               Our solutions enhance IoT performance with real-time monitoring, predictive maintenance, and seamless connectivity management.
             </p>
 
-            <p className="w-full text-start text-gray-400 text-sm md:text-lg font-medium mt-4 md:mt-12">
+            <p className="w-full text-start text-gray-400 text-xs md:text-base font-medium mt-4 md:mt-12">
               We specialize in developing scalable, secure, and high-performance IoT solutions tailored to your business needs. Our services include IoT platform development, device provisioning, data analytics, and cloud infrastructure to ensure seamless connectivity. With AI-powered analytics and real-time data processing, we help businesses unlock valuable insights. Our security solutions protect devices, data, and networks from threats, ensuring compliance with industry standards. From initial setup to continuous optimization, we provide the technical backbone for your IoT success.
             </p>
 
-            <Link to="/services/2" className="rounded-full w-fit  p-2   pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium  my-4 md:my-12 lg:my-24">
+            <Link to="/services/2" className="rounded-full w-fit  p-2   pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium  my-4 md:my-12 lg:my-16">
               Learn More
             <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
             </Link>
           </div>
 
-          <button className="w-fit p-1 md:p-2 px-4 bg-white text-black text-xs lg:text-xl rounded-full font-medium mt-4">
+          <label className="w-fit p-1 md:p-2 px-4 bg-white text-black text-xs lg:text-xl rounded-full font-medium mt-4">
             Technical
-          </button>
+          </label>
         </div>
 
         <div className="w-full flex flex-col-reverse md:flex-row justify-between items-start mt-8 pt-4 md:mt-16 border-t border-gray-700 gap-4">
@@ -1020,23 +1020,23 @@ const ServicesNew = () => {
             <h1 className="text-start w-full  text-[25px] md:text-[40px] lg:text-[60px] font-medium">
               Optimizing IoT for Maximum Efficiency
             </h1>
-            <p className="w-full text-start text-md md:text-xl font-medium mt-4 md:mt-8">
+            <p className="w-full text-start text-sm md:text-lg font-medium mt-4 md:mt-8">
               We develop and integrate IoT platforms, device provisioning, cloud infrastructure, and security solutions for reliable and future-proof operations.
             </p>
 
-            <p className="w-full text-start text-gray-400 text-sm md:text-lg font-medium mt-4 md:mt-12">
+            <p className="w-full text-start text-gray-400 text-xs md:text-base font-medium mt-4 md:mt-12">
               We streamline IoT deployment, monitoring, and management to ensure smooth, efficient operations. Our solutions include custom IoT applications, connectivity management, edge computing, and predictive maintenance to enhance productivity. With real-time monitoring, automated alerts, and proactive support, we minimize downtime and maximize performance. Our smart asset tracking solutions improve inventory and supply chain management. From integration to long-term support, we keep your IoT ecosystem running at peak efficiency.
             </p>
 
-            <Link to="/services/3" className="rounded-full w-fit  p-2   pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-4 md:my-12 lg:my-24">
+            <Link to="/services/3" className="rounded-full w-fit  p-2   pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-4 md:my-12 lg:my-16">
               Learn More
             <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
             </Link>
           </div>
 
-          <button className="w-fit p-1 md:p-2 px-4  bg-white text-black text-xs lg:text-xl rounded-full font-medium mt-4">
+          <label className="w-fit p-1 md:p-2 px-4  bg-white text-black text-xs lg:text-xl rounded-full font-medium mt-4">
             Operational
-          </button>
+          </label>
         </div>
       </section>
 
@@ -1045,7 +1045,7 @@ const ServicesNew = () => {
 
       <AnimatedElement>
     
-      <div className="feature-hero w-full flex flex-col gap-4 justify-center  items-start pl-4 lg:pl-24 py-12 lg:py-40 bg-white animate-fadeInUp">
+      <div className="feature-hero w-full flex flex-col gap-4 justify-center  items-start pl-4 lg:pl-24 py-12 lg:py-24 bg-white animate-fadeInUp">
 
         <div className="flex gap-2 justify-center items-center">
           <span className="bg-lime-400 text-white size-2 md:size-3 rounded-full">.</span>
@@ -1053,7 +1053,7 @@ const ServicesNew = () => {
         </div>
 
         <div className="flex justify-center items-start flex-col gap-2 leading-none ">
-          <h1 className="text-[25px] lg:text-[90px] text-black leading-none">
+          <h1 className="text-[25px] md:text-[40px] lg:text-[60px] font-normal text-black leading-none">
             Why Our Services?
           </h1>
         </div>

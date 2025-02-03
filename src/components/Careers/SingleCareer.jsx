@@ -72,7 +72,7 @@ const SingleCareer = () => {
       <AnimatedElement delay={400}>
 
         {jobs[id-1].details.map((detail) => (
-          <p key={detail.id} className="text-gray-500 font-medium text-xs md:text-2xl w-full md:w-full mt-4 md:mt-8">
+          <p key={detail.id} className="text-gray-500 font-medium text-xs md:text-xl w-full md:w-full mt-4 md:mt-8">
                 {detail.line}
             </p>
         ))}
@@ -204,10 +204,10 @@ const SingleCareer = () => {
             <p className="w-full text-start">
               Google form Link: 
             </p>
-            <Link to="/services" className="rounded-full p-2   pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-0 md:my-6 w-fit">
+            <a href="https://forms.gle/AAaXr7QN7KJKeSNj9" target="_blank" className="rounded-full p-2   pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-0 md:my-6 w-fit">
               Link
               <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
-            </Link>
+            </a>
           </div>
 
           <p className="text-sm md:text-2xl font-medium text-black mt-8 md:mt-16">

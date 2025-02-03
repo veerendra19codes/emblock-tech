@@ -1,7 +1,7 @@
 import { FaArrowRightLong, FaXTwitter } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
 import { useEffect, useRef, useState } from 'react';
-import { FaRegCopyright } from "react-icons/fa";
+import { FaInstagram, FaRegCopyright, FaWhatsapp } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -96,9 +96,15 @@ const Footer = () => {
                   <h1 className="name font-semibold text-xs  sm:text-lg  text-white font-manrope">EMBLOCK TECH</h1>
                   <p className="text-gray-400 font-medium font-manrope text-xs sm:text-base   ">contact@emblocktech.com</p>
                   <div className="icons w-full flex gap-2 justify-between items-center ">
-                    <FaXTwitter className="text-gray-400 text-md lg:text-xl hover:rotate-360 transition-all duration-300 " />
-                    <IoLogoInstagram  className="text-gray-400 text-md lg:text-xl hover:rotate-360 transition-all duration-300 " />
-                    <FaLinkedinIn  className="text-gray-400 text-md lg:text-xl font-bold  hover:rotate-360 transition-all duration-300 " />
+                    <a href="https://www.instagram.com/emblock_tech/" target="_blank">
+                      <FaInstagram  className="text-gray-400 text-md lg:text-xl hover:rotate-360 transition-all duration-300 " />
+                    </a>
+                    <a href="https://wa.me/919952311408" target="_blank">
+                      <FaWhatsapp  className="text-gray-400 text-md lg:text-xl hover:rotate-360 transition-all duration-300 " />
+                    </a>
+                    <a href="https://www.linkedin.com/company/emblock-tech/" target="_blank">
+                      <FaLinkedinIn  className="text-gray-400 text-md lg:text-xl font-bold  hover:rotate-360 transition-all duration-300 " />
+                    </a>
                   </div>
                 </div>
 
@@ -108,8 +114,8 @@ const Footer = () => {
             <div className="w-full h-full flex justify-start items-start flex-col ">
 
               <p className="text-gray-400 text-lg lg:text-3xl lg:my-2">Contact Us</p>
-              <h1 className="text-base lg:text-2xl text-white w-full text-start lg:my-2">contact<span className="text-customgreen">@</span>emblocktech.com</h1>
-              <h1 className="text-base lg:text-2xl text-white w-full text-start lg:my-2"><span className="text-customgreen">+91</span>99523 11408</h1>
+              <h1 className="text-xl lg:text-2xl text-white w-full text-start lg:my-2">contact<span className="text-customgreen">@</span>emblocktech.com</h1>
+              <h1 className="text-xl lg:text-2xl text-white w-full text-start lg:my-2"><span className="text-customgreen">+91</span>99523 11408</h1>
               
             </div>
 
@@ -117,8 +123,8 @@ const Footer = () => {
 
           <div className="w-full flex flex-col gap-1 my-6 justify-center lg:justify-start items-start lg:items-start">     
 
-            <p className="w-full  text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold  justify-start items-center text-start px-4 lg:px-0 mt-8">102, 20th Cross Road, Bengaluru 560076, Karnataka, India </p>
-              <p className="w-full  text-gray-500 text-md lg:text-xl flex flex-wrap font-semibold   justify-start items-center text-start px-4 lg:px-0 ">No.23-A, Vadakuthu, Cuddalore, Tamil Nadu, 607308</p>          
+            <p className="w-full  text-gray-500 text-sm lg:text-xl flex flex-wrap font-semibold  justify-start items-center text-start px-4 lg:px-0 mt-8">102, 20th Cross Road, Bengaluru 560076, Karnataka, India </p>
+              <p className="w-full  text-gray-500 text-sm lg:text-xl flex flex-wrap font-semibold   justify-start items-center text-start px-4 lg:px-0 ">No.23-A, Vadakuthu, Cuddalore, Tamil Nadu, 607308</p>          
             </div>  
 
             <Link to="/contactus" className="rounded-full p-2  lg:m-0 pl-4 md:pl-6 text-md md:text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-8 lg:my-12 shadow-md shadow-customgreen group hover:shadow-none transition-all duration-500  font-medium w-fit">Book a call <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform duration-300 -rotate-45 group-hover:rotate-0" /> </Link>

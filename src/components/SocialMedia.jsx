@@ -1,5 +1,5 @@
 import  { useEffect, useRef, useState } from 'react'
-import { FaArrowRightLong, FaInstagram, FaLinkedin, FaSquareFacebook, FaXTwitter } from 'react-icons/fa6'
+import { FaArrowRightLong, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
 const AnimatedElement = ({ children, delay = 0 }) => {
@@ -64,37 +64,37 @@ const SocialMedia = () => {
 
 
             <AnimatedElement delay={200}>
-              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm h-[150px] md:h-[200px] group">
+              <a href="https://www.instagram.com/emblock_tech/" target='_blank' className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm h-[150px] md:h-[200px] group">
                   <h1 className="text-md md:text-2xl text-start w-full  font-medium">Instagram</h1>
                   
                   <p className="w-full flex justify-end">
                       <FaInstagram className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl group-hover:rotate-360 transition-all duration-300" />
                   </p>
-              </div>
+              </a>
             </AnimatedElement>
 
 
 
 
             <AnimatedElement delay={400}>
-              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm h-[150px] md:h-[200px] group">
-                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Facebook</h1>
+              <a href="https://wa.me/919952311408" target="_blank" className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm h-[150px] md:h-[200px] group">
+                  <h1 className="text-md md:text-2xl text-start w-full  font-medium">Whatsapp</h1>
                   
                   <p className="w-full flex justify-end">
-                      <FaSquareFacebook className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl group-hover:rotate-360 transition-all duration-300" />
+                      <FaWhatsapp className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl group-hover:rotate-360 transition-all duration-300" />
                   </p>
-              </div>
+              </a>
             </AnimatedElement>
 
 
             <AnimatedElement delay={600}>
-              <div className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm h-[150px] md:h-[200px] group">
+              <a href="https://www.linkedin.com/company/emblock-tech/"  target="_blank" className="card w-full rounded-xl flex flex-col justify-between bg-white p-4 md:p-12 text-black gap-8 shadow-sm h-[150px] md:h-[200px] group">
                   <h1 className="text-md md:text-2xl text-start w-full  font-medium">Linkedin</h1>
                   
                   <p className="w-full flex justify-end">
                       <FaLinkedin className="bg-customgreen rounded-full size-6 md:size-12 p-1 md:p-4   text-customblack font-bold text-xl group-hover:rotate-360 transition-all duration-300" />
                   </p>
-              </div>
+              </a>
             </AnimatedElement>
             
 

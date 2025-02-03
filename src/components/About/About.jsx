@@ -52,27 +52,33 @@ const About = () => {
   const quotes = [
     {
       id: 1,
-      quote: `"EMBLOCK has completely transformed our construction management. With real-time video streaming, image recognition for attendance, and integrated PMS & ERP, it’s a single solution for everything we need on-site."`,
-      author: "Bala venkatesh",
-      designatin: "Founder Aargaa Construction",
+      quote: `"True vision at EMBLOCK means seeing beyond the horizon and moving relentlessly towards it, transforming challenges into opportunities every step of the way."`,
+      author: "Anbu Selvam Kasilingam,r",
+      designatin: "COO & Co-Founder",
     },
     {
       id: 2,
-      quote: `“Right from the setup, EMBLOCK's e-commerce solution boosted our online operations, enhancing efficiency and scalability exactly as shown in the demo”`,
-      author: "Devi  Ramanujam",
-      designatin: "Founder Nishika",
+      quote: `"Technology drives the future. We leverage cutting-edge solutions to stay ahead in an ever-evolving tech landscape."`,
+      author: `Zahid Khan , `,
+      designatin: "CTO & Co-Founder",
     },
     {
       id: 3,
-      quote: `“Fleet safety has always been a priority for us, and EMBLOCK delivered exactly what we needed. Driver behavior monitoring and GPS tracking have improved safety and efficiency across our fleet.`,
-      author: "Syed Irfan ",
-      designatin: "Founder-NATIONAL TRANSPORT ",
+      quote: `"Seamlessly integrating information systems with business strategies empowers us to achieve efficiency and fuel growth."`,
+      author: "Ashok R P, ",
+      designatin: "CIO & Co-Founder",
     },
     {
       id: 4,
-      quote: `“Managing GST used to be a nightmare until we switched to EMBLOCK. Automated tax calculations and seamless filing have made compliance effortless!."`,
-      author: "CA Avani Daxin",
-      designatin: "Founder Buddybooks",
+      quote: `"Innovation is our heartbeat. We design user-focused solutions that create meaningful impact and drive progress."`,
+      author: "Lokeshwaran P, ",
+      designatin: "CPO",
+    },
+     {
+      id: 5,
+      quote: `"Financial integrity and strategic investments are vital to sustainable growth. We steward our resources wisely to secure a prosperous future."`,
+      author: "Vijay Karthik K, ",
+      designatin: "CFO",
     },
   ]
 
@@ -136,11 +142,11 @@ const About = () => {
 
 
       <div className="bg-black w-full flex flex-col my-12 px-6 md:px-24 py-12 md:py-24 text-white">
-        <div className="transition-all duration-700 ease-out  left w-full text-start  flex flex-col  h-full">
+        <div className="transition-all duration-700 ease-out  left w-full text-start  flex flex-col  h-full gap-2">
 
           <div className="flex gap-2 justify-start items-center">
             <span className={`bg-lime-400 text-black size-2 md:size-3 rounded-full`}>.</span>
-            <p className="text-md lg:text-lg font-semibold text-gray-400">Vision</p>
+            <p className="text-base lg:text-lg font-semibold text-gray-400">Vision</p>
           </div>
 
           <h1 className={`text-[25px] md:text-[40px] lg:text-[60px] font-normal leading-none text-white`}>
@@ -149,37 +155,37 @@ const About = () => {
 
         </div>
 
-        <h1 className="text-lg md:text-xl lg:text-3xl font-medium py-4 mt-4">
+        <h1 className="text-sm md:text-xl font-medium py-4 mt-4">
           Our vision is to become a global leader in IoT and software solutions, enabling businesses to anticipate and address ever-evolving demands.
         </h1>
 
         <div className="w-full flex flex-col md:flex-row justify-between items-center my-4 gap-8 md:gap-0">
           <div className="left w-full md:w-1/2 flex flex-col justify-start items-center gap-4 md:gap-8">
-            <h1 className="w-full text-start text-lg lg:text-2xl font-medium">We aim to provide tools that:</h1>
+            <h1 className="w-full text-start text-sm lg:text-xl font-medium">We aim to provide tools that:</h1>
 
             <p className="w-full text-start text-gray-400 font-medium flex justify-start items-start gap-2 flex-wrap">
               <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%]  text-start">Enhance operational efficiency by automating processes.</span>
+              <span className="w-[90%]  text-start text-xs md:text-md">Enhance operational efficiency by automating processes.</span>
             </p>
 
             <p className="w-full text-start text-gray-400 font-medium flex flex-row justify-start items-start gap-2 flex-wrap">
               <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%] text-start">Deliver critical data insights that drive smarter decision-making.</span>
+              <span className="w-[90%] text-start text-xs md:text-md">Deliver critical data insights that drive smarter decision-making.</span>
             </p>
 
             <p className="w-full text-start text-gray-400 font-medium flex flex-row justify-start items-start gap-2 flex-wrap">
               <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%]  text-start flex">Promote innovation in every facet of business.</span>
+              <span className="w-[90%]  text-start flex text-xs md:text-md">Promote innovation in every facet of business.</span>
             </p>
 
             <p className="w-full text-start text-gray-400 font-medium flex flex-row justify-start items-start gap-2 flex-wrap">
               <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%] text-start flex">Foster sustainable growth by integrating eco-friendly technologies and solutions.</span>
+              <span className="w-[90%] text-start flex text-xs md:text-md">Foster sustainable growth by integrating eco-friendly technologies and solutions.</span>
             </p>
 
             <p className="w-full text-start text-gray-400 font-medium flex flex-row justify-start items-start gap-2 flex-wrap">
               <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%] text-start flex">Empower businesses with scalable, adaptable solutions.</span>
+              <span className="w-[90%] text-start flex text-xs md:text-md">Empower businesses with scalable, adaptable solutions.</span>
             </p>
 
           </div>
@@ -189,7 +195,7 @@ const About = () => {
           </div>
         </div>
 
-        <h1 className="text-center mx-auto flex justify-center items-center text-md md:text-xl text-white font-medium my-0 md:my-8 w-full md:w-[70%] mt-8 md:mt-16">
+        <h1 className="text-center mx-auto flex justify-center items-center text-xs md:text-xl text-white font-medium my-0 md:my-8 w-full md:w-[70%] mt-8 md:mt-16">
           At EMBLOCK, we envision a smarter, more connected world where innovation and efficiency lead the way. Together, we can pave the path to a future that&apos;s not only transformative but also secure, scalable, and sustainable.
         </h1>
 

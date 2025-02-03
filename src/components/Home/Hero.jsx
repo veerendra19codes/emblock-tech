@@ -1,6 +1,6 @@
 import { FaArrowRightLong, FaXTwitter } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io";
-import {  FaLinkedinIn } from "react-icons/fa";
+import {  FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -98,9 +98,15 @@ const Hero = () => {
               <h1 className="name font-semibold text-xl  text-customgray font-manrope">EMBLOCK TECH</h1>
               <p className="text-customgray font-medium font-manrope text-xs 2xl:text-lg">contact@emblocktech.com</p>
               <div className="icons w-full flex gap-2 justify-between items-center ">
-                <FaXTwitter className="text-gray-400 text-xl 2xl:text-2xl hover:rotate-360 transition-all duration-300 " />
-                <IoLogoInstagram  className="text-gray-400 text-2xl 2xl:text-3xl  hover:rotate-360 transition-all duration-300 " />
-                <FaLinkedinIn  className="text-gray-400 text-xl 2xl:text-2xl  font-bold  hover:rotate-360 transition-all duration-300 " />
+                <a href="https://www.instagram.com/emblock_tech/" target="_blank">
+                  <FaInstagram  className="text-gray-500 text-md lg:text-xl hover:rotate-360 transition-all duration-300 font-bold" />
+                </a>
+                <a href="https://wa.me/919952311408" target="_blank">
+                  <FaWhatsapp  className="text-gray-500 text-md lg:text-xl hover:rotate-360 transition-all duration-300 font-bold " />
+                </a>
+                <a href="https://www.linkedin.com/company/emblock-tech/" target="_blank">
+                  <FaLinkedinIn  className="text-gray-500 text-md lg:text-xl font-bold  hover:rotate-360 transition-all duration-300 " />
+                </a>
               </div>
             </div>
 

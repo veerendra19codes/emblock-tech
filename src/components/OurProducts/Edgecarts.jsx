@@ -200,16 +200,16 @@ Download STRIKES now and be part of the future of collaboration!
     <div className="flex flex-col justify-center items-center w-full h-full py-6 px-0  md:py-28">
         <AnimatedElement>
 
-        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] uppercase w-full text-start font-medium px-[10%]">
+        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] uppercase w-full text-start font-medium px-6 md:px-[10%]">
             EDGECARTS
         </h1>
         </AnimatedElement>
 
-        <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8 mt-16 px-[8%] mb-24">
+        <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8 md:mt-16 px-[8%] mb-24">
 
             {/* this fixed  */}
             <div
-          ref={leftComponentRef}
+        
           className={`left w-full md:w-[30%] key-features flex flex-col justify-start items-start ${
             isLeftSticky ? "md:fixed md:top-0 md:w-[calc(30%-6rem)]" : ""
           }`}
@@ -241,18 +241,18 @@ Download STRIKES now and be part of the future of collaboration!
                     </h2>
                 </div>
 
-                <button className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group my-4 font-semibold">
-                    Visit Website 
+                <Link to="/contactus" className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group my-4 font-semibold">
+                    Contact Us 
                     <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
-                </button>
+                </Link>
                 
             </div>
 
-        {isLeftSticky && <div className="hidden md:block w-1/3" />}
+        {/* {isLeftSticky && <div className="hidden md:block w-1/3" />} */}
 
 
             {/* this div max-h-[500px] and scrollable according to page scroll  */}
-            <div ref={rightComponentRef} className="details w-full md:w-[65%] flex flex-col gap-4 md:gap-6 justify-center items-start">
+            <div className="details w-full md:w-[65%] flex flex-col gap-4 md:gap-6 justify-center items-start">
 
                 <div className="w-full text-lg md:text-2xl text-customgray font-semibold leading-6">
                     EDGECARTS makes entering the online marketplace simple and risk-free. Businesses can launch unique e-commerce websites with no upfront costs or hidden fees. We prioritize your success, charging only a 10% commission on each sale.

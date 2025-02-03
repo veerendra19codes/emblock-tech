@@ -4,50 +4,50 @@ import { GoDotFill } from "react-icons/go"
 import { Link, useParams } from "react-router-dom"
 import { FaQuoteLeft } from "react-icons/fa"
 
-const useInView = (options = {}) => {
-  const [isVisible, setIsVisible] = useState(false)
-  const ref = useRef(null)
-
-  useEffect(() => {
-    if (!ref.current) return
-
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting && !isVisible) {
-        setIsVisible(true)
-        // Once element is visible, stop observing
-        observer.unobserve(ref.current)
-      }
-    }, options)
-
-    observer.observe(ref.current)
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current)
-      }
-    }
-  }, [ref, options, isVisible]) // Added isVisible to dependencies
-
-  return [ref, isVisible]
-}
-
-const AnimatedSection = ({ children, delay = 0, className="" }) => {
-  const [ref, isVisible] = useInView({ threshold: 0.1 })
-
-  return (
-    <div
-      ref={ref}
-      className={`transition-all duration-1000 ease-out transform ${className} ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
-      style={{ transitionDelay: `${delay}ms` }}
-    >
-      {children}
-    </div>
-  )
-}
 
 const Solutions = () => {
+  const useInView = (options = {}) => {
+    const [isVisible, setIsVisible] = useState(false)
+    const ref = useRef(null)
+  
+    useEffect(() => {
+      if (!ref.current) return
+  
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true)
+          // Once element is visible, stop observing
+          observer.unobserve(ref.current)
+        }
+      }, options)
+  
+      observer.observe(ref.current)
+  
+      return () => {
+        if (ref.current) {
+          observer.unobserve(ref.current)
+        }
+      }
+    }, [ref, options]) // Added isVisible to dependencies
+  
+    return [ref, isVisible]
+  }
+  
+  const AnimatedSection = ({ children, delay = 0, className="" }) => {
+    const [ref, isVisible] = useInView({ threshold: 0.1 })
+  
+    return (
+      <div
+        ref={ref}
+        className={`transition-all duration-1000 ease-out transform ${className} ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+        style={{ transitionDelay: `${delay}ms` }}
+      >
+        {children}
+      </div>
+    )
+  }
   const { id } = useParams()
   const [isRightSticky, setIsRightSticky] = useState(false)
   const leftComponentRef = useRef(null)
@@ -293,9 +293,9 @@ const Solutions = () => {
       },
       quote: {
         quote:
-          "Right from the setup, EMBLOCK's e-commerce solution boosted our online operations, enhancing efficiency and scalability exactly as shown in the demo",
-        author: "Devi  Ramanujam",
-        designation: "Founder Nishikas",
+          "EMBLOCK's pipeline monitoring and leak detection system has transormed our operations with real-time insights and precise anomaly detection. Seamless integration and reliability make it an invaluable asset.",
+        author: "Krithick Kumar",
+        designation: "",
       },
     },
     {
@@ -327,7 +327,7 @@ const Solutions = () => {
       industry: "Logistics and Supply Chain",
       focus: "Operational Efficiency",
       image1: "/fleet-safety-image1.png",
-      image2: "/fleet-safety-image2.jpg",
+      image2: "/fleet-safety-image2.png",
       painPoint:
         "Logistics and supply chain businesses face several critical challenges that impact their efficiency and profitability. High costs associated with accidents and insurance claims can strain budgets, while unsafe driving behaviors lead to inefficiencies and increased risks. One of the most significant issues is the difficulty in exonerating drivers wrongfully accused of traffic violations, resulting in unnecessary legal disputes and reputational damage. EMBLOCK’s solutions directly address these pain points by improving accountability, enhancing safety standards, and providing indisputable video evidence when needed.",
       bottomText: "EMBLOCK delivers unparalleled value to logistics and supply chain businesses by:",
@@ -415,7 +415,7 @@ const Solutions = () => {
       industry: "Accounting",
       focus: "Compliance Automation",
       image1: "/gst-solution-image1.png",
-      image2: "/gst-solution-image2.jpg",
+      image2: "/gst-solution-image2.png",
       painPoint:
         "Accounting professionals face several challenges that affect their efficiency and productivity. Manual errors during data entry and tax preparation are common, leading to potential compliance issues and penalties. Additionally, the time-consuming nature of creating and submitting GST forms can limit the capacity of accountants to manage multiple clients. Keeping up with frequent updates to tax laws and regulations further complicates the process, leaving little room for strategic decision-making. EMBLOCK’s solution addresses these pain points by automating repetitive tasks and reducing the risk of errors, allowing accountants to focus on delivering value to their clients.",
       bottomText: "EMBLOCK’s accounting software offers several benefits to professionals and firms:",
@@ -497,7 +497,7 @@ const Solutions = () => {
 
         <div className="focus w-full relative flex flex-col-reverse md:flex-row justify-between items-start mt-8 md:mt-16  pl-0 md:px-[10%] mb-12">
           <section
-            ref={leftComponentRef}
+            
             className="left w-full md:w-[65%] px-6 md:px-0  flex flex-col justify-start items-start mt-8 md:mt-0"
           >
             <h2 className="text-customblack text-start w-full font-semibold text-xl md:text-3xl flex flex-wrap">
@@ -563,7 +563,7 @@ const Solutions = () => {
           </section>
 
           <section
-            ref={rightComponentRef}
+            
             className={`px-6 md:px-0 w-full md:w-[30%] h-auto  ${isRightSticky ? "md:fixed md:top-0 md:right-0 w-[34%] md:pr-[10%]" : ""} `}
           >
             <div className="left w-full key-features flex flex-col justify-start items-start ">
@@ -635,7 +635,7 @@ const Solutions = () => {
       </section>
 
       {/* quote  */}
-      <section className="w-full h-[500px] md:h-[700px] 2xl:h-[800px] flex justify-center items-center ">
+      <section className="w-full h-[400px] md:h-[700px] 2xl:h-[800px] flex justify-center items-center ">
         <AnimatedSection delay={800}>
           {/* <section className="w-full h-[400px] md:h-[800px] flex justify-center items-center px-6 md:px-24">
             <div className="w-1/5 flex justify-end items-start -mt-[170px] sm:-mt-[130px] md:-mt-[200px]">
@@ -647,20 +647,20 @@ const Solutions = () => {
               <p className="text-xs md:text-md font-medium">{solution.quote.designation}</p>
             </div>
           </section> */}
-          <section className="w-full h-[400px] sm:h-[600px] md:h-[800px] flex justify-start items-center px-6 md:px-24 pb-12 sm:pb-24 md:pb-48 lg:-mt-24">
+          <section className="w-full h-[400px] sm:h-[600px] md:h-[800px] flex justify-start items-center px-6 md:px-24  sm:pb-24 md:pb-48 lg:-mt-24">
 
-            <div className="h-[200px] w-1/5 flex justify-end items-start ">
-              <FaQuoteLeft className="text-gray-600 size-[40px] sm:size-[80px] md:size-[130px] lg:size-[200px]" />
+            <div className="h-[200px] w-fit flex justify-end items-start ">
+              <FaQuoteLeft className="text-gray-600 size-4 sm:size-[80px] md:size-[130px] lg:size-[200px]" />
             </div>
 
-            <div className="h-[200px] w-4/5 flex flex-col justify-start  items-start mt-[70px] sm:mt-[150px] md:mt-[220px] lg:mt-[350px] pr-[10%]">
-              <h1 className=" text-black text-sm sm:text-lg md:text-3xl font-medium mb-8">&ldquo;{solution.quote.quote}&ldquo;</h1>
+            <div className="h-[200px] w-fit flex flex-col justify-start  items-start mt-[30px] sm:mt-[150px] md:mt-[220px] lg:mt-[350px] pr-[5%]">
+              <h1 className=" text-black text-[8px] sm:text-[12px] md:text-xl font-medium mb-8">&ldquo;{solution.quote.quote}&ldquo;</h1>
 
-              <div className="flex flex-col gap-2 md:gap-4 justify-start items-start">
+              <div className="flex flex-col md:gap-4 justify-start items-start">
 
-                <p className=" text-xs md:text-lg font-medium mb-4">{solution.quote.author}</p>
+                <p className=" text-[6px] sm:text-xs md:text-lg font-medium mb-4">{solution.quote.author}</p>
 
-                <p className="text-xs md:text-md font-medium">{solution.quote.designation}</p>
+                <p className="text-[6px] sm:text-xs md:text-base font-medium">{solution.quote.designation}</p>
 
               </div>
 
@@ -669,7 +669,7 @@ const Solutions = () => {
         </AnimatedSection>
       </section>
 
-      <div className="w-full flex flex-col justify-center items-start gap-0 py-12 px-6 md:px-24">
+      <div className="w-full flex flex-col justify-center items-start gap-0 pb-12 px-6 md:px-24">
         <AnimatedSection delay={600}>
           <div className="flex gap-2 justify-center items-center">
             <span className="bg-lime-400  size-2 mdsize-3 rounded-full text-white">.</span>
@@ -692,6 +692,7 @@ const Solutions = () => {
               >
                 <AnimatedSection key={s.id} delay={400 + index * 200} className="w-full h-full">
                   <Link
+                    onClick={() => set}
                     to={`/solutions/${s.id}`}
                     key={s.id}
                     className="card w-full flex flex-col justify-between items-start p-4 border border-gray-400 rounded-xl h-[380px] md:h-[450px] lg:h-[500px] xl:h-[450px]"

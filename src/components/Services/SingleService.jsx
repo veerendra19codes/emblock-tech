@@ -248,27 +248,34 @@ const SingleService = () => {
                 points: [
                     {
                         id: 1,
-                        title: "Data Collection and Analytics",
-                        content: "Turn your raw IoT data into meaningful insights with our AI-powered analytics. We help you make informed decisions by transforming data into actionable business intelligence, driving growth and efficiency. Our solutions cover comprehensive data gathering, processing, and visualization, enabling you to understand trends and patterns within your data. With predictive analytics, we assist you in anticipating future outcomes and optimizing your operations accordingly."
+                        title: "Industrial IoT (IIoT) Solutions",
+                        content: "At Emblock Tech, we provide cutting-edge Industrial IoT (IIoT) solutions tailored for manufacturing, logistics, and energy industries. Our advanced systems enable real-time monitoring, predictive maintenance, and automation to enhance operational efficiency and minimize downtime. By integrating AI-driven analytics and secure cloud infrastructure, we help businesses optimize workflows, reduce costs, and improve asset utilization. Our IIoT solutions ensure seamless data synchronization across devices, allowing for better decision-making and increased productivity."
                     },
                     {
                         id: 2,
-                        title: "Cloud Services and Infrastructure Management",
-                        content: "Our secure and scalable cloud solutions are built for IoT applications. We offer real-time data processing, reliable backups, and comprehensive infrastructure management to keep your IoT ecosystem running smoothly. Our cloud services ensure that your data is accessible, secure, and efficiently managed, supporting your business’s growth and adapting to your evolving needs. We provide robust support to maintain optimal performance and scalability of your cloud infrastructure."
+                        title: "IoT in Supply Chain & Logistics",
+                        content: "Maximize efficiency in supply chain and logistics with Emblock Tech’s IoT-driven solutions. Our technology enables real-time inventory tracking, automated fleet management, and predictive analytics to reduce delays and improve delivery performance. With smart sensors and cloud integration, businesses gain full visibility into their supply chain, ensuring better resource allocation and streamlined operations. Our AI-powered forecasting tools help businesses mitigate risks, optimize routes, and enhance overall supply chain resilience."
                     },
                     {
                         id: 3,
-                        title: "Security Solutions for IoT",
-                        content: "Protecting your IoT ecosystem is our priority. We implement advanced data encryption, compliance protocols, and robust cybersecurity measures to keep your data and devices safe from threats. Our security solutions ensure that your IoT systems are resilient against cyber-attacks and compliant with industry standards. We continuously monitor and update our security measures to safeguard your business, giving you peace of mind to focus on your core operations."
+                        title: "ERP Solutions",
+                        content: "At Emblock Tech, we offer comprehensive ERP solutions that unify business operations across industries such as manufacturing, textiles, retail, and construction. Our ERP systems centralize key processes like inventory control, financial tracking, and supply chain management, improving efficiency and accuracy. IoT integration enables real-time data collection from industrial devices, allowing businesses to automate workflows and make data-driven decisions. Our scalable ERP solutions are designed to adapt to your business growth, ensuring seamless connectivity and operational excellence."
                     },
-                ]
+                    {
+                        id: 4,
+                        title: "CRM Solutions",
+                        content: "Strengthen customer relationships with Emblock Tech’s CRM solutions, designed for industries like retail, real estate, and service sectors. Our intelligent lead tracking and customer engagement platforms help businesses streamline communication, personalize marketing efforts, and boost customer loyalty. For IoT-enabled businesses, we offer real-time data integration, allowing you to analyze customer behavior, automate sales processes, and enhance customer experiences. With AI-driven insights and secure cloud-based CRM platforms, businesses can optimize their customer interactions and drive long-term growth."
+                    },
+                    
+                ],
+                quote: "Empower your business with Emblock Tech’s advanced IoT, ERP, and CRM solutions—delivering seamless automation, enhanced decision-making, and improved operational efficiency. 🚀"
             }
         },
     ]
 
   return (
     <div className="flex flex-col 
-    justify-center items-center w-full h-full   text-black bg-white py-6">
+    justify-center items-center w-full h-full   text-black bg-white py-6 md:py-[5%]">
         <AnimatedElement>
 
         <h1 className="text-[25px] md:text-[40px] lg:text-[60px] w-full md:w-[95%] text-start leading-tight font-normal px-6 md:px-[10%]">
@@ -278,7 +285,7 @@ const SingleService = () => {
 
         <AnimatedElement delay={200}>
 
-        <p className="text-md md:text-2xl w-full md:w-[90%] font-medium  px-6 md:px-[10%] mt-4 md:mt-[2%]">
+        <p className="text-sm md:text-xl w-full md:w-[90%] font-medium  px-6 md:px-[10%] mt-4 md:mt-[2%]">
             {services[id-1].text}
         </p>
         </AnimatedElement>
@@ -287,7 +294,7 @@ const SingleService = () => {
 
             {/* this fixed  */}
             <div
-          ref={leftComponentRef}
+         
           className={`left w-full md:w-[30%] key-features flex flex-col justify-start items-start ${
             isLeftSticky ? "md:fixed md:top-0 md:w-[calc(30%-8rem)]" : ""
           }`}
@@ -296,25 +303,25 @@ const SingleService = () => {
                     <p className="text-gray-500 font-normal text-sm md:text-lg">
                         Category
                     </p>
-                    <h2 className="text-customblack text-md md:text-xl font-medium">
+                    <h2 className="text-customblack text-lg font-medium">
                         {services[id-1].category}
                     </h2>
                 </div>
 
                 <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 py-4 md:py-8">
-                    <p className="text-gray-500 font-normal text-sm md:text-lg">
+                    <p className="text-gray-500 font-normal text-base md:text-xl">
                         Industry Focus
                     </p>
-                    <h2 className="text-customblack text-md md:text-xl  font-medium">
+                    <h2 className="text-customblack text-lg  font-medium">
                         {services[id-1].industryFocus}
                     </h2>
                 </div>
 
                 <div className="w-full flex flex-col justify-center items-start  py-4 md:py-8">
-                    <p className="text-gray-500 font-normal text-sm md:text-lg">
+                    <p className="text-gray-500 font-normal text-base md:text-xl">
                         Key Benefits
                     </p>
-                    <h2 className="text-customblack text-md md:text-xl  font-medium">
+                    <h2 className="text-customblack text-lg  font-medium">
                         {services[id-1].keyBenefits}
                     </h2>
                 </div>
@@ -332,7 +339,7 @@ const SingleService = () => {
 
 
             {/* this div max-h-[500px] and scrollable according to page scroll  */}
-            <div ref={rightComponentRef} className="details w-full md:w-[65%] flex flex-col gap-4 md:gap-6 justify-center items-start">
+            <div  className="details w-full md:w-[65%] flex flex-col gap-4 md:gap-6 justify-center items-start">
 
                 <div className="w-full text-md md:text-xl text-gray-500 font-semibold leading-6">
                     {services[id-1].content}
@@ -387,45 +394,47 @@ const SingleService = () => {
             ))}
             
 
-            <button className="rounded-full p-2  pl-4  md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group mt-8 md:mt-16  md:my-4 font-semibold">
+            <Link to="/contactus" className="rounded-full p-2  pl-4  md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group mt-8 md:my-16  font-semibold">
                 Contact Us
                 <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
-            </button>
+            </Link>
         </section>
 
         {/* bottom  */}
         {services[id-1].bottom?.text && (
 
-        <section className="w-full px-6 py-24 md:p-[10%] flex flex-col justify-start items-start gap-16">
+        <section className="w-full px-6 py-12 md:py-24 md:p-[10%] flex flex-col justify-start items-start ">
             <h1 className="text-start w-full text-wrap text-sm md:text-xl font-medium">
                 {services[id-1].bottom.text}
             </h1>
 
-            <div className="w-full flex flex-col md:flex-row justify-between items-start">
-                <div className="w-full md:w-1/2 flex justify-start items-center">
-                    <img src={services[id-1].bottom.image} className="w-full md:w-[80%] h-[250px] lg:h-[400px] 2xl:h-[500px] object-cover rounded-xl" />
+            <div className="w-full flex flex-col lg:flex-row justify-between items-start mt-16">
+                <div className="w-full lg:w-1/2 flex justify-start items-center">
+                    <img src={services[id-1].bottom.image} className="w-full mx-auto md:w-[80%] h-[250px] lg:h-[800px] 2xl:h-[800px] object-cover rounded-xl mb-8" />
                 </div>
 
-                <div className="w-full md:w-1/2 flex flex-col justify-start items-start gap-8 mt-8 md:mt-0">
+                <div className="w-full lg:w-1/2 flex flex-col justify-start items-start gap-8 mt-8 md:mt-0">
                     {services[id-1].bottom.points.map((p) => (
                         <div key={p.id} className="flex flex-col w-full justify-start items-start gap-4">
-                            <h1 className="text-sm md:text-xl w-full text-wrap font-medium">
+                            <h1 className="text-md md:text-xl w-full text-wrap font-medium">
                                 {p.title}
                             </h1>
-                            <p className="text-xs md:text-lg text-gray-500 font-medium">
+                            <p className="text-sm lg:text-base text-gray-500 font-medium">
                                 {p.content}
                             </p>
                         </div>
                     ))}
                 </div>
+
             </div>
+            {services[id-1].bottom.quote && <h1 className="text-base md:text-xl font-semibold text-center w-full mt-16">&quot;{services[id-1].bottom.quote}&quot;</h1>}
         </section>
         )}
 
 
 
         {/* other solutions  */}
-        <div className="w-full flex flex-col justify-center items-start gap-0 mt-8 p-6 md:p-[10%]">
+        <div className="w-full flex flex-col justify-center items-start gap-0  p-6 md:px-[10%]">
             <AnimatedElement delay={600} className="w-full  flex gap-2 justify-start items-center">
                 <span className="bg-customgreen  size-2 md:size-3 rounded-full text-white">.</span>
                 <p className="text-md md:text-lg font-semibold text-gray-400">Our services</p>

@@ -30,29 +30,29 @@ const AnimatedQuoteSection = ({ quotes ,className="" }) => {
   return (
     <div className="w-full h-auto flex justify-center items-center">
 
-    <section className={`quote h-[600px] md:h-[700px] 2xl:h-[800px] w-full flex justify-center items-center pb-32 sm:py-24 md:py-16 px-6 md:px-24 md:mb-0 overflow-hidden ${className} transition-all duration-1000 ease-in-out`}>
+    <section className={`quote h-[400px] md:h-[700px] 2xl:h-[800px] w-full flex justify-center items-center sm:pb-16 sm:py-24 md:py-16 px-6 md:px-24 md:mb-0 overflow-hidden ${className} transition-all duration-1000 ease-in-out`}>
       <div className={`w-1/5 flex justify-end items-start -mt-[130px] sm:-mt-[170px] `}>
         <FaQuoteLeft className={`text-gray-600 size-[40px] sm:size-[80px] md:size-[130px] lg:size-[200px] transition-all duration-1000 ease-in-out  ${
             isAnimating
-              ? '-translate-y-24 opacity-0'
+              ? '-translate-y-12 opacity-0'
               : 'translate-y-0 opacity-100'
           }`}/>
       </div>
       <div className={`w-4/5 flex flex-col justify-start items-start mb-[100px]  pr-[10%] md:mb-[50px] lg:mb-0 relative transition-all duration-1000 ease-in-out ${
             isAnimating
-              ? '-translate-y-24 opacity-0'
+              ? '-translate-y-12 opacity-0'
               : 'translate-y-0 opacity-100'
           }`}>
         <div
           className={`absolute w-full`}
         >
-          <h1 className=" text-md md:text-xl xl:text-3xl font-medium mb-8">
+          <h1 className=" text-[8px] md:text-xl xl:text-3xl font-medium mb-8">
             {currentQuote.quote}
           </h1>
-          <p className="text-sm md:text-md xl:text-lg font-medium mb-4">
+          <p className="text-[6px] md:text-sm xl:text-lg font-medium md:mb-4">
             {currentQuote.author}
           </p>
-          <p className="text-xs md:text-sm xl:text-md font-medium">
+          <p className="text-[6px] md:text-sm xl:text-md font-medium">
             {currentQuote.designatin}
           </p>
         </div>

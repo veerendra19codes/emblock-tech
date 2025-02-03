@@ -69,7 +69,7 @@ const OurServices = () => {
 
           <div className="w-full flex gap-2 justify-start  lg:justify-end items-center">
             <span className="bg-lime-400 text-white size-2 sm:size-3 rounded-full">.</span>
-            <p className="text-sm  lg:text-lg font-semibold text-gray-500">Services</p>
+            <p className="text-sm md:text-lg font-semibold text-gray-500">Services</p>
           </div>
 
           <h1 className="text-[25px] md:text-[40px] lg:text-[60px] leading-none">
@@ -83,7 +83,7 @@ const OurServices = () => {
           
           {cards.map((card) => (
             <div key={card.id} className={`${isAnimated ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-32'} 
-             card flex flex-col justify-between shadow-lg rounded-lg bg-white p-4 lg:p-8 xl:p-12 w-[45%] h-[200px] lg:h-[250px] transition-all duration-1000 ease-out text-center`}>
+             card flex flex-col justify-between shadow-lg rounded-lg bg-white p-4 lg:p-8 xl:p-12 w-[45%] h-[200px] lg:h-[250px] transition-all duration-1000 ease-out text-start`}>
                 <div className="flex flex-col gap-2">
                   <h3 className="text-sm sm:text-xl lg:text-2xl font-semibold">{card.title}</h3>
                   <p className="text-gray-500 text-xs sm:text-lg  font-medium">{card.content}</p>

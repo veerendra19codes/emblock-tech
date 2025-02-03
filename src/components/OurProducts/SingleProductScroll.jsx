@@ -3,66 +3,66 @@ import { FaArrowRightLong } from "react-icons/fa6"
 import { Link, useParams } from "react-router-dom"
 import Edgecarts from "./Edgecarts"
 
-const AnimatedElement = ({ children, delay = 0, className = "" }) => {
-  const [isVisible, setIsVisible] = useState(false)
-  const elementRef = useRef(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
-      },
-      { threshold: 0.1 },
-    )
-
-    if (elementRef.current) {
-      observer.observe(elementRef.current)
-    }
-
-    return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current)
-      }
-    }
-  }, [])
-
-  return (
-    <div
-      ref={elementRef}
-      className={`transform transition-all duration-700 w-full ${className} ${
-        isVisible ? `opacity-100 translate-y-0 delay-[${delay}ms]` : "opacity-0 translate-y-10"
-      }`}
-    >
-      {children}
-    </div>
-  )
-}
 
 const SingleProductScroll = () => {
-  const { id } = useParams()
-  const [isLeftSticky, setIsLeftSticky] = useState(false)
-  const leftComponentRef = useRef(null)
-  const rightComponentRef = useRef(null)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (leftComponentRef.current && rightComponentRef.current) {
-        const leftRect = leftComponentRef.current.getBoundingClientRect()
-        const rightRect = rightComponentRef.current.getBoundingClientRect()
-
-        if (rightRect.top <= 0 && rightRect.bottom > window.innerHeight) {
-          setIsLeftSticky(true)
-        } else {
-          setIsLeftSticky(false)
+  const AnimatedElement = ({ children, delay = 0, className = "" }) => {
+    const [isVisible, setIsVisible] = useState(false)
+    const elementRef = useRef(null)
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true)
+          }
+        },
+        { threshold: 0.1 },
+      )
+  
+      if (elementRef.current) {
+        observer.observe(elementRef.current)
+      }
+  
+      return () => {
+        if (elementRef.current) {
+          observer.unobserve(elementRef.current)
         }
       }
-    }
+    }, [])
+  
+    return (
+      <div
+        ref={elementRef}
+        className={`transform transition-all duration-700 w-full ${className} ${
+          isVisible ? `opacity-100 translate-y-0 delay-[${delay}ms]` : "opacity-0 translate-y-10"
+        }`}
+      >
+        {children}
+      </div>
+    )
+  }
+  const { id } = useParams()
+  // const [isLeftSticky, setIsLeftSticky] = useState(false)
+  // const leftComponentRef = useRef(null)
+  // const rightComponentRef = useRef(null)
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (leftComponentRef.current && rightComponentRef.current) {
+  //       const leftRect = leftComponentRef.current.getBoundingClientRect()
+  //       const rightRect = rightComponentRef.current.getBoundingClientRect()
+
+  //       if (rightRect.top <= 0 && rightRect.bottom > window.innerHeight) {
+  //         setIsLeftSticky(true)
+  //       } else {
+  //         setIsLeftSticky(false)
+  //       }
+  //     }
+  //   }
+
+  //   window.addEventListener("scroll", handleScroll)
+  //   return () => window.removeEventListener("scroll", handleScroll)
+  // }, [])
 
   const products = [
         {
@@ -208,37 +208,35 @@ Download STRIKES now and be part of the future of collaboration!
       
         {/* left component  */}
         <div
-          ref={leftComponentRef}
-          className={`left w-full md:w-[30%] key-features flex flex-col justify-start items-start ${
-            isLeftSticky ? "md:fixed md:top-0 md:w-[calc(30%-2rem)]" : ""
-          }`}
+         
+          className={`left w-full md:w-[30%] key-features flex flex-col justify-start items-start `}
         >
           <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 py-4 md:py-8">
             <p className="text-gray-400 font-normal text-base md:text-lg">Platform Type</p>
-            <h2 className="text-customblack text-lg md:text-xl font-medium">{products[id - 1].platformType}</h2>
+            <h2 className="text-customblack text-lg font-medium">{products[id - 1].platformType}</h2>
           </div>
 
           <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 py-4 md:py-8">
             <p className="text-gray-400 font-normal text-base md:text-lg">Industry Focus</p>
-            <h2 className="text-customblack text-lg md:text-xl  font-medium">{products[id - 1].industryFocus}</h2>
+            <h2 className="text-customblack text-lg  font-medium">{products[id - 1].industryFocus}</h2>
           </div>
 
           <div className="w-full flex flex-col justify-center items-start  py-4 md:py-8">
             <p className="text-gray-400 font-normal text-base md:text-lg">Key Benefits</p>
-            <h2 className="text-customblack text-lg md:text-xl  font-medium">{products[id - 1].keyBenefits}</h2>
+            <h2 className="text-customblack text-lg font-medium">{products[id - 1].keyBenefits}</h2>
           </div>
 
-          <button className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group my-4 font-semibold">
-            Visit Website
+          <Link to="/contactus" className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group my-4 font-semibold">
+            Contact Us
             <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" />
-          </button>
+          </Link>
         </div>
 
-        {isLeftSticky && <div className="hidden md:block w-1/3" />}
+        {/* {isLeftSticky && <div className="hidden md:block w-1/3" />} */}
         
         {/* right component  */}
         <div
-          ref={rightComponentRef}
+          
           className="details w-full md:w-[65%] flex flex-col gap-4 mt-0 md:mt-8 md:gap-6 justify-center items-start"
         >
           <div className="details w-full  flex flex-col gap-4 md:gap-6 justify-center items-start">

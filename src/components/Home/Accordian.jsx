@@ -92,12 +92,12 @@ const HomeFaq = () => {
 
       <AnimatedElement className="w-full px-6 gap-4">
 
-        <div className="w-full flex gap-2 justify-start lg:justify-center items-center">
+        <div className="w-full flex gap-2 justify-start md:justify-center items-center">
           <span className="bg-lime-400 size-2 md:size-3 rounded-full text-white">.</span>
-          <p className="text-sm md:text-lg font-semibold text-gray-400">FAQ</p>
+          <p className="text-sm md:text-lg font-semibold text-gray-500">FAQ</p>
         </div>
 
-        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] w-full lg:text-center">
+        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] w-full md:text-center">
             Got Questions?
         </h1>
       </AnimatedElement>

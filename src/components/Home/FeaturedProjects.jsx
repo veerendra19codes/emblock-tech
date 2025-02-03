@@ -84,7 +84,7 @@ const FeaturedProjects = () => {
 
         <div className="projects-2 w-full flex flex-col lg:flex-row justify-center items-center bg-black">
 
-          <Link to="/product/1" className="w-full lg:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:px-16 md:pb-16 lg:px-12  lg:pb-12 xl:pb-16 h-[280px] sm:h-[400px] md:h-[550px] 2xl:h-[700px]">
+          <Link to="/product/3" className="w-full lg:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:px-16 md:pb-16 lg:px-12  lg:pb-12 xl:pb-16 h-[280px] sm:h-[400px] md:h-[550px] 2xl:h-[700px]">
 
 
             <div className="w-full flex flex-col justify-start items-start gap-2 md:gap-4">
@@ -98,7 +98,7 @@ const FeaturedProjects = () => {
             <img src="/edgecarts.webp" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px] sm:h-[250px] md:h-[350px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12  transition-transform duration-500 ease-in-out ${visibleImages[`project-image-0`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
-          <Link to="/product/2" className="w-full lg:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:px-16 md:pb-16 lg:px-12 lg:pb-12 xl:pb-16  h-[280px] sm:h-[400px] md:h-[550px] 2xl:h-[700px]">
+          <Link to="/product/4" className="w-full lg:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:px-16 md:pb-16 lg:px-12 lg:pb-12 xl:pb-16  h-[280px] sm:h-[400px] md:h-[550px] 2xl:h-[700px]">
 
             <div className="w-full flex flex-col justify-start items-start gap-2 md:gap-4">
 
@@ -115,7 +115,7 @@ const FeaturedProjects = () => {
 
         <div className="projects-3 h-auto w-full flex flex-col lg:flex-row justify-center items-center bg-black">
 
-          <Link to="/product/3" className="w-full lg:w-1/3 h-[300px] sm:h-[400px] md:h-[600px] lg:h-[600px] 2xl:h-[720px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:px-12 lg:px-8 xl:p-12 gap-2 md:gap-4">
+          <Link to="/product/2" className="w-full lg:w-1/3 h-[300px] sm:h-[450px] md:h-[600px] lg:h-[600px] 2xl:h-[720px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:px-12 lg:px-8 xl:p-12 gap-2 md:gap-4">
 
             <div className="w-full flex flex-col justify-start items-start gap-2 md:gap-4">
 
@@ -125,11 +125,11 @@ const FeaturedProjects = () => {
 
             </div>
 
-            <img src="/strikes.jpeg"  className={`project-image w-full md:w-[95%] mx-auto h-[150px] sm:h-[250px]  md:h-[400px] lg:h-[350px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12  transition-transform duration-500 ease-in-out lg:my-4 
+            <img src="/strikes.jpeg"  className={`project-image w-full md:w-[95%] mx-auto h-[150px] sm:h-[250px]  md:h-[300px] lg:h-[350px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12  transition-transform duration-500 ease-in-out lg:my-4 
               ${visibleImages[`project-image-2`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
-          <Link to="/product/4" className="w-full  lg:w-1/3 h-[330px] sm:h-[400px] md:h-[600px] lg:h-[600px] border 2xl:h-[720px] border-gray-800 flex flex-col hover:bg-customblackhover justify-between items-start p-6 md:px-8 xl:p-12 gap-2 md:gap-4">
+          <Link to="/product/1" className="w-full  lg:w-1/3 h-[330px] sm:h-[450px] md:h-[600px] lg:h-[600px] border 2xl:h-[720px] border-gray-800 flex flex-col hover:bg-customblackhover justify-between items-start p-6 md:px-8 xl:p-12 gap-2 md:gap-4">
 
           <div className="flex flex-col gap-2 md:gap-4 justify-start items-start">
 
@@ -138,11 +138,11 @@ const FeaturedProjects = () => {
             <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">Monitorting system for your industry with hardware prototype combined software</p>
           </div>
 
-            <img src="/real-time-machine-monitoring-product.jpg"  className={`project-image w-full md:w-[95%]  mx-auto h-[150px] sm:h-[250px]  md:h-[350px] lg:h-[350px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out lg:my-4 
+            <img src="/real-time-machine-monitoring-product.jpg"  className={`project-image w-full md:w-[95%]  mx-auto h-[150px] sm:h-[250px]  md:h-[300px] lg:h-[350px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out lg:my-4 
               ${visibleImages[`project-image-3`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
-          <div className="w-full lg:w-1/3 border border-gray-800 flex justify-center items-center h-[200px] sm:h-[400px]  lg:h-[600px] 2xl:h-[720px]">
+          <div className="w-full lg:w-1/3 border border-gray-800 flex justify-center items-center h-[200px] sm:h-[500px]  lg:h-[600px] 2xl:h-[720px]">
             <Link to="/ourproducts" className="flex justify-center items-center rounded-none md:rounded-xl size-[100%] md:size-[90%] hover:size-[100%] hover:rounded-none ease-in-out bg-customgreen text-customblack text-xl 2xl:text-2xl gap-4 font-medium transition-all duration-500 group">
               View all Projects <FaArrowRightLong className="size-8 2xl:size-12 rounded-full bg-customblack p-2 text-customgreen  -rotate-45 group-hover:rotate-0 transition-transform duration-500 " />
             </Link>

@@ -83,7 +83,7 @@ const Testimonials = () => {
 {/* */}
             <div className={`flex h-[400px] md:h-[550px]  gap-4 md:gap-10 justify-center items-center   whitespace-nowrap pause-on-hover animate-marqueeright md:animate-marqueerightslow `} >
                 {numbers.map((i) => (
-                    <div key={i} className="card h-[300px] md:h-[550px] border border-gray-700 rounded-xl flex flex-col p-4 md:p-12 min-w-[200px] md:min-w-[400px] bg-black">
+                    <div key={i} className="card h-[300px] md:h-[500px] border border-gray-700 rounded-xl flex flex-col p-4 md:p-12 min-w-[200px] md:min-w-[400px] bg-black">
 
                         <div className="row flex justify-between items-center mb-8">
                             <div className="ratings flex items-center text-xs md:text-md 2xl:text-lg">
@@ -105,7 +105,7 @@ const Testimonials = () => {
                         </div>
 
                         <div className="author flex justify-start items-center  gap-4">
-                            <img src="/profile.png" className="size-8 md:size-12 rounded-full" />
+                            <img src="/profile.webp" className="size-8 md:size-12 rounded-full" />
                             <p className="text-gray-400 font-semibold text-xs md:text-xl">{reviews[i%10].author}</p>
                         </div>
                     </div>

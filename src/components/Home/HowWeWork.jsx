@@ -130,11 +130,11 @@ const HowWeWork = () => {
         {/* 1 */}
          <AnimatedElement>
 
-          <div className="feature-hero w-full flex flex-col gap-4 justify-center  items-start pl-4 lg:pl-24 py-12 md:py-24 xl:py-40 bg-black animate-fadeInUp">
+          <div className="feature-hero w-full flex flex-col gap-4 justify-center  items-start pl-4 lg:pl-24 py-12 md:py-24  bg-black animate-fadeInUp">
 
             <div className="flex gap-2 justify-center items-center">
               <span className="bg-lime-400 text-black size-2 md:size-3 rounded-full">.</span>
-              <p className="text-sm lg:text-lg font-semibold text-gray-400">Process</p>
+              <p className="text-sm md:text-lg font-semibold text-gray-400">Process</p>
             </div>
 
             <div className="flex justify-center items-start flex-col gap-2 leading-none ">
@@ -153,8 +153,8 @@ const HowWeWork = () => {
           <AnimatedElement delay={step.id*100} key={step.id}>
             <div  className="step py-8  lg:py-16 flex flex-col lg:flex-row w-full justify-center items-start border-t-2 border-gray-900 gap-2">
 
-              <div className="w-full lg:w-[20%] flex justify-center lg:justify-start items-center lg:items-start">
-                  <button className="w-1/2 button py-2 px-4 border border-gray-800 rounded-full text-md md:text-lg">{step.name}</button>
+              <div className="w-full lg:w-[20%] flex justify-start items-center lg:items-start">
+                  <button className="w-fit button py-2 px-4 border border-gray-800 rounded-full text-md md:text-lg">{step.name}</button>
               </div>
 
               <h1 className="w-full lg:w-[10%] step-count text-2xl lg:text-3xl font-semibold flex">
