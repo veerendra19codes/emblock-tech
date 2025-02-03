@@ -1096,7 +1096,7 @@ const ServicesNew = () => {
           <AnimatedElement delay={800}>
             <div className="card w-full rounded-xl flex flex-row md:flex-col justify-between items-center bg-customgreen p-6 lg:p-12 h-[100px] md:h-[280px]">
                 <h1 className="text-[60px] md:text-[4xl] lg:text-[80px] text-start w-full text-customblack font-medium">95%</h1>
-                <div className="flex flex-col justify-end items-center">
+                <div className="w-full flex flex-col justify-end items-center">
                   <p className="text-end w-full text-customgray font-semibold text-sm md:text-lg">Percent</p>
                   <p className="text-end w-full text-green-700 text-sm md:text-xl fotnsembold">Customer Satisfaction</p>
                 </div>
@@ -1107,7 +1107,7 @@ const ServicesNew = () => {
           <AnimatedElement delay={700}>
             <div className="card w-full rounded-xl flex flex-row md:flex-col justify-between items-center bg-customblack p-6 lg:p-12 h-[100px] md:h-[280px]">
                 <h1 className="text-[60px] md:text-[4xl] lg:text-[80px] text-start w-full text-white font-medium">5+</h1>
-                <div className="flex flex-col justify-between items-center">
+                <div className="w-full flex flex-col justify-between items-center">
                   <p className="text-end w-full  font-semibold text-gray-500 text-sm md:text-lg">Years</p>
                   <p className="text-end w-full text-gray-500 text-sm md:text-xl font-semibold">of Experience</p>
                 </div>
@@ -1118,7 +1118,7 @@ const ServicesNew = () => {
           <AnimatedElement delay={800}>
             <div className="card w-full rounded-xl flex flex-row md:flex-col justify-between items-center bg-gray-200 p-6 lg:p-12 h-[100px] md:h-[280px]">
                 <h1 className="text-[60px]  md:text-[4xl] lg:text-[80px] text-start w-full text-customblack font-medium">60+</h1>
-                <div className="flex flex-col justify-between items-center">
+                <div className="w-full flex flex-col justify-between items-center">
                   <p className="text-end w-full text-customblack font-semibold text-sm md:text-lg">Projects</p>
                   <p className="text-end w-full text-green-700 font-semibold text-sm md:text-xl">Completed</p>
                 </div>
