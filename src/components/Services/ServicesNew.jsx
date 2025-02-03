@@ -697,8 +697,8 @@ const ServicesNew = () => {
         <AnimatedElement delay={service.id*100} key={service.id}>
           <div  className="service py-8  lg:py-16 flex flex-col lg:flex-row w-full justify-center items-start border-t-2 border-gray-300 gap-2">
 
-            <div className="w-full lg:w-[20%] flex justify-center lg:justify-start items-center lg:items-start">
-                <button className="w-1/2 button py-2 px-4 border border-gray-800 rounded-full text-black">{service.name}</button>
+            <div className="w-full lg:w-[20%] flex justify-start items-center lg:items-start">
+                <button className="w-fit button py-2 px-4 border border-gray-800 rounded-full text-black">{service.name}</button>
             </div>
 
             <h1 className="w-full lg:w-[10%] service-count text-2xl lg:text-3xl font-semibold flex">

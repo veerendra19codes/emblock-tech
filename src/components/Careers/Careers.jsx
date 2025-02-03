@@ -50,7 +50,7 @@ const Careers = () => {
     {
       id: 1,
       type: "Web Applications",
-      title: "Front End Developer Intern",
+      title: "Front End Developer",
       openPositions: 3,
       text: 'We are looking for passionate Front End Developer Interns to join our "Innovation Hub" and contribute to building dynamic, user-friendly web applications.',
       roleType: "Remote, 0-1 Year Experience",
@@ -59,7 +59,7 @@ const Careers = () => {
     {
       id: 2,
       type: "Design Prototype",
-      title: "UI/UX Intern",
+      title: "UI/UX Designer",
       openPositions: 1,
       text: 'Join our "Creative Lab" as a UI/UX Intern and help craft intuitive, visually stunning user experiences that leave a lasting impact.',
       roleType: "Remote, 0-1 Year Experience",
@@ -68,7 +68,7 @@ const Careers = () => {
     {
       id: 3,
       type: "Marketing",
-      title: "IoT Consulting Services",
+      title: "Marketing Executive",
       openPositions:2 ,
       text: '',
       roleType: "Remote, 0-1 Year Experience",

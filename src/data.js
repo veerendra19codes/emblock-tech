@@ -2,7 +2,7 @@ export const jobs = [
   {
     id: 1,
     type: "Web Applications",
-    title: "Front End Developer Intern",
+    title: "Front End Developer",
     details: [
       {
         id: 1,
@@ -99,7 +99,7 @@ export const jobs = [
   {
     id: 2,
     type: "Design Prototype",
-    title: "UI/UX Intern",
+    title: "UI/UX Designer",
     details: [
       {
         id: 1,
@@ -196,7 +196,7 @@ This is a fantastic opportunity to gain hands-on experience in UI/UX design, ref
   {
     id: 3,
     type: "Marketing",
-    title: "IoT Consulting Services",
+    title: "Marketing Executive",
     details: [
       {
         id: 1,
