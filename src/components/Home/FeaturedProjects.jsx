@@ -53,7 +53,7 @@ const FeaturedProjects = () => {
 
         <div className=" feature-hero w-full flex justify-start  items-center  py-12 lg:py-40 bg-black ">
 
-          <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-8 justify-center items-start pl-6 lg:pl-24">
+          <div className="w-full lg:w-1/2 flex flex-col gap-4 justify-center items-start pl-6 lg:pl-24">
 
             <div className={`${isAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'} 
             flex gap-2 justify-center items-center transition-all duration-1000 ease-out`}>
@@ -62,11 +62,11 @@ const FeaturedProjects = () => {
             </div>
 
             <div className={`${isAnimated ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'} 
-            flex justify-center items-start flex-col gap-2 lg:gap-12 leading-none transition-all duration-1000 ease-out delay-200`}>
-              <h1 className="text-[25px] md:text-4xl lg:text-[60px] text-white leading-none whitespace-nowrap">
+            flex justify-center items-start flex-col gap-2  leading-tight transition-all duration-1000 ease-out delay-200`}>
+              <h1 className="text-[25px] md:text-[40px] lg:text-[60px] text-white leading-tight whitespace-nowrap">
                 Turning Imagination
               </h1>
-              <h1 className="text-[25px] md:text-4xl lg:text-[60px] text-white leading-none">
+              <h1 className="text-[25px] md:text-[40px] lg:text-[60px] text-white leading-tight">
                 Into Innovation
               </h1>
             </div>

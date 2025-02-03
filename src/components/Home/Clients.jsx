@@ -76,12 +76,12 @@ const Clients = () => {
       
       <AnimatedElement>
 
-        <div className="flex gap-2 justify-start items-center 2xl:pl-[5%]">
+        <div className="flex gap-2 justify-start items-center 2xl:pl-[5%] mb-4">
             <span className="bg-lime-400 text-white size-2 md:size-3 rounded-full">.</span>
             <p className="text-sm md:text-lg font-semibold text-gray-400"> Our Clients </p>
         </div>
 
-        <h1 className="text-[25px] sm:text-[40px] lg:text-[60px] mb-12 2xl:pl-[5%]">
+        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] mb-12 2xl:pl-[5%]">
             Discover our happiest clients
         </h1>
       </AnimatedElement>
@@ -95,7 +95,7 @@ const Clients = () => {
                 {/* <AnimatedElement key={client.id} delay={100*(index+1)}> */}
                 <img src={client.image} className="h-8 md:h-20 w-auto" />
                 
-                <p className="w-full flex justify-center text-sm md:text-lg font-medium text-black">
+                <p className="w-full flex justify-center text-center text-sm md:text-lg font-medium text-black">
                   {client.name}
                 </p>
               {/* </AnimatedElement> */}

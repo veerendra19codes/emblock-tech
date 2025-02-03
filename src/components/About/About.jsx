@@ -88,7 +88,7 @@ const About = () => {
           <p className="text-xs md:text-lg font-semibold text-gray-400">About Us</p>
         </div>
 
-        <h1 className="w-full text-start text-[35px] md:text-[60px] font-medium">About Us</h1>
+        <h1 className="w-full text-start text-[25px] md:text-[40px] lg:text-[60px] font-normal">About Us</h1>
 
         <p className="w-full text-start text-xl md:text-3xl font-medium mt-4">EMBLOCK: Turning Imagination Into Innovation </p>
 
@@ -130,19 +130,20 @@ const About = () => {
         </h1>
 
 
+
       </AnimatedSection>
       {/* </section> */}
 
 
       <div className="bg-black w-full flex flex-col my-12 px-6 md:px-24 py-12 md:py-24 text-white">
-        <div className="transition-all duration-700 ease-out  left w-full text-start  flex flex-col gap-2 lg:gap-6 h-full">
+        <div className="transition-all duration-700 ease-out  left w-full text-start  flex flex-col  h-full">
 
           <div className="flex gap-2 justify-start items-center">
             <span className={`bg-lime-400 text-black size-2 md:size-3 rounded-full`}>.</span>
             <p className="text-md lg:text-lg font-semibold text-gray-400">Vision</p>
           </div>
 
-          <h1 className={`text-[25px] md:text-[40px] lg:text-[60px] leading-none text-white`}>
+          <h1 className={`text-[25px] md:text-[40px] lg:text-[60px] font-normal leading-none text-white`}>
             <h1>Our Vision</h1>
           </h1>
 

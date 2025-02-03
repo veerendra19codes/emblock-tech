@@ -268,22 +268,22 @@ const SingleService = () => {
 
   return (
     <div className="flex flex-col 
-    justify-center items-center w-full h-full   text-black bg-white">
+    justify-center items-center w-full h-full   text-black bg-white py-6">
         <AnimatedElement>
 
-        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] w-full md:w-[95%] text-start font-medium p-6 py-12 md:px-[10%] md:pt-[10%]">
+        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] w-full md:w-[95%] text-start leading-tight font-normal px-6 md:px-[10%]">
             {services[id-1].name}
         </h1>
         </AnimatedElement>
 
         <AnimatedElement delay={200}>
 
-        <p className="text-md md:text-2xl w-full md:w-[90%] font-medium  p-6 md:px-[10%] mb-12">
+        <p className="text-md md:text-2xl w-full md:w-[90%] font-medium  px-6 md:px-[10%] mt-4 md:mt-[2%]">
             {services[id-1].text}
         </p>
         </AnimatedElement>
 
-        <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8 p-6 md:px-[10%]">
+        <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8 p-6 md:px-[10%] mt-8">
 
             {/* this fixed  */}
             <div
@@ -292,7 +292,7 @@ const SingleService = () => {
             isLeftSticky ? "md:fixed md:top-0 md:w-[calc(30%-8rem)]" : ""
           }`}
         >
-                <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 py-4 md:py-8">
+                <div className="w-full flex flex-col justify-center items-start border-b border-gray-400 pb-4 md:py-8">
                     <p className="text-gray-500 font-normal text-sm md:text-lg">
                         Category
                     </p>
@@ -319,9 +319,9 @@ const SingleService = () => {
                     </h2>
                 </div>
 
-                <Link to="/contactus" className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group my-4 font-semibold">
+                <Link to="/contactus" className="rounded-full p-2  pl-4  md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group my-4 font-semibold">
                     Contact Us
-                    <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
+                    <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
                 </Link>
                 
             </div>
@@ -339,7 +339,7 @@ const SingleService = () => {
                 </div>
                 
                 {services[id-1].subparts.map((part) => (
-                    <div key={part.id} className="w-full flex flex-col justify-center items-star gap-4 md:gap-6 my-6">
+                    <div key={part.id} className="w-full h-fit flex flex-col justify-center items-star gap-4 md:gap-6 md:my-6">
                         <img src={part.image} className="w-full h-[250px] lg:h-[400px] 2xl:h-[500px] object-cover rounded-xl" />
                         <h1 className="w-full text-lg md:text-2xl text-customgray font-semibold leading-6">
                             {part.title}
@@ -353,7 +353,7 @@ const SingleService = () => {
         </div>
 
         {services[id-1].bottomText.length > 0  && (
-            <div className="w-full flex-col justify-start items-start gap-8 p-6 py-12 md:px-[10%] md:pb-[10%]">
+            <div className="w-full flex-col justify-start items-start gap-8 p-6 md:py-12 md:px-[10%] md:pb-[10%]">
                 {services[id-1].bottomText.map((b) => (
                     <div key={b.id} className="w-full flex flex-col justify-start items-start gap-4">
                         <h1 className="w-full text-lg md:text-2xl text-customgray font-semibold ">
@@ -369,11 +369,11 @@ const SingleService = () => {
 
 
         {/* middle  */}
-        <section className="p-6 py-24 md:px-[10%] md:pt-[10%] w-full bg-black text-white flex flex-col justify-start items-start gap-2 md:gap-8">
-            <h1 className="text-[25px] md:text-[60px] w-full text-start font-medium my-4 md:my-0">
+        <section className="h-fit p-6 py-12 md:px-[10%] md:pt-[10%] w-full bg-black text-white flex flex-col justify-start items-start md:gap-8">
+            <h1 className="text-[25px] md:text-[60px] w-full text-start font-medium mb-4 md:my-0">
                 {services[id-1].middle.title}
             </h1>
-            <p className="text-md md:text-xl font-medium w-full text-start my-2 md:my-0 mb-4 md:mb-0">
+            <p className="text-md md:text-xl font-medium w-full text-start   mb-4 md:mb-0">
                 {services[id-1].middle.subtitle}
             </p>
 
@@ -387,16 +387,16 @@ const SingleService = () => {
             ))}
             
 
-            <button className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group mt-16  md:my-4 font-semibold">
+            <button className="rounded-full p-2  pl-4  md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group mt-8 md:mt-16  md:my-4 font-semibold">
                 Contact Us
-                <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
+                <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
             </button>
         </section>
 
         {/* bottom  */}
         {services[id-1].bottom?.text && (
 
-        <section className="w-full p-6 py-24 md:p-[10%] flex flex-col justify-start items-start gap-16">
+        <section className="w-full px-6 py-24 md:p-[10%] flex flex-col justify-start items-start gap-16">
             <h1 className="text-start w-full text-wrap text-sm md:text-xl font-medium">
                 {services[id-1].bottom.text}
             </h1>
@@ -438,20 +438,21 @@ const SingleService = () => {
             <div className="w-full flex flex-col md:flex-row gap-4 mt-12">
                 {services.filter((service) => service.id != id).map((service, index) => (
                     <Link to={service.path} key={service.id} className="card w-full md:w-1/3 ">
-                        <AnimatedElement delay={1000+(200*index)} className="flex flex-col justify-between items-start p-4 border border-gray-400 rounded-xl h-[400px] md:h-[550px]">
 
+                        <AnimatedElement delay={1000+(200*index)} className="flex flex-col justify-between items-start p-4 border border-gray-400 rounded-xl gap-4  h-fit md:h-[500px]">
 
-                    <div className="flex flex-col justify-start  items-start gap-2 md:gap-4">
+                            <div className="flex flex-col justify-start  items-start gap-2 md:gap-4">
+                            <h1 className="text-xl md:text-2xl 2xl:text-3xl uppercase font-medium">
+                                {service.name}
+                            </h1>
+                            <p className="text-customgrayhover font-semibold text-sm md:text-lg">
+                                {service.subcontent}
+                            </p>
+                            </div>
+                            <img src={service.image} className="w-full h-[200px] sm:h-[250px] lg:h-[350px] rounded-xl object-cover" />
 
-                    <h1 className="text-xl md:text-2xl 2xl:text-3xl uppercase font-medium">
-                        {service.name}
-                    </h1>
-                    <p className="text-customgrayhover font-semibold text-sm md:text-lg">
-                        {service.subcontent}
-                    </p>
-                    </div>
-                    <img src={service.image} className="w-full h-[200px] sm:h-[250px] lg:h-[350px] rounded-xl object-cover" />
                         </AnimatedElement>
+
                     </Link>
                 ))}
                 

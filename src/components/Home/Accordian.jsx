@@ -1,7 +1,7 @@
 import FaqNew from '../FaqNew';
 import  { useEffect, useRef, useState } from 'react';
 
-const AnimatedElement = ({ children, delay=0 }) => {
+const AnimatedElement = ({ children, delay=0, className="" }) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
 
@@ -29,7 +29,7 @@ const AnimatedElement = ({ children, delay=0 }) => {
    return (
     <div 
       ref={elementRef}
-      className={`transform transition-all duration-700 ${
+      className={`transform transition-all duration-700  ${className} ${
         isVisible 
           ? `opacity-100 translate-y-0 delay-[${delay}ms]` 
           : 'opacity-0 translate-y-10'
@@ -90,21 +90,21 @@ const HomeFaq = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center bg-white py-12 sm:py-16 xl:py-40">
 
-      <AnimatedElement>
+      <AnimatedElement className="w-full px-6 gap-4">
 
-         <div className="flex gap-2 justify-center items-center">
-            <span className="bg-lime-400 size-2 md:size-3 rounded-full text-white">.</span>
-            <p className="text-sm md:text-lg font-semibold text-gray-400">FAQ</p>
+        <div className="w-full flex gap-2 justify-start lg:justify-center items-center">
+          <span className="bg-lime-400 size-2 md:size-3 rounded-full text-white">.</span>
+          <p className="text-sm md:text-lg font-semibold text-gray-400">FAQ</p>
         </div>
 
-        <h1 className="text-[25px] sm:text-[40px] lg:text-[60px]">
+        <h1 className="text-[25px] md:text-[40px] lg:text-[60px]">
             Got Questions?
         </h1>
-        </AnimatedElement>
+      </AnimatedElement>
 
-        <AnimatedElement delay={200}>
-          <FaqNew data={data} />
-        </AnimatedElement>
+      <AnimatedElement delay={200}>
+        <FaqNew data={data} />
+      </AnimatedElement>
     </div>
   )
 }

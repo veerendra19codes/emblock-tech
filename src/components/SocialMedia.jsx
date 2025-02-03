@@ -50,17 +50,17 @@ const SocialMedia = () => {
         <AnimatedElement>
 
           <div className="flex gap-2 justify-start items-center">
-              <span className="bg-customgreen text-white size-2 md:size-3 rounded-full">.</span>
+              <span className="bg-lime-400 text-white size-2 md:size-3 rounded-full">.</span>
               <p className="text-md md:text-lg font-semibold text-gray-400">Contact Us</p>
           </div>
 
-          <h1 className="text-[25px] md:text-[40px] lg:text-[60px] font-medium">
+          <h1 className="text-[25px] md:text-[40px] lg:text-[60px] font-normal">
               We&apos;re all over the internet
           </h1>
         </AnimatedElement>
 
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 mt-4 md:mt-0">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 mt-4">
 
 
             <AnimatedElement delay={200}>

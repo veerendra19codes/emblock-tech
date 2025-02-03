@@ -83,18 +83,18 @@ const quotes = [
 
   return (
     <div className="flex flex-col justify-center items-center overflow-x-hidden w-full">
-        <section className="bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat bg- w-full flex flex-col p-6 md:p-32 justify-start items-start md:pt-48">
+        <section className="bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat bg- w-full flex flex-col p-6 md:px-[10%] justify-start items-start md:py-[5%]">
 
         <div className=" flex gap-2 justify-center items-center transition-all duration-1000 ease-out">
             <span className="bg-lime-400  size-2 md:size-3 rounded-full text-white">.</span>
             <p className="text-xs md:text-lg font-semibold text-gray-400">Get in touch</p>
         </div>
 
-        <h1 className="w-full text-start text-[35px] md:text-[60px] font-medium">We&apos;re happy to help</h1>
+        <h1 className="w-full text-start text-[25px] md:text-[40px] lg:text-[60px] leading-tight font-medium">We&apos;re happy to help</h1>
 
-        <p className="w-full text-start text-xl md:text-3xl font-medium my-6 md:my-12">At EmBlock, we value your inquiries, feedback, and suggestions. Whether you have a question about our services, need assistance, or want to explore a partnership, we&apos;d love to hear from you. </p>
+        <p className="w-full text-start text-xl md:text-3xl font-medium my-4 md:my-12">At EmBlock, we value your inquiries, feedback, and suggestions. Whether you have a question about our services, need assistance, or want to explore a partnership, we&apos;d love to hear from you. </p>
         
-        <Link to="/services" className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-12">
+        <Link to="/services" className="rounded-full p-2 pl-4  md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium my-4 md:my-12">
             Become a client 
           <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
         </Link>
@@ -119,7 +119,7 @@ const quotes = [
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7768.833871562424!2d77.70846808950584!3d13.199119993995087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1cfe75446265%3A0x296c70e9a129418e!2sKempegowda%20International%20Airport%20Bengaluru!5e0!3m2!1sen!2sin!4v1738332183791!5m2!1sen!2sin"  allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-full md:w-[400px] h-[300px] md:h-[600px] rounded-xl"></iframe>
           </div>
 
-          <div className="w-full md:w-1/2 flex flex-col justify-center items-start py-12 md:py-0">
+          <div className="w-full md:w-1/2 flex flex-col justify-center items-start pt-8 md:py-0">
             <h1 className="text-lg md:text-3xl  font-medium">
               Get in touch
             </h1>
@@ -128,7 +128,7 @@ const quotes = [
               You can reach us through various channels, and our dedicated team is always ready to assist with any questions, concerns, or support you need.
             </p>
 
-            <p className="text-lg md:text-3xl font-medium mt-16">
+            <p className="text-lg md:text-3xl font-medium mt-8 md:mt-16">
               Send us a message
             </p>
 
@@ -170,9 +170,9 @@ const quotes = [
 
               </div>
 
-              <textarea type="text" name="message" placeholder="send us a message*" rows={10} className="mt-8 w-full bg-black border border-gray-400 text-gray-400 p-2 outline-none rounded-xl text-xs md:text-lg" />
+              <textarea type="text" name="message" placeholder="send us a message*" rows={10} className="mt-4 md:mt-8 w-full bg-black border border-gray-400 text-gray-400 p-2 outline-none rounded-xl text-xs md:text-lg" />
 
-              <button  className="rounded-full p-2  md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium mt-4">
+              <button  className="rounded-full p-2 pl-4 md:pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group font-medium mt-4">
                 Send a message
                 <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" /> 
               </button>
@@ -188,7 +188,10 @@ const quotes = [
       {/* <Faq /> */}
       <ContactUsFaq />
 
+      <div className="w-full h-fit bg-black flex justify-center items-center">
+
       <AnimatedQuoteSection quotes={quotes} className="bg-black text-white" />
+      </div>
 
       <SocialMedia />
     </div>

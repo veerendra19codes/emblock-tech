@@ -65,21 +65,21 @@ const OurServices = () => {
   return (
     <section ref={sectionRef} className="tools-and-skills w-full py-12 lg:py-24 flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-start bg-gray-100">
         
-        <div className={`${isAnimated ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-32'}   transition-all duration-700 ease-out  left w-full lg:w-1/3 text-center lg:text-right flex flex-col gap-6 h-full`}>
+        <div className={`${isAnimated ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-32'}   transition-all duration-700 ease-out  left w-full lg:w-1/3 px-[10%] lg:px-0 lg:mt-4 text-start lg:text-right flex flex-col gap-4 h-full`}>
 
-          <div className="flex gap-2 justify-center lg:justify-end items-center">
+          <div className="w-full flex gap-2 justify-start  lg:justify-end items-center">
             <span className="bg-lime-400 text-white size-2 sm:size-3 rounded-full">.</span>
             <p className="text-sm  lg:text-lg font-semibold text-gray-500">Services</p>
           </div>
 
-          <h1 className="text-[25px] sm:text-[40px] lg:text-[60px] leading-none">
+          <h1 className="text-[25px] md:text-[40px] lg:text-[60px] leading-none">
             <h1>Our Services</h1>
             <h1>Teams</h1>
           </h1>
 
         </div>
 
-        <div className="right w-full lg:w-2/3 flex flex-wrap gap-2 md:gap-4 justify-center items-center lg:items-start px-4 lg:px-8 mt-12 lg:mt-0">
+        <div className="right w-full lg:w-2/3 flex flex-wrap gap-2 md:gap-4 justify-center items-center lg:items-start px-4 lg:px-8 mt-8">
           
           {cards.map((card) => (
             <div key={card.id} className={`${isAnimated ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-32'} 

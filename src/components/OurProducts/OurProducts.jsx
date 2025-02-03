@@ -34,7 +34,7 @@ const OurProducts = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center py-12 md:py-48 px-6 gap-16 md:gap-32">
+    <div className="flex flex-col justify-center items-center py-12 md:py-[5%] px-6 gap-16 md:gap-32">
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
@@ -82,7 +82,7 @@ const ProductCard = ({ product }) => {
 
       <div className="title-and-link w-full flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="w-full flex flex-col justify-center items-start gap-2 md:gap-8">
-          <h1 className="text-[25px] md:text-[50px] text-start uppercase font-normal md:font-semibold w-full md:w-4/5 leading-none">
+          <h1 className="text-[25px] md:text-[40px] lg:text-[60px] text-start uppercase font-normal  w-full md:w-4/5 leading-none">
             {product.title}
           </h1>
           <p className="text-customgray text-start text-lg md:text-2xl flex flex-wrap">

@@ -490,7 +490,7 @@ const Solutions = () => {
         </AnimatedSection>
 
         <AnimatedSection delay={400} className="w-full">
-          <p className="w-full md:w-[90%] text-customblack text-start text-xs md:text-lg lg:text-2xl flex flex-wrap font-semibold mt-8 md:mt-[2%] px-6 md:px-[10%]">
+          <p className="w-full md:w-[90%] text-customblack text-start text-xs md:text-lg lg:text-2xl flex flex-wrap font-semibold mt-4  md:mt-[2%] px-6 md:px-[10%]">
             {solution.description}
           </p>
         </AnimatedSection>
@@ -653,7 +653,7 @@ const Solutions = () => {
               <FaQuoteLeft className="text-gray-600 size-[40px] sm:size-[80px] md:size-[130px] lg:size-[200px]" />
             </div>
 
-            <div className="h-[200px] w-4/5 flex flex-col justify-start  items-start mt-[70px] sm:mt-[150px] md:mt-[220px] lg:mt-[350px] pr-[5%]">
+            <div className="h-[200px] w-4/5 flex flex-col justify-start  items-start mt-[70px] sm:mt-[150px] md:mt-[220px] lg:mt-[350px] pr-[10%]">
               <h1 className=" text-black text-sm sm:text-lg md:text-3xl font-medium mb-8">&ldquo;{solution.quote.quote}&ldquo;</h1>
 
               <div className="flex flex-col gap-2 md:gap-4 justify-start items-start">
@@ -690,7 +690,7 @@ const Solutions = () => {
                 key={s.id}
                 className="card w-full  flex  justify-center items-start  rounded-xl h-[380px] md:h-[450px] lg:h-[500px] xl:h-[450px]"
               >
-                <AnimatedSection key={s.id} delay={1000 + index * 200} className="w-full h-full">
+                <AnimatedSection key={s.id} delay={400 + index * 200} className="w-full h-full">
                   <Link
                     to={`/solutions/${s.id}`}
                     key={s.id}
@@ -710,6 +710,8 @@ const Solutions = () => {
             ))}
         </div>
       </div>
+
+      
     </div>
   )
 }

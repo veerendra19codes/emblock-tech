@@ -58,20 +58,20 @@ const Testimonials = () => {
     
 
   return (
-    <div className="flex flex-col w-full justify-center items-center bg-black text-white gap-4 h-full pt-8">
+    <div className="flex flex-col w-full justify-center items-center bg-black text-white gap-2 h-full pt-8">
       
         <div className="flex gap-2 justify-center items-center">
             <span className="bg-lime-400 text-black size-2 md:size-3 rounded-full">.</span>
             <p className="text-sm md:text-lg font-semibold text-gray-400">Testimonials</p>
         </div>
 
-        <div className="flex w-full flex-col justify-center items-center leading-none gap-2">
+        <div className="flex w-full flex-col justify-center items-center leading-tight">
 
-            <h1 className="text-[25px] sm:text-[60px] lg:text-[60px]">
+            <h1 className="text-[25px] md:text-[40px] lg:text-[60px]">
                 Don&apos;t take our
             </h1>
 
-            <h1 className="text-[25px]  sm:text-[60px] lg:text-[60px] flex justify-center items-center relative">
+            <h1 className="text-[25px] md:text-[40px] lg:text-[60px] flex justify-center items-center relative">
                 word for it 
                 
             </h1>

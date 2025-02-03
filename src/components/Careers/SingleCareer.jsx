@@ -52,7 +52,7 @@ const SingleCareer = () => {
 
   return (
     <div className="flex flex-col justify-center items-center min-h-screen w-full">
-      <section className="bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat w-full flex flex-col p-6 md:p-32 justify-start items-start md:pt-48">
+      <section className="bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat w-full flex flex-col p-6 md:px-[10%] justify-start items-start md:py-[5%]">
 
       <AnimatedElement>
 
@@ -61,10 +61,10 @@ const SingleCareer = () => {
 
       <AnimatedElement delay={200}>
 
-        <h1 className="w-full md:w-[90%] text-[25px] md:text-[60px] font-normal flex-wrap leading-none my-2 md:my-4">
+        <h1 className="w-full md:w-[90%] text-[25px] md:text-[40px] lg:text-[60px] font-normal flex-wrap leading-none my-2 md:my-4">
           {jobs[id-1].title} 
         </h1>
-        <h1 className="w-full md:w-[90%] text-[25px] md:text-[60px] font-normal flex-wrap leading-none md:my-4">
+        <h1 className="w-full md:w-[90%] text-[25px] md:text-[40px] lg:text-[60px] font-normal flex-wrap leading-none md:my-4">
           ({jobs[id-1].openPositions} Positions)
         </h1>
       </AnimatedElement>
@@ -156,7 +156,7 @@ const SingleCareer = () => {
           </div>
 
           <div className="flex justify-center items-start flex-col gap-2 leading-none ">
-            <h1 className="w-full  text-[25px] lg:text-[60px] text-black leading-none font-medium">
+            <h1 className="w-full  text-[25px] md:text-[40px] lg:text-[60px] text-black leading-none font-normal">
               How to apply for this role ?
             </h1>
             
@@ -210,7 +210,7 @@ const SingleCareer = () => {
             </Link>
           </div>
 
-          <p className="text-sm md:text-2xl font-medium text-black mt-16">
+          <p className="text-sm md:text-2xl font-medium text-black mt-8 md:mt-16">
             What Happens Next?
           </p>
           <p className="text-sm md:text-2xl font-medium text-black ">

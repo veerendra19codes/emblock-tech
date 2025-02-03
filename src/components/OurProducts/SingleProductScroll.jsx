@@ -197,9 +197,9 @@ Download STRIKES now and be part of the future of collaboration!
   return id == 3 ? (
     <Edgecarts />
   ) : (
-    <div className="flex flex-col justify-center items-center w-full h-full p-6 py-4 md:py-[5%] md:px-[10%]">
+    <div className="flex flex-col justify-center items-center w-full h-full p-6 py-4 md:py-[5%] lg:px-[10%] ">
       <AnimatedElement>
-        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] uppercase w-full text-start font-medium">
+        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] uppercase w-full text-start font-normal">
           {products[id - 1].name}
         </h1>
       </AnimatedElement>
@@ -271,7 +271,7 @@ Download STRIKES now and be part of the future of collaboration!
         </AnimatedElement>
         {/* </div> */}
 
-        <AnimatedElement className="text-[25px] md:text-[40px] lg:text-[60px]">
+        <AnimatedElement className="text-[25px] md:text-[40px] lg:text-[60px] font-normal">
           Our Extended Products
         </AnimatedElement>
 
@@ -282,13 +282,13 @@ Download STRIKES now and be part of the future of collaboration!
               <Link to={product.path} key={product.id} className="card w-full lg:w-1/3  ">
                 <AnimatedElement
                   delay={1000 + 200 * index}
-                  className="flex flex-col justify-between items-start p-4  border border-gray-400 rounded-xl h-[350px] sm:h-[400px] md:h-[450px]  xl:h-[550px]"
+                  className="flex flex-col justify-between items-start p-4  border border-gray-400 rounded-xl h-fit gap-4 h sm:h-[400px] md:h-[450px]  xl:h-[550px]"
                 >
-                  <div className="flex flex-col justify-start  items-start gap-2 md:gap-4 font-medium">
+                  <div className="flex flex-col justify-start  items-start gap-2 font-medium">
                     <h1 className="text-xl md:text-2xl lg:text-2xl uppercase 2xl:text-3xl">
                       {product.name}
                     </h1>
-                    <p className="text-customgrayhover font-semibold text-sm md:text-md lg:text-lg 2xl:text-xl">
+                    <p className="text-customgrayhover font-semibold text-sm md:text-md ">
                       {product.subcontent}
                     </p>
                   </div>

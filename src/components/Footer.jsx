@@ -53,7 +53,7 @@ const Footer = () => {
 
       <div className="w-full flex flex-col lg:flex-row justify-between items-start py-12">
 
-        <AnimatedElement className="w-full lg:w-1/2">
+        <AnimatedElement className="w-full lg:w-1/2 sm:px-[10%] lg:px-0">
           <div className="w-full lg:w-1/2 flex flex-col gap-4 lg:gap-8 justify-center items-start pl-4 lg:pl-[10%] 2xl:pl-[20%]  bg-black pb-8 border-b lg:border-b-0 border-gray-800">
 
             <div className="flex justify-center items-start flex-col gap-2 leading-none ">
@@ -78,7 +78,7 @@ const Footer = () => {
 
 
         <div className="w-full lg:w-1/2  flex flex-col justify-start       items-start pl-0  lg:pl-24 gap-8 pt-8 lg:mt-0">
-        <AnimatedElement delay={200} className="w-full flex flex-col items-center justify-start lg:items-start">
+        <AnimatedElement delay={200} className="w-full flex flex-col items-center justify-start sm:px-[10%] lg:px-0 lg:items-start">
 
           <div className="w-full flex flex-col justify-center  items-center px-4 lg:px-0 gap-8 lg:gap-12">
 
