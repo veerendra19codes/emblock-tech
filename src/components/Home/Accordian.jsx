@@ -97,7 +97,7 @@ const HomeFaq = () => {
           <p className="text-sm md:text-lg font-semibold text-gray-400">FAQ</p>
         </div>
 
-        <h1 className="text-[25px] md:text-[40px] lg:text-[60px]">
+        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] w-full lg:text-center">
             Got Questions?
         </h1>
       </AnimatedElement>
