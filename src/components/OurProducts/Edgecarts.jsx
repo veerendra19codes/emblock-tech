@@ -300,7 +300,7 @@ Download STRIKES now and be part of the future of collaboration!
         </div>
 
 
-        <div className="h-[650px] lg:h-[800px] w-full bg-black text-white flex flex-col justify-start items-center p-6 lg:p-[10%]">
+        <div className="min-h-[650px] lg:h-[800px] w-full bg-black text-white flex flex-col justify-start items-center p-6 lg:p-[10%]">
              <AnimatedElement className="w-full flex justify-start items-center gap-2">
                 <span className="bg-lime-400  size-2 md:size-3 rounded-full text-black">.</span>
                 <p className="text-md md:text-lg font-semibold text-gray-400">Team</p>
@@ -318,7 +318,7 @@ Download STRIKES now and be part of the future of collaboration!
                         We&apos;re excited to join hands with Ewall Solutions, a team known for their innovative and reliable tech expertise. This partnership allows us to take EDGECARTS to the next level by delivering smoother integrations, stronger performance, and outstanding support. Together, we&apos;re here to help you build a thriving e-commerce business and achieve your dreams.
                     </h1>
 
-                    <img src="/ewall-partner.png" className="w-fit h-[30px] lg:h-[60px]" />
+                    <img src="/ewall-partner.png" className="w-fit h-[40px] lg:h-[60px] object-cover" />
                 </div>
             </div>
         </div>
