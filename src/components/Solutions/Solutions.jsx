@@ -143,9 +143,9 @@ const Solutions = () => {
       },
       quote: {
         quote:
-          "EMBLOCK has completely transformed our construction management. With real-time video streaming, image recognition for attendance, and integrated PMS & ERP, it’s a single solution for everything we need on-site.",
-        author: "Bala venkatesh",
-        designation: "Founder Aargaa Construction",
+          "EMBLOCK solution has transformed our operations, giving us live insights and instant alerts to reduce downtime. It's user-friendly, efficient, and has greatly improved our productivity!",
+        author: "Adithya Raam Sankar",
+        designation: "Founder trusspur",
       },
     },
     {
@@ -213,7 +213,7 @@ const Solutions = () => {
     {
       id: 3,
       title: "EMBLOCK Pipeline Monitoring and Leak Detection  ",
-      type: "E-commerce solutions",
+      type: "IoT Solutions",
       description:
         "The oil and gas industry is a critical sector that fuels global economies, but it also faces immense challenges in maintaining safety, operational efficiency, and regulatory compliance. Aging infrastructure, environmental concerns, and the need for modernization have made leak detection and predictive maintenance more essential than ever. EMBLOCK addresses these challenges with a state-of-the-art solution designed for real-time pipeline monitoring and leak detection. Our technology enhances operational safety, prevents costly spills, and ensures pipeline integrity.",
       focusAreasText:
@@ -654,13 +654,13 @@ const Solutions = () => {
             </div>
 
             <div className="h-[200px] w-fit flex flex-col justify-start  items-start mt-[30px] sm:mt-[150px] md:mt-[220px] lg:mt-[350px] pr-[5%]">
-              <h1 className=" text-black text-[8px] sm:text-[12px] md:text-xl font-medium mb-8">&ldquo;{solution.quote.quote}&ldquo;</h1>
+              <h1 className=" text-black text-sm md:text-xl xl:text-3xl font-medium mb-8">&ldquo;{solution.quote.quote}&ldquo;</h1>
 
               <div className="flex flex-col md:gap-4 justify-start items-start">
 
-                <p className=" text-[6px] sm:text-xs md:text-lg font-medium mb-4">{solution.quote.author}</p>
+                <p className="text-xs md:text-sm xl:text-lg font-medium mb-4">{solution.quote.author}</p>
 
-                <p className="text-[6px] sm:text-xs md:text-base font-medium">{solution.quote.designation}</p>
+                <p className="text-xs md:text-sm xl:text-md   font-medium">{solution.quote.designation}</p>
 
               </div>
 

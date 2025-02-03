@@ -51,9 +51,15 @@ const About = () => {
 
   const quotes = [
     {
+      id: 0,
+      quote: `"Vision without action is a dream. At our core, we transform aspirations into reality through relentless innovation and unwavering dedication."`,
+      author: "Vigneshwaran R,",
+      designatin: "CEO & Founder, EMBLOCK",
+    },
+    {
       id: 1,
       quote: `"True vision at EMBLOCK means seeing beyond the horizon and moving relentlessly towards it, transforming challenges into opportunities every step of the way."`,
-      author: "Anbu Selvam Kasilingam,r",
+      author: "Anbu Selvam Kasilingam,",
       designatin: "COO & Co-Founder",
     },
     {
@@ -164,28 +170,28 @@ const About = () => {
             <h1 className="w-full text-start text-sm lg:text-xl font-medium">We aim to provide tools that:</h1>
 
             <p className="w-full text-start text-gray-400 font-medium flex justify-start items-start gap-2 flex-wrap">
-              <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%]  text-start text-xs md:text-md">Enhance operational efficiency by automating processes.</span>
+              <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 " />
+              <span className="w-[90%]  text-start text-xs md:text-base">Enhance operational efficiency by automating processes.</span>
             </p>
 
             <p className="w-full text-start text-gray-400 font-medium flex flex-row justify-start items-start gap-2 flex-wrap">
-              <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%] text-start text-xs md:text-md">Deliver critical data insights that drive smarter decision-making.</span>
+              <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1" />
+              <span className="w-[90%] text-start text-xs md:text-base">Deliver critical data insights that drive smarter decision-making.</span>
             </p>
 
             <p className="w-full text-start text-gray-400 font-medium flex flex-row justify-start items-start gap-2 flex-wrap">
-              <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%]  text-start flex text-xs md:text-md">Promote innovation in every facet of business.</span>
+              <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1" />
+              <span className="w-[90%]  text-start flex text-xs md:text-base">Promote innovation in every facet of business.</span>
             </p>
 
             <p className="w-full text-start text-gray-400 font-medium flex flex-row justify-start items-start gap-2 flex-wrap">
-              <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%] text-start flex text-xs md:text-md">Foster sustainable growth by integrating eco-friendly technologies and solutions.</span>
+              <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1" />
+              <span className="w-[90%] text-start flex text-xs md:text-base">Foster sustainable growth by integrating eco-friendly technologies and solutions.</span>
             </p>
 
             <p className="w-full text-start text-gray-400 font-medium flex flex-row justify-start items-start gap-2 flex-wrap">
-              <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1 md:mt-2" />
-              <span className="w-[90%] text-start flex text-xs md:text-md">Empower businesses with scalable, adaptable solutions.</span>
+              <FaStarOfLife className="text-customgreen size-3 md:size-4 mt-1" />
+              <span className="w-[90%] text-start flex text-xs md:text-base">Empower businesses with scalable, adaptable solutions.</span>
             </p>
 
           </div>
