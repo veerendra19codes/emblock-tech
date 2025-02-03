@@ -197,14 +197,15 @@ Download STRIKES now and be part of the future of collaboration!
   return id == 3 ? (
     <Edgecarts />
   ) : (
-    <div className="flex flex-col justify-center items-center w-full h-full p-6 py-12 md:p-28">
+    <div className="flex flex-col justify-center items-center w-full h-full p-6 py-4 md:py-[5%] md:px-[10%]">
       <AnimatedElement>
-        <h1 className="text-[35px] md:text-[40px] lg:text-[60px] uppercase w-full text-start font-medium">
+        <h1 className="text-[25px] md:text-[40px] lg:text-[60px] uppercase w-full text-start font-medium">
           {products[id - 1].name}
         </h1>
       </AnimatedElement>
 
-      <div className="w-full flex flex-col md:flex-row justify-between overflow-y-auto gap-8 mt-16">
+      <div className="w-full flex flex-col md:flex-row justify-between items-start overflow-y-auto gap-8 ">
+      
         {/* left component  */}
         <div
           ref={leftComponentRef}
@@ -229,7 +230,7 @@ Download STRIKES now and be part of the future of collaboration!
 
           <button className="rounded-full p-2   pl-6 text-md md:text-xl whitespace-nowrap text-black bg-customgreen flex gap-4 justify-center items-center shadow-md shadow-customgreen transition-all duration-1000 ease-out delay-500  hover:shadow-none group my-4 font-semibold">
             Visit Website
-            <FaArrowRightLong className="bg-white text-customgray rounded-full size-10 p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" />
+            <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform -rotate-45 group-hover:rotate-0" />
           </button>
         </div>
 
@@ -238,7 +239,7 @@ Download STRIKES now and be part of the future of collaboration!
         {/* right component  */}
         <div
           ref={rightComponentRef}
-          className="details w-full md:w-[65%] flex flex-col gap-4 md:gap-6 justify-center items-start"
+          className="details w-full md:w-[65%] flex flex-col gap-4 mt-0 md:mt-8 md:gap-6 justify-center items-start"
         >
           <div className="details w-full  flex flex-col gap-4 md:gap-6 justify-center items-start">
             <div className="w-full text-lg md:text-2xl text-customgray font-semibold leading-6">
@@ -262,7 +263,7 @@ Download STRIKES now and be part of the future of collaboration!
         </div>
       </div>
 
-      <div className="w-full flex flex-col justify-center items-start gap-0">
+      <div className="w-full flex flex-col justify-center items-start gap-0 pb-12">
         {/* <div className="flex gap-2 justify-center items-center"> */}
         <AnimatedElement className="w-full flex justify-start items-center gap-2">
           <span className="bg-lime-400  size-2 md:size-3 rounded-full text-white">.</span>
@@ -270,21 +271,21 @@ Download STRIKES now and be part of the future of collaboration!
         </AnimatedElement>
         {/* </div> */}
 
-        <AnimatedElement className="text-[25px] md:text-[40px] lg:text-[60px] mb-24">
+        <AnimatedElement className="text-[25px] md:text-[40px] lg:text-[60px]">
           Our Extended Products
         </AnimatedElement>
 
-        <div className="w-full flex flex-col md:flex-row gap-4">
-          {products
+        <div className="w-full flex flex-col md:flex-row gap-4 mt-8">
+          {products 
             .filter((product) => product.id != id)
             .map((product, index) => (
               <Link to={product.path} key={product.id} className="card w-full lg:w-1/3  ">
                 <AnimatedElement
                   delay={1000 + 200 * index}
-                  className="flex flex-col justify-between items-start p-4  border border-gray-400 rounded-xl h-[400px] md:h-[550px] 2xl:h-[600px]"
+                  className="flex flex-col justify-between items-start p-4  border border-gray-400 rounded-xl h-[350px] sm:h-[400px] md:h-[450px]  xl:h-[550px]"
                 >
                   <div className="flex flex-col justify-start  items-start gap-2 md:gap-4 font-medium">
-                    <h1 className="text-xl md:text-2xl lg:text-2xl uppercase 2xl:text-3xl font-medium">
+                    <h1 className="text-xl md:text-2xl lg:text-2xl uppercase 2xl:text-3xl">
                       {product.name}
                     </h1>
                     <p className="text-customgrayhover font-semibold text-sm md:text-md lg:text-lg 2xl:text-xl">
@@ -293,7 +294,7 @@ Download STRIKES now and be part of the future of collaboration!
                   </div>
                   <img
                     src={product.image || "/placeholder.svg"}
-                    className="w-full h-[150px] sm:h-[250px] rounded-xl 2xl:h-[350px] object-cover"
+                    className="w-full h-[200px] sm:h-[250px] rounded-xl 2xl:h-[350px] object-cover"
                   />
                 </AnimatedElement>
               </Link>

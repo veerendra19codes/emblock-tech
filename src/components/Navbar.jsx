@@ -354,7 +354,7 @@ const Navbar = () => {
 
       {/* Mobile Navbar */}
       <nav className="w-full h-20 flex justify-between items-center p-4 lg:hidden shadow-sm border-b border-gray-400 bg-gray-100">
-        <img src="logo.png" className="h-6" alt="Logo" />
+        <img src="/logo.png" className="h-6" alt="Logo" />
         <HiMenuAlt2
           className="size-12 rotate-180 shadow-2xl rounded-full bg-white p-2"
           onClick={() => setShowMobileNavbar(true)}
@@ -366,7 +366,7 @@ const Navbar = () => {
           } fixed top-0 right-0 left-0 menu w-full flex-col gap-2 bg-white text-white bg-opacity-90 backdrop-blur-sm z-50 h-screen opacity-0 animate-slide-down-fast animate-fill-mode-forwards`}
         >
           <nav className="w-full h-20 p-4 flex justify-between items-center lg:hidden shadow-sm bg-gray-100">
-            <img src="logo.png" className="h-6" alt="Logo" />
+            <img src="/logo.png" className="h-6" alt="Logo" />
             <IoCloseSharp
               className="size-12 rotate-180 shadow-2xl rounded-full bg-white text-customblack p-2"
               onClick={() => setShowMobileNavbar(false)}

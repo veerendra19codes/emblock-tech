@@ -84,74 +84,61 @@ const FeaturedProjects = () => {
 
         <div className="projects-2 w-full flex flex-col lg:flex-row justify-center items-center bg-black">
 
-          <Link to="/product/1" className="w-full lg:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-center items-start p-6 md:py-0 md:px-12 gap-2 md:gap-4 h-[280px] sm:h-[400px] md:h-[600px] 2xl:h-[750px]">
+          <Link to="/product/1" className="w-full lg:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:px-16 md:pb-16 lg:px-12  lg:pb-12 xl:pb-16 h-[280px] sm:h-[400px] md:h-[550px] 2xl:h-[700px]">
 
-            {/* <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
-              <div><span className="text-customgreen">{"{"}</span> E-commerce Saas <span className="text-customgreen">{"}"}</span>
-              </div> 
-              <div className="text-gray-400">5/31/24</div>
-            </h1> */}
 
-            <h1 className="text-2xl md:text-3xl  2xl:text-4xl">EDGECARTS</h1>
+            <div className="w-full flex flex-col justify-start items-start gap-2 md:gap-4">
 
-            <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">Web design & Web development</p>
+              <h1 className="text-2xl md:text-3xl  2xl:text-4xl">EDGECARTS</h1>
 
-            <img src="/edgecarts.webp" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px] sm:h-[250px] md:h-[400px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12  transition-transform duration-500 ease-in-out ${visibleImages[`project-image-0`] ? 'md:scale-110' : 'scale-100'}`}  />
+              <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">Web design & Web development</p>
+
+            </div>
+
+            <img src="/edgecarts.webp" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px] sm:h-[250px] md:h-[350px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12  transition-transform duration-500 ease-in-out ${visibleImages[`project-image-0`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
-          <Link to="/product/2" className="w-full lg:w-1/2 border border-gray-800 flex flex-col hover:bg-customblackhover justify-center items-start p-6 md:px-12  gap-2 md:gap-4 h-[280px] sm:h-[400px] md:h-[600px] 2xl:h-[750px]">
+          <Link to="/product/2" className="w-full lg:w-1/2 border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:px-16 md:pb-16 lg:px-12 lg:pb-12 xl:pb-16  h-[280px] sm:h-[400px] md:h-[550px] 2xl:h-[700px]">
 
-            {/* <h1 className="flex justify-start items-center gap-6 text-lg md:text-xl"> 
-              <div><span className="text-customgreen">{"{"}</span> Saas <span className="text-customgreen">{"}"}</span>
-              </div> 
-              <div className="text-gray-400">8/8/24</div>
-            </h1> */}
+            <div className="w-full flex flex-col justify-start items-start gap-2 md:gap-4">
 
-            <h1 className="text-2xl md:text-3xl 2xl:text-4xl">BUILDOPS</h1>
+              <h1 className="text-2xl md:text-3xl  2xl:text-4xl">BUILDOPS</h1>
 
-            <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">ERP & PMS for Construction firm</p>
+              <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">ERP & PMS for Construction firm</p>
 
-            <img src="/buildops.jpg" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px] sm:h-[250px]  md:h-[400px] 2xl:h-[450px] object-cover rounded-xl mt-6  md:mt-12 transition-transform duration-500  ease-in-out ${visibleImages[`project-image-1`] ? 'md:scale-110' : 'scale-100'}`} />
+            </div>
+
+            <img src="/buildops.jpg" className={`project-image  w-full 2xl:w-[95%] mx-auto h-[150px] sm:h-[250px]  md:h-[350px] 2xl:h-[450px] object-cover rounded-xl mt-6  md:mt-12 transition-transform duration-500  ease-in-out ${visibleImages[`project-image-1`] ? 'md:scale-110' : 'scale-100'}`} />
           </Link>
 
         </div>
 
         <div className="projects-3 h-auto w-full flex flex-col lg:flex-row justify-center items-center bg-black">
 
-          <Link to="/product/3" className="w-full lg:w-1/3 h-[280px] sm:h-[400px] md:h-[600px] lg:h-[600px] 2xl:h-[720px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:p-8 xl:p-12 gap-2 md:gap-4">
-          <div className="flex flex-col gap-4 justify-start items-start">
+          <Link to="/product/3" className="w-full lg:w-1/3 h-[300px] sm:h-[400px] md:h-[600px] lg:h-[600px] 2xl:h-[720px] border border-gray-800  hover:bg-customblackhover flex flex-col justify-between items-start p-6 md:px-12 lg:px-8 xl:p-12 gap-2 md:gap-4">
 
-            {/* <h1 className="flex justify-start items-center text-lg md:text-xl  gap-6"> 
-              <div><span className="text-customgreen">{"{"}</span> Mobile App <span className="text-customgreen">{"}"}</span>
-              </div> 
-              <div className="text-gray-400">6/20/24</div>
-            </h1> */}
+            <div className="w-full flex flex-col justify-start items-start gap-2 md:gap-4">
 
-            <h1 className="text-2xl md:text-3xl 2xl:text-4xl whitespace-nowrap"> STRIKES</h1>
+              <h1 className="text-2xl md:text-3xl  2xl:text-4xl">STRIKES</h1>
 
-            <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">App that Connect the Influencer and Brand and Audience</p>
-          </div>
+              <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">App that Connect the Influencer and Brand and Audience</p>
 
+            </div>
 
             <img src="/strikes.jpeg"  className={`project-image w-full md:w-[95%] mx-auto h-[150px] sm:h-[250px]  md:h-[400px] lg:h-[350px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12  transition-transform duration-500 ease-in-out lg:my-4 
               ${visibleImages[`project-image-2`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 
-          <Link to="/product/4" className="w-full  lg:w-1/3 h-[350px] sm:h-[400px] md:h-[600px] lg:h-[600px] border 2xl:h-[720px] border-gray-800 flex flex-col hover:bg-customblackhover justify-between items-start p-6 md:p-8 xl:p-12 gap-2 md:gap-4">
-          <div className="flex flex-col gap-4 justify-start items-start">
+          <Link to="/product/4" className="w-full  lg:w-1/3 h-[330px] sm:h-[400px] md:h-[600px] lg:h-[600px] border 2xl:h-[720px] border-gray-800 flex flex-col hover:bg-customblackhover justify-between items-start p-6 md:px-8 xl:p-12 gap-2 md:gap-4">
 
-            {/* <h1 className="flex justify-start items-center text-lg md:text-xl gap-6"> 
-              <div><span className="text-customgreen">{"{"}</span> Software Development <span className="text-customgreen">{"}"}</span>
-              </div> 
-              <div className="text-gray-400">7/13/24</div>
-            </h1> */}
+          <div className="flex flex-col gap-2 md:gap-4 justify-start items-start">
 
             <h1 className="text-2xl md:text-3xl 2xl:text-4xl">Real-Time Machine Monitoring System</h1>
 
             <p className="text-gray-500 font-semibold text-xs md:text-md 2xl:text-lg">Monitorting system for your industry with hardware prototype combined software</p>
           </div>
 
-            <img src="/real-time-machine-monitoring-product.jpg"  className={`project-image w-full md:w-[95%]  mx-auto h-[150px] sm:h-[250px]  md:h-[400px] lg:h-[350px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out lg:my-4 
+            <img src="/real-time-machine-monitoring-product.jpg"  className={`project-image w-full md:w-[95%]  mx-auto h-[150px] sm:h-[250px]  md:h-[350px] lg:h-[350px] 2xl:h-[450px] object-cover rounded-xl mt-6 md:mt-12 transition-transform duration-500 ease-in-out lg:my-4 
               ${visibleImages[`project-image-3`] ? 'md:scale-110' : 'scale-100'}`}  />
           </Link>
 

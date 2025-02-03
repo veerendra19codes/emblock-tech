@@ -74,7 +74,7 @@ const Solutions = () => {
   const solutions = [
     {
       id: 1,
-      title: "EMBLOCK: IoT Solutions for Manufacturing",
+      title: "EMBLOCK IoT Solutions for Manufacturing",
       type: "Iot solutions",
       description:
         "The manufacturing industry is at the heart of the global economy, driving innovation and productivity. With the rapid evolution of technology, manufacturers are transitioning to smart factories and adopting advanced systems under the Industry 4.0 framework. However, this transition comes with challenges, including integrating new technologies with existing systems, managing labor shortages, and meeting fluctuating market demands. Compliance with stringent environmental and quality regulations adds to the complexity, necessitating advanced solutions for seamless operations.",
@@ -150,7 +150,7 @@ const Solutions = () => {
     },
     {
       id: 2,
-      title: "Building Success: EMBLOCK Construction Solutions",
+      title: "EMBLOCK Construction Solutions",
       type: "Construction Solutions",
       description:
         "The construction industry is a cornerstone of economic growth, driving infrastructure development and urbanization. However, it faces significant challenges in today's competitive environment. Fluctuating material costs, labor shortages, and increasingly stringent regulations create obstacles for project managers and construction firms alike. These issues often result in project delays, budget overruns, and reduced productivity, making it essential for businesses to adopt advanced tools to streamline operations and maintain profitability.",
@@ -212,7 +212,7 @@ const Solutions = () => {
     },
     {
       id: 3,
-      title: "EMBLOCK: Pipeline Monitoring and Leak Detection  ",
+      title: "EMBLOCK Pipeline Monitoring and Leak Detection  ",
       type: "E-commerce solutions",
       description:
         "The oil and gas industry is a critical sector that fuels global economies, but it also faces immense challenges in maintaining safety, operational efficiency, and regulatory compliance. Aging infrastructure, environmental concerns, and the need for modernization have made leak detection and predictive maintenance more essential than ever. EMBLOCK addresses these challenges with a state-of-the-art solution designed for real-time pipeline monitoring and leak detection. Our technology enhances operational safety, prevents costly spills, and ensures pipeline integrity.",
@@ -480,22 +480,22 @@ const Solutions = () => {
 
 
   return (
-    <div className="flex justify-start items-center py-4 md:py-32 min-h-screen w-full flex-col">
+    <div className="flex justify-start items-center py-4 md:py-[5%] min-h-screen w-full flex-col">
       {/* {solutions.map((solution) => ( */}
       <section key={solution.id} className="top w-full flex flex-col justify-start items-center py-0 ">
         <AnimatedSection delay={200} className="w-full">
-          <h1 className="w-full md:w-[90%] text-[35px] md:text-[40px] lg:text-[60px] text-start text-customblack font-normal flex flex-wrap leading-none px-6 md:px-[10%] py-12 md:py-0">
+          <h1 className="w-full md:w-[90%] text-[25px] md:text-[40px] lg:text-[60px] text-start text-customblack font-normal flex flex-wrap px-6 leading-tight md:px-[10%]  md:py-0">
             {solution.title}
           </h1>
         </AnimatedSection>
 
         <AnimatedSection delay={400} className="w-full">
-          <p className="w-full md:w-[90%] text-customblack text-start text-xs md:text-lg lg:text-2xl flex flex-wrap font-semibold mt-8 md:mt-24 px-6 md:px-[10%]">
+          <p className="w-full md:w-[90%] text-customblack text-start text-xs md:text-lg lg:text-2xl flex flex-wrap font-semibold mt-8 md:mt-[2%] px-6 md:px-[10%]">
             {solution.description}
           </p>
         </AnimatedSection>
 
-        <div className="focus w-full relative flex flex-col-reverse md:flex-row justify-between items-start mt-16  pl-0 md:px-[10%] mb-12">
+        <div className="focus w-full relative flex flex-col-reverse md:flex-row justify-between items-start mt-8 md:mt-16  pl-0 md:px-[10%] mb-12">
           <section
             ref={leftComponentRef}
             className="left w-full md:w-[65%] px-6 md:px-0  flex flex-col justify-start items-start mt-8 md:mt-0"
@@ -504,7 +504,7 @@ const Solutions = () => {
               Focus Areas of the Solution:
             </h2>
 
-            <p className="w-full text-start text-customgrayhover flex flex-wrap text-sm md:text-xl font-semibold mt-8">
+            <p className="w-full text-start text-customgrayhover flex flex-wrap text-sm md:text-xl font-semibold mt-4 md:mt-8">
               {solution.focusAreasText}
             </p>
 
@@ -525,14 +525,14 @@ const Solutions = () => {
             <img
               src={solution.image1 || "/placeholder.svg"}
               alt="image"
-              className="w-full rounded-xl  object-cover my-16 h-[150px] sm:h-[250px] lg:h-[400px] 2xl:h-[500px]"
+              className="w-full rounded-xl  object-cover my-8 md:my-16 h-[180px] sm:h-[250px] md:h-[350px] lg:h-[400px] 2xl:h-[500px]"
             />
 
             <div className="painPoint w-full flex flex-col justify-start items-start">
               <h1 className="text-customblack text-start w-full font-semibold text-xl md:text-3xl flex flex-wrap">
                 Pain Points:
               </h1>
-              <p className="w-full text-start text-customgrayhover flex flex-wrap text-sm md:text-xl font-semibold mt-8">
+              <p className="w-full text-start text-customgrayhover flex flex-wrap text-sm md:text-xl font-semibold mt-4 md:mt-8">
                 {solution.painPoint}
               </p>
             </div>
@@ -540,7 +540,7 @@ const Solutions = () => {
             <img
               src={solution.image2 || "/placeholder.svg"}
               alt="image"
-              className="w-full rounded-xl object-contain my-16"
+              className="w-full rounded-xl object-cover mt-8 md:my-16 h-[180px] sm:h-[250px] md:h-[350px] lg:h-[400px] 2xl:h-[500px]"
             />
 
             <p className="w-full text-start text-customgrayhover flex flex-wrap text-sm md:text-xl font-semibold mt-8">
@@ -564,7 +564,7 @@ const Solutions = () => {
 
           <section
             ref={rightComponentRef}
-            className={`px-6 md:px-0w-full md:w-[30%] h-auto  ${isRightSticky ? "md:fixed md:top-0 md:right-0 w-[34%] md:pr-[10%]" : ""} `}
+            className={`px-6 md:px-0 w-full md:w-[30%] h-auto  ${isRightSticky ? "md:fixed md:top-0 md:right-0 w-[34%] md:pr-[10%]" : ""} `}
           >
             <div className="left w-full key-features flex flex-col justify-start items-start ">
               <div className="w-full flex flex-col justify-center items-start border-b border-gray-300 py-4">
@@ -595,12 +595,12 @@ const Solutions = () => {
       </section>
       {/* ))} */}
 
-      <section className="w-full bg-black px-6 md:px-24 py-24 md:py-48 text-white flex flex-col justify-center items-center">
-        <h1 className="text-2xl font-medium text-start w-full mb-12 lg:mb-0 pl-8 lg:pl-0">Our Solutions</h1>
+      <section className="w-full bg-black px-6 md:px-24 py-12 md:py-24 xl:py-48 text-white flex flex-col justify-center items-center">
+        <h1 className="text-2xl font-medium text-start w-full mb-4 md:mb-12 lg:mb-0">Our Solutions</h1>
 
         <div className="w-full middle flex gap-2 flex-col-reverse lg:flex-row justify-between items-center">
           <div className="left w-full lg:w-1/2 flex flex-col justify-start items-start">
-            <p className="w-full text-start text-gray-400 flex flex-wrap text-md md:text-xl font-semibold my-8">
+            <p className="w-full text-start text-gray-400 flex flex-wrap text-md md:text-xl font-semibold my-4 md:my-8">
               {solution.solution.header}
             </p>
 
@@ -623,34 +623,53 @@ const Solutions = () => {
           <div className="right w-full lg:w-1/2 flex justify-center items-center mt-4 md:mt-0">
             <img
               src={solution.solution.image || "/placeholder.svg"}
-              className="size-full md:size-[90%] h-[250px] md:h-[400px] 2xl:h-[550px] object-cover rounded-xl"
+              className="size-full md:size-[90%] h-[250px] md:h-[350px]  lg:h-[400px] 2xl:h-[550px] object-cover rounded-xl"
             />
           </div>
         </div>
 
-        <div className="bottom w-full flex flex-col gap-4 justify-start my-12">
+        <div className="bottom w-full flex flex-col gap-4 justify-start mt-8 md:mt-12">
           <h1 className="text-white text-md md:text-2xl font-medium">{solution.solution.bottomTextHeader}</h1>
           <p className="text-gray-400 text-sm md:text-xl font-medium">{solution.solution.bottomText}</p>
         </div>
       </section>
 
       {/* quote  */}
-      <section className="w-full h-[400px] md:h-[800px] flex justify-center items-center ">
+      <section className="w-full h-[500px] md:h-[700px] 2xl:h-[800px] flex justify-center items-center ">
         <AnimatedSection delay={800}>
-          <section className="w-full h-[400px] md:h-[800px] flex justify-center items-center px-6 md:px-24">
-            <div className="w-1/5 flex justify-end items-start -mt-[150px] md:-mt-[200px]">
+          {/* <section className="w-full h-[400px] md:h-[800px] flex justify-center items-center px-6 md:px-24">
+            <div className="w-1/5 flex justify-end items-start -mt-[170px] sm:-mt-[130px] md:-mt-[200px]">
               <FaQuoteLeft className="text-gray-600 size-[40px] md:size-[200px]" />
             </div>
-            <div className="w-4/5 flex flex-col justify-center items-start -mb-[100px] md:-mb-[200px]">
+            <div className="w-4/5 flex flex-col justify-start  items-start -mb-[100px] sm:-mb-[50px] md:-mb-[200px] pr-[5%]">
               <h1 className="text-black text-sm md:text-3xl font-medium mb-8">&ldquo;{solution.quote.quote}&ldquo;</h1>
               <p className="text-xs md:text-lg font-medium mb-4">{solution.quote.author}</p>
               <p className="text-xs md:text-md font-medium">{solution.quote.designation}</p>
+            </div>
+          </section> */}
+          <section className="w-full h-[400px] sm:h-[600px] md:h-[800px] flex justify-start items-center px-6 md:px-24 pb-12 sm:pb-24 md:pb-48 lg:-mt-24">
+
+            <div className="h-[200px] w-1/5 flex justify-end items-start ">
+              <FaQuoteLeft className="text-gray-600 size-[40px] sm:size-[80px] md:size-[130px] lg:size-[200px]" />
+            </div>
+
+            <div className="h-[200px] w-4/5 flex flex-col justify-start  items-start mt-[70px] sm:mt-[150px] md:mt-[220px] lg:mt-[350px] pr-[5%]">
+              <h1 className=" text-black text-sm sm:text-lg md:text-3xl font-medium mb-8">&ldquo;{solution.quote.quote}&ldquo;</h1>
+
+              <div className="flex flex-col gap-2 md:gap-4 justify-start items-start">
+
+                <p className=" text-xs md:text-lg font-medium mb-4">{solution.quote.author}</p>
+
+                <p className="text-xs md:text-md font-medium">{solution.quote.designation}</p>
+
+              </div>
+
             </div>
           </section>
         </AnimatedSection>
       </section>
 
-      <div className="w-full flex flex-col justify-center items-start gap-0 py-24 px-6 md:px-24">
+      <div className="w-full flex flex-col justify-center items-start gap-0 py-12 px-6 md:px-24">
         <AnimatedSection delay={600}>
           <div className="flex gap-2 justify-center items-center">
             <span className="bg-lime-400  size-2 mdsize-3 rounded-full text-white">.</span>
@@ -659,23 +678,23 @@ const Solutions = () => {
         </AnimatedSection>
 
         <AnimatedSection delay={800}>
-          <h1 className="text-[25px] md:text-[60px]">Some of other Solutions</h1>
+          <h1 className="text-[25px] md:text-[40px] lg:text-[60px]">Some of other Solutions</h1>
         </AnimatedSection>
 
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 ">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
           {solutions
             .filter((s) => s.id != solution.id)
             .map((s, index) => (
               <Link
                 to={`/solutions/${s.id}`}
                 key={s.id}
-                className="card w-full  flex  justify-center items-start  rounded-xl h-[400px] md:h-[500px]"
+                className="card w-full  flex  justify-center items-start  rounded-xl h-[380px] md:h-[450px] lg:h-[500px] xl:h-[450px]"
               >
-                <AnimatedSection key={s.id} delay={1000 + index * 200}>
+                <AnimatedSection key={s.id} delay={1000 + index * 200} className="w-full h-full">
                   <Link
                     to={`/solutions/${s.id}`}
                     key={s.id}
-                    className="card w-full flex flex-col justify-between items-start p-4 border border-gray-400 rounded-xl h-[400px] md:h-[500px]"
+                    className="card w-full flex flex-col justify-between items-start p-4 border border-gray-400 rounded-xl h-[380px] md:h-[450px] lg:h-[500px] xl:h-[450px]"
                   >
                     <div className="flex flex-col justify-start  items-start gap-2 md:gap-4">
                       <h1 className="text-xl md:text-2xl uppercase font-medium">{s.title}</h1>
@@ -683,7 +702,7 @@ const Solutions = () => {
                     </div>
                     <img
                       src={s.image1 || "/placeholder.svg"}
-                      className="w-full h-[150px] md:h-[250px] rounded-xl object-cover"
+                      className="w-full h-[200px] sm:h-[250px] rounded-xl object-cover"
                     />
                   </Link>
                 </AnimatedSection>

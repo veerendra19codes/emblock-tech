@@ -78,14 +78,14 @@ const About = () => {
 
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen w-full py-6 md:py-0">
+    <div className="flex flex-col justify-center items-center min-h-screen w-full py-6  md:py-0">
 
       {/* <section className="w-full md:w-[80%] flex flex-col justify-center items-start px-6 md:mx-0"> */}
-      <AnimatedSection classes="w-full md:px-[10%] pt-12 md:pt-[10%] flex flex-col justify-center items-start px-6 md:mx-0 bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat ">
+      <AnimatedSection classes="w-full md:px-[10%] md:pt-[5%] flex flex-col justify-center items-start px-6 md:mx-0 bg-[url('/herobg.jpg')] bg-cover bg-center bg-no-repeat ">
 
         <div className=" flex gap-2 justify-start items-center transition-all duration-1000 ease-out w-full text-start">
           <span className="bg-lime-400  size-2 md:size-3 rounded-full text-white ">.</span>
-          <p className="text-xs md:text-lg font-semibold text-gray-400">Featured projects</p>
+          <p className="text-xs md:text-lg font-semibold text-gray-400">About Us</p>
         </div>
 
         <h1 className="w-full text-start text-[35px] md:text-[60px] font-medium">About Us</h1>
@@ -102,30 +102,30 @@ const About = () => {
           <div className="right w-full lg:w-1/2 flex flex-col justify-start items-start px-0 md:px-8 mt-8 md:mt-0">
             <h1 className="text-customblack text-xl lg:text-3xl mt-4 font-medium">IoT Solutions</h1>
 
-            <p className="text-gray-500 font-medium mt-2 text-xs md:text-lg">As trailblazers in IoT innovation, we deliver solutions tailored to industries like manufacturing, construction, logistics, and supply chain management.</p>
+            <p className="text-gray-500 font-medium mt-2 text-xs lg:text-lg">As trailblazers in IoT innovation, we deliver solutions tailored to industries like manufacturing, construction, logistics, and supply chain management.</p>
 
-            <p className="text-gray-500 font-medium mt-4  text-xs md:text-lg">Key offerings include:</p>
+            <p className="text-gray-500 font-medium mt-4  text-xs lg:text-lg">Key offerings include:</p>
 
-            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Real-Time Machine Monitoring: Gain visibility into equipment performance to reduce downtime and increase productivity.</span></p>
-            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Fleet Management Systems: Optimize routes, improve safety, and cut operational costs with data-driven insights.</span></p>
-            <p className="text-gray-500 font-medium text-start mt-4 text-xs md:text-lg"> Our IoT solutions empower businesses to operate smarter, reduce waste, and achieve their goals seamlessly</p>
+            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs lg:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Real-Time Machine Monitoring: Gain visibility into equipment performance to reduce downtime and increase productivity.</span></p>
+            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs lg:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Fleet Management Systems: Optimize routes, improve safety, and cut operational costs with data-driven insights.</span></p>
+            <p className="text-gray-500 font-medium text-start mt-4 text-xs lg:text-lg"> Our IoT solutions empower businesses to operate smarter, reduce waste, and achieve their goals seamlessly</p>
 
 
 
             <h1 className="text-customblack text-xl lg:text-3xl mt-4 font-medium">Software Solutions</h1>
 
-            <p className="text-gray-500 font-medium mt-2 text-xs md:text-lg">We bring robust, intuitive, and scalable software platforms to the forefront of business innovation.</p>
+            <p className="text-gray-500 font-medium mt-2 text-xs lg:text-lg">We bring robust, intuitive, and scalable software platforms to the forefront of business innovation.</p>
 
-            <p className="text-gray-500 font-medium mt-4 text-xs md:text-lg">Key offerings include:</p>
+            <p className="text-gray-500 font-medium mt-4 text-xs lg:text-lg">Key offerings include:</p>
 
-            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">E-commerce Inventory Management: Track, manage, and optimize inventory for seamless business operations.</span></p>
-            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Customer Behavior Analytics: Understand consumer preferences and tailor strategies for maximum engagement.</span></p>
-            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs md:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Simplified GST Filing for Chartered Accountants: Streamline complex processes for improved accuracy and compliance.</span></p>
+            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs lg:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">E-commerce Inventory Management: Track, manage, and optimize inventory for seamless business operations.</span></p>
+            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs lg:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Customer Behavior Analytics: Understand consumer preferences and tailor strategies for maximum engagement.</span></p>
+            <p className="text-gray-500 font-medium w-full  text-start flex flex-row flex-wrap justify-between items-start text-xs lg:text-lg"><GoDotFill size={8} className="size-2 md:size-4 mt-1 md:mt-0" /> <span className="w-[95%]">Simplified GST Filing for Chartered Accountants: Streamline complex processes for improved accuracy and compliance.</span></p>
 
           </div>
         </div>
 
-        <h1 className="w-full flex justify-center items-center text-md md:text-xl lg:text-2xl text-customblack font-medium my-8">
+        <h1 className="w-full flex justify-center items-center text-md md:text-xl lg:text-2xl text-customblack font-medium  text-center m-0 md:my-8">
           Every solution is designed to simplify workflows, improve accuracy, and enhance user satisfaction.
         </h1>
 
@@ -188,7 +188,7 @@ const About = () => {
           </div>
         </div>
 
-        <h1 className="text-center mx-auto flex justify-center items-center text-md md:text-xl text-white font-medium my-8 w-full md:w-[70%] mt-16">
+        <h1 className="text-center mx-auto flex justify-center items-center text-md md:text-xl text-white font-medium my-0 md:my-8 w-full md:w-[70%] mt-8 md:mt-16">
           At EMBLOCK, we envision a smarter, more connected world where innovation and efficiency lead the way. Together, we can pave the path to a future that&apos;s not only transformative but also secure, scalable, and sustainable.
         </h1>
 
