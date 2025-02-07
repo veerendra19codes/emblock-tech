@@ -614,7 +614,7 @@ const ServicesNew = () => {
             </Link>
           </div>
 
-          <label className="w-fit p-1 md:p-2 px-4 bg-white text-black text-xs lg:text-xl rounded-full font-medium mt-4">
+          <label className="w-fit p-1 md:p-2 lg:px-4 bg-white text-black text-xs lg:text-xl rounded-full font-medium mt-4">
             Strategic
           </label>
         </div>
@@ -639,7 +639,7 @@ const ServicesNew = () => {
             </Link>
           </div>
 
-          <label className="w-fit p-1 md:p-2 px-4 bg-white text-black text-xs lg:text-xl rounded-full font-medium mt-4">
+          <label className="w-fit p-1 md:p-2 lg:px-4 bg-white text-black text-xs lg:text-xl rounded-full font-medium mt-4">
             Technical
           </label>
         </div>
@@ -664,7 +664,7 @@ const ServicesNew = () => {
             </Link>
           </div>
 
-          <label className="w-fit p-1 md:p-2 px-4  bg-white text-black text-xs lg:text-xl rounded-full font-medium mt-4">
+          <label className="w-fit p-1 md:p-2 lg:px-4  bg-white text-black text-xs lg:text-xl rounded-full font-medium mt-4">
             Operational
           </label>
         </div>
