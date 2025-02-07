@@ -295,7 +295,7 @@ This is a fantastic opportunity to gain hands-on experience in UI/UX design, ref
     type: "IoT Systems",
     title: "Embedded Engineer",
     openPositions: 2,
-    text: "",
+    text: "Join our IoT Systems Team as an Embedded Engineer and be part of developing innovative embedded solutions that power real-time, connected systems.This role is ideal for individuals who are passionate about embedded systems, firmware development, and IoT hardware integration.",
     roleType: "Remote, 0-1 Year Experience",
     skillsRequired:
       "Embedded C/C++,Microcontrollers (ESP32, STM32, ARM Cortex),RTOS & Firmware Development,PCB Design & Hardware Debugging,Communication Protocols (UART, SPI, I2C, MQTT)",
