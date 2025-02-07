@@ -123,8 +123,8 @@ const Footer = () => {
 
           <div className="w-full flex flex-col gap-1 my-6 justify-center lg:justify-start items-start lg:items-start">     
 
-            <p className="w-full  text-gray-500 text-sm lg:text-xl flex flex-wrap font-semibold  justify-start items-center text-start px-4 lg:px-0 mt-8">102, 20th Cross Road, Bengaluru 560076, Karnataka, India </p>
-              <p className="w-full  text-gray-500 text-sm lg:text-xl flex flex-wrap font-semibold   justify-start items-center text-start px-4 lg:px-0 ">No.23-A, Vadakuthu, Cuddalore, Tamil Nadu, 607308</p>          
+              <p className="w-full  text-gray-500 text-sm lg:text-xl flex flex-wrap font-semibold  justify-start items-center text-start px-4 lg:px-0 mt-8">19th Cross Rd, Mahadeshwara Nagar, Stage 2, BTM Layout</p>
+              <p className="w-full  text-gray-500 text-sm lg:text-xl flex flex-wrap font-semibold   justify-start items-center text-start px-4 lg:px-0 ">BENGALURU, KARNATAKA 560076</p>          
             </div>  
 
             <Link to="/contactus" className="rounded-full p-2  lg:m-0 pl-4 md:pl-6 text-md md:text-xl text-black bg-customgreen flex gap-4 justify-center items-center mt-8 lg:my-12 shadow-md shadow-customgreen group hover:shadow-none transition-all duration-500  font-medium w-fit">Book a call <FaArrowRightLong className="bg-white text-customgray rounded-full size-6 md:size-10 p-1 md:p-3 font-thin transition-transform duration-300 -rotate-45 group-hover:rotate-0" /> </Link>
