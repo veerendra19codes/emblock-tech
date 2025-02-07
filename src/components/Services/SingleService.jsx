@@ -137,7 +137,7 @@ const SingleService = () => {
                     id: 1,
                     image: "/service2-image1.png",
                     title: "IoT Platform Development and Integration",
-                    content: "IoT Platform Development and Integration"
+                    content: "We build scalable IoT platforms tailored to your specific needs. Our team seamlessly integrates these platforms with your existing ERP, CRM, and other enterprise systems, ensuring all parts of your business work together effortlessly. This integration enhances operational efficiency and provides a unified view of your business processes. Our platforms are designed for flexibility, allowing you to adapt as your business grows and evolves."
                 },
                 {
                     id: 2,

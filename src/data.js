@@ -289,4 +289,90 @@ This is a fantastic opportunity to gain hands-on experience in UI/UX design, ref
       },
     ],
   },
+
+  {
+    id: 4,
+    type: "IoT Systems",
+    title: "Embedded Engineer",
+    openPositions: 2,
+    text: "",
+    roleType: "Remote, 0-1 Year Experience",
+    skillsRequired:
+      "Embedded C/C++,Microcontrollers (ESP32, STM32, ARM Cortex),RTOS & Firmware Development,PCB Design & Hardware Debugging,Communication Protocols (UART, SPI, I2C, MQTT)",
+    details: [
+      {
+        id: 1,
+        line: `Join our IoT Systems Team as an Embedded Engineer and be part of developing innovative embedded solutions that power real-time, connected systems.`,
+      },
+      {
+        id: 2,
+        line: `This role is ideal for individuals who are passionate about embedded systems, firmware development, and IoT hardware integration.`,
+      },
+    ],
+
+    keyResponsibilities: [
+      {
+        id: 1,
+        text: "Develop and optimize embedded software for IoT devices.",
+      },
+      {
+        id: 2,
+        text: "Design, test, and debug firmware for microcontrollers and embedded platforms.",
+      },
+      {
+        id: 3,
+        text: "Work on hardware-software integration, ensuring seamless connectivity.",
+      },
+      {
+        id: 4,
+        text: "Implement communication protocols for device-to-cloud data transmission.",
+      },
+      {
+        id: 5,
+        text: "Troubleshoot and resolve system performance issues.",
+      },
+    ],
+    basicQualifications: [
+      {
+        id: 1,
+        text: "Bachelor's degree in Electronics, Computer Science, or a related field.",
+      },
+      {
+        id: 2,
+        text: "Strong programming skills in Embedded C/C++.",
+      },
+      {
+        id: 3,
+        text: "Understanding of hardware design and debugging tools.",
+      },
+    ],
+    prefferedQualifications: [
+      {
+        id: 1,
+        text: "Experience with IoT communication protocols like MQTT.",
+      },
+      {
+        id: 2,
+        text: "KHands-on experience with real-time operating systems (RTOS).",
+      },
+      {
+        id: 3,
+        text: "Familiarity with PCB design and circuit simulation tools.",
+      },
+    ],
+    whyJoinUs: [
+      {
+        id: 1,
+        text: "Work on cutting-edge IoT solutions with real-world impact.",
+      },
+      {
+        id: 2,
+        text: "Exposure to international projects and industry-leading technologies.",
+      },
+      {
+        id: 3,
+        text: "Growth opportunities in a fast-paced, innovation-driven environment..",
+      },
+    ],
+  },
 ];

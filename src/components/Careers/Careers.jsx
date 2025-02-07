@@ -3,6 +3,7 @@ import { GoDotFill } from "react-icons/go";
 import { Link } from "react-router-dom";
 import SocialMedia from "../SocialMedia";
 import  { useEffect, useRef, useState } from 'react'
+import { jobs } from "../../data";
 
 const AnimatedElement = ({ children, delay = 0 }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,35 +47,35 @@ const AnimatedElement = ({ children, delay = 0 }) => {
 
 const Careers = () => {
 
-  const jobs = [
-    {
-      id: 1,
-      type: "Web Applications",
-      title: "Front End Developer",
-      openPositions: 3,
-      text: 'We are looking for passionate Front End Developer Interns to join our "Innovation Hub" and contribute to building dynamic, user-friendly web applications.',
-      roleType: "Remote, 0-1 Year Experience",
-      skillsRequired: "HTML, CSS, JavaScript, React/Angular, Tailwind CSS, Material UI",
-    },
-    {
-      id: 2,
-      type: "Design Prototype",
-      title: "UI/UX Designer",
-      openPositions: 1,
-      text: 'Join our "Creative Lab" as a UI/UX Intern and help craft intuitive, visually stunning user experiences that leave a lasting impact.',
-      roleType: "Remote, 0-1 Year Experience",
-      skillsRequired: "Figma, Adobe XD, Wireframing, Prototyping",
-    },
-    {
-      id: 3,
-      type: "Marketing",
-      title: "Marketing Executive",
-      openPositions:2 ,
-      text: '',
-      roleType: "Remote, 0-1 Year Experience",
-      skillsRequired: "Cold Calling, Client Management, Campaign Strategy, Lead Generation",
-    },
-  ];
+  // const jobs = [
+  //   {
+  //     id: 1,
+  //     type: "Web Applications",
+  //     title: "Front End Developer",
+  //     openPositions: 3,
+  //     text: 'We are looking for passionate Front End Developer Interns to join our "Innovation Hub" and contribute to building dynamic, user-friendly web applications.',
+  //     roleType: "Remote, 0-1 Year Experience",
+  //     skillsRequired: "HTML, CSS, JavaScript, React/Angular, Tailwind CSS, Material UI",
+  //   },
+  //   {
+  //     id: 2,
+  //     type: "Design Prototype",
+  //     title: "UI/UX Designer",
+  //     openPositions: 1,
+  //     text: 'Join our "Creative Lab" as a UI/UX Intern and help craft intuitive, visually stunning user experiences that leave a lasting impact.',
+  //     roleType: "Remote, 0-1 Year Experience",
+  //     skillsRequired: "Figma, Adobe XD, Wireframing, Prototyping",
+  //   },
+  //   {
+  //     id: 3,
+  //     type: "Marketing",
+  //     title: "Marketing Executive",
+  //     openPositions:2 ,
+  //     text: '',
+  //     roleType: "Remote, 0-1 Year Experience",
+  //     skillsRequired: "Cold Calling, Client Management, Campaign Strategy, Lead Generation",
+  //   },
+  // ];
 
 
   const steps = [

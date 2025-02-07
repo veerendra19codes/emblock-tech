@@ -22,17 +22,17 @@ const Testimonials = () => {
         {
             id: 4,
             author: "Bala Venkatesh",
-            review: "Emblock Tech built an ERP and PMS system for our construction business, and it&apos;s been a game-changer. They understood exactly what we needed and delivered on time. "
+            review: "Emblock Tech built an ERP and PMS system for our construction business, and it's been a game-changer. They understood exactly what we needed and delivered on time. "
         },
         {
             id: 5,
             author: "Nigesh",
-            review: "The team at Emblock Tech did an excellent job creating a custom ERP for our construction business. It’s made managing projects so much easier, and the whole system runs smoothly."
+            review: "The team at Emblock Tech did an excellent job creating a custom ERP for our construction business. It's made managing projects so much easier, and the whole system runs smoothly."
         },
         {
             id: 6,
             author: "Avani",
-            review: "I reached out to Emblock Tech for a software solution, and they delivered exactly what I needed. The team was super professional and made the whole process stress-free. Couldn&apos;t have asked for better service!"
+            review: "I reached out to Emblock Tech for a software solution, and they delivered exactly what I needed. The team was super professional and made the whole process stress-free. Couldn't have asked for better service!"
         },
         {
             id: 7,
@@ -42,7 +42,7 @@ const Testimonials = () => {
         {
             id: 8,
             author: "Mohammed Kasim",
-            review: "They built a CRM for our business, and it&apos;s so easy to use, and it&apos;s helped us stay on top of customer relationships. I&apos;m really impressed with their work"
+            review: "They built a CRM for our business, and it&apos;s so easy to use, and it's helped us stay on top of customer relationships. I'm really impressed with their work"
         },
         {
             id: 9,
