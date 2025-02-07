@@ -42,7 +42,7 @@ const Testimonials = () => {
         {
             id: 8,
             author: "Mohammed Kasim",
-            review: "They built a CRM for our business, and it&apos;s so easy to use, and it's helped us stay on top of customer relationships. I'm really impressed with their work"
+            review: "They built a CRM for our business, and it's so easy to use, and it's helped us stay on top of customer relationships. I'm really impressed with their work"
         },
         {
             id: 9,
